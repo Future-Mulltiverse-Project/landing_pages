@@ -1,0 +1,18 @@
+// rem-calc variables
+$font-size-base: 1rem;
+$global-font-size: $font-size-base;
+
+// z function function variables
+$z-indexes: ('toast', 'modal', 'modal-backdrop', 'tippy', 'header');
+
+// wrap-calc function variables
+$wrapper-padding: 50px;
+$wrapper-padding-sm: 24px;
+$wrapper-inner-width: 1170px;
+$wrapper-width: $wrapper-inner-width + ($wrapper-padding * 2);
+
+// bootstrap rfs defaults
+$rfs-base-value: 14px;
+//$rfs-breakpoint: 1200px;
+$rfs-breakpoint: $wrapper-width;
+//$rfs-factor: 10;

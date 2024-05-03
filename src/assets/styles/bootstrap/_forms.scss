@@ -1,0 +1,57 @@
+@import "bootstrap/scss/forms/labels";
+@import "bootstrap/scss/forms/form-text";
+@import "bootstrap/scss/forms/form-control";
+@import "bootstrap/scss/forms/form-select";
+@import "bootstrap/scss/forms/form-check";
+//@import "bootstrap/scss/forms/form-range";
+//@import "bootstrap/scss/forms/floating-labels";
+@import "bootstrap/scss/forms/input-group";
+@import "bootstrap/scss/forms/validation";
+
+.form-fieldset {
+  margin-bottom: rem-calc(50px);
+}
+
+.form-legend {
+  @include font-size(16px);
+  font-weight: 600;
+  color: $primary;
+  margin-bottom: rem-calc(12px);
+}
+
+.form-row {
+  --gutter-x: #{rem-calc(20px)};
+}
+
+.form-group {
+  margin-bottom: rem-calc(20px);
+}
+
+.form-asterisk {
+  color: $danger;
+}
+
+.form-radio-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  color: #9C9C9C;
+  font-size: rem-calc(16px);
+  line-height: math-div(20, 16);
+}
+
+.form-check-label {
+  font-family: $font-family-base;
+  font-weight: 500;
+  color: #9C9C9C;
+  font-size: rem-calc(14px);
+  line-height: math-div(18, 14);
+}
+
+.form-footer {
+  margin-top: rem-calc(50px);
+  justify-content: space-between;
+}
+
+textarea.form-control {
+  resize: none;
+}

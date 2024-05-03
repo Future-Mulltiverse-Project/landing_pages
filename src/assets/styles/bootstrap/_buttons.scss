@@ -1,0 +1,113 @@
+@import "bootstrap/scss/buttons";
+
+@keyframes spinLoader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.btn {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  text-transform: uppercase;
+
+  --btn-loader-color: #{$body-color};
+
+  //svg {
+  //  margin-right: rem-calc(12px);
+  //  height: rem-calc(16px);
+  //  width: rem-calc(16px);
+  //}
+
+  &-sm {
+    line-height: math-div(14, 12);
+
+    svg {
+      margin-right: rem-calc(10px);
+      height: rem-calc(12px);
+      width: rem-calc(12px);
+    }
+  }
+
+  &-link {
+    --btn-font-weight: $font-weight-bold;
+    --btn-padding-y: 0;
+    --btn-padding-x: 0;
+    --btn-border-width: 0;
+  }
+
+  &-primary {
+    --btn-loader-color: #fff;
+  }
+
+  &-secondary {
+    --btn-loader-color: #fff;
+  }
+
+  &-success {
+    --btn-loader-color: #fff;
+  }
+
+  &-warning {
+    --btn-loader-color: #fff;
+  }
+
+  &-danger {
+    --btn-loader-color: #fff;
+  }
+
+  &-outline-gradient-primary {
+    color: $yellow-200;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to bottom, $yellow-200, $yellow-400);
+    border-style: solid;
+    position: relative;
+
+    &:hover {
+      background-image: linear-gradient(to bottom, $yellow-200, $yellow-400);
+      color: #0A0D1D;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+  }
+}
+
+.btn.is-loading, .btn-is-loading {
+  color: transparent !important;
+  position: relative;
+  pointer-events: none;
+
+  &::after {
+    animation: spinLoader 500ms infinite linear;
+    border: 1px solid var(--btn-loader-color);
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: 1em;
+    position: absolute;
+    left: calc(50% - (1em / 2));
+    top: calc(50% - (1em / 2));
+    width: 1em;
+  }
+}
+
+span.btn {
+  cursor: initial;
+
+  &.disabled {
+    opacity: 1;
+  }
+
+  &:focus, &.focused {
+    box-shadow: none;
+  }
+}

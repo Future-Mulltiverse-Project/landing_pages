@@ -1,0 +1,11 @@
+@function em-calc($pixels, $context: $font-size-base) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return math-div($pixels, $context) * 1em;
+}

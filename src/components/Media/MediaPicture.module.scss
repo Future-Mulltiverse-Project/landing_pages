@@ -1,0 +1,33 @@
+.el {
+  display: block;
+  position: relative;
+}
+
+.fill {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.transition {
+  transition: opacity 300ms;
+}
+
+.in {
+  opacity: 1;
+}
+
+.out {
+  opacity: 0;
+}

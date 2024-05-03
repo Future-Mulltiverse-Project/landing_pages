@@ -1,0 +1,125 @@
+<template>
+  <section :class="$style.section">
+    <MediaPicture
+      :media-class="$style.bg"
+      layout="fill"
+      :src="Bg"
+      :width="1440"
+      :height="840"
+    />
+    <div :class="$style.gradient" />
+    <AppWrapper>
+      <div :class="$style.formContainer">
+        <div class="row" :class="$style.row">
+          <div class="col-12 col-lg">
+            <h2 :class="$style.title">
+    JOIN OUR<span :class="$style.primaryText"> NEWSLETTER LIST TODAY</span> FOR ALL <span :class="$style.primaryText">NEWS</span> & <span :class="$style.primaryText">UPDATES</span>
+  </h2>
+          </div>
+          <div class="col-12 col-lg-auto">
+            <JoinForm :class="$style.form" />
+          </div>
+        </div>
+      </div>
+      <p :class="$style.text1">We can´t wait to meet you in the <br> <span style="font-size: 42px; color: white;">FUTURE MULTIVERSE</span><span style="font-size: 42px;">!</span></p>
+      <p :class="$style.text2">Your<span style="color: white;"> home</span> of <span style="color: white;">inspiration</span> for the <span style="color: white;">future</span></p>
+    </AppWrapper>
+  </section>
+</template>
+<script lang="ts" setup>
+import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
+import JoinForm from '~/components/Join/JoinForm.vue';
+import Bg from '~/assets/images/join-bg-2.jpg';
+import MediaPicture from '~/components/Media/MediaPicture.vue';
+</script>
+
+<style lang="scss" module>
+.section {
+  @include padding-bottom(100px);
+  
+  color: #0a0d1d;
+  position: relative;
+  overflow: hidden;
+}
+
+.primaryText {
+  color: $primary; /* Replace $primary with your desired primary text color */
+}
+
+.bg {
+  object-position: 50% 0;
+}
+
+.gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(#e3e2e5, 0) 0%,
+    rgba(#e3e2e5, 0) 90%,
+    #e3e2e5 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.formContainer {
+  @include padding(62px 0 54px);
+
+  border-bottom: 1px solid rgba(#fff, 0.7);
+  margin-bottom: 16%;
+}
+
+.row {
+  --gutter-x: #{rem-calc(30px)};
+  --gutter-y: #{rem-calc(30px)};
+  align-items: center;
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    text-align: left;
+  }
+}
+
+.form {
+  max-width: rem-calc(474px);
+  width: 100%;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(lg) {
+    max-width: none;
+    margin: 0;
+    width: rem-calc(474px);
+  }
+}
+
+.title {
+  @include font-size(20px);
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.text1 {
+  @include font-size(26px);
+  @include margin-bottom(115px);
+  @include margin-top(10px);
+  line-height: math-div(30, 26);
+  color: $primary;
+  text-align: center;
+}
+
+.text2 {
+  @include font-size(45px);
+  font-weight: 700;
+  line-height: math-div(55, 45);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  max-width: rem-calc(720px);
+  color: $primary;
+  margin-bottom: 30%;
+}
+</style>

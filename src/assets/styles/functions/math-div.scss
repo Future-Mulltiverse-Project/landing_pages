@@ -1,0 +1,5 @@
+@use "sass:math";
+
+@function math-div($n1, $n2) {
+  @return math.div($n1, $n2);
+}
