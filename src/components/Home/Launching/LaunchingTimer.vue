@@ -1,22 +1,26 @@
 <template>
   <div :class="$style.row">
     <div :class="$style.col">
-      <div :class="$style.val">{{ zerofi(days) }}</div>
+      <!--div :class="$style.val">{{ zerofi(days) }}</div-->
+      <div :class="$style.val">39</div>
       <div :class="$style.term">Days</div>
     </div>
     <div :class="$style.sep">:</div>
     <div :class="$style.col">
-      <div :class="$style.val">{{ zerofi(hours) }}</div>
+      <!--div :class="$style.val">{{ zerofi(hours) }}</div-->
+      <div :class="$style.val">23</div>
       <div :class="$style.term">Hours</div>
     </div>
     <div :class="$style.sep">:</div>
     <div :class="$style.col">
-      <div :class="$style.val">{{ zerofi(minutes) }}</div>
+      <!--div :class="$style.val">{{ zerofi(minutes) }}</div-->
+      <div :class="$style.val">59</div>
       <div :class="$style.term">Minutes</div>
     </div>
     <div :class="$style.sep">:</div>
     <div :class="$style.col">
-      <div :class="$style.val">{{ zerofi(seconds) }}</div>
+      <!--div :class="$style.val">{{ zerofi(seconds) }}</div-->
+      <div :class="$style.val">59</div>
     </div>
   </div>
 </template>
@@ -44,6 +48,15 @@ const { days, hours, minutes, seconds } = useTimer(props.datetime);
   }
 }
 
+@media (max-width: 768px) and (min-width:720px){
+    .val{
+      font-size: 33px !important;
+    }
+    .sep{
+    font-size: 27px !important;
+    }
+}
+
 .col {
   text-align: center;
 }
@@ -66,5 +79,6 @@ const { days, hours, minutes, seconds } = useTimer(props.datetime);
   text-transform: uppercase;
   font-weight: 700;
   margin-top: rem-calc(7px);
+  color: #CFB16D;
 }
 </style>

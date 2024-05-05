@@ -12,6 +12,7 @@ import LogoIcon from '~/icons/LogoIcon.vue';
 .link {
   display: inline-block;
   color: inherit;
+  margin-bottom: 20px !important;
 }
 
 .icon {

@@ -36,8 +36,8 @@ const items = [
   {
     img: {
       url: MarketplaceImg,
-      width: 277,
-      height: 450,
+      width: 390,
+      height: 750,
     },
     title: 'Marketplace',
     text: '“Discover the limitless possibilities of the future, at the FXPO Marketplace. Where passions meet purpose and values create opportunities.”',
@@ -73,6 +73,9 @@ const items = [
 <style lang="scss" module>
 .section {
   overflow: hidden;
+  //background-color: unset;    
+  background-size: cover;
+  background-image: url("@/assets/images/dalle_background.png");
 }
 
 .grid {

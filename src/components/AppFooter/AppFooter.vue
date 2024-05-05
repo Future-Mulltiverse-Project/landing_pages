@@ -2,16 +2,18 @@
   <footer :class="$style.footer">
     <AppWrapper :class="$style.wrapper">
       <div class="row" :class="$style.row">
-        <div :class="$style.leftCol" class="col-12 col-lg-4">
+        <div :class="$style.leftCol" class="col-12 col-lg-3">
           <AppFooterLogo :class="$style.logo" />
           <p :class="$style.contactText">
-            Contact Us:
+            CONTACT US:
             <br />
-            <a href="mailto:support@fxpo.io" target="_top">support@fxpo.io</a>
+            <a href="mailto:Support@futuremultiverse.com" style="font-weight: 500;" target="_top">Support@futuremultiverse.com</a>
           </p>
           <AppFooterSocials :class="$style.socials" />
         </div>
+        <div class="col-12 col-lg-1"></div>
         <div class="col-12 col-lg-8">
+          <h4 style="font-size: 18px;padding-bottom: 13px;"><span style="color: #CFB16D;">FUTURE</span> MULTIVERSE</h4>
           <div class="row" :class="$style.navRow">
             <div
               v-for="(item, index) in items"
@@ -55,6 +57,7 @@ const items = useFooterNavItems;
   color: $dark;
   overflow: hidden;
   position: relative;
+  padding-top: 100px;
 }
 
 .wrapper {
@@ -80,9 +83,10 @@ const items = useFooterNavItems;
 }
 
 .contactText {
-  @include font-size(22px);
-  @include margin-bottom(66px);
+  @include font-size(15px);
+  @include margin-bottom(24px);
   line-height: divide(30, 22);
+  font-weight: 900;
 
   a {
     transition: color 150ms ease-in-out;
@@ -108,8 +112,8 @@ const items = useFooterNavItems;
 .itemTitle {
   @include font-size(14px);
   line-height: math-div(18, 14);
-  font-weight: 700;
-  color: $primary;
+  font-weight: bold;
+  color: #000000;
   margin-bottom: rem-calc(22px);
 }
 
@@ -117,11 +121,12 @@ const items = useFooterNavItems;
   display: flex;
   flex-direction: column;
   row-gap: rem-calc(2px);
+  list-style-type: none !important; /* Remove bullet points */
 }
 
 .subitem {
-  position: relative;
-  padding-left: rem-calc(12px);
+  position: unset;
+  padding-left: rem-calc(0px);
 
   &:before {
     background-color: currentColor;

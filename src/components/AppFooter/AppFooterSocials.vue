@@ -60,7 +60,7 @@ const socials = ref([
 .link {
   align-items: center;
   border-radius: 50%;
-  border: 2px solid #1c203d;
+  border: 3px solid #1c203d;
   color: #1c203d;
   display: flex;
   height: rem-calc(40px);

@@ -1,11 +1,11 @@
 <template>
   <NuxtLink to="/" aria-label="FXPO" :class="$style.link">
-    <LogoIcon :class="$style.icon" />
+    <HeaderLogoIcon :class="$style.icon" />
   </NuxtLink>
 </template>
 
 <script lang="ts" setup>
-import LogoIcon from '~/icons/LogoIcon.vue';
+import HeaderLogoIcon from '~/icons/HeaderLogoIcon.vue';
 </script>
 
 <style lang="scss" module>

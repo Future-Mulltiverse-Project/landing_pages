@@ -1,7 +1,8 @@
 <template>
   <div :class="$style.el">
+    <p style="margin-top: -16%; text-align: center; color: #CFB16D; font-size: 30px; margin-bottom: 30px;">COUNTDOWN</p>
     <h3 :class="$style.title">
-      {{ title }}
+      <span style="color: #CFB16D">NEXT UPDATE</span> & ANNOUNCEMENT:
     </h3>
     <slot />
   </div>
@@ -26,6 +27,11 @@ defineProps<Props>();
     padding-bottom: 0;
     margin-bottom: 0;
   }
+}
+@media (max-width: 768px) and (min-width:720px){
+    .title{
+      font-size: 15px !important;
+    }
 }
 
 .title {

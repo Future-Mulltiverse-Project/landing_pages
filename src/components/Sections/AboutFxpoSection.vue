@@ -1,51 +1,45 @@
 <template>
   <section :class="$style.section">
-    <MainSectionHeader :class="$style.header" :title="title" />
+    <MediaPicture :src="Bg" :width="14240" :height="2338" layout="fill" />
+    <AppWrapper>
+    <AboutFutureMultiverse :class="$style.header" :title="title" />
     <MainSectionTextContent :class="$style.text">
-      <p>
+      <p style="margin-bottom: 170%; font-size: 20px; padding-top:13px">
         The Future Multiverse is a digital, decentralized platform created to
         accelerate the breakthrough to a sustainable, meaningful and inspiring
         future for everyone.
       </p>
     </MainSectionTextContent>
-    <Torus />
     <div :class="$style.btnContainer">
-      <h3 :class="$style.btnTitle">Experience the Future today:</h3>
+      <h3 :class="$style.btnTitle">Experience the <span style="color: #cfb16d;">Future </span>today:</h3>
+      <br />
       <div class="row" :class="$style.btnRow">
-        <div class="col-auto" :class="$style.btnCol">
-          <button
-            class="btn btn-outline-gradient-primary"
+        <div class="col-md-4" :class="$style.btnCol">
+          <a
+            class="btn btn-outline-primary"
             :class="$style.btn"
             type="button"
           >
-            <span style="color: white; line-height: 1">LEARN&nbsp;</span>
-            <span style="color: #cfb16d; line-height: 1">&nbsp;MORE&nbsp;</span>
-            <span style="color: white; line-height: 1">
-              &nbsp;(COMING NEXT)
-            </span>
-          </button>
+            <p style="margin-bottom: 0px; color: #ffffff;">LEARN <span style="color: #cfb16d;">MORE </span> <br />(COMING NEXT)</p>
+          </a>
         </div>
-        <div class="col-auto" :class="$style.btnCol">
-          <button
+        <div class="col-md-4" :class="$style.btnCol">
+          <a
             class="btn btn-outline-white"
             :class="$style.btn"
-            type="button"
           >
-            ENTER
-            <span style="color: #cfb16d; line-height: 1">
-              &nbsp;FUTURE EXPO&nbsp;
-            </span>
-            (COMING NEXT)
-          </button>
+            <p style="margin-bottom: 0px; color: #ffffff;">ENTER
+            <span style="color: #cfb16d;"> FUTURE EXPO <br />
+            </span> (COMING NEXT) </p>
+          </a>
         </div>
-        <div class="col-auto" :class="$style.btnCol">
-          <button
-            class="btn btn-outline-gradient-primary"
+        <div class="col-md-4" :class="$style.btnCol">
+          <a
+            class="btn btn-outline-primary"
             :class="$style.btn"
-            type="button"
           >
-            DISCOVER MAP (COMING NEXT)
-          </button>
+          <p style="margin-bottom: 0px; color: #ffffff;"> DISCOVER<span style="color: #cfb16d;"> MAP</span><br /> (COMING NEXT)</p>
+        </a>
         </div>
       </div>
     </div>
@@ -81,6 +75,7 @@
         </NuxtLink>
       </div>
     </div>
+    </AppWrapper>
   </section>
 </template>
 
@@ -88,18 +83,27 @@
 import MainSectionHeader from '~/components/MainSection/MainSectionHeader.vue';
 import FileUploadIcon from '~/icons/FileUploadIcon.vue';
 import HeadCommentIcon from '~/icons/HeadCommentIcon.vue';
+import Bg from '~/assets/images/torus2.jpg';
 import RoadmapIcon from '~/icons/RoadmapIcon.vue';
+import MediaPicture from '~/components/Media/MediaPicture.vue';
+import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MainSectionTextContent from '~/components/MainSection/MainSectionTextContent.vue';
-import Torus from '~/components/Torus/Torus.vue';
+import AboutFutureSection from './launch/aboutFutureSection.vue';
+import AboutFutureMultiverse from '~/components/MainSection/AboutFutureMultiverse.vue';
 
 const title = `About FUTURE MULTIVERSE`;
 </script>
 
 <style lang="scss" module>
 .section {
-  @include padding(34px 0 30px);
-  background-color: #0c1020;
+  //background-color: #0c1020;
+  //background-size: cover;
+  //background-image: url("@/assets/images/torus2.jpg");
+  //height: 1700px;
   text-align: center;
+  @include padding(70px 0 200px);
+  color: #ffffff;
+  position: relative;
 }
 
 .header {
@@ -137,14 +141,18 @@ const title = `About FUTURE MULTIVERSE`;
 }
 
 .btnTitle {
-  @include font-size(22px);
+  @include font-size(28px);
   @include margin-bottom(32px);
   font-weight: 600;
-  color: $primary;
+  color: #ffffff;
 }
 
 .btn {
   width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 17px;
+  text-align: center;
 }
 
 .btn svg {

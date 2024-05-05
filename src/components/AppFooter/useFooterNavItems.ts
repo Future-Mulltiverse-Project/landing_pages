@@ -2,46 +2,88 @@ import { ref } from 'vue';
 
 export const useFooterNavItems = ref([
   {
-    name: 'Main Pages',
+    name: 'INITIATIVE',
     subitems: [
       {
-        name: 'Home',
+        name: 'Vision / Mission & Movement',
         to: { name: 'index' },
       },
       {
-        name: 'FXPO',
+        name: 'Future Multiverse Engine',
         to: { name: 'fxpo' },
       },
       {
-        name: 'Launch',
+        name: 'Team & Purpose',
         to: { name: 'launch' },
       },
       {
-        name: 'Quest',
+        name: 'Partners',
         to: { name: 'quest' },
       },
       {
-        name: 'Launchpad',
+        name: 'GuideBook',
         to: { name: 'launchpad' },
       },
       {
-        name: 'Marketplace',
+        name: 'Support',
         to: { name: 'marketplace' },
       },
       {
-        name: 'Academy',
+        name: 'Contact Us',
+        to: { name: 'index' },
+      },
+    ],
+  },
+  {
+    name: 'PLATFORM ECOSYSTEM',
+    subitems: [
+      {
+        name: 'Future Multiverse',
         to: { name: 'index' },
       },
       {
-        name: 'Blockchain',
-        to: { name: 'blockchain' },
+        name: 'Future EXPO',
+        to: { name: 'index' },
       },
       {
-        name: 'Guidebook',
-        to: { name: 'guidebook' },
+        name: 'LaunchPad / Accelerator',
+        to: { name: 'index' },
       },
       {
-        name: 'News',
+        name: 'FXPO Marketplace',
+        to: { name: 'index' },
+      },
+      {
+        name: 'FXPO Blockchain',
+        to: { name: 'index' },
+      },
+      {
+        name: 'NFTs & Packages',
+        to: { name: 'index' },
+      },
+      {
+        name: 'Backoffice',
+        to: { name: 'index' },
+      },
+      {
+        name: 'Grace AI & Guidebook',
+        to: { name: 'index' },
+      },
+    ],
+  },
+  {
+    name: 'RESOURCES',
+    subitems: [
+      {
+        name: 'Grace AI / Guidebook',
+        to: { name: 'index' },
+      },
+      {
+        name: 'RoadMap',
+        to: { name: 'index' },
+      },
+      {
+        name: 'News & Updates',
         to: { name: 'index' },
       },
       {
@@ -49,105 +91,36 @@ export const useFooterNavItems = ref([
         to: { name: 'index' },
       },
       {
-        name: 'Official Updates',
+        name: 'Q&A / FAQ',
+        to: { name: 'index' },
+      },
+      {
+        name: 'Tutorials',
         to: { name: 'index' },
       },
     ],
   },
   {
-    name: 'FXPO Ecosystem',
+    name: 'GENERAL',
     subitems: [
       {
-        name: 'Overview',
+        name: 'Terms of Use & Service',
         to: { name: 'index' },
       },
       {
-        name: 'Vision, Mission & Quest',
+        name: 'Disclaimer',
         to: { name: 'index' },
       },
       {
-        name: 'Metaverse & Architecture',
+        name: 'Compliance & Regulation',
         to: { name: 'index' },
       },
       {
-        name: 'LaunchPad & Marketplace',
+        name: 'Privacy Policy',
         to: { name: 'index' },
       },
       {
-        name: 'Tokenomics',
-        to: { name: 'index' },
-      },
-      {
-        name: 'Gamification',
-        to: { name: 'index' },
-      },
-      {
-        name: 'B2B2C System & Packages',
-        to: { name: 'index' },
-      },
-      {
-        name: 'Hybrid Blockchain',
-        to: { name: 'index' },
-      },
-      {
-        name: 'FXPO Coin',
-        to: { name: 'index' },
-      },
-      {
-        name: 'Connect',
-        to: { name: 'index' },
-      },
-      {
-        name: 'Opportunities for everyone',
-        to: { name: 'index' },
-      },
-      {
-        name: 'Roadmap & Team',
-        to: { name: 'index' },
-      },
-    ],
-  },
-  {
-    name: 'Resources & Knowledge',
-    subitems: [
-      {
-        name: 'FXPO Whitepaper',
-        to: { name: 'index' },
-      },
-      {
-        name: 'FXPO LaunchPlan',
-        to: { name: 'index' },
-      },
-      {
-        name: 'FXPO PitchDeck',
-        to: { name: 'index' },
-      },
-      {
-        name: 'FXPO 3 Pager',
-        to: { name: 'index' },
-      },
-      {
-        name: 'FAQ',
-        to: { name: 'index' },
-      },
-      {
-        name: 'Q&A',
-        to: { name: 'index' },
-      },
-      {
-        name: 'How-To Tutorials',
-        to: { name: 'index' },
-      },
-      {
-        name: 'General Knowledge',
-        to: { name: 'index' },
-      },
-      {
-        name: 'Market Research & Trends',
-        to: { name: 'index' },
-      },
-      {
-        name: 'Compliance & Regulations',
+        name: 'Patent & Licence Agreements',
         to: { name: 'index' },
       },
     ],

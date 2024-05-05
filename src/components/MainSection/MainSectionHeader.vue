@@ -7,7 +7,7 @@
       {{ heading }}
     </div>
     <h2 :class="[$style.title, titleLg && $style.titleLg]">
-      <strong>{{ title }}</strong>
+      <strong>{{ title }}<br /> <span style="color: #ffffff;">{{invent_title}}</span></strong>
       <template v-if="subtitle">
         <br />
         {{ subtitle }}
@@ -26,6 +26,7 @@ defineProps<{
   subtitle?: string;
   titleLg?: boolean;
   headingLg?: boolean;
+  invent_title?: string;
 }>();
 </script>
 

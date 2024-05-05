@@ -1,40 +1,77 @@
 <template>
   <section :class="$style.section">
-    <MediaPicture :src="Bg" :width="1440" :height="1038" layout="fill" />
+    <MediaPicture :src="Bg" :width="1440" :height="1338" layout="fill" />
     <AppWrapper>
       <div class="row" :class="$style.row">
-        <div class="col" :class="$style.leftCol">
-          <MainSectionHeader
+        <div class="col-md-6">
+          <HomeMainSectionHeader
             :class="$style.header"
-            heading="It's time for the future!"
             :title="'REGISTER NOW & SAVE YOUR SEAT FOR THE VIP PRE-LAUNCH OF THE FUTURE!'"
             title-lg
           />
-        
-            
+
+          <div class="button-container" :class="$style.button_set">
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-5" :class="$style.btn_special1">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  :class="$style.btn"
+                  style="
+                    background-color: rgba(255, 255, 255, 0);
+                    width: 100%;
+                    color: #ffffff;
+                    font-weight: 100;
+                  "
+                >
+                  Onboard now
+                  <br />
+                  (coming next)
+                </button>
+              </div>
+              <div class="col-md-5" :class="$style.btn_special2">
+                <button
+                  type="button"
+                  class="btn btn--primary-inverted"
+                  :class="$style.btn"
+                  style="
+                    background-color: #cfb16d;
+                    width: 100%;
+                    color: #ffffff;
+                    font-weight: 400;
+                  "
+                >
+                  REGISTER FOR
+                  <br />
+                  OUR NEWSLETTER
+                </button>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
         </div>
-        <div class="col" :class="$style.rightCol">
-          <LaunchingTimerWrapper :class="$style.timerWrapper">
+        <div class="col-md-6">
+          <LaunchingTimerWrapper
+            :class="$style.timerWrapper"
+            style="padding-bottom: 30px"
+          >
             <LaunchingTimerItem
-              title="NEXT UPDATE & ANNOUNCEMENT:"
+              title="NEXT UPDATE & ANNOUNCEMENT"
               class="custom-text-color"
             >
               <LaunchingTimer :datetime="config.public.MINT_EVENT_START_IN" />
             </LaunchingTimerItem>
-            <LaunchingTimerItem title="PLANNED VIP PRE-LAUNCH MINT EVENT">
-              <p :class="$style.text1"><br> <span style="font-size: 42px; color: white;">IN <span :class="$style.primaryText"> Q1</span>  2024</span><span style="font-size: 42px;">!</span></p>
-            </LaunchingTimerItem>
+            <SubLaunchingTimerItem>
+              <p :class="$style.text1">
+                <br />
+                <span style="font-size: 60px; color: white" :class="$style.date_format">31. MAY 2024</span>
+              </p>
+            </SubLaunchingTimerItem>
           </LaunchingTimerWrapper>
         </div>
       </div>
-       <div class="button-container">
-            <button type="button" class="btn btn-outline-white" :class="$style.btn">
-              Onboard now (coming next)
-            </button>
-            <button type="button" class="btn btn-outline-primary" :class="$style.btn">
-              REGISTER FOR OUR NEWSLETTER
-            </button>
-          </div>
+      <br />
     </AppWrapper>
   </section>
 </template>
@@ -46,7 +83,8 @@ import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import LaunchingTimer from '~/components/Home/Launching/LaunchingTimer.vue';
 import LaunchingTimerItem from '~/components/Home/Launching/LaunchingTimerItem.vue';
 import LaunchingTimerWrapper from '~/components/Home/Launching/LaunchingTimerWrapper.vue';
-import MainSectionHeader from '~/components/MainSection/MainSectionHeader.vue';
+import HomeMainSectionHeader from '~/components/MainSection/HomeMainSectionHeader.vue';
+import SubLaunchingTimerItem from '~/components/Home/Launching/SubLaunchingTimerItem.vue';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 const config = useRuntimeConfig();
@@ -55,6 +93,100 @@ const config = useRuntimeConfig();
 <style lang="scss" module>
 .section .rightCol .timerWrapper .custom-text-color {
   color: #ffffff !important; /* Change to your desired text color */
+}
+
+@media (max-width: 1231px) and (min-width: 1131px) {
+    .button_set{
+      margin-top: 30px !important;
+    }
+}
+
+@media (max-width: 1131px) and (min-width: 1040px) {
+    .button_set{
+      padding-top: 30px !important;
+    }
+}
+
+@media (max-width: 1040px) and (min-width:768px) {
+    .button_set{
+      padding-top: 45px !important;
+    }
+    .btn{
+      font-size: 13px;
+    }
+}
+@media (max-width: 768px) and (min-width:599px){
+    .button_set{
+      padding-top: 45px !important;
+    }
+    .btn{
+      font-size: 10px;
+      font-weight: bold;
+    }
+    .date_format{
+      font-size: 40px !important;
+    }
+    .button_set{
+      margin-top: 10%;
+    }
+    .btn_special1{
+      margin-top: 2%;
+    }
+    .btn_special2{
+      margin-top: 10%;
+    }
+}
+@media (max-width: 599px) and (min-width: 522px) {
+    .date_format{
+      font-size: 40px !important;
+      text-align: center;
+    }
+    .button_set{
+      margin-top: 30%;
+    }
+    .btn_special1{
+      margin-top: 2%;
+    }
+    .btn_special2{
+      margin-top: 10%;
+    }
+}
+@media (max-width: 522px) and (min-width: 400px) {
+    .date_format{
+      font-size: 40px !important;
+      text-align: center;
+    }
+    .button_set{
+      margin-top: 35%;
+    }
+    .btn_special1{
+      margin-top: 2%;
+    }
+    .btn_special2{
+      margin-top: 15%;
+    }
+}
+
+@media (max-width: 470px) {
+    .date_format{
+      font-size: 40px !important;
+      text-align: center;
+    }
+    .button_set{
+      margin-top: 50%;
+    }
+    .btn_special1{
+      margin-top: 5%;
+    }
+    .btn_special2{
+      margin-top: 20%;
+    }
+}
+
+
+
+.section {
+  padding-bottom: 0px !important;
 }
 
 .primaryText {
@@ -106,7 +238,7 @@ const config = useRuntimeConfig();
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+  text-align: center;
 }
 
 .btn {
@@ -132,6 +264,4 @@ const config = useRuntimeConfig();
 .timer2 {
   margin-top: rem-calc(16px);
 }
-
-
 </style>

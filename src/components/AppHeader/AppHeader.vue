@@ -43,8 +43,8 @@
 </template>
 
 <script lang="ts" setup>
-import AppHeaderLogo from '~/components/AppHeader/AppHeaderLogo';
-import AppHeaderNav from '~/components/AppHeader/AppHeaderNav';
+import AppHeaderLogo from '~/components/AppHeader/AppHeaderLogo.vue';
+import AppHeaderNav from '~/components/AppHeader/AppHeaderNav.vue';
 import AppHeaderToggleBtn from '~/components/AppHeader/AppHeaderToggleBtn.vue';
 </script>
 

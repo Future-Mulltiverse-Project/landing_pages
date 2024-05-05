@@ -20,7 +20,8 @@
   &::after {
     content: '';
     border-image-slice: 1;
-    border-image-source: linear-gradient(to bottom, $yellow-200, $yellow-400);
+    border-color: #CFB16D;
+    //border-image-source: linear-gradient(to bottom, $yellow-200, $yellow-400);
     border-style: solid;
     border-width: em-calc(6, 16) 0 em-calc(6, 16) em-calc(6, 16);
     display: block;

@@ -5,7 +5,8 @@
         <div class="col-12 col-lg-5" :class="$style.leftCol">
           <MainSectionHeader
             :class="$style.header"
-            :title="`YOUR FUTURE GUIDEBOOK`"
+            :title="`YOUR FUTURE `"
+            :invent_title="`GUIDEBOOK`"
             title-lg
           />
           <MainSectionTextContent :class="$style.text">
@@ -29,7 +30,7 @@
               class="btn btn-sm btn-outline-primary"
               to="/"
             >
-              Visit Now! <br> COMING NEXT
+              <p style="margin-bottom: 0px;">Visit <span style="color: #CFB16D;">Now</span>! <br> (COMING NEXT)</p>
             </NuxtLink>
           </div>
         </div>
@@ -165,5 +166,6 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 .visitBtn {
   flex-shrink: 0;
   min-width: rem-calc(130px);
+  color: #ffffff;
 }
 </style>

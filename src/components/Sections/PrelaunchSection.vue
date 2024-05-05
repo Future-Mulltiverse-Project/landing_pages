@@ -6,15 +6,15 @@
       <h2 :class="$style.title">
         Onboard <span :class="$style.primaryText"> Now</span> & Save your <span :class="$style.primaryText"> Seat</span> for the <span :class="$style.primaryText"> Launch</span> of the <span :class="$style.primaryText"> FUTURE</span>!
       </h2>
-      <h3 :class="$style.timerTitle">PLANNED VIP PRE-LAUNCH MINT-EVENT:</h3>
+      <h3 :class="$style.timerTitle">PLANNED <span style="color: #CFB16D;">VIP PRE-LAUNCH </span>MINT-EVENT</h3>
       <LaunchingTimer
         :class="$style.timer"
         :datetime="config.public.MINT_EVENT_START_IN"
       />
       <button type="button" class="btn btn-outline-white" :class="$style.btn">
-        Onboard now (coming next)
+       <p style="margin-bottom: 0px;"><span style="color: #CFB16D;">Onboard </span> now (coming next)</p>
       </button> 
-      <button type="button" class="btn btn2 btn-outline-primary" :class="$style.btn">
+      <button type="button" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
         REGISTER FOR OUR NEWSLETTER
       </button>
     </AppWrapper>
@@ -35,7 +35,7 @@ const config = useRuntimeConfig();
 .section {
   @include padding(104px 0 448px);
   
-  
+  padding-bottom: 230px !important;
   text-align: center;
   position: relative;
 }
@@ -43,6 +43,7 @@ const config = useRuntimeConfig();
 .primaryText {
   color: $primary; /* Replace $primary with your desired primary text color */
 }
+
 
 .heading {
   @include font-size(28px);
@@ -64,19 +65,21 @@ const config = useRuntimeConfig();
 }
 
 .btn {
-  --btn-bg: rgba(255, 255, 255, 0.2);
+  --btn-bg: rgba(255, 255, 255, 0);
   --btn-color: #0a0d1d;
   min-width: rem-calc(256px);
   max-width: 100%;
-  margin-bottom: -400px;
+  margin-bottom: -200px;
   margin-right: 10px;
+  color: #ffffff;
+  font-weight: 100
 }
 
 
 .timerTitle {
   @include font-size(18px);
   @include margin-top(300px);
-  color: $primary;
+  color: #ffffff;
   font-weight: 600;
   line-height: divide(30, 18);
   

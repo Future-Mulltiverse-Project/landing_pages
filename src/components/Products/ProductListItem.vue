@@ -3,12 +3,13 @@
     <div :class="$style.textContainer">
       <h3 :class="$style.title">{{ item.title }}</h3>
       <div :class="$style.text">{{ item.text }}</div>
-      <NuxtLink
-        :class="$style.btn"
-        class="btn btn-sm btn-outline-primary"
-        :to="item.to"
-      >
-        Explore
+
+      <NuxtLink to="/" class="btn btn-sm btn-outline-primary">
+        <p style="font-weight: 100;margin-bottom: 0px;">
+          EXPLORE
+          <br />
+          <span style="color: #ffffff">(COMING NEXT)</span>
+        </p>
       </NuxtLink>
     </div>
     <div :class="$style.mediaWrapper">
@@ -50,13 +51,13 @@ defineProps<{ item: Itesmata }>();
 
 <style lang="scss" module>
 .item {
-  border-left: 1px solid transparent;
-  border-right: 1px solid #222649;
-  border-bottom: 1px solid #222649;
+  //border-left: 1px solid transparent;
+  //border-right: 1px solid #222649;
+  //border-bottom: 1px solid #222649;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  background: radial-gradient(100% 60% at center bottom, #23274a, transparent);
+  //background: radial-gradient(100% 60% at center bottom, #23274a, transparent);
   overflow: hidden;
   flex-direction: row;
 
@@ -80,7 +81,7 @@ defineProps<{ item: Itesmata }>();
     }
 
     @media (min-width: $wrapper-width + 1px) {
-      padding-left: calc(100% - $wrapper-inner-width / 2);
+      padding-right: calc(100% - $wrapper-inner-width / 2);
     }
 
     @media (min-width: 1441px) {
@@ -121,7 +122,7 @@ defineProps<{ item: Itesmata }>();
 }
 
 .mediaHolder {
-  padding-bottom: 254.3478%;
+  padding-bottom: 250%;
   position: relative;
 }
 
