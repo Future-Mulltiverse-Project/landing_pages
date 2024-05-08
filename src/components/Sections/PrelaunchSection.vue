@@ -11,12 +11,14 @@
         :class="$style.timer"
         :datetime="config.public.MINT_EVENT_START_IN"
       />
-      <button type="button" class="btn btn-outline-white" :class="$style.btn">
-       <p style="margin-bottom: 0px;"><span style="color: #CFB16D;">Onboard </span> now (coming next)</p>
-      </button> 
-      <button type="button" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
-        REGISTER FOR OUR NEWSLETTER
-      </button>
+      <div style="padding-top: 100px;">
+        <button type="button" class="btn btn-outline-white" :class="$style.btn">
+        <p style="margin-bottom: 0px;"><span style="color: #CFB16D;">Onboard </span> now (coming next)</p>
+        </button> 
+        <button type="button" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
+          REGISTER FOR OUR NEWSLETTER
+        </button>
+      </div>
     </AppWrapper>
   </section>
 </template>
@@ -69,7 +71,7 @@ const config = useRuntimeConfig();
   --btn-color: #0a0d1d;
   min-width: rem-calc(256px);
   max-width: 100%;
-  margin-bottom: -200px;
+  margin-bottom: 20px;
   margin-right: 10px;
   color: #ffffff;
   font-weight: 100

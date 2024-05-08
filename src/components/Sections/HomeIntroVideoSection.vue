@@ -1,6 +1,6 @@
 <template>
   <section :class="$style.section">
-    <MediaPicture layout="fill" :src="Bg" :width="1440" :height="860" />
+    <MediaVideo layout="fill" :loop="true" :autoplay="true" :src="Bg" :width="1440" :height="860" />
     <AppWrapper :class="$style.wrapper">
       <h1 :class="$style.title">
         <strong>Welcome To The</strong>
@@ -34,7 +34,8 @@
 import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
 import ScrollIcon from '~/icons/ScrollIcon.vue';
-import Bg from '~/assets/images/home-intro.jpg';
+import Bg from '~/assets/videos/future_multiverse_video.mp4';
+import MediaVideo from '../Media/MediaVideo.vue';
 </script>
 
 <style lang="scss" module>
@@ -47,6 +48,18 @@ import Bg from '~/assets/images/home-intro.jpg';
   flex-direction: column;
   text-align: center;
   position: relative;
+}
+
+.background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .wrapper {

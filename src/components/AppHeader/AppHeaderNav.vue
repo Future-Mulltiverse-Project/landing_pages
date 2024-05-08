@@ -25,11 +25,11 @@ const items = ref(useNavItems);
 }
 
 .link {
-  @include font-size(14px);
+  @include font-size(16px);
   color: inherit;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   transition: color 0.2s ease-in-out;
 
   &:global(.router-link-active) {

@@ -210,6 +210,13 @@ h4 {
   margin: 0 auto;
 }
 
+@media (max-width: 1800px)
+{
+    .section{
+      margin-left: 10px !important;
+    }
+}
+
 .primaryText {
   color: $primary; /* Replace $primary with your desired primary text color */
 }

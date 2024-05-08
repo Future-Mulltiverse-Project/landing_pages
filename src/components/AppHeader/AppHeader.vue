@@ -50,13 +50,15 @@ import AppHeaderToggleBtn from '~/components/AppHeader/AppHeaderToggleBtn.vue';
 
 <style lang="scss" module>
 .el {
-  @include padding(50px 0 0);
+  @include padding(42px 0 0);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: z('header');
+  background-color: rgb(12, 12, 12, 0.5);
 }
+
 
 .wrapper {
   max-width: rem-calc(1440px);
@@ -77,6 +79,8 @@ import AppHeaderToggleBtn from '~/components/AppHeader/AppHeaderToggleBtn.vue';
 
 .navCol {
   display: none;
+  margin-top: -24px !important;
+  margin-bottom: 22px;
 
   @media (min-width: 1341px) {
     display: block;
@@ -85,6 +89,8 @@ import AppHeaderToggleBtn from '~/components/AppHeader/AppHeaderToggleBtn.vue';
 
 .btnsCol {
   margin-left: auto;
+  margin-top: -24px !important;
+  margin-bottom: 22px;
 }
 
 .btnRow {
