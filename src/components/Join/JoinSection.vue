@@ -13,8 +13,8 @@
         <div class="row" :class="$style.row">
           <div class="col-12 col-lg">
             <h2 :class="$style.title">
-    JOIN OUR<span :class="$style.primaryText"> NEWSLETTER LIST TODAY</span> FOR ALL <span :class="$style.primaryText">NEWS</span> & <span :class="$style.primaryText">UPDATES</span>
-  </h2>
+               JOIN OUR<span :class="$style.primaryText"> NEWSLETTER LIST TODAY</span> FOR ALL <span :class="$style.primaryText">NEWS</span> & <span :class="$style.primaryText">UPDATES</span>
+            </h2>
           </div>
           <div class="col-12 col-lg-auto">
             <JoinForm :class="$style.form" />
@@ -22,7 +22,7 @@
         </div>
       </div>
       <p :class="$style.text1">We can´t wait to meet you in the <br> <span style="font-size: 42px; color: white;">FUTURE MULTIVERSE</span><span style="font-size: 42px;">!</span></p>
-      <p :class="$style.text2">Your<span style="color: white;"> home</span> of <span style="color: white;">inspiration</span> for the <span style="color: white;">future</span></p>
+      <p :class="$style.text2">Your<span style="color: white;"> home</span> of <span style="color: white;">inspiration <br /> </span> for the <span style="color: white;">future</span></p>
     </AppWrapper>
   </section>
 </template>
@@ -65,7 +65,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .formContainer {
-  @include padding(62px 0 54px);
+  @include padding(62px 0 34px);
 
   border-bottom: 1px solid rgba(#fff, 0.7);
   margin-bottom: 16%;
@@ -103,7 +103,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .text1 {
-  @include font-size(26px);
+  @include font-size(50px);
   @include margin-bottom(115px);
   @include margin-top(10px);
   line-height: math-div(30, 26);
@@ -112,13 +112,12 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .text2 {
-  @include font-size(45px);
+  @include font-size(62px);
   font-weight: 700;
   line-height: math-div(55, 45);
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  max-width: rem-calc(720px);
   color: $primary;
   margin-bottom: 30%;
 }

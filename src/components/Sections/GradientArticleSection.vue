@@ -19,7 +19,7 @@
                       :width="24"
                       :height="24"
                       layout="fill"
-                      contain
+                      
                     />
                   </div>
                   <h4 :class="$style.itemTitle">{{ item.title }}</h4>
@@ -36,7 +36,7 @@
         </div>
         <div class="col-12 col-lg-6">
           <div :class="$style.media">
-            <MediaPicture :src="Img" :width="570" :height="1596" />
+            <MediaPicture :src="Img" :width="670" :height="1896" style="object-fit: contain !important;" />
           </div>
         </div>
       </div>
@@ -64,17 +64,24 @@ defineProps<{
 
 <style lang="scss" module>
 .section {
-  @include padding(158px 0 178px);
+  @include padding(100px 0 178px);
   background: radial-gradient(
     1160px 320px at center bottom,
     #23274a,
-    transparent
+    #0B0F20
   );
 }
 
 .row {
   @include rfs(64px, --gutter-y);
   --gutter-x: 0;
+  background: radial-gradient(
+    1160px 1020px at center,
+    #23274a 20%,
+    #0B0F20 35%,
+    transparent
+    /*#23274a 10% bottom,*/
+  );
 }
 
 .leftCol {
@@ -85,7 +92,7 @@ defineProps<{
 
 .media {
   margin: 0 auto;
-  max-width: rem-calc(570px);
+  max-width: rem-calc(870px);
 
   @include media-breakpoint-up(lg) {
     margin: 0;
@@ -93,7 +100,7 @@ defineProps<{
 }
 
 .header {
-  @include margin-bottom(20px);
+  @include margin-bottom(5px);
 
   p:first-child {
     @include margin-top(25px);
@@ -101,13 +108,13 @@ defineProps<{
 }
 
 .text {
-  @include margin-bottom(62px);
+  @include margin-bottom(22px);
 }
 
 .list {
   @include margin-top(-14px);
   @include margin-bottom(-14px);
-  @include padding-bottom(62px);
+  @include padding-bottom(52px);
   position: relative;
 }
 
@@ -128,7 +135,7 @@ defineProps<{
 .itemTitle {
   @include font-size(18px);
   @include margin-bottom(14px);
-  color: $primary;
+  color: white;
   font-weight: 700;
   line-height: divide(30, 18);
   position: relative;
@@ -140,6 +147,7 @@ defineProps<{
   position: absolute;
   top: 0;
   width: rem-calc(24px);
+  margin-top: 23px
 }
 
 .itemText {

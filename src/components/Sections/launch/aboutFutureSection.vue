@@ -1,168 +1,128 @@
 <template>
   <section :class="$style.section">
-    <Torus />
+    <MediaPicture :src="Bg" :width="14240" :height="2338" layout="fill" />
     <AppWrapper>
-      <MainSectionTextContent :class="$style.text">
-        <div class="text-center" style="margin-top: -850px">
-          <h2
-            style="
-              color: white;
-              font-size: 40px;
-              font-family: Bai Jamjuree;
-              font-weight: 700;
-              text-transform: uppercase;
-              line-height: 40px;
-              word-wrap: break-word;
-              margin-top: -100px;
-            "
+    <AboutLaunchMultiverse :class="$style.header" :title="title" />
+    <MainSectionTextContent :class="$style.text">
+      <p style="margin-bottom: 170%; font-size: 20px; padding-top:13px">
+        the digital & decentralized catalyst accelerating breakthroughs to an inspiring, meaningful and fulfilled future for everyone.
+      </p>
+    </MainSectionTextContent>
+    <div :class="$style.btnContainer">
+      <h3 :class="$style.btnTitle">Experience the <span style="color: #cfb16d;">Future </span>today:</h3>
+      <br />
+      <div class="row" :class="$style.btnRow">
+        <div class="col-md-4" :class="$style.btnCol">
+          <a
+            class="btn btn-outline-primary"
+            :class="$style.btn"
+            type="button"
           >
-            ABOUT
-            <span style="color: #cfb16d">FUTURE</span>
-          </h2>
-          <h2
-            style="
-              color: #cfb16d;
-              font-size: 40px;
-              font-family: Bai Jamjuree;
-              font-weight: 700;
-              text-transform: uppercase;
-              line-height: 40px;
-              word-wrap: break-word;
-            "
-          >
-            MULTIVERSE
-            <span style="color: white">&</span>
-            EXPO
-          </h2>
+            <p style="margin-bottom: 0px; color: #ffffff;">LEARN <span style="color: #cfb16d;">MORE <br />(<span style="color: #ffffff;">Guide</span>Book)</span></p>
+          </a>
         </div>
-        <p>
-          The Future Multiverse & EXPO is a digital, decentralised platform &
-          ecosystem, created to accelerate the breakthrough to a sustainable,
-          meaningful and inspiring future for everyone
-        </p>
-      </MainSectionTextContent>
-
-      <div :class="$style.btnContainer">
-        <h3 :class="$style.btnTitle">
-          Experience the
-          <span style="color: #cfb16d">Future</span>
-          today:
-        </h3>
-        <div class="row" :class="$style.btnRow">
-          <div class="col-auto" :class="$style.btnCol">
-            <NuxtLink
-              to="/"
-              class="btn btn-outline-primary text-white"
-              :class="$style.btn10"
-            >
-              <span style="color: white">LEARN</span>
-              MORE
-              <br />
-              <Span style="color: white">(COMING NEXT)</Span>
-            </NuxtLink>
-          </div>
-          <div class="col-auto" :class="$style.btnCol">
-            <NuxtLink
-              to="/"
-              class="btn btn-outline-primary text-white"
-              :class="$style.btn10"
-            >
-              <span style="color: white">ENTER</span>
-              FUTURE EXPO
-              <br />
-              <Span style="color: white">(COMING NEXT)</Span>
-            </NuxtLink>
-          </div>
-          <div class="col-auto" :class="$style.btnCol">
-            <NuxtLink
-              to="/"
-              class="btn btn-outline-primary text-white"
-              :class="$style.btn10"
-            >
-              <span style="color: white">DISCOVER</span>
-              MAP
-              <br />
-              <Span style="color: white">(COMING NEXT)</Span>
-            </NuxtLink>
-          </div>
+        <div class="col-md-4" :class="$style.btnCol">
+          <a
+            class="btn btn-outline-white"
+            :class="$style.btn"
+          >
+            <p style="margin-bottom: 12px; padding-top:10px; color: #ffffff;">ENTER
+            <span style="color: #cfb16d;"> FUTURE EXPO <ThreeSixtyIcon /><br />
+            </span> </p>
+          </a>
+        </div>
+        <div class="col-md-4" :class="$style.btnCol">
+          <a
+            class="btn btn-outline-primary"
+            :class="$style.btn"
+          >
+          <p style="margin-bottom: 12px; padding-top:10px; color: #ffffff;"> DISCOVER<span style="color: #cfb16d;"> MAP</span><br /></p>
+        </a>
         </div>
       </div>
-      <div class="row" :class="$style.btnLinkRow">
-        <div class="col-auto">
-          <NuxtLink :class="$style.btnLink" to="/">
-            <HeadCommentIcon />
-            Guide
-            <span style="color: white">Book</span>
-          </NuxtLink>
-        </div>
-        <div class="col-auto">
-          <NuxtLink :class="$style.btnLink" to="/">
-            <FileUploadIcon />
-            <span style="color: white">Bronchure</span>
-          </NuxtLink>
-        </div>
-        <div class="col-auto">
-          <NuxtLink :class="$style.btnLink" to="/">
-            <FileUploadIcon />
-            Launch
-            <span style="color: white">Paper</span>
-          </NuxtLink>
-        </div>
-        <div class="col-auto">
-          <NuxtLink
-            :class="$style.btnLink"
-            :to="{ name: 'launch', hash: '#roadmap' }"
-          >
-            <RoadmapIcon />
-            Launch
-            <span style="color: white">Roadmap</span>
-          </NuxtLink>
-        </div>
+    </div>
+    <div class="row" :class="$style.btnLinkRow">
+      <div class="col-auto">
+        <NuxtLink :class="$style.btnLink" to="/">
+          <HeadCommentIcon />
+          Guide
+          <span style="color: white; line-height: 1">book</span>
+        </NuxtLink>
       </div>
+      <div class="col-auto">
+        <NuxtLink :class="$style.btnLink" to="/">
+          <FileUploadIcon />
+          <span style="color: white; line-height: 1">Brochure</span>
+        </NuxtLink>
+      </div>
+      <div class="col-auto">
+        <NuxtLink :class="$style.btnLink" to="/">
+          <FileUploadIcon />
+          Launch
+          <span style="color: white; line-height: 1">Paper</span>
+        </NuxtLink>
+      </div>
+      <div class="col-auto">
+        <NuxtLink
+          :class="$style.btnLink"
+          :to="{ name: 'launch', hash: '#roadmap' }"
+        >
+          <RoadmapIcon />
+          Launch
+          <span style="color: white; line-height: 1">&nbsp;Roadmap</span>
+        </NuxtLink>
+      </div>
+    </div>
     </AppWrapper>
   </section>
 </template>
 
 <script lang="ts" setup>
-import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
+import MainSectionHeader from '~/components/MainSection/MainSectionHeader.vue';
 import FileUploadIcon from '~/icons/FileUploadIcon.vue';
 import HeadCommentIcon from '~/icons/HeadCommentIcon.vue';
+import ThreeSixtyIcon from '~/icons/ThreeSixtyIcon.vue';
+import Bg from '~/assets/images/torus2.jpg';
 import RoadmapIcon from '~/icons/RoadmapIcon.vue';
+import MediaPicture from '~/components/Media/MediaPicture.vue';
+import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MainSectionTextContent from '~/components/MainSection/MainSectionTextContent.vue';
-import Torus from '~/components/Sections/launch/torus.vue';
+import AboutFutureSection from './launch/aboutFutureSection.vue';
+import AboutFutureMultiverse from '~/components/MainSection/AboutFutureMultiverse.vue';
+
+const title = `About FUTURE MULTIVERSE`;
 </script>
 
 <style lang="scss" module>
-.btn10 {
-  display: inline-block;
-  width: 100%;
-  font-size: 12px;
-  margin-bottom: 14%;
-}
 .section {
-  @include padding(255px 0 100px);
-  background-color: #0c1020;
+  //background-color: #0c1020;
+  //background-size: cover;
+  //background-image: url("@/assets/images/torus2.jpg");
+  //height: 1700px;
   text-align: center;
+  @include padding(70px 0 200px);
+  color: #ffffff;
+  position: relative;
 }
 
 .header {
+  @include margin-top(65px);
   @include margin-bottom(26px);
   position: relative;
   z-index: 1;
 }
 
 .text {
-  @include margin-bottom(0px);
+  @include margin-bottom(15px);
   margin-left: auto;
   margin-right: auto;
   max-width: rem-calc(434px);
   position: relative;
   z-index: 1;
-  margin-top: 0px;
 }
 
 .btnContainer {
-  @include margin-top(808px);
+  @include margin-top(58px);
   position: relative;
 }
 
@@ -177,18 +137,20 @@ import Torus from '~/components/Sections/launch/torus.vue';
   flex: 0 1 rem-calc(204px);
   min-width: fit-content;
   max-width: 100%;
-  text-align: center;
 }
 
 .btnTitle {
-  @include font-size(22px);
+  @include font-size(28px);
   @include margin-bottom(32px);
   font-weight: 600;
-  color: white;
+  color: #ffffff;
 }
 
 .btn {
   width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 17px;
   text-align: center;
 }
 

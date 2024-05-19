@@ -5,9 +5,7 @@
     <AboutFutureMultiverse :class="$style.header" :title="title" />
     <MainSectionTextContent :class="$style.text">
       <p style="margin-bottom: 170%; font-size: 20px; padding-top:13px">
-        The Future Multiverse is a digital, decentralized platform created to
-        accelerate the breakthrough to a sustainable, meaningful and inspiring
-        future for everyone.
+        the digital & decentralized catalyst accelerating breakthroughs to an inspiring, meaningful and fulfilled future for everyone.
       </p>
     </MainSectionTextContent>
     <div :class="$style.btnContainer">
@@ -20,7 +18,7 @@
             :class="$style.btn"
             type="button"
           >
-            <p style="margin-bottom: 0px; color: #ffffff;">LEARN <span style="color: #cfb16d;">MORE </span> <br />(COMING NEXT)</p>
+            <p style="margin-bottom: 0px; color: #ffffff;">LEARN <span style="color: #cfb16d;">MORE <br />(<span style="color: #ffffff;">Guide</span>Book)</span></p>
           </a>
         </div>
         <div class="col-md-4" :class="$style.btnCol">
@@ -28,9 +26,9 @@
             class="btn btn-outline-white"
             :class="$style.btn"
           >
-            <p style="margin-bottom: 0px; color: #ffffff;">ENTER
-            <span style="color: #cfb16d;"> FUTURE EXPO <br />
-            </span> (COMING NEXT) </p>
+            <p style="margin-bottom: 12px; padding-top:10px; color: #ffffff;">ENTER
+            <span style="color: #cfb16d;"> FUTURE EXPO <ThreeSixtyIcon /><br />
+            </span> </p>
           </a>
         </div>
         <div class="col-md-4" :class="$style.btnCol">
@@ -38,7 +36,7 @@
             class="btn btn-outline-primary"
             :class="$style.btn"
           >
-          <p style="margin-bottom: 0px; color: #ffffff;"> DISCOVER<span style="color: #cfb16d;"> MAP</span><br /> (COMING NEXT)</p>
+          <p style="margin-bottom: 12px; padding-top:10px; color: #ffffff;"> DISCOVER<span style="color: #cfb16d;"> MAP</span><br /></p>
         </a>
         </div>
       </div>
@@ -83,6 +81,7 @@
 import MainSectionHeader from '~/components/MainSection/MainSectionHeader.vue';
 import FileUploadIcon from '~/icons/FileUploadIcon.vue';
 import HeadCommentIcon from '~/icons/HeadCommentIcon.vue';
+import ThreeSixtyIcon from '~/icons/ThreeSixtyIcon.vue';
 import Bg from '~/assets/images/torus2.jpg';
 import RoadmapIcon from '~/icons/RoadmapIcon.vue';
 import MediaPicture from '~/components/Media/MediaPicture.vue';

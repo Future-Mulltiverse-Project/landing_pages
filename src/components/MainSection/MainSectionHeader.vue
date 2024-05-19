@@ -4,13 +4,13 @@
       v-if="heading"
       :class="[$style.heading, headingLg && $style.headingLg]"
     >
-      {{ heading }}
+      {{ heading }} {{ strongTitle }}
     </div>
     <h2 :class="[$style.title, titleLg && $style.titleLg]">
-      <strong>{{ title }}<br /> <span style="color: #ffffff;">{{invent_title}}</span></strong>
+      <strong v-html="title" /><br /> <span style="color: #ffffff;">{{invent_title}}</span>
       <template v-if="subtitle">
         <br />
-        {{ subtitle }}
+        {{ subtitle }} 
       </template>
     </h2>
     <div v-if="$slots.default" :class="$style.text">
@@ -24,6 +24,7 @@ defineProps<{
   heading?: string;
   title: string;
   subtitle?: string;
+  strongTitle?: string,
   titleLg?: boolean;
   headingLg?: boolean;
   invent_title?: string;

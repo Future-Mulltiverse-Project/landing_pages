@@ -2,7 +2,7 @@
   <div :class="$style.row">
     <div :class="$style.col">
       <!--div :class="$style.val">{{ zerofi(days) }}</div-->
-      <div :class="$style.val">39</div>
+      <div :class="$style.val">29</div>
       <div :class="$style.term">Days</div>
     </div>
     <div :class="$style.sep">:</div>

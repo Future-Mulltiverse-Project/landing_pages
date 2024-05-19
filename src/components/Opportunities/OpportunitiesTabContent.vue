@@ -26,12 +26,12 @@
       </ul>
     </div>
     <blockquote :class="$style.quote">
-      <p>
+      <p style="color: white;">
         "Let the future tell the truth, and evaluate and reward each one
         according to his work and accomplishments. The present is theirs; the
         future, for which I have really worked, is mine."
       </p>
-      <footer>Nikola Tesla</footer>
+      <footer style="color: #CFB16D;">Nikola Tesla</footer>
     </blockquote>
   </div>
 </template>
@@ -93,10 +93,12 @@ defineProps<{
 .itemTitle {
   @include font-size(18px);
   @include margin-bottom(14px);
-  color: $primary;
+  color: white;
   font-weight: 700;
   line-height: divide(30, 18);
   position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .itemCheck {
@@ -122,6 +124,7 @@ defineProps<{
   text-align: center;
   margin-bottom: 0;
   width: 100%;
+  color: white !important;
 }
 
 .quote p {

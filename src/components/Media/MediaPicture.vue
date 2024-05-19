@@ -30,7 +30,7 @@ interface Props {
   alt?: string;
   contain?: boolean;
   height: number;
-  layout?: 'responsive' | 'fill' | 'static';
+  layout?: 'responsive' | 'fill' | 'static' | 'contain';
   mediaClass?: string | object | [];
   mediaStyle?: string | object;
   src: string;

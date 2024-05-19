@@ -23,10 +23,10 @@
         Explore
       </button>
     </AppWrapper>
-    <div :class="$style.scroll">
+    <!--div :class="$style.scroll">
       <ScrollIcon />
       Scroll & learn more
-    </div>
+    </div-->
   </section>
 </template>
 

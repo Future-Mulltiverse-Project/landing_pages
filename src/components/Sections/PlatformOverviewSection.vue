@@ -58,7 +58,8 @@ import ChatButton from '~/components/ChatButton.vue';
 }
 
 .wrapper {
-  @include padding-top(26px);
+  //@include padding-top(26px);
+  margin: unset;
 }
 
 .header {

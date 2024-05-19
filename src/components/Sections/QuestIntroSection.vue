@@ -2,21 +2,21 @@
   <section :class="$style.section">
     <MediaPicture :src="Bg" :width="1440" :height="690" layout="fill" />
     <AppWrapper :class="$style.wrapper">
-      <div :class="$style.heading">FXPO Quest</div>
+      <div :class="$style.heading"><span style='color:#CFB16D'>Future Multiverse</span> Quest</div>
       <h2 :class="$style.title">
-        <strong>Discovering the Secrets</strong>
-        of the Universe
+        Discovering <span :class="$style.gold">the</span> <br />
+          Multiverse <span :class="$style.gold"> of <br />the </span>future<span :class="$style.gold">.</span>
       </h2>
       <MainSectionTextContent :class="$style.text">
         <p>
-          "If you want to find the secrets of the Universe, think in terms of
-          energy, frequencies and vibration."
+          <span :class="$style.gold">"</span>If you want to find the secrets of the Universe, think in terms of
+          energy, frequencies and vibration<span :class="$style.gold">."
           <br />
-          Nikola Tesla
+          Nikola Tesla</span>
         </p>
       </MainSectionTextContent>
       <NuxtLink to="/" class="btn btn-outline-primary" :class="$style.btn">
-        onboard now
+        Start now
       </NuxtLink>
     </AppWrapper>
   </section>
@@ -32,11 +32,15 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 <style lang="scss" module>
 .section {
   min-height: 100vh;
-  padding-top: rem-calc(130px);
+  padding-top: rem-calc(10px);
   display: flex;
   align-items: center;
   position: relative;
   text-align: center;
+}
+
+.gold{
+  color: #CFB16D;
 }
 
 .wrapper {
@@ -55,19 +59,20 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .heading {
-  @include font-size(28px);
+  @include font-size(32px);
   @include margin-bottom(15px);
   line-height: divide(30, 28);
 }
 
 .title {
-  @include font-size(50px);
+  @include font-size(60px);
   @include margin-bottom(25px);
   line-height: divide(70, 50);
   margin-left: auto;
   margin-right: auto;
   max-width: rem-calc(720px);
   text-transform: uppercase;
+  color: white;
 
   > * {
     color: $primary;
@@ -87,6 +92,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 .btn {
   --btn-bg: rgba(12, 15, 34, 0.2);
   max-width: 100%;
+  color: #ffffff;
   min-width: rem-calc(226px);
 }
 </style>

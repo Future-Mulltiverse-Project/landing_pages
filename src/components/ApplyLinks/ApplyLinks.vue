@@ -21,17 +21,17 @@ const items = [
       height: 498,
     },
     title:
-      'You want to Join the VIP Pre-Launch Mint Event, and still need (more) FXTE?',
+      'You want to <span style="color: #CFB16D">Join</span> the <span style="color: #CFB16D">VIP Pre-Launch Mint Event</span>, and still need (more) <span style="color: #CFB16D">FXTE</span>?',
     text: 'Onboard & Apply Now, to buy FXTE from our verified and approved Supplier FXTE Pool for a Discount.',
   },
   {
     img: {
       url: DoorImg,
-      width: 796,
+      width: 706,
       height: 525,
     },
     title:
-      'Apply Today to Get Listed with your Project before the Public Launch:',
+      '<span style="color: #CFB16D">Apply Today</span> to <span style="color: #CFB16D">Get Listed</span> with your Project before the Public Launch:',
     text: `a) Premium Position in the FXPO<br/>b) IEO, STO or Public Listing on FXPO LaunchPad<br/>c) Product & Service Offering Placement on the FXPO Marketplace`,
   },
 ];

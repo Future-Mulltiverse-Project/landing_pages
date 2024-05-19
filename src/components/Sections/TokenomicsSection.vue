@@ -2,25 +2,40 @@
   <section :class="$style.section">
     <AppWrapper>
       <div class="row" :class="$style.row">
-        <div class="col-12 col-lg-5" :class="$style.leftCol">
+        <div class="col-12 col-lg-12" :class="$style.leftCol">
           <MainSectionHeader
             :class="$style.header"
-            :title="`<strong>FXPO</strong> TOKENOMICS`"
+            :title="`<strong style='color:white'>FUTURE MULTIVERSE<br /></strong> <span style='color:#CFB16D'>TOKENOMICS</span>`"
           />
         </div>
-        <div class="col-12 col-lg-7">
+        <!--div class="col-12 col-lg-7">
           <MainSectionTextContent>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             ali
           </MainSectionTextContent>
-        </div>
+        </div-->
       </div>
     </AppWrapper>
     <div :class="$style.scheme">
       <MediaPicture :src="Img" :width="1070" :height="734" />
-    </div>
+    </div>   
+    <br />   
+    <br />   
+    <br />
+      <div class="row">
+      <div class="col-md-6">
+          <button class="btn btn-outline-primary" style="float: right;" type="button">
+            OPEN <span style="color:white; padding-left: 5px;">GUIDE</span>BOOK
+          </button>
+      </div>
+      <div class="col-md-6">
+          <button class="btn btn-outline-primary" style="float: left;" type="button">
+            OPEN <span style="color:white; padding-right: 5px;padding-left: 5px;">BLOCKCHAIN</span>BOOK
+          </button>
+      </div>
+      </div>
   </section>
 </template>
 
@@ -29,7 +44,7 @@ import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MainSectionHeader from '~/components/MainSection/MainSectionHeader.vue';
 import MainSectionTextContent from '~/components/MainSection/MainSectionTextContent.vue';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
-import Img from '~/assets/images/tokenomics.svg';
+import Img from '~/assets/images/tokenomics.png';
 </script>
 
 <style lang="scss" module>

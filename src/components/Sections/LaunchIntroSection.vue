@@ -32,7 +32,7 @@
               <h2
                 style="
                   color: white;
-                  font-size: 40px;
+                  font-size: 50px;
                   font-family: Bai Jamjuree;
                   font-weight: 700;
                   text-transform: uppercase;
@@ -69,17 +69,11 @@
                   word-wrap: break-word;
                 "
               >
-                VIP PRE
-                <span style="color: white">-</span>
-                LAUNCH!
+                <span style="font-size:80px">LAUNCH!</span>
               </h2>
             </div>
           </div>
           <div :class="$style.btnContainer">
-            <h3 :class="$style.btnTitle">
-              Join us in the
-              <span style="color: white">FXPO:</span>
-            </h3>
             <div class="row" :class="$style.btnRow">
               <div class="col-auto" :class="$style.btnCol">
                 <button
@@ -98,8 +92,9 @@
                   :class="$style.btn"
                   type="button"
                 >
-                  <span style="color: white">READ &#160;</span>
-                  LAUNCHPAPER
+                  READ
+                  <span style="color: #ffffff">&#160; launchpaper</span>
+                  
                 </button>
               </div>
             </div>
@@ -120,7 +115,7 @@
 
 <script lang="ts" setup>
 import Bg from '~/assets/images/launch/dalle.png';
-import Video from '~/assets/images/video-bg.jpg';
+import Video from '~/assets/images/landing_video.png';
 import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
 import { useTimer, zerofi } from '~/composables/useTimer';

@@ -1,43 +1,18 @@
 <template>
   <header :class="$style.el">
     <div :class="$style.wrapper">
-      <div class="row">
-        <div class="col-auto">
-          <AppHeaderLogo />
-        </div>
-        <div class="col">
           <div class="row" :class="$style.rightRow">
             <div class="col" :class="$style.navCol">
               <AppHeaderNav />
             </div>
             <div class="col-auto" :class="$style.btnsCol">
               <div class="row" :class="$style.btnRow">
-                <div class="col-auto" :class="$style.btnCol">
-                  <NuxtLink
-                    to="/"
-                    class="btn btn-sm btn-outline-gradient-primary"
-                    :class="$style.btn"
-                  >
-                    Onboard
-                  </NuxtLink>
-                </div>
-                <div class="col-auto" :class="$style.btnCol">
-                  <NuxtLink
-                    to="/"
-                    class="btn btn-sm btn-outline-primary"
-                    :class="$style.btn"
-                  >
-                    Connect
-                  </NuxtLink>
-                </div>
                 <div class="col-auto" :class="$style.toggleBtnCol">
                   <AppHeaderToggleBtn />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </div>
   </header>
 </template>
@@ -80,7 +55,7 @@ import AppHeaderToggleBtn from '~/components/AppHeader/AppHeaderToggleBtn.vue';
 .navCol {
   display: none;
   margin-top: -24px !important;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 
   @media (min-width: 1341px) {
     display: block;

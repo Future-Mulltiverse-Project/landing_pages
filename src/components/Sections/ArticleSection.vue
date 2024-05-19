@@ -15,16 +15,16 @@
                 <div :class="$style.itemTitleContainer">
                   <div :class="$style.itemCheck">
                     <MediaPicture
-                      :src="CheckCircle"
+                      :src="WhiteTickCircle"
                       :width="24"
                       :height="24"
                       layout="fill"
                       contain
                     />
                   </div>
-                  <h4 :class="$style.itemTitle">{{ item.title }}</h4>
+                  <h4 :class="$style.title_white_1"> {{ item.title }} {{ item.title_white_1 }}</h4>
                 </div>
-                <p v-if="item.text" :class="$style.itemText">{{ item.text }}</p>
+                <p :class="$style.itemText">{{ item.text }}</p>
               </div>
             </li>
           </ul>
@@ -45,7 +45,7 @@
 </template>
 
 <script lang="ts" setup>
-import CheckCircle from 'assets/images/check-circle.svg';
+import WhiteTickCircle from 'assets/images/white_tick_circle.png';
 import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MainSectionHeader from '~/components/MainSection/MainSectionHeader.vue';
 import MainSectionTextContent from '~/components/MainSection/MainSectionTextContent.vue';
@@ -55,9 +55,11 @@ import Img from '~/assets/images/launchpad-for-investors.jpg';
 defineProps<{
   title: string;
   heading: string;
+  title_white_1?: string;
   items?: {
     title: string;
     text?: string;
+    title_white_1?: string;
   }[];
 }>();
 </script>
@@ -65,6 +67,15 @@ defineProps<{
 <style lang="scss" module>
 .section {
   @include padding(170px 0 120px);
+}
+
+.title_white_1{
+   color: white;
+  @include font-size(18px);
+  //@include margin-bottom(14px);
+  font-weight: 700;
+  line-height: divide(30, 18);
+  position: relative;
 }
 
 .row {
@@ -97,7 +108,7 @@ defineProps<{
 }
 
 .text {
-  @include margin-bottom(62px);
+  @include margin-bottom(22px);
 }
 
 .list {
@@ -124,7 +135,7 @@ defineProps<{
 .itemTitle {
   @include font-size(18px);
   @include margin-bottom(14px);
-  color: $primary;
+  color: white;
   font-weight: 700;
   line-height: divide(30, 18);
   position: relative;
@@ -136,6 +147,7 @@ defineProps<{
   position: absolute;
   top: 0;
   width: rem-calc(24px);
+  margin-top: 23px
 }
 
 .itemText {

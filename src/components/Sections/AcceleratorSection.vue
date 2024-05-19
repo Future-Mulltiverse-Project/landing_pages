@@ -1,60 +1,33 @@
 <template>
-  <section :class="$style.section" style="padding-top: 0px;">
+  <section :class="$style.section" style="padding-top: 0px;padding-bottom: 20px;">
     <AppWrapper>
       <div class="row" :class="$style.row">
         <div class="col-md-6">
-          <h1 style="font-size: 50px; color: #cfb16d">
-            FUTURE CATALYST
+          <h1 style="font-size: 48px; padding-bottom:20px; color: #cfb16d">
+            FUTURE MULTIVERSE
             <br />
-            <span style="color: #ffffff">ACCELERATOR</span>
+            <span style="color: #ffffff">ECOSYSTEM</span>
           </h1>
-          <p style="padding-bottom: 10px; color: #cfb16d">
+          <!--p style="padding-bottom: 10px; color: #cfb16d">
             <span style="font-size: 16px">
               "ANYTHING YOU CAN IMAGINE, YOU CAN BUILD!
               <br />
               AND EVERYTHING YOU CAN BUILD, CAN BE FUNDED!"
             </span>
+          </p-->
+          <p style="font-size: 14px; padding-right: 30px; line-height: 1.8;">
+            Leveraging our advanced tools, including our In-House Cinematic Design Production Studio, our Web3 based Accelerator platform, uniting a hyper-realistic Multivere, LaunchPad and Marketplace, and the methodologies, systems and modeling, amplified by the outstanding global influence and resources of Future Trends Group, we empower nations, organizations, associations, institutions, academies, universities, companies, projects and individuals across the world to actualize, uplift and transform their reality, enabling them to scale and grow quickly. Our platform offers key transformational processes that unlock limitless potentials and open up new realms of possibilities for growth and success. 
+
           </p>
-          <p style="font-size: 12px; padding-right: 30px">
-            The Future Catalyst Accelerator is the one-of-a-kind digital
-            acceleration platform created to transform the way impact driven
-            creators with any initiatives are able to transition into and master
-            the world of tomorrow and win within the fast evolving economic
-            landscape of the future. With the Future Accelerator nations,
-            organizations, institutions, academies, universities, companies,
-            foundations, projects and individuals all have the unparalleled
-            opportunity to harness the power of tokenization on Future
-            Blockchain, getting publicly listed on our Launch Pad and positioned
-            in our EXPO & Multiverse, opening the doors to secure funding from
-            investors, all in cooperation and with the approval of leading
-            international Law Firms & Regulators with full legitimacy.
-            <br />
-            <br />
-            Not only does our platform provide access to essential resources
-            such as design, branding, compliance, marketing, and other
-            consulting services, but it also enables users to bring their
-            projects, products, services, and assets to life in the Future EXPO,
-            Multiverse and Marketplace. This immersive environment creates
-            seamless experiences, brings in massive clients and parters to them,
-            and thereby accelerates trade and capital, ensuring that every
-            vision and idea has the assurances to not only be implemented but
-            more so to thrive and flourish.
-          </p>
-          <br />
-          <br />
-          <NuxtLink to="/" class="btn btn-sm btn-outline-primary">
-            <p style="font-weight: 100;margin-bottom: 0px;">
-              EXPLORE
-              <br />
-              <span style="color: #ffffff">(COMING NEXT)</span>
-            </p>
-          </NuxtLink>
         </div>
         <div class="col-md-7" :class="$style.mediaCol">
           <div :class="$style.mediaWrapper">
-            <MediaPicture :src="Img" :width="663" :height="477" />
+            <MediaPicture :src="Img" :width="433" :height="247" />
           </div>
         </div>
+      </div>
+      <div class="row">
+        <h4 style="text-align: center;">Partner with us today and take your future to the next level.</h4>
       </div>
     </AppWrapper>
   </section>
@@ -126,7 +99,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .mediaWrapper {
-  @include padding(30px);
+  @include padding(25px);
   background-color: #0a0d1d;
   border: 1px solid #232749;
 }

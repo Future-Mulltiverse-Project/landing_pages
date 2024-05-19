@@ -5,17 +5,17 @@
         <div class="col-12 col-lg-6">
           <MainSectionHeader
             :class="$style.header"
-            :title="`FXPO Matchmaker <strong>Swap items, goods or services with other Members.</strong>`"
+            :title="`<span style='color: white'>FXPO Matchmaker</span> <br />Swap items, goods or <br/> services with other Members.</strong>`"
           >
             <p>
-              <strong>
+              <strong style="color: white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis
               </strong>
             </p>
           </MainSectionHeader>
-          <NuxtLink to="/" class="btn btn-primary" :class="$style.btn">
+          <NuxtLink to="/" class="btn btn-primary" :class="$style.btn" style="color:white">
             EXCHANGE YOUR GOODS
           </NuxtLink>
         </div>

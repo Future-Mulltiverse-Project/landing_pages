@@ -2,9 +2,13 @@
   <section :class="$style.section">
     <AppWrapper>
       <div class="row" :class="$style.item">
+          <MainSectionHeader
+            :title="`<strong>THE <span style='color:white'>MOVEMENT</span></strong>`"
+            :class="$style.header"
+          />
         <div class="col-12 col-lg-6" :class="$style.leftCol">
           <MainSectionHeader
-            :title="`<strong>Our Vision is clear</strong>`"
+            :title="`<strong>Our <span style='color:white'>Vision</span> is clear</strong>`"
             :class="$style.header"
           />
           <MainSectionTextContent>
@@ -25,7 +29,7 @@
       <div class="row" :class="$style.item">
         <div class="col-12 col-lg-6" :class="$style.leftCol">
           <MainSectionHeader
-            :title="`<strong>our Mission is Simple</strong>`"
+            :title="`<strong>our <span style='color:white'>Mission</span> is Simple</strong>`"
             :class="$style.header"
           />
           <MainSectionTextContent>
@@ -62,7 +66,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 <style lang="scss" module>
 .section {
   @include padding(70px 0 126px);
-  background: radial-gradient(1160px 420px at bottom, #23274a, transparent);
+  background: radial-gradient(1160px 420px at center, #23274a, transparent);
 }
 
 .item {

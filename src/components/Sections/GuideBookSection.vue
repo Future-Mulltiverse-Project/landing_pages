@@ -30,7 +30,7 @@
               class="btn btn-sm btn-outline-primary"
               to="/"
             >
-              <p style="margin-bottom: 0px;">Visit <span style="color: #CFB16D;">Now</span>! <br> (COMING NEXT)</p>
+              <p style="margin-bottom: 0px;">Visit <span style="color: #CFB16D;">Now</span>!</p>
             </NuxtLink>
           </div>
         </div>

@@ -1,14 +1,17 @@
 <template>
-  <DefaultLayout>
+  <MarketplaceLayout>
+    <div>
+    <div style=" background: url('_nuxt/assets/images/fxpo_marketplace_background_image.png'), #0A0D1D; background-repeat: no-repeat; background-size: contain;max-height: 80%;">
     <IntroSection
-      :heading="`Welcome to the <strong>FXPO Marketplace!</strong>`"
-      :title="`<strong>Your ultimate gateway to enter</strong>
-          the world of Web3, blockchain, & the digital future.`"
+      :heading="`Welcome to the <strong>FXPO Marketplace</strong>`"
+      :title="`<strong style='color:white'>Your ultimate gateway to enter</strong>
+          <span style='color: #CFB16D;'>the world of Web3, blockchain, & the digital future.</span>`"
       :img="{
         url: Img,
         width: 2800,
-        height: 2467,
+        height: 2967,
       }"
+      
     >
       <IntroSectionButtons>
         <div class="col-auto">
@@ -23,9 +26,10 @@
         </div>
       </IntroSectionButtons>
     </IntroSection>
+    <div style=" background: url('_nuxt/assets/images/accelerator_bg.png'), #0A0D1D; background-repeat: no-repeat; background-size: cover;">
     <AboutLaunchpadSection
-      :title="`FXPO marketplace - <strong>Introducing you the digital platform of the future</strong>`"
-      :heading="`<p><strong>“Discover the limitless possibilities of the future, at the FXPO Marketplace. Where passions meet purpose and values create opportunities.”</strong></p>`"
+      :title="`<span style='color: white;'>Future MULTIVERSE marketplace -</span><br/> <strong>Introducing you the digital platform of the future</strong>`"
+      :heading="`<p><strong style='color:white;font-size:20px'>“Discover the limitless possibilities of the future, at the FXPO Marketplace. Where passions meet purpose and values create opportunities.”</strong></p>`"
       :items="items2"
     >
       <template #text>
@@ -60,8 +64,9 @@
         </template>
       </IconList>
     </AboutLaunchpadSection>
+    </div>
     <GradientArticleSection
-      :title="`trade YOUR ASSETS <strong>WITH OUR Digital Marketplace</strong>`"
+      :title="`<span style='color: white'>trade your assets</span> <br /> <strong>WITH OUR Digital Marketplace</strong>`"
       :heading="`<p>
         The FXPO Marketplace is a diverse platform where companies can
         list their products, services, or assets, and buyers can explore,
@@ -69,9 +74,15 @@
         built to support businesses in reaching out to a larger audience
         while providing buyers with numerous choices and purchase benefits.
       </p>`"
+        style="
+              background: radial-gradient(
+              35% 10% at center bottom,
+              #23274a,
+              transparent
+              );"
       :items="items2"
     >
-      <p>
+      <p style="padding-top: 10px;font-size: 19px;font-weight: 100;">
         Our Marketplace structure offers easy access and onboarding, an
         immersive experience due to the direct VR bridge, trust & transparency,
         secure crypto & fiat payment gateways, special offers & discounts, and a
@@ -81,7 +92,7 @@
       </p>
     </GradientArticleSection>
     <ArticleSection
-      :title="`buy & invest <strong>in best assets AT MARKETPLACE</strong>`"
+      :title="`<span style='color: white'>buy & invest</span><br /> <strong>in best assets <br />AT MARKETPLACE</strong>`"
       :heading="`<p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -101,17 +112,19 @@
     </ArticleSection>
     <MatchmakerSection />
     <PrelaunchSection />
-    <GuideBookSection />
+    <MarketplaceGuideBookSection />
     <JoinSection />
-  </DefaultLayout>
+    </div>
+    </div>
+  </MarketplaceLayout>
 </template>
 
 <script lang="ts" setup>
-import Img from '~/assets/images/marketplace-screens.jpg';
-import DefaultLayout from '~/components/Layouts/DefaultLayout.vue';
-import PrelaunchSection from '~/components/Sections/PrelaunchSection.vue';
+import Img from '~/assets/images/fxpo_marketplace_screenshots.png';
+import Bg from '~/assets/images/torus2.jpg';
+import PrelaunchSection from '~/components/Sections/MarketplacePrelaunchSection.vue';
 import JoinSection from '~/components/Join/JoinSection.vue';
-import GuideBookSection from '~/components/Sections/GuideBookSection.vue';
+import MarketplaceGuideBookSection from '~/components/Sections/MarketplaceGuideBookSection.vue';
 import IntroSection from '~/components/Sections/IntroSection.vue';
 import AboutLaunchpadSection from '~/components/Sections/AboutLaunchpadSection.vue';
 import IconListItem from '~/components/IconList/IconListItem.vue';
@@ -126,6 +139,7 @@ import GradientArticleSection from '~/components/Sections/GradientArticleSection
 import ArticleSection from '~/components/Sections/ArticleSection.vue';
 import MatchmakerSection from '~/components/Sections/MatchmakerSection.vue';
 import IntroSectionButtons from '~/components/Sections/IntroSectionButtons.vue';
+import MarketplaceLayout from '~/components/Layouts/MarketplaceLayout.vue';
 
 const icons = {
   SignDocumentIcon,
@@ -139,32 +153,32 @@ const icons = {
 const items = [
   {
     icon: 'SignDocumentIcon',
-    title: 'Simple Access & Onboarding',
+    title_white_1: 'Simple Access & Onboarding',
     text: 'Onboarding, Compliance, Listing, Tier Status, thus Transparency and Trust for projects and investors',
   },
   {
     icon: 'ImmersiveExperienceIcon',
-    title: 'Immersive Experience',
+    title_white_1: 'Immersive Experience',
     text: 'Provide Transparency & Trust for Investors to accelerate your funding',
   },
   {
     icon: 'CryptocurrencyLaptopIcon',
-    title: 'Trust & Transparency',
+    title_white_1: 'Trust & Transparency',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid',
   },
   {
     icon: 'LockBitcoinIcon',
-    title: 'Secure Crypto & Fiat Payment Gateways',
+    title_white_1: 'Secure Crypto & Fiat Payment Gateways',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid',
   },
   {
     icon: 'DiscountIcon',
-    title: 'Special Offers & Discounts',
+    title_white_1: 'Special Offers & Discounts',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid',
   },
   {
     icon: 'GroupNetworkingIcon',
-    title: 'Connect Referral System',
+    title_white_1: 'Connect Referral System',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid',
   },
 ];
@@ -198,22 +212,27 @@ const items2 = [
 
 const items3 = [
   {
-    title: 'Benefit or feature',
+    title_white_1: 'Benefit or feature',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qu',
   },
   {
-    title: 'Benefit or feature',
+    title_white_1: 'Benefit or feature',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qu',
   },
   {
-    title: 'Benefit or feature',
+    title_white_1: 'Benefit or feature',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qu',
   },
   {
-    title: 'Benefit or feature',
+    title_white_1: 'Benefit or feature',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qu',
   },
 ];
 </script>
 
-<style lang="scss" module></style>
+<style lang="scss" module>
+.media {
+  opacity: 0.4;
+}
+
+</style>

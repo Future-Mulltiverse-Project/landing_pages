@@ -23,11 +23,12 @@
                     width: 100%;
                     color: #ffffff;
                     font-weight: 100;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
                   "
                 >
                   Onboard now
                   <br />
-                  (coming next)
                 </button>
               </div>
               <div class="col-md-5" :class="$style.btn_special2">

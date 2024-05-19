@@ -18,11 +18,12 @@
       font-size: 20px;
   }
   .section {
-    padding-top: 50px;
+    padding-top: 80px;
     text-align: center;
     position: relative;
     max-width: 1168px;
     margin: 0 auto;
+    padding-bottom: 50px;
   }
   
   .primaryText {

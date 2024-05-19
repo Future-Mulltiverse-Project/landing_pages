@@ -8,7 +8,6 @@
         <p style="font-weight: 100;margin-bottom: 0px;">
           EXPLORE
           <br />
-          <span style="color: #ffffff">(COMING NEXT)</span>
         </p>
       </NuxtLink>
     </div>
@@ -131,6 +130,6 @@ defineProps<{ item: Itesmata }>();
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: calc(var(--image-w) * 100% / 230);
+  width: calc(var(--image-w) * 100% / 280);
 }
 </style>

@@ -115,7 +115,7 @@ import MediaVideo from '../Media/MediaVideo.vue';
   }
 
   &:after {
-    background: $yellow-200;
+    //background: $yellow-200;
     content: '';
     display: block;
     height: rem-calc(100px);

@@ -53,7 +53,7 @@
             </a>
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-2"><img src="~/assets/images/graceai/logo_footer_guidebook.png" :class="$style.logoGraceAI" height="70" width="50" alt="Logo"></div>
+        <div class="col-md-2"> src="~/assets/images/graceai/logo_footer_guidebook.png" :class="$style.logoGraceAI" height="70" width="50" alt="Logo"></div>
       </div>
     </div>
    

@@ -14,7 +14,7 @@ export const useOpportunitiesItems = () => {
       tab: 'For Individuals',
       items: [
         {
-          title: 'Launch and Accelerate your Project',
+          title: 'Launch and Accelerate Your Project',
           text: 'with the FXPO LaunchPad, VR EXPO, Marketplace & Connect System.',
         },
         {
@@ -38,7 +38,7 @@ export const useOpportunitiesItems = () => {
           text: 'Share any Product, Service or Asset listed on the FXPO LaunchPad & Marketplace to anyone with your unique FXPO Connect Affiliate Link to be rewarded and earn commissions.',
         },
         {
-          title: 'purchase/order products',
+          title: 'Purchase / Order Products / Services / Assets',
           text: 'Purchase/Order Products, Services or Assets on our Marketplace,',
         },
         {
@@ -52,7 +52,7 @@ export const useOpportunitiesItems = () => {
       ],
     },
     {
-      tab: 'For Projects and SMES',
+      tab: 'For Projects and SMEs',
       items: [
         {
           title: 'Launch and Accelerate your Project',
@@ -71,11 +71,11 @@ export const useOpportunitiesItems = () => {
           text: 'Donate a Percentage of your earned Income / rewards into verified Non-Profit Projects through our LaunchPad',
         },
         {
-          title: 'purchase/order products',
+          title: 'Purchase / Order Products',
           text: 'Purchase/Order Products, Services or Assets on our Marketplace ',
         },
         {
-          title: 'offer a Discount to buyers & investors',
+          title: 'Offer a Discount to buyers & investors',
           text: 'To make your product, service or asset more attractive and to incentivice anyone for referring your offer to another buyer or investor through our LaunchPad & Marketplace',
         },
         {
@@ -93,7 +93,7 @@ export const useOpportunitiesItems = () => {
       ],
     },
     {
-      tab: 'For Established Companies',
+      tab: 'For Public Companies & Organizations',
       items: [
         {
           title: 'Accelerate your Project or Business',
@@ -112,11 +112,11 @@ export const useOpportunitiesItems = () => {
           text: 'Donate a Percentage of your earned Income / rewards into verified Non-Profit Projects through our LaunchPad',
         },
         {
-          title: 'purchase/order products',
+          title: 'Purchase / Order Products',
           text: 'Purchase/Order Products, Services or Assets on our Marketplace',
         },
         {
-          title: 'offer a Discount to buyers & investors',
+          title: 'Offer a Discount to buyers & investors',
           text: 'To make your product, service or asset more attractive and to incentivice anyone for referring your offer to another buyer or investor through our LaunchPad & Marketplace',
         },
         {

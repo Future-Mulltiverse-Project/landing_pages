@@ -3,49 +3,32 @@
     <AppWrapper>
       <div class="row" :class="$style.row">
         <div class="col-12 col-lg-6" :class="$style.leftCol">
-          <MainSectionHeader
-            :class="$style.header"
-            :title="`FXPO universe <strong>ARCHITECTURE</strong>`"
-          >
-            <p>
-              <strong>
-                Our design philosophy not only creates an aesthetically
-                beautiful environment but also seeks to inspire greater
-                consciousness in the world.
-              </strong>
-            </p>
-          </MainSectionHeader>
+          <h2 :class="$style.header">
+            WELCOME TO THE
+            <span :class="$style.gold">
+              FUTURE
+              <br />
+              MULTIVERSE
+            </span>
+            &
+            <span :class="$style.gold">EXPO</span>
+          </h2>
+          <p style="font-size: 17px" :class="$style.gold">
+            <strong>
+              Our design philosophy not only creates an aesthetically beautiful
+              environment, but also seeks to inspire greater consciousness in
+              the world.
+            </strong>
+          </p>
           <MainSectionTextContent>
             <p>
-              By adhering to these principles, we facilitate a smooth transition
-              from the constraints of traditional, rigid structures to a more
-              dynamic, interconnected, and innovative era. Every element in our
-              Expo, from the smallest details to the grandest structures, has
-              been designed and constructed by our talented team of artists and
-              architects from scratch. The use of Fibonacci sequences and Golden
-              Geometry ensures a seamless flow and an innate sense of balance
-              throughout the virtual world, making the experience both immersive
-              and visually breathtaking for visitors. We understand the
-              importance of striking a balance between maintaining the essence
-              of our vision and ensuring that it resonates with a diverse
-              audience. As such, our approach is to present these concepts in a
-              way that is accessible and appealing to everyone, regardless of
-              their background or beliefs. The originality and uniqueness of our
-              designs are protected by copyrights, ensuring that our Expo
-              remains a distinctive and unparalleled destination in the
-              ever-evolving digital landscape. By integrating these timeless
-              principles into the fabric of our virtual world, we hope to
-              encourage a broader understanding of the interconnectedness of all
-              things and the potential for positive change in the digital age.
-            </p>
-            <p>
-              Explore the enchanting world of the FXPO Expo, where the ancient
-              wisdom of Fibonacci and Golden Geometry come together to create a
-              mesmerizing and unforgettable experience. The FXPO Expo serves as
-              a bridge between the old and the new, ushering in a future where
-              creativity, innovation, and harmony can thrive together,
-              connecting visitors to the innate beauty of the universe and the
-              endless potential of the digital realm.
+              Over the last years we have crafted a revolutionary Multiverse &
+              EXPO platform, fusing Feng Shui and Golden Geometry to enable the
+              creation of the bespoke, visually captivating environments for the
+              diverse usages of our economic & financial mega impact engines.
+              Our adherence to these design tenets creates a harmonious,
+              dynamic, bustling virtual experience, meticulously realized by our
+              skilled artists and architects.
             </p>
           </MainSectionTextContent>
         </div>
@@ -136,7 +119,9 @@ import RotationIcon from '~/icons/RotationIcon.vue';
     text-align: left;
   }
 }
-
+.gold {
+  color: #cfb16d;
+}
 .row {
   @include rfs(64px, --gutter-y);
   --gutter-x: 0;

@@ -5,7 +5,7 @@
         <div class="col-12 col-lg-6">
           <MainSectionHeader
             :class="$style.header"
-            :title="`<strong>The Opportunity for everyone</strong>`"
+            :title="`<strong style='color:white'>The <span style='color:#CFB16D'>Opportunity</span><br /> for <span style='color:#CFB16D'>everyone</span></strong>`"
           />
         </div>
         <div class="col-12 col-lg-6">
@@ -20,6 +20,19 @@
               and success, while every contribution is rewarded.
             </p>
           </MainSectionTextContent>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">  
+      <MediaPicture
+        :class="$style.video"
+        :src="Video"
+        :width="1170"
+        :height="656"
+      />
+      <br />
+      <br />
+      <br />
         </div>
       </div>
       <div v-if="opportunities?.length" ref="swiperRef" class="swiper">
@@ -43,6 +56,24 @@
         v-if="selectedItem"
         :selected-item="selectedItem"
       />
+      <div class="row" style="margin-top: 70px;">
+        <div class="col-md-6">
+      <NuxtLink
+        :class="$style.btn"
+        class="btn btn-sm btn-outline-primary"
+      >
+        <span>GO TO <span style="color: #CFB16D"> GUIDEBOOK</span></span>
+      </NuxtLink>
+    </div>
+        <div class="col-md-6">
+      <NuxtLink
+        :class="$style.btn_second"
+        class="btn btn-sm btn-outline-primary"
+      >
+        <span> ONBOARD <span style="color: #CFB16D"> NOW</span></span>
+      </NuxtLink>
+    </div>
+      </div>
     </AppWrapper>
   </section>
 </template>
@@ -68,6 +99,8 @@ import {
 } from '~/components/Opportunities/useOpportunitiesItems';
 import 'swiper/css';
 import 'swiper/css/free-mode';
+import Video from '~/assets/images/video-bg.jpg';
+import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 const opportunities = useOpportunitiesItems();
 
@@ -110,6 +143,15 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="scss" module>
+
+.btn {
+  float: right;
+  color: white;
+}
+.btn_second {
+  float:left;
+  color: white;
+}
 .section {
   @include padding(120px 0);
 }

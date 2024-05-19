@@ -49,7 +49,7 @@ defineProps<{
   @include padding-bottom(132px);
   background: radial-gradient(
     1160px 320px at center bottom,
-    #23274a,
+    #0a0d21,
     transparent
   );
 }

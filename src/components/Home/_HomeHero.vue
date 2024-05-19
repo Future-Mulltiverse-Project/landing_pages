@@ -55,12 +55,12 @@
         </div>
       </Transition>
     </AppWrapper>
-    <template #afterContent>
+    <!--template #afterContent>
       <div :class="$style.scroll">
         <ScrollIcon />
         Scroll & learn more
       </div>
-    </template>
+    </template-->
   </MainSection>
 </template>
 

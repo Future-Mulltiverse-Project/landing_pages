@@ -3,11 +3,11 @@
     <AppWrapper>
       <MainSectionHeader
         :class="$style.header"
-        :title="`<strong>FXPO VIP Pre-Launch Mint Event</strong> Available NFT Packages`"
+        :title="`<span style='color: white'> <span style='color: #CFB16D'>FUTURE MULTIVERSE LAUNCH</span><br />AVAILABLE NFT PACKAGES</span>`"
       />
       <p :class="$style.heading">
-        Exclusively accessible for onboarded VIP Early Board FutureX Token
-        Owners
+        Exclusively accessible for <span style="color:white"> successfully onboarded</span><br /> Individuals, Projects & SME's, Public Companies, <br/>
+        Organizations & Governments
       </p>
       <MainSectionTextContent :class="$style.text">
         <p>Explore & Find the best suited for you:</p>
@@ -174,17 +174,18 @@ function selectIndex(index: number) {
 
 .heading {
   @include font-size(28px);
-  @include margin-bottom(72px);
+  @include margin-bottom(52px);
   color: $primary;
   font-weight: 600;
   line-height: divide(30, 28);
   margin-left: auto;
   margin-right: auto;
-  max-width: rem-calc(476px);
+  max-width: rem-calc(806px);
 }
 
 .text {
   @include margin-bottom(48px);
+  font-size: 30px;
 }
 
 .grid {

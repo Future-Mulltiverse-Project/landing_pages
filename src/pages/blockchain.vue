@@ -1,8 +1,9 @@
 <template>
   <DefaultLayout>
-    <IntroSection
+    <div style=" background: url('_nuxt/assets/images/fxpo_marketplace_background_image.png'), #0A0D1D; background-repeat: no-repeat; background-size: cover;max-height: 80%;">
+    <BlockchainIntroSection
       :heading="`Welcome to the Blockchain of the Future!`"
-      :title="`The Hybrid <strong>FXPO Blockchain</strong>`"
+      :title="`The future multiverse <br /><strong> Blockchain</strong>`"
       :img="{
         url: Img,
         width: 1440,
@@ -19,10 +20,12 @@
       <button class="btn btn-outline-primary" type="button">
         OPEN BLOCKCHAIN EXPLORER
       </button>
-    </IntroSection>
+    </BlockchainIntroSection>
+    </div>
+    <div style=" background: url('_nuxt/assets/images/accelerator_bg.png'), #0A0D1D; background-repeat: no-repeat; background-size: cover;max-height: 80%;">
     <AboutLaunchpadSection
-      :title="`<strong>About FXPO</strong> HYBRID BLOCKCHAIN`"
-      :heading="`<p><strong>Based on Proof of Stake (POS) and Proof of Authority (POA) protocols. This unique combination of protocols ensures a highly secure, efficient, and scalable ecosystem that can adapt to the ever-evolving demands of the digital landscape.</strong></p>`"
+      :title="`<strong style='color:white'>About Future <br/>multiverse</strong><br /> <span style='color: #CFB16D'> BLOCKCHAIN</span>`"
+      :heading="`<p style='color:white !important'>Based on Proof of Stake (POS) and Proof of Authority (POA) protocols. This unique combination of protocols ensures a highly secure, efficient, and scalable ecosystem that can adapt to the ever-evolving demands of the digital landscape.</p>`"
     >
       <template #text>
         <p>
@@ -60,7 +63,7 @@
       </template>
       <template #buttons>
         <button class="btn btn-outline-primary" type="button">
-          OPEN BLOCKCHAIN EXPLORER
+          OPEN <span style="color:white; padding-left: 5px;padding-right: 5px;">BLOCKCHAIN</span> EXPLORER
         </button>
       </template>
       <IconList v-if="items && items?.length" :items="items">
@@ -73,20 +76,21 @@
         </template>
       </IconList>
     </AboutLaunchpadSection>
+    </div>
     <TokenomicsSection />
     <PrelaunchSection />
-    <GuideBookSection />
+    <!--BlockchainGuideBookSection/-->
     <JoinSection />
   </DefaultLayout>
 </template>
 
 <script lang="ts" setup>
-import Img from '~/assets/images/blockchain-screens.jpg';
+import Img from '~/assets/images/blockchain-screens.png';
 import DefaultLayout from '~/components/Layouts/DefaultLayout.vue';
-import PrelaunchSection from '~/components/Sections/PrelaunchSection.vue';
+import PrelaunchSection from '~/components/Sections/BlockchainPrelaunchSection.vue';
 import JoinSection from '~/components/Join/JoinSection.vue';
-import GuideBookSection from '~/components/Sections/GuideBookSection.vue';
-import IntroSection from '~/components/Sections/IntroSection.vue';
+import BlockchainGuideBookSection from '~/components/Sections/BlockchainGuideBookSection.vue';
+import BlockchainIntroSection from '~/components/Sections/BlockchainIntroSection.vue';
 import IconListItem from '~/components/IconList/IconListItem.vue';
 import IconList from '~/components/IconList/IconList.vue';
 import AboutLaunchpadSection from '~/components/Sections/AboutLaunchpadSection.vue';
@@ -111,32 +115,32 @@ const icons = {
 const items = [
   {
     icon: 'CyrptocurrencySecurityIcon',
-    title: 'Hybrid Protocol',
+    title_white_1: 'Hybrid Protocol',
     text: 'Hybrid FXPO Universe & POS (Proof of Stake) / POA (Proof of Authority) Blockchain Protocol',
   },
   {
     icon: 'CryptocurrencyGlobalIcon',
-    title: 'Decentralized System Solution',
+    title_white_1: 'Decentralized System Solution',
     text: 'Decentralized POS/POA Blockchain Node & Data Management System Solution',
   },
   {
     icon: 'CryptocurrencyLaptopIcon',
-    title: 'Multifunctional Ecosystem',
+    title_white_1: 'Multifunctional Ecosystem',
     text: 'POS/POA based FXPO Coin Mining, Staking & Gamification Reward Functions',
   },
   {
     icon: 'PickupPointIcon',
-    title: 'FXPO Land Plot NFTs',
+    title_white_1: 'FXPO Land Plot NFTs',
     text: 'Multifunctional (Ownable, Useable, Minable, Stakable, Leasable and Tradable) FXPO Land Plot NFTs, each owning a unique coordination & code, economic space and other qualities & functions',
   },
   {
     icon: 'LaptopMoneyIcon',
-    title: 'FXPO Coin',
+    title_white_1: 'FXPO Coin',
     text: 'The FXPO Universe Ecosystems & Hybrid Blockchain based own Minable, Stakeable, Usable & Tradable Coin',
   },
   {
     icon: 'SignDocumentIcon',
-    title: 'Smart Contracts',
+    title_white_1: 'Smart Contracts',
     text: 'FXPO Blockchain based SmartContracts, incl. NFTs, created through and listed on the FXPO LaunchPad',
   },
 ];

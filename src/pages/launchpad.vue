@@ -1,13 +1,15 @@
 <template>
-  <DefaultLayout>
+  <MarketplaceLayout >
+    <div>
+    <div style=" background: url('_nuxt/assets/images/fxpo_marketplace_background_image.png'), #0A0D1D; background-repeat: no-repeat; background-size: contain;max-height: 80%;">
     <IntroSection
       :heading="`Welcome to the <strong>FXPO LaunchPad!</strong>`"
       :title="`<strong>Your State of the Art Platform</strong>
-          to CATALYSE PROJECT FUNDING OR INVEST IN ASSETS`"
+          to CATALYSE PROJECT FUNDING <br />OR INVEST IN ASSETS`"
       :img="{
         url: Img,
         width: 2880,
-        height: 2486,
+        height: 2986,
       }"
     >
       <IntroSectionButtons>
@@ -23,12 +25,19 @@
         </div>
       </IntroSectionButtons>
     </IntroSection>
+    <div style=" background: url('_nuxt/assets/images/accelerator_bg.png'), #000000; background-repeat: no-repeat; background-size: cover;">
     <AboutLaunchpadSection
-      :title="`FXPO LaunchPad - <strong> Introducing you the digital
-        platform of the future</strong>`"
-      :heading="`<p><strong>“The future is not limited by space or time but only by our
+      :title="`<span style='font-size:40px'><span style='color:white; '>Future trends Catalyst LaunchPad -</span><br />
+              Introducing you the<br /> digital platform <br />of the future</span>`"
+      :heading="`<p style='color:white !important;'>“The future is not limited by space or time but only by our
         courage. Anything you can imagine can be built. And everything
-        that can be built, can be funded.“</strong></p>`"
+        that can be built, can be funded.“</p>`"
+        style="
+              background: radial-gradient(
+              90% 80% at center top,
+              #0B0F20,
+              transparent
+              );"
     >
       <template #text>
         <p>
@@ -63,8 +72,9 @@
         </template>
       </IconList>
     </AboutLaunchpadSection>
+    </div>
     <GradientArticleSection
-      :title="`LAUNCHPAD for Companies & Projects`"
+      :title="`LAUNCHPAD <span style='color: white;'> <br />for Companies & Projects</span>`"
       :heading="`<p>
         The FXPO LaunchPad serves as a dynamic platform bridging
         innovative projects with potential investors. It offers a
@@ -82,7 +92,7 @@
       </p>
     </GradientArticleSection>
     <ArticleSection
-      :title="`LAUNCHPAD FOR INVESTORS <strong>TITLE HERE</strong>`"
+      :title="`LAUNCHPAD <br /><span style='color: white;'>FOR INVESTORS </span><strong>TITLE HERE</strong>`"
       :heading="`<p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -97,25 +107,27 @@
         commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim i
+        mollit anim i11
       </p>
     </ArticleSection>
-    <PrelaunchSection />
-    <GuideBookSection />
+    <LaunchPadPrelaunchSection />
+    <LaunchPadGuideBookSection />
     <JoinSection />
-  </DefaultLayout>
+    </div>
+    </div>
+  </MarketplaceLayout>
 </template>
 
 <script lang="ts" setup>
-import DefaultLayout from '~/components/Layouts/DefaultLayout.vue';
+import MarketplaceLayout from '~/components/Layouts/MarketplaceLayout.vue';
 import IntroSection from '~/components/Sections/IntroSection.vue';
-import GuideBookSection from '~/components/Sections/GuideBookSection.vue';
+import LaunchPadGuideBookSection from '~/components/Sections/LaunchPadGuideBookSection.vue';
 import JoinSection from '~/components/Join/JoinSection.vue';
-import PrelaunchSection from '~/components/Sections/PrelaunchSection.vue';
+import LaunchPadPrelaunchSection from '~/components/Sections/LaunchPadPrelaunchSection.vue';
 import AboutLaunchpadSection from '~/components/Sections/AboutLaunchpadSection.vue';
 import GradientArticleSection from '~/components/Sections/GradientArticleSection.vue';
 import ArticleSection from '~/components/Sections/ArticleSection.vue';
-import Img from '~/assets/images/launchpad-screens.jpg';
+import Img from '~/assets/images/fxpo_launchpad_screens.png';
 import SignDocumentIcon from '~/icons/SignDocumentIcon.vue';
 import ImmersiveExperienceIcon from '~/icons/ImmersiveExperienceIcon.vue';
 import CryptocurrencyLaptopIcon from '~/icons/CryptocurrencyGlobalIcon.vue';
@@ -138,33 +150,33 @@ const icons = {
 const items = [
   {
     icon: 'SignDocumentIcon',
-    title: 'Simple Access & Onboarding',
+    title_white_1: 'Simple Access & Onboarding',
     text: 'Onboarding, Compliance, Listing, Tier Status, thus Transparency and Trust for projects and investors',
   },
   {
     icon: 'ImmersiveExperienceIcon',
-    title: 'Immersive Experience',
-    text: 'Provide Transparency & Trust for Investors to accelerate your funding',
+    title_white_1: 'Immersive Experience',
+    text_grey: 'Provide Transparency & Trust for Investors to accelerate your funding',
   },
   {
     icon: 'CryptocurrencyLaptopIcon',
-    title: 'Trust & Transparency',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid',
+    title_white_1: 'Trust & Transparency',
+    text_grey: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid',
   },
   {
     icon: 'LockBitcoinIcon',
-    title: 'Secure Crypto & Fiat Payment Gateways',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid',
+    title_white_1: 'Secure Crypto & Fiat Payment Gateways',
+    text_grey: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid',
   },
   {
     icon: 'DiscountIcon',
-    title: 'Special Offers & Discounts',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid',
+    title_white_1: 'Special Offers & Discounts',
+    text_grey: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid',
   },
   {
     icon: 'GroupNetworkingIcon',
-    title: 'Connect Referral System',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid',
+    title_white_1: 'Connect Referral System',
+    text_grey: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid',
   },
 ];
 

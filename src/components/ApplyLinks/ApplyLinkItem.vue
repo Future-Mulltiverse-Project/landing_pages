@@ -1,14 +1,14 @@
 <template>
   <div :class="$style.item">
     <div :class="$style.textContainer">
-      <h3 :class="$style.title">{{ item.title }}</h3>
+      <h3 :class="$style.title" v-html="item.title" />
       <div :class="$style.text" v-html="item.text" />
       <NuxtLink
         :class="$style.btn"
         class="btn btn-sm btn-outline-primary"
         :to="item.to"
       >
-        Explore
+        Apply
       </NuxtLink>
     </div>
     <div :class="$style.mediaWrapper">
@@ -62,9 +62,15 @@ defineProps<{ item: Itesmata }>();
 
   &:nth-child(odd) {
     padding-left: rem-calc($wrapper-padding-sm);
+    padding-right: rem-calc($wrapper-padding-sm);
 
     @include media-breakpoint-up(sm) {
       @include padding-left($wrapper-padding);
+      @include padding-right($wrapper-padding);
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-right: 0;
     }
 
     @media (min-width: $wrapper-width + 1px) {
@@ -74,17 +80,21 @@ defineProps<{ item: Itesmata }>();
 
   &:nth-child(even) {
     padding-left: rem-calc($wrapper-padding-sm);
+    padding-right: rem-calc($wrapper-padding-sm);
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(sm) {
       @include padding-left($wrapper-padding);
+      @include padding-right($wrapper-padding);
     }
 
     @media (min-width: $wrapper-width + 1px) {
       padding-left: calc(100% - $wrapper-inner-width / 2);
+      padding-right: 0;
     }
 
     @media (min-width: 1441px) {
-      padding-left: rem-calc(100px);
+      padding-left: rem-calc(60px);
+      padding-right: calc(100% - $wrapper-inner-width / 2);
     }
   }
 }
@@ -95,9 +105,9 @@ defineProps<{ item: Itesmata }>();
 }
 
 .title {
-  @include font-size(40px);
+  @include font-size(35px);
   @include margin-bottom(28px);
-  color: $primary;
+  color: white;
   line-height: divide(50, 40);
 }
 
@@ -112,6 +122,7 @@ defineProps<{ item: Itesmata }>();
 .btn {
   min-width: rem-calc(130px);
   max-width: 100%;
+  color: white;
 }
 
 .mediaWrapper {

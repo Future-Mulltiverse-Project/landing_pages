@@ -3,32 +3,24 @@
     <MediaPicture :src="Bg" :width="1440" :height="690" layout="fill" />
     <AppWrapper>
       <MainSectionHeader
-        :title="`<strong>FXPO Quest</strong>`"
+        :title="`<strong>Future MULTIVERSE <span style='color:white'>quest</span></strong>`"
         :class="$style.header"
       >
         <p>
-          <strong>
-            Discovering the Secrets of the Universe, creating the breakthrough
-            to a sustainable, meaningful and inspiring future for everyone.
+          <strong  style="color: white !important;">
+            Discovering the Multiverse of the Future, creating the breakthrough to an abundant, meaningful and inspiring future for everyone.
           </strong>
         </p>
       </MainSectionHeader>
       <MainSectionTextContent :class="$style.text">
         <p>
-          Since the beginning of our known existence, humanity is on the quest
-          curiosity discover the secrets of life and the universe and to unleash
-          our full potential.
+          Since the beginning of our known existence, humanity is on the quest of curiosity to discover the secrets of life and the universe / multiverse and to unleash our full potential.
         </p>
         <p>
-          FXPO is a vortex channeling this collective curiosity acting as a
-          catalyst to fast-track progress and sustainable development. It offers
-          everyone the chance to actively participate in shaping our common
-          destiny & future and to be rewarded for their efforts.
+          The Future Multiverse & the Future Trends Catalyst are a vortex channeling this collective curiosity acting as a catalyst to fast-track progress and groundbreaking development. It offers everyone the chance to actively participate in shaping our common destiny & future and to be rewarded for their efforts.
         </p>
         <p>
-          We invite you to embark on the FXPO Quest with us, join our
-          extraordinary expedition discovering the unknown, and building the
-          future.
+          We invite you to embark on the Future Multiverse Quest with us, to join our extraordinary expedition discovering the unknown, unleashing new realms of possibilities for humanity & building our future.
         </p>
       </MainSectionTextContent>
     </AppWrapper>
@@ -46,7 +38,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 <style lang="scss" module>
 .section {
   @include padding(120px 0);
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   position: relative;

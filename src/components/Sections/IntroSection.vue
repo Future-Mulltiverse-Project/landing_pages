@@ -1,14 +1,6 @@
 <template>
   <section :class="$style.section">
     <div :class="$style.top">
-      <MediaPicture
-        :class="$style.media"
-        :media-class="$style.mediaImg"
-        :src="Bg"
-        :width="1523"
-        :height="3024"
-        layout="fill"
-      />
       <div :class="$style.gradient" />
       <AppWrapper :class="$style.wrapper">
         <h3 :class="$style.headline" v-html="heading" />
@@ -26,7 +18,7 @@
 </template>
 
 <script lang="ts" setup>
-import Bg from '~/assets/images/launch-intro-bg.jpg';
+import Bg from '~/assets/images/torus2.jpg';
 import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
 import MainSectionTextContent from '~/components/MainSection/MainSectionTextContent.vue';
@@ -49,12 +41,12 @@ defineProps<{
 }
 
 .gradient {
-  background: linear-gradient(
+  /*background: linear-gradient(
     to bottom,
     rgba(#0a0d1d, 0) 0%,
     rgba(#0a0d1d, 0) 90%,
     #0a0d1d 100%
-  );
+  );*/
   position: absolute;
   top: 0;
   left: 0;
@@ -124,7 +116,7 @@ defineProps<{
   width: 100%;
 
   &::before {
-    background: radial-gradient(50% 40% at center center, #23274a, transparent);
+    //background: radial-gradient(100px 100px at center left, #23274a, #fbfbfb);
     border-radius: 50rem;
     bottom: 0;
     content: '';
