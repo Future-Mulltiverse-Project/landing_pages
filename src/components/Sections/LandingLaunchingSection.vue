@@ -66,7 +66,7 @@
             <SubLaunchingTimerItem>
               <p :class="$style.text1">
                 <br />
-                <span style="font-size: 60px; color: white" :class="$style.date_format">31. MAY 2024</span>
+                <span style="font-size: 60px; color: white" :class="$style.date_format">June 2024</span>
               </p>
             </SubLaunchingTimerItem>
           </LaunchingTimerWrapper>
@@ -234,7 +234,7 @@ const config = useRuntimeConfig();
 }
 
 .header {
-  @include padding-top(32px);
+  //@include padding-top(32px);
   @include margin-bottom(200px);
   flex-grow: 1;
   display: flex;

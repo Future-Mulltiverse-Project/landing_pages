@@ -13,13 +13,14 @@
       <br />
       <div class="row" :class="$style.btnRow">
         <div class="col-md-4" :class="$style.btnCol">
-          <a
+          <NuxtLink
+          to="https://future-multiverse.gitbook.io/guidebook"
             class="btn btn-outline-primary"
             :class="$style.btn"
             type="button"
           >
             <p style="margin-bottom: 0px; color: #ffffff;">LEARN <span style="color: #cfb16d;">MORE <br />(<span style="color: #ffffff;">Guide</span>Book)</span></p>
-          </a>
+        </NuxtLink>
         </div>
         <div class="col-md-4" :class="$style.btnCol">
           <a
@@ -32,18 +33,19 @@
           </a>
         </div>
         <div class="col-md-4" :class="$style.btnCol">
-          <a
+          <NuxtLink
+          to="https://map.futuremultiverse.dev/"
             class="btn btn-outline-primary"
             :class="$style.btn"
           >
           <p style="margin-bottom: 12px; padding-top:10px; color: #ffffff;"> DISCOVER<span style="color: #cfb16d;"> MAP</span><br /></p>
-        </a>
+        </NuxtLink>
         </div>
       </div>
     </div>
     <div class="row" :class="$style.btnLinkRow">
       <div class="col-auto">
-        <NuxtLink :class="$style.btnLink" to="/">
+        <NuxtLink :class="$style.btnLink" to="https://future-multiverse.gitbook.io/guidebook">
           <HeadCommentIcon />
           Guide
           <span style="color: white; line-height: 1">book</span>

@@ -22,7 +22,8 @@
             </p>
           </MainSectionTextContent>
         </div>
-        <div class="col-12 col-lg-6">
+        
+        <div class="col-12 col-lg-6" style="margin-top: 0px;">
           <MediaPicture :src="VisionImg" :width="539" :height="319" />
         </div>
       </div>
@@ -72,7 +73,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 .item {
   @include rfs(80px, --gutter-x);
   @include rfs(64px, --gutter-y);
-  @include margin-bottom(98px);
+  @include margin-bottom(58px);
   align-items: center;
 
   &:last-child {
@@ -89,6 +90,6 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .header {
-  @include margin-bottom(26px);
+  @include margin-bottom(6px);
 }
 </style>

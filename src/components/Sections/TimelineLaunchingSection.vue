@@ -70,7 +70,7 @@
                   style="font-size: 60px; color: white"
                   :class="$style.date_format"
                 >
-                  31. MAY 2024
+                  JUNE 2024
                 </span>
               </p>
             </SubLaunchingTimerItem>

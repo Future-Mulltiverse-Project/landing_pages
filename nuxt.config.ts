@@ -89,7 +89,7 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/styles/app.scss'],
-  modules: ['~/modules/purgecss'],
+  modules: ['~/modules/purgecss','@nuxt/ui'],
   experimental: {
     inlineSSRStyles: false,
   },

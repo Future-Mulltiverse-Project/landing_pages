@@ -3,45 +3,60 @@
     <AppWrapper>
       <div class="row" :class="$style.row">
         <div class="col-12 col-lg-6" :class="$style.leftCol">
-          <h2 :class="$style.header">
-            WELCOME TO THE
-            <span :class="$style.gold">
-              FUTURE
-              <br />
-              MULTIVERSE
-            </span>
-            &
-            <span :class="$style.gold">EXPO</span>
-          </h2>
-          <p style="font-size: 17px" :class="$style.gold">
-            <strong>
-              Our design philosophy not only creates an aesthetically beautiful
-              environment, but also seeks to inspire greater consciousness in
-              the world.
-            </strong>
-          </p>
-          <MainSectionTextContent>
-            <p>
-              Over the last years we have crafted a revolutionary Multiverse &
-              EXPO platform, fusing Feng Shui and Golden Geometry to enable the
-              creation of the bespoke, visually captivating environments for the
-              diverse usages of our economic & financial mega impact engines.
-              Our adherence to these design tenets creates a harmonious,
-              dynamic, bustling virtual experience, meticulously realized by our
-              skilled artists and architects.
-            </p>
-          </MainSectionTextContent>
+          <div class="row">
+            <div class="col-md-12">
+              <h2 :class="$style.header" style="margin-top: 20%; font-size: 40px !important;">
+                WELCOME TO THE
+                <span :class="$style.gold">
+                  FUTURE
+                  <br />
+                  MULTIVERSE
+                </span>
+                &
+                <span :class="$style.gold">EXPO</span>
+              </h2>
+              <p style="font-size: 22px" :class="$style.gold">
+                <strong>
+                  Our design philosophy not only creates an aesthetically
+                  beautiful environment, but also seeks to inspire greater
+                  consciousness in the world.
+                </strong>
+              </p>
+              <MainSectionTextContent>
+                <p style="font-size: 17px;">
+                  Over the last years we have crafted a revolutionary Multiverse
+                  & EXPO platform, fusing Feng Shui and Golden Geometry to
+                  enable the creation of the bespoke, visually captivating
+                  environments for the diverse usages of our economic &
+                  financial mega impact engines. Our adherence to these design
+                  tenets creates a harmonious, dynamic, bustling virtual
+                  experience, meticulously realized by our skilled artists and
+                  architects.
+                </p>
+              </MainSectionTextContent>
+            </div>
+            <div class="col-md-12">
+              <img
+                :src="designTool"
+                :width="550"
+                :height="370"
+                layout="fill"
+                style="margin-top: 30px"
+              />
+            </div>
+          </div>
         </div>
         <div class="col-12 col-lg-6" :class="$style.rightCol">
           <div :class="$style.schemeWrapper">
             <div :class="$style.schemeInner">
               <h3 :class="$style.schemeTitle">
-                Fibonacci Numbers / Golden Ratio
+                Feng Shui <br/>/ Golden Geometry
               </h3>
               <p :class="$style.schemeText">
-                At the core of the FXPO Expo lies a world of beauty, harmony,
-                and balance, meticulously crafted using the principles of
-                Fibonacci sequences and Golden Geometry.
+                At the core of the Future Trends Catalyst lies a world of
+                beauty, harmony and balance, meticulously crafted using the
+                principles of Fibonacci sequences and Golden Geometry, producing
+                greatest impact with maximum financial results.
               </p>
               <div :class="$style.torusWrapper">
                 <div :class="$style.torusHoldeer">
@@ -61,37 +76,25 @@
               <div class="row" :class="$style.btnRow">
                 <div class="col-auto" :class="$style.btnCol">
                   <button
-                    class="btn btn-outline-primary"
-                    :class="$style.btn"
-                    type="button"
-                  >
-                    ENTER FXPO
-                  </button>
-                </div>
-                <div class="col-auto" :class="$style.btnCol">
-                  <button
                     class="btn btn-outline-white"
                     :class="$style.btn"
                     type="button"
                   >
-                    Explore Map
+                    ENTER <span style="color: #CFB16D;padding-left: 4px;" >FUTURE EXPO <ThreeSixtyIcon /> </span>
                   </button>
+                </div>
+                <div class="col-auto" :class="$style.btnCol">
+                  <nuxt-link 
+                  to="https://map.futuremultiverse.dev/"
+                    class="btn btn-outline-primary"
+                    :class="$style.btn"
+                  >
+                  <span style="color: #CFB16D;padding-right: 4px;" >Explore</span>  Map
+                  </nuxt-link>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div :class="$style.spaceContainer">
-        <div :class="$style.spaceLabel">FXPO Business Space</div>
-        <div :class="$style.spaceGroup">
-          <!-- prettier-ignore -->
-          <div :class="$style.spaceValue">
-            500.000.000m<sup>3</sup>
-          </div>
-          <p :class="$style.spaceText">
-            Available to buy or rent, use, stake and trade
-          </p>
         </div>
       </div>
     </AppWrapper>
@@ -103,16 +106,18 @@ import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MainSectionHeader from '~/components/MainSection/MainSectionHeader.vue';
 import MainSectionTextContent from '~/components/MainSection/MainSectionTextContent.vue';
 import Torus from '~/assets/images/torus-2.png';
+import ThreeSixtyIcon from '~/icons/ThreeSixtyIcon.vue';
 import Scheme from '~/assets/images/architecture.svg';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
 import RotationIcon from '~/icons/RotationIcon.vue';
+import designTool from '~/assets/images/design_tool.png';
 </script>
 
 <style lang="scss" module>
 .section {
-  background-color: $dark;
+  //background-color: $dark;
   color: #fff;
-  @include padding(82px 0 145px);
+  @include padding(30px 0 145px);
   text-align: center;
 
   @include media-breakpoint-up(lg) {
@@ -142,7 +147,7 @@ import RotationIcon from '~/icons/RotationIcon.vue';
 }
 
 .header {
-  @include margin-bottom(50px);
+  @include margin-bottom(30px);
 
   h2 {
     @include margin-bottom(33px);

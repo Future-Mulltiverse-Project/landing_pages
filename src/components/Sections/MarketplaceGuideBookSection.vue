@@ -30,7 +30,7 @@ info visit our Guidebook</span>
               <NuxtLink
                 :class="$style.visitBtn"
                 class="btn btn-sm btn-outline-primary"
-                to="/"
+                to="https://future-multiverse.gitbook.io/guidebook"
               >
                 <p style="margin-bottom: 0px;color: #CFB16D">Visit Now! </p>
               </NuxtLink>

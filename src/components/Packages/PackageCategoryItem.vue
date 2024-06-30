@@ -9,6 +9,7 @@
         item.type === 'catalyzer' && $style.titleYellow,
         item.type === 'public' && $style.titleRed,
       ]"
+      style="margin-bottom: 4px;"
     >
       {{ item.title }}
     </h4>

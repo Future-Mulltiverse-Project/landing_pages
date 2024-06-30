@@ -11,7 +11,7 @@ export interface Opportunity {
 export const useOpportunitiesItems = () => {
   return ref([
     {
-      tab: 'For Individuals',
+      tab: '<span style="color:#ffffff !important">For</span> <span style="color: #CFB16D">Individuals</span>',
       items: [
         {
           title: 'Launch and Accelerate Your Project',
@@ -52,7 +52,7 @@ export const useOpportunitiesItems = () => {
       ],
     },
     {
-      tab: 'For Projects and SMEs',
+      tab: '<span style="color:#ffffff !important">For</span> <span style="color: #CFB16D">Projects</span> <span style="color:#ffffff">&</span> <span style="color: #CFB16D">SMEs</span>',
       items: [
         {
           title: 'Launch and Accelerate your Project',
@@ -93,7 +93,7 @@ export const useOpportunitiesItems = () => {
       ],
     },
     {
-      tab: 'For Public Companies & Organizations',
+      tab: '<span style="color:#ffffff !important">For</span> <span style="color: #CFB16D">Public Companies</span> <span style="color:#ffffff">&</span> <span style="color: #CFB16D">Organizations</span>',
       items: [
         {
           title: 'Accelerate your Project or Business',
@@ -130,6 +130,47 @@ export const useOpportunitiesItems = () => {
         {
           title: 'Re-Invest',
           text: 'Re-) Invest your Earnings within or outside the FXPO Ecosystem',
+        },
+      ],
+    },
+    {
+      tab: '<span style="color:#ffffff !important">For</span> <span style="color: #CFB16D">Governments</span>',
+      items: [
+        {
+          title: 'Launch and Accelerate Your Project',
+          text: 'with the FXPO LaunchPad, VR EXPO, Marketplace & Connect System.',
+        },
+        {
+          title: 'Invest in FXPO',
+          text: 'Invest in FXPO Land Plots, Projects, Companies or other Assets through our LaunchPad.',
+        },
+        {
+          title: 'Lease the FXPO Land Plot NFTs',
+          text: 'Lease the FXPO Land Plot NFTsto Projects or Companies while you mine & stake the FXPO Coins.',
+        },
+        {
+          title: 'Trade',
+          text: 'Trade any Product, Service or Asset on our LaunchPad & Marketplace for the Crypto or Fiat currencies you prefer.',
+        },
+        {
+          title: 'Earn rewards',
+          text: 'Earn Rewards such as Platform & Creator Fee Participation through Pool Rewards, as well as Commissions and other Rewards such as Play & Learn & Share to Earn Rewards.',
+        },
+        {
+          title: 'Share',
+          text: 'Share any Product, Service or Asset listed on the FXPO LaunchPad & Marketplace to anyone with your unique FXPO Connect Affiliate Link to be rewarded and earn commissions.',
+        },
+        {
+          title: 'Purchase / Order Products / Services / Assets',
+          text: 'Purchase/Order Products, Services or Assets on our Marketplace,',
+        },
+        {
+          title: 'Re-Invest',
+          text: 'Re-) Invest your Earnings within or outside the FXPO Ecosystem,',
+        },
+        {
+          title: 'Donate',
+          text: 'Donate a Percentage of your earned Income / rewards into verified Non-Profit Projects through our LaunchPad.',
         },
       ],
     },

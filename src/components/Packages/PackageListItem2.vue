@@ -8,19 +8,24 @@
         type === 'catalyzer' && $style.titleYellow,
         type === 'public' && $style.titleRed,
       ]"
+      style="text-align: center; "
     >
       {{ package.name }}
     </h4>
     <div :class="$style.priceLabel">
       Price at
       <br />
-      Official Launch:
+      {{package.launch_type}}:
     </div>
     <div :class="$style.price">{{ package.price }}</div>
     <ul :class="$style.list">
       <li>
         <strong>{{ package.fxpo_citizen_pass_nft }}</strong>
         FXPO Citizen Pass NFT
+      </li>
+      <li>
+        <strong>{{ package.fxpo_expo_pass_nft }}</strong>
+        Future EXPO Pass: 6 Months
       </li>
       <li>
         <strong>{{ package.fxpo_m3_nfts }}</strong>
@@ -53,7 +58,9 @@ export interface PackageItem {
   price: string;
   fxpo_citizen_pass_nft: string;
   fxpo_m3_nfts: string;
+  fxpo_expo_pass_nft: string;
   fxte: string;
+  launch_type: string;
 }
 
 defineProps<{ package: PackageItem; type: string }>();

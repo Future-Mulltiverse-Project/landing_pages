@@ -3,11 +3,11 @@
     <MediaPicture :src="Bg" :width="1440" :height="690" layout="fill" />
     <AppWrapper>
       <MainSectionHeader
-        :title="`<strong>Future MULTIVERSE <span style='color:white'>quest</span></strong>`"
+        :title="`<strong style='font-size:35px'>Future MULTIVERSE <span style='color:white'>quest</span></strong>`"
         :class="$style.header"
       >
         <p>
-          <strong  style="color: white !important;">
+          <strong  style="color: white !important; font-size: 20px;">
             Discovering the Multiverse of the Future, creating the breakthrough to an abundant, meaningful and inspiring future for everyone.
           </strong>
         </p>
@@ -37,7 +37,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 <style lang="scss" module>
 .section {
-  @include padding(120px 0);
+  @include padding(100px 0);
   min-height: 10vh;
   display: flex;
   align-items: center;

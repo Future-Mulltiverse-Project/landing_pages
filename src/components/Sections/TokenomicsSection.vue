@@ -26,9 +26,9 @@
     <br />
       <div class="row">
       <div class="col-md-6">
-          <button class="btn btn-outline-primary" style="float: right;" type="button">
+          <NuxtLink class="btn btn-outline-primary" style="float: right;" to="https://future-multiverse.gitbook.io/guidebook">
             OPEN <span style="color:white; padding-left: 5px;">GUIDE</span>BOOK
-          </button>
+          </NuxtLink>
       </div>
       <div class="col-md-6">
           <button class="btn btn-outline-primary" style="float: left;" type="button">

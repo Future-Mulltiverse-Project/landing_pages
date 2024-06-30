@@ -66,7 +66,7 @@
             <SubLaunchingTimerItem>
               <p :class="$style.text1">
                 <br />
-                <span style="font-size: 60px; color: white" :class="$style.date_format">31. MAY 2024</span>
+                <span style="font-size: 60px; color: white" :class="$style.date_format">JUNE 2024</span>
               </p>
             </SubLaunchingTimerItem>
           </LaunchingTimerWrapper>

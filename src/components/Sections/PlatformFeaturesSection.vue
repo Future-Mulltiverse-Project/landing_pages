@@ -51,7 +51,7 @@ const items = [
     title_gold_1: 'Multiverse',
     title_gold_2: 'EXPO',
     text: 'The FXPO is a Hyper-Realistic, digital & decentralized Meta-Universe, harnessing cutting edge technology to accelerate the economy of the Future.',
-    url: '/',
+    url: '/launch',
   },
   {
     icon: 'LaptopMetricsIcon',
@@ -61,7 +61,7 @@ const items = [
     title_gold_2: '',
     //title: 'LaunchPad / Accelerator Platform',
     text: 'The FXPO LaunchPad - your state of the art platform to catalyze project funding or invest in assets.',
-    url: '/',
+    url: '/launchpad',
   },
   {
     icon: 'MarketplaceIcon',
@@ -71,7 +71,7 @@ const items = [
     title_gold_2: '',
     //title: ' Marketplace',
     text: 'FXPO Marketplace - Your ultimate gateway to enter the world of web3, blockchain and the digital future.',
-    url: '/',
+    url: '/marketplace',
   },
   {
     icon: 'StaffIcon',
@@ -80,7 +80,7 @@ const items = [
     title_gold_1: 'Product & Service Packages',
     title_gold_2: '',
     text: 'Business, Design & Marketing Packages, incl. our Passport, Hyper-Realistic Avatars, Multi-Functional Business Space, Platform Revenue Share NFTs, Any Dimension Custom Design Services for any business, Marketing Licences, Apparel & much more ',
-    url: '/',
+    url: '/packages',
   },
   {
     icon: 'WorldwideLocationIcon',
@@ -89,7 +89,7 @@ const items = [
     title_gold_1: 'Technologies',
     title_gold_2: '',
     text: 'The Future Multiverse & EXPO is accelerating an international portfolio of groundbreaking technologies across multiple industries, scaling their institutional, governmental, academic, public & mass adoption',
-    url: '/',
+    url: '/architecture',
   },
   {
     icon: 'LaptopMoneyIcon',
@@ -98,7 +98,7 @@ const items = [
     title_gold_1: 'Blockchain',
     title_gold_2: 'Coin',
     text: "The FXPO's underlying Hybrid POS / POA Blockchain protocol and it's minable / stakable and tradable Coin",
-    url: '/',
+    url: '/blockchain',
   },
 ];
 </script>

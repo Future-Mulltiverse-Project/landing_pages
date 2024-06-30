@@ -35,7 +35,7 @@
         <div class="row" :class="$style.btnRow">
           <div class="col-auto">
             <NuxtLink
-              to="/"
+              to="/quest"
               class="btn btn-outline-primary"
               :class="$style.btn1"
             >
@@ -46,7 +46,7 @@
           </div>
           <div class="col-auto">
             <NuxtLink
-              to="/"
+              to="https://future-multiverse.gitbook.io/guidebook"
               class="btn btn-outline-primary"
               :class="$style.btn"
             >

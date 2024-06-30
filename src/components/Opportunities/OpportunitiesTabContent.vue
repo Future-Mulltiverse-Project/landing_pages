@@ -49,7 +49,7 @@ defineProps<{
 <style lang="scss" module>
 .panel {
   @include padding(52px 56px 45px);
-  background-color: #1c213e;
+  background-color: #1C213E;
   position: relative;
 }
 

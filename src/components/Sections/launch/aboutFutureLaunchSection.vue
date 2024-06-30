@@ -34,18 +34,19 @@
             </a>
           </div>
           <div class="col-md-4" :class="$style.btnCol">
-            <a
+            <NuxtLink
+            to="https://map.futuremultiverse.dev/"
               class="btn btn-outline-primary"
               :class="$style.btn"
             >
             <p style="margin-bottom: -2px; padding-top:0px; color: #ffffff;"> DISCOVER<span style="color: #cfb16d;"> MAP</span> <br /> <span style="color: #ffffff;">(COMING NEXT)</span></p>
-          </a>
+          </NuxtLink>
           </div>
         </div>
       </div>
       <div class="row" :class="$style.btnLinkRow">
         <div class="col-auto">
-          <NuxtLink :class="$style.btnLink" to="/">
+          <NuxtLink :class="$style.btnLink" to="https://future-multiverse.gitbook.io/guidebook">
             <HeadCommentIcon />
             Guide
             <span style="color: white; line-height: 1">book</span>

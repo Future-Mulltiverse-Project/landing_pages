@@ -5,7 +5,7 @@
         <AppHeaderLogo />
       </li>
       <li class="col-auto" style="margin-top: 8px;">
-        <nuxt-link exact :class="$style.link">Home</nuxt-link>
+        <nuxt-link  to="/"  exact :class="$style.link">Home</nuxt-link>
       </li>
       <li :class="[$style.dropdown]" class="col-auto">
         <nuxt-link exact :class="$style.link">Future Multiverse</nuxt-link>
@@ -16,25 +16,15 @@
         </div>
         <div :class="$style.menu">
           <div :class="$style.menuInner">
-            <nuxt-link :class="[$style.link_sub]">
-              
-              Welcome, Overview & Examples
+            <nuxt-link :class="[$style.link_sub]">Welcome, Overview & Examples
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              Enter Future Multiverse & EXPO
+            <nuxt-link to="/launch" :class="$style.link_sub">Enter Future Multiverse & EXPO
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              Explore Map
+            <nuxt-link to="https://map.futuremultiverse.dev/" :class="$style.link_sub">Explore Map
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              Product & Service Packages
+            <nuxt-link to="/packages" :class="$style.link_sub">Product & Service Packages
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              Advanced Technologies
+            <nuxt-link :class="$style.link_sub">Advanced Technologies
             </nuxt-link>
           </div>
         </div>
@@ -48,21 +38,13 @@
         </div>
         <div :class="$style.menu" style="min-width: 12rem !important">
           <div :class="$style.menuInner">
-            <nuxt-link :class="[$style.link_sub]">
-              
-              LaunchPad
+            <nuxt-link to="/launchpad" :class="[$style.link_sub]">LaunchPad
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              Marketplace
+            <nuxt-link to="/marketplace" :class="$style.link_sub">Marketplace
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              Blockchain
+            <nuxt-link to="/blockchain" :class="$style.link_sub">Blockchain
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              LAB
+            <nuxt-link :class="$style.link_sub">LAB
             </nuxt-link>
           </div>
         </div>
@@ -76,21 +58,13 @@
         </div>
         <div :class="$style.menu" style="min-width: 16rem !important">
           <div :class="$style.menuInner">
-            <nuxt-link :class="[$style.link_sub]">
-              
-              Quest
+            <nuxt-link to="/quest" :class="[$style.link_sub]">Quest
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              Vision & Mission & Movement
+            <nuxt-link :class="$style.link_sub">Vision & Mission & Movement
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              Surprise Rise of Humanity
+            <nuxt-link :class="$style.link_sub">Surprise Rise of Humanity
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              Future Trends Group
+            <nuxt-link :class="$style.link_sub">Future Trends Group
             </nuxt-link>
           </div>
         </div>
@@ -104,17 +78,11 @@
         </div>
         <div :class="$style.menu" style="min-width: 12rem !important">
           <div :class="$style.menuInner">
-            <nuxt-link :class="[$style.link_sub]">
-              
-              VIP Pre-Launch
+            <nuxt-link :class="[$style.link_sub]">VIP Pre-Launch
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              Pre-Launch
+            <nuxt-link :class="$style.link_sub">Pre-Launch
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              Public-Launch
+            <nuxt-link :class="$style.link_sub">Public-Launch
             </nuxt-link>
           </div>
         </div>
@@ -128,13 +96,9 @@
         </div>
         <div :class="$style.menu" style="min-width: 12rem !important">
           <div :class="$style.menuInner">
-            <nuxt-link :class="[$style.link_sub]">
-              
-              GuideBook
+            <nuxt-link to="https://future-multiverse.gitbook.io/guidebook" :class="[$style.link_sub]">GuideBook
             </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              
-              ChatGuide
+            <nuxt-link :class="$style.link_sub">ChatGuide
             </nuxt-link>
           </div>
         </div>
@@ -179,7 +143,7 @@ const items = ref(useNavItems);
 }
 
 .menuInner {
-  padding-top: 8px;
+  padding-top: 2px;
   display: flex; /* Add this line */
   flex-direction: column; /* Add this line */
 }
@@ -232,7 +196,7 @@ const items = ref(useNavItems);
   display: none;
   min-width: rem-calc(18rem);
   position: absolute;
-  padding-top: 10px;
+  padding-top: 2px;
   top: 100%;
 
   padding-bottom: 10px;

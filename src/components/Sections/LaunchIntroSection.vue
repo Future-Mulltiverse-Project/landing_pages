@@ -5,8 +5,8 @@
         :class="$style.media"
         :media-class="$style.mediaImg"
         :src="Bg"
-        :width="1523"
-        :height="3024"
+        :width="1723"
+        :height="3224"
         layout="fill"
       />
       <AppWrapper :class="$style.wrapper">
@@ -115,7 +115,7 @@
 
 <script lang="ts" setup>
 import Bg from '~/assets/images/launch/dalle.png';
-import Video from '~/assets/images/landing_video.png';
+import Video from '~/assets/images/launch_video_updated.png';
 import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
 import { useTimer, zerofi } from '~/composables/useTimer';

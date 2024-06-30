@@ -34,7 +34,7 @@ const config = useRuntimeConfig();
 .section {
   @include padding(104px 0 448px);
   
-  padding-bottom: 230px !important;
+  padding-bottom: 80px !important;
   text-align: center;
   position: relative;
 }

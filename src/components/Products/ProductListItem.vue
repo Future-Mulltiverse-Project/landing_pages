@@ -4,7 +4,7 @@
       <h3 :class="$style.title">{{ item.title }}</h3>
       <div :class="$style.text">{{ item.text }}</div>
 
-      <NuxtLink to="/" class="btn btn-sm btn-outline-primary">
+      <NuxtLink :to="item.to " class="btn btn-sm btn-outline-primary">
         <p style="font-weight: 100;margin-bottom: 0px;">
           EXPLORE
           <br />
