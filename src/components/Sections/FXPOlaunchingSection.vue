@@ -10,7 +10,7 @@
         </h2>
         <h3 :class="$style.timerTitle">
           <span style="color: #CFB16D;">VIP Pre-Launch Mint Event Start in:</span></h3>
-          <h1 style="font-size: 60px;">June 2024</h1>
+          <h1 style="font-size: 60px;">July 2024</h1>
         <div style="padding-top: 40px;">
           <button type="button" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
             ONBOARD NOW

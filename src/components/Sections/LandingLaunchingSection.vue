@@ -23,11 +23,11 @@
                     width: 100%;
                     color: #ffffff;
                     font-weight: 100;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
                   "
                 >
-                  Onboard now
+                  REGISTER FOR
+                  <br />
+                  OUR NEWSLETTER
                   <br />
                 </button>
               </div>
@@ -41,11 +41,11 @@
                     width: 100%;
                     color: #ffffff;
                     font-weight: 400;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
                   "
                 >
-                  REGISTER FOR
-                  <br />
-                  OUR NEWSLETTER
+                ONBOARD NOW
                 </button>
               </div>
               <div class="col-md-1"></div>
@@ -61,12 +61,12 @@
               title="NEXT UPDATE & ANNOUNCEMENT"
               class="custom-text-color"
             >
-              <LaunchingTimer :datetime="config.public.MINT_EVENT_START_IN" />
+              <LaunchingTimerMarketplace :datetime="config.public.MINT_EVENT_START_IN" />
             </LaunchingTimerItem>
             <SubLaunchingTimerItem>
               <p :class="$style.text1">
                 <br />
-                <span style="font-size: 60px; color: white" :class="$style.date_format">June 2024</span>
+                <span style="font-size: 60px; color: white" :class="$style.date_format">JULY 2024</span>
               </p>
             </SubLaunchingTimerItem>
           </LaunchingTimerWrapper>
@@ -82,7 +82,7 @@
 import { useRuntimeConfig } from '#imports';
 import Bg from '~/assets/images/rocket-launch.png';
 import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
-import LaunchingTimer from '~/components/Home/Launching/LaunchingTimer.vue';
+import LaunchingTimerMarketplace from '~/components/Home/Launching/LaunchingTimerMarketplace.vue';
 import LaunchingTimerItem from '~/components/Home/Launching/LaunchingTimerItem.vue';
 import LaunchingTimerWrapper from '~/components/Home/Launching/LaunchingTimerWrapper.vue';
 import LandingHomeMainSectionHeader from '~/components/MainSection/LandingHomeMainSectionHeader.vue';

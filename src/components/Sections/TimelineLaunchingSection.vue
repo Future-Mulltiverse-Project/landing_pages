@@ -261,7 +261,7 @@ const config = useRuntimeConfig();
 }
 
 .header {
-  @include padding-top(32px);
+  //@include padding-top(32px);
   @include margin-bottom(200px);
   flex-grow: 1;
   display: flex;

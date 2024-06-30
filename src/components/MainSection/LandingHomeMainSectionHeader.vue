@@ -11,7 +11,7 @@
         THE <span style="color: #cfb16d">VIP PRE-LAUNCH</span> OF
         <br />THE <span style="color: #cfb16d; font-size: 80px">FUTURE</span>
         <span style="color: #ffffff; font-size: 80px">!</span><br />
-        <span style="color: #cfb16d;">MULTIVERSE</span> & <span style="color: #cfb16d;">EXPO</span>
+        <!--span style="color: #cfb16d;">MULTIVERSE</span> & <span style="color: #cfb16d;">EXPO</span-->
       </strong>
       <template v-if="subtitle">
         <br />
@@ -37,7 +37,7 @@ defineProps<{
 <style lang="scss" module>
 .heading {
   @include font-size(22px);
-  @include margin-bottom(25px);
+  @include margin-bottom(53px);
   line-height: divide(30, 22);
 }
 
@@ -49,6 +49,7 @@ defineProps<{
 
 .title {
   @include font-size(45px);
+  margin-top: 10px;
   @include margin-bottom(20px);
   line-height: math-div(55, 45);
   text-transform: uppercase;

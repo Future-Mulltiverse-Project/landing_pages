@@ -184,7 +184,7 @@ import designTool from '~/assets/images/design_tool.png';
   @include margin-bottom(38px);
   line-height: divide(30, 26);
   font-weight: 600;
-  color: $primary;
+  color: #ffffff;
   max-width: rem-calc(256px);
   margin-left: auto;
   text-align: right;

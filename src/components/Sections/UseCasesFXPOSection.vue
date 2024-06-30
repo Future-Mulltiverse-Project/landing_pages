@@ -52,6 +52,53 @@
         </div>
       </div>
       <div class="row">
+          <div class="col-md-3">
+              <div class="card">
+              <h4>Energy</h4>
+              <img
+                  src="@/assets/images/use_cases/energy.png"
+                  alt="FUTURE Image"
+                  class="img-fluid"
+                  :class="$style['custom-image']"
+              />
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+              <h4>Industry</h4>
+              <img
+                  src="@/assets/images/use_cases/industry.png"
+                  alt="FUTURE Image"
+                  class="custom-image img-fluid"
+                  :class="$style['custom-image']"
+              />
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+              <h4>Mobility</h4>
+              <img
+                  src="@/assets/images/use_cases/mobility.png"
+                  alt="FUTURE Image"
+                  class="custom-image img-fluid"
+                  :class="$style['custom-image']"
+              />
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+              <h4>(Space) Ports</h4>
+              <img
+                  src="@/assets/images/use_cases/ports.png"
+                  alt="FUTURE Image"
+                  class="custom-image"
+                  :class="$style['custom-image']"
+              />
+              </div>
+          </div>
+        </div>
+
+      <div class="row">
         <div class="col-md-3">
             <div class="card">
             <h4>Agriculture</h4>

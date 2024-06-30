@@ -7,7 +7,7 @@
         Onboard <span :class="$style.primaryText"> Now</span> & Save your <span :class="$style.primaryText"> Seat</span><br/> for the <span :class="$style.primaryText"> Launch</span> of the <span :class="$style.primaryText">Iamverse</span>!
       </h2>
       <h3 :class="$style.timerTitle"><span style="color: #CFB16D;">Pre-Launch Mint Event Start in: </span></h3>
-      <LaunchingTimer
+      <LaunchingTimerBlockchain
         :class="$style.timer"
         :datetime="config.public.MINT_EVENT_START_IN"
       />
@@ -25,7 +25,7 @@
 
 <script lang="ts" setup>
 import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
-import LaunchingTimer from '~/components/Home/Launching/LaunchingTimer.vue';
+import LaunchingTimerBlockchain from '~/components/Home/Launching/LaunchingTimerBlockchain.vue';
 import { useRuntimeConfig } from '#imports';
 import Bg from '~/assets/images/prelaunch-bg.png';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
