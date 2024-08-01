@@ -12,9 +12,9 @@
         :datetime="config.public.MINT_EVENT_START_IN"
       />
       <div style="padding-top: 100px;">
-        <button type="button" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
+        <NuxtLink to="https://sandbox.futuremultiverse.dev/" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
         <p style="margin-bottom: 0px;"><span style="color: #181C36; font-weight: 700">ONBOARD NOW! </span> </p>
-        </button> 
+        </NuxtLink> 
         <!--button type="button" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
           REGISTER FOR OUR NEWSLETTER
         </button-->

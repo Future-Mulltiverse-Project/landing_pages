@@ -31,12 +31,12 @@ Guide<span style="color: #cfb16d">book</span>
         <div class="col-auto">
           <div class="row" :class="$style.btnRow">
             <div class="col-auto">
-              <NuxtLink to="/" class="btn btn-sm btn-outline-gradient-primary">
+              <NuxtLink to="https://sandbox.futuremultiverse.dev/" class="btn btn-sm btn-outline-gradient-primary">
                 Onboard
               </NuxtLink>
             </div>
             <div class="col-auto">
-              <NuxtLink to="/" class="btn btn-sm btn-outline-primary">
+              <NuxtLink to="https://sandbox.futuremultiverse.dev/" class="btn btn-sm btn-outline-primary">
                 Connect
               </NuxtLink>
             </div>

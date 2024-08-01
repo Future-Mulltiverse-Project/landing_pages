@@ -13,13 +13,13 @@
       <div :class="$style.inner">
         <div class="btn-container">
           <NuxtLink
-            to="/"
+            to="https://sandbox.futuremultiverse.dev/"
             class="btn btn-sm btn-outline-gradient-primary" :class="$style.btn"
           >
             Onboard
           </NuxtLink>
           <NuxtLink
-            to="/"
+            to="https://sandbox.futuremultiverse.dev/"
             class="btn btn-sm btn-outline-primary" :class="$style.btn"
           >
             Connect

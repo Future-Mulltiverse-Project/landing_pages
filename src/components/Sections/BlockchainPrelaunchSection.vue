@@ -13,7 +13,7 @@
       />
       <div style="padding-top: 100px;">
         <button type="button" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
-        <p style="margin-bottom: 0px;"><span style="color: #181C36; font-weight: 700">ONBOARD NOW</span> </p>
+        <NuxtLink style="margin-bottom: 0px;" to="https://sandbox.futuremultiverse.dev/" ><span style="color: #181C36; font-weight: 700" >ONBOARD NOW</span> </NuxtLink>
         </button> 
         <!--button type="button" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
           REGISTER FOR OUR NEWSLETTER

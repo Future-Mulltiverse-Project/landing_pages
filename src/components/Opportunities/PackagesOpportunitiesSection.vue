@@ -47,6 +47,7 @@
         </div>
         <div class="col-md-6">
           <NuxtLink
+            to="https://sandbox.futuremultiverse.dev/"
             :class="$style.btn_second"
             class="btn btn-sm btn-outline-primary"
           >

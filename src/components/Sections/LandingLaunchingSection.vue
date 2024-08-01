@@ -32,8 +32,8 @@
                 </button>
               </div>
               <div class="col-md-5" :class="$style.btn_special2">
-                <button
-                  type="button"
+                <NuxtLink
+                  to="https://sandbox.futuremultiverse.dev/"
                   class="btn btn--primary-inverted"
                   :class="$style.btn"
                   style="
@@ -46,7 +46,7 @@
                   "
                 >
                 ONBOARD NOW
-                </button>
+                </NuxtLink>
               </div>
               <div class="col-md-1"></div>
             </div>

@@ -14,8 +14,8 @@
             <div class="row">
               <div class="col-md-1"></div>
               <div class="col-md-5" :class="$style.btn_special1">
-                <button
-                  type="button"
+                <NuxtLink
+                  to="https://sandbox.futuremultiverse.dev/"
                   class="btn btn-outline-primary"
                   :class="$style.btn"
                   style="
@@ -31,7 +31,7 @@
                   <br />
                   (COMING NEXT)
                   <br />
-                </button>
+                </NuxtLink>
               </div>
               <div class="col-md-5" :class="$style.btn_special2">
                 <button

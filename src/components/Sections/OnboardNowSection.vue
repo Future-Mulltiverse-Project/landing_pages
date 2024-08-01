@@ -9,7 +9,7 @@
         <div class="row" :class="$style.row">
           <div class="col-auto">
             <NuxtLink
-              to="/"
+              to="https://sandbox.futuremultiverse.dev/"
               class="btn btn-outline-gradient-primary"
               :class="$style.btn"
             >

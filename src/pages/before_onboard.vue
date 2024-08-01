@@ -50,7 +50,7 @@
           </div>
           <div class="col-auto">
             <NuxtLink
-              to="/"
+              to="https://sandbox.futuremultiverse.dev/"
               class="btn btn-outline-primary"
               :class="$style.btn"
             >

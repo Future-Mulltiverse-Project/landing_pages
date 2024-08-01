@@ -25,6 +25,7 @@
           <div class="col-md-3" ></div>
           <div class="col-md-2" >
             <NuxtLink
+              to="https://future-multiverse.gitbook.io/guidebook"
               :class="$style.btn_second"
               class="btn btn-sm btn-outline-primary"
             >
@@ -33,6 +34,7 @@
           </div>
           <div class="col-md-3">
             <NuxtLink
+              to="https://www.futuremultiverse.com/packages"
               :class="$style.btn_second"
               class="btn btn-sm btn-outline-primary"
             >
@@ -41,6 +43,7 @@
           </div>
           <div class="col-md-3">
             <NuxtLink
+              to="https://sandbox.futuremultiverse.dev"
               :class="$style.btn_second"
               class="btn btn-sm btn-outline-primary"
             >

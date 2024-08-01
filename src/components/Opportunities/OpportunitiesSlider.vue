@@ -26,7 +26,7 @@
   />
   <div class="row" style="margin-top: 70px">
     <div class="col-md-6">
-      <NuxtLink :class="$style.btn" class="btn btn-sm btn-outline-primary">
+      <NuxtLink :class="$style.btn" to="https://future-multiverse.gitbook.io/guidebook" class="btn btn-sm btn-outline-primary">
         <span>
           GO TO
           <span style="color: #cfb16d">GUIDEBOOK</span>
@@ -35,6 +35,7 @@
     </div>
     <div class="col-md-6">
       <NuxtLink
+        to:="https://sandbox.futuremultiverse.dev/"
         :class="$style.btn_second"
         class="btn btn-sm btn-outline-primary"
       >

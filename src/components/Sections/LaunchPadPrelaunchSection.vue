@@ -12,9 +12,9 @@
         <span style="color: #CFB16D;">Pre-Launch Mint Event Start:</span></h3>
         <h1 style="font-size: 60px;">IN <span :class="$style.primaryText">Q1</span> 2024</h1>
       <div style="padding-top: 40px;">
-        <button type="button" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
+        <NuxtLink to="https://sandbox.futuremultiverse.dev/" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
           ONBOARD NOW
-        </button>
+        </NuxtLink>
       </div>
     </AppWrapper>
   </section>

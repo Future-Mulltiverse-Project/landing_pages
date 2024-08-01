@@ -26,7 +26,7 @@
               <div class="row" :class="$style.btnRow">
                  <div class="col-auto" :class="$style.btnCol">
                   <NuxtLink
-                    to="/"
+                    to="https://sandbox.futuremultiverse.dev"
                     class="btn btn-sm btn-outline-gradient-primary"
                     :class="$style.btn"
                   >
@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-auto" :class="$style.btnCol">
                   <NuxtLink
-                    to="/"
+                    to="https://sandbox.futuremultiverse.dev/"
                     class="btn btn-sm btn-outline-primary"
                     :class="$style.btn"
                   >

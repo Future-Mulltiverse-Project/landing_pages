@@ -19,9 +19,9 @@
           </button>
         </div>
         <div class="col-auto">
-          <button class="btn btn-outline-gradient-primary" type="button">
+          <NuxtLink to="https://sandbox.futuremultiverse.dev/" class="btn btn-outline-gradient-primary" >
             Onboard
-          </button>
+          </NuxtLink>
         </div>
       </div>
       <p :class="$style.text">

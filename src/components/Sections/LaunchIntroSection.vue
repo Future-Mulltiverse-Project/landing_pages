@@ -76,15 +76,15 @@
           <div :class="$style.btnContainer">
             <div class="row" :class="$style.btnRow">
               <div class="col-auto" :class="$style.btnCol">
-                <button
+                <NuxtLink
+                  to="https://sandbox.futuremultiverse.dev/"
                   class="btn btn-outline-white"
                   :class="$style.btn"
-                  type="button"
                 >
                   Onboard
                   <span style="color: #cfb16d">&#160; now</span>
                   !
-                </button>
+                </NuxtLink>
               </div>
               <div class="col-auto" :class="$style.btnCol">
                 <button

@@ -10,9 +10,9 @@
             title="Onboard Now & Save your Seat for the Launch of the FXPO!"
             title-lg
           />
-          <button :class="$style.btn" type="button" class="btn">
+          <NuxtLink to="https://sandbox.futuremultiverse.dev/" :class="$style.btn"  class="btn">
             Onboard now
-          </button>
+          </NuxtLink>
         </div>
         <div class="col" :class="$style.rightCol">
           <LaunchingTimerWrapper :class="$style.timerWrapper">
