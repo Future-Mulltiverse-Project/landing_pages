@@ -8,7 +8,7 @@
       >
         <p>
           <strong  style="color: white !important; font-size: 20px;">
-            Discovering the Multiverse of the Future, creating the breakthrough to an abundant, meaningful and inspiring future for everyone.
+            Catalyzing the Destiny of the Future, creating the breakthrough to an inspiring, meaningful and abundant future for everyone.
           </strong>
         </p>
       </MainSectionHeader>

@@ -55,7 +55,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 <style lang="scss" module>
 .section {
-  @include padding(136px 0 156px);
+  @include padding(55px 0 156px);
   text-align: center;
 
   @include media-breakpoint-up(lg) {

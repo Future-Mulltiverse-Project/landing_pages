@@ -1,13 +1,7 @@
 <template>
     <section :class="$style.section">
-      <AppWrapper>
+      <AppWrapper style="margin-top: 0px !important;">
         <div class="row" :class="$style.row">
-         <p style="text-align: center; font-size: 20px">Partner with us today <span style="color: #CFB16D">to join and become part of our movement!</span></p>
-         <p style="text-align: center; font-size: 20px">We help you to accelerate and scale your future <span style="color: #CFB16D">, serving you<br/> 
-            with our product & service packages, technologies, applications & networks,<br/>
-            and</span> together we have the opportunity to serve and impact the future of our world<span style="color: #CFB16D">!</span></p>
-        <p style="text-align: center; font-size: 26px;margin-bottom: 45px"><span style="color: #CFB16D">"</span>In the moments of our decisions our destiny is shaped!<span style="color: #CFB16D">"</span><br/>
-            <span style="color: #CFB16D">Tony Robbins</span></p>
         <p style="text-align: center; font-size: 25px"><span style="color: #CFB16D">Some of our</span> Business <span style="color: #CFB16D">&</span> Technologies Partners<span style="color: #CFB16D">:</span></p>
         </div>
         <div class="row">

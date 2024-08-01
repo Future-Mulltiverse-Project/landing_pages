@@ -26,7 +26,7 @@
               :class="[$style.tab, selectedIndex === index && $style.active]"
               @click="select(index)"
               v-html="item.tab"
-            />
+            />1
           </div>
         </div>
       </div>

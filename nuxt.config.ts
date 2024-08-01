@@ -3,10 +3,10 @@ export default defineNuxtConfig({
   ssr: false,
   runtimeConfig: {
     public: {
-      APP_NAME: '',
-      APP_TITLE: '',
+      APP_NAME: 'Future Mulitverse',
+      APP_TITLE: 'Future Mulitverse',
       APP_DESCRIPTION: '',
-      API_URL: '',
+      API_URL: 'https://futuremultiverse.com/',
       MINT_EVENT_START_IN: '2023-06-08T11:59:59.000Z',
       EXPO_LAUNCH_IN: '2023-07-08T11:59:59.000Z',
     },
@@ -66,7 +66,7 @@ export default defineNuxtConfig({
         },
         {
           rel: 'shortcut icon',
-          href: '/favicon.ico?v=1',
+          href: '/favicon-16x16.png?v=1',
         },
         {
           rel: 'preconnect',

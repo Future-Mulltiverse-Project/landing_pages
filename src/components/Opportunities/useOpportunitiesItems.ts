@@ -43,7 +43,7 @@ export const useOpportunitiesItems = () => {
         },
         {
           title: 'Re-Invest',
-          text: 'Re-) Invest your Earnings within or outside the FXPO Ecosystem,',
+          text: 'Re-invest your Earnings within or outside the FXPO Ecosystem,',
         },
         {
           title: 'Donate',
@@ -88,7 +88,7 @@ export const useOpportunitiesItems = () => {
         },
         {
           title: 'Re-Invest',
-          text: 'Re-) Invest your Earnings within or outside the FXPO Ecosystem',
+          text: 'Re-invest your Earnings within or outside the FXPO Ecosystem',
         },
       ],
     },
@@ -129,7 +129,7 @@ export const useOpportunitiesItems = () => {
         },
         {
           title: 'Re-Invest',
-          text: 'Re-) Invest your Earnings within or outside the FXPO Ecosystem',
+          text: 'Re-invest your Earnings within or outside the FXPO Ecosystem',
         },
       ],
     },
@@ -166,7 +166,7 @@ export const useOpportunitiesItems = () => {
         },
         {
           title: 'Re-Invest',
-          text: 'Re-) Invest your Earnings within or outside the FXPO Ecosystem,',
+          text: 'Re-invest your Earnings within or outside the FXPO Ecosystem,',
         },
         {
           title: 'Donate',

@@ -4,8 +4,8 @@
     <AppWrapper :class="$style.wrapper">
       <div :class="$style.heading"><span style='color:#CFB16D'>Future Multiverse</span> Quest</div>
       <h2 :class="$style.title">
-        Discovering <span :class="$style.gold">the</span> <br />
-          Multiverse <span :class="$style.gold"> of <br />the </span>future<span :class="$style.gold">.</span>
+         <span :class="$style.gold">TO </span>CATALYZE <br /><span :class="$style.gold">THE </span> DESTINY <br/>
+          <span :class="$style.gold"> of </span>THE FUTURE
       </h2>
       <MainSectionTextContent :class="$style.text">
         <p>

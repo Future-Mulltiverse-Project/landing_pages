@@ -21,25 +21,7 @@
           v-if="selectedItem"
           :selected-item="selectedItem"
         />
-        <div class="row" style="margin-top: 40px;">
-          <!--h3 style="color: #CFB16D;margin-bottom: 30px;text-align: center">Learn & Discover More:</h3-->
-          <div class="col-md-6">
-            <NuxtLink
-              :class="$style.btn"
-              class="btn btn-sm btn-outline-primary"
-            >
-              <span>GO TO <span style="color: #CFB16D"> GUIDEBOOK</span></span>
-            </NuxtLink>
-          </div>
-          <div class="col-md-6">
-            <NuxtLink
-              :class="$style.btn_second"
-              class="btn btn-sm btn-outline-primary"
-            >
-              <span> ONBOARD <span style="color: #CFB16D"> NOW</span></span>
-            </NuxtLink>
-          </div>
-        </div>
+
         <br />
         <br/>
       </AppWrapper>

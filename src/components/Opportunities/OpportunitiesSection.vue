@@ -5,101 +5,129 @@
         <div class="col-12 col-lg-6">
           <MainSectionHeader
             :class="$style.header"
-            :title="`<strong style='color:white'><span style='color:#CFB16D'>THE WORLWIDE</span><br /> INFLUENCE & IMPACT</strong>`"
+            :title="`<strong style='font-size: 40px !important; color:white'><span style='color:#CFB16D'>FUTURE TRENDS</span> GROUP</strong>`"
           />
+          
+          <p>
+              We are convinced that despite all the challenges the world is currently facing, we 
+              are also living in the most exciting time to be alive that holds unprecedented change 
+              and transformational potential for our world, the whole economy, and each individual, if 
+              the existing solutions and available opportunities are made accessible and are acknowledged and used consciously.
+            </p>
+            
+
+            <div class="row"  >
+              <div class="col-md-1"></div>
+              <div class="col-md-3">
+                  <NuxtLink
+                    :class="$style.btn_second"
+                    class="btn btn-sm btn-outline-primary"
+                      style="padding-top: 18px; padding-bottom:18px;"
+                  >
+                    <span><span style="color: #ffffff">WEBSITE</span></span>
+                  </NuxtLink>
+              </div>
+              <div class='col-md-3'>
+                  <NuxtLink
+                    :class="$style.btn_second"
+                    class="btn btn-sm btn-outline-primary"
+                      style=" padding-top: 18px; padding-bottom:18px;"
+                  >
+                    <span style="color: white;">MATRIX</span>
+                  </NuxtLink>
+              </div>
+              <div class='col-md-3'>
+                  <NuxtLink
+                    :class="$style.btn_second"
+                    class="btn btn-sm btn-outline-primary"
+                    style="background-color: #CFB16D;"
+                  >
+                    <span style="color: white;">EXPERIENCE <br/>IN Fxpo</span>
+                  </NuxtLink>
+              </div>
+              <div class="col-md-2"></div>
+              </div>
+              <br/>
+            
         </div>
         <div class="col-12 col-lg-6">
           <MainSectionTextContent :class="$style.text">
-            <p>
-              The First time in history our platform makes it possible, that
-              Individuals, projects and companies can come together in one fully
-              immersive experience, accessible 24/7 from anywhere around the
-              world, to connect, communicate, share & exchange valuable
-              knowledge, solutions, goods, services or assets, and work together
-              using our platform as a catalyst to accelerate everyones progress
-              and success, while every contribution is rewarded.
-            </p>
-          </MainSectionTextContent>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
           <MediaPicture
-            :class="$style.video"
-            :src="Video"
+            :class="$style.VisionImg"
+            :src="VisionImg"
             :width="1170"
             :height="656"
           />
-          <br />
-          <br />
-          <br />
+          </MainSectionTextContent>
         </div>
       </div>
+
+      <FutureGroupSlider/>
 
       <div class="row">
         <div class="col-12 col-lg-6" :class="$style.leftCol">
           <MainSectionHeader
-            :title="`<strong>Our <span style='color:white'>Vision</span> is clear</strong>`"
+            :title="`<strong>Future Trends Matrix <br/><span style='color:white'>Influence & impact</span></strong>`"
             :class="$style.header"
           />
-          <MainSectionTextContent>
-            <p>
-              We are convinced that despite all the challenges the world is
-              currently facing, we are also living in the most exciting time to
-              be alive that holds unprecedented change and transformational
-              potential for our world, the whole economy, and each individual,
-              if the existing solutions and available opportunities are made
-              accessible and are acknowledged and used consciously.
-            </p>
-          </MainSectionTextContent>
         </div>
         <div class="col-12 col-lg-6" style="margin-top: 0px">
-          <MediaPicture :src="VisionImg" :width="539" :height="319" />
-        </div>
-      </div>
-
-      <div class="row" :class="$style.item">
-        <div class="col-12 col-lg-6">
-          <MediaPicture :src="MissionImg" :width="539" :height="319" />
-        </div>
-        <div class="col-12 col-lg-6" :class="$style.leftCol">
-          <MainSectionHeader
-            :title="`<strong>our <span style='color:white'>Mission</span> is Simple</strong>`"
-            :class="$style.header"
-          />
           <MainSectionTextContent>
             <p>
-              We designed and built the FXPO to demonstrate how, in a world
-              where challenges and opportunities coexist, the latest advances in
-              technology can be used in ways never seen before in a meaningful
-              and forward-thinking way to accelerate a more sustainable,
-              inspiring and meaningful future for all, and at the same time to
-              open up the possibility for everyone to gain access to these new
-              opportunities and to make them usable in essence to create more
-              value for every individual, every project and every company that
-              resonates with this purpose.
+              The First time in history our platform makes it possible, that Individuals, projects and 
+              companies can come together in one fully immersive experience, accessible 24/7 from anywhere 
+              around the world, to connect, communicate, share & exchange valuable knowledge, solutions, goods,
+               services or assets, and work together using our platform as a catalyst to accelerate everyones 
+               progress and success, while every contribution is rewarded.
             </p>
           </MainSectionTextContent>
         </div>
       </div>
 
-      <div class="row" :class="$style.row" style="margin-top:100px">
+      <QuestGallerySection/>
+
+      <div class="row"  >
+        <div class="col-md-2"></div>
+        <div class="col-md-3">
+            <NuxtLink
+              :class="$style.btn_second"
+              class="btn btn-sm btn-outline-primary"
+                style="padding-top: 18px; padding-bottom:18px;"
+            >
+              <span><span style="color: #ffffff">FUTURE TRENDS WEBSITE</span></span>
+            </NuxtLink>
+          </div>
+          <div class='col-md-3'>
+            <NuxtLink
+              :class="$style.btn_second"
+              class="btn btn-sm btn-outline-primary"
+                style=" padding-top: 18px; padding-bottom:18px;"
+            >
+              <span style="color: white;">FUTURE TRENDS MATRIX</span>
+            </NuxtLink>
+          </div>
+          <div class='col-md-4'>
+            <NuxtLink
+              :class="$style.btn_second"
+              class="btn btn-sm btn-outline-primary"
+                style="background-color: #CFB16D;"
+            >
+              <span style="color: white;">EXPERIENCE <br/>IN FUTURE MULTIVERSE</span>
+            </NuxtLink>
+          </div>
+          </div>
+
+      <div class="row" :class="$style.row" style="margin-top:40px">
         <div class="col-12 col-lg-6">
           <MainSectionHeader
             :class="$style.header"
-            :title="`<strong style='color:CFB16D'>THE <span style='color:#FFFFFF'> OPPORTUNITUES</span><br /> FORE EVERYONE</strong>`"
+            :title="`<strong style='color:CFB16D; font-size: 37px !important;'>FUTURE <span style='color:#FFFFFF'> MULTIVERSE & </span><br /> FUTURE <span style='color:#ffffff'>TRENDS CATALYST </span></strong>`"
           />
         </div>
         <div class="col-12 col-lg-6">
           <MainSectionTextContent :class="$style.text">
-            <p>
-              The First time in history our platform makes it possible, that
-              Individuals, projects and companies can come together in one fully
-              immersive experience, accessible 24/7 from anywhere around the
-              world, to connect, communicate, share & exchange valuable
-              knowledge, solutions, goods, services or assets, and work together
-              using our platform as a catalyst to accelerate everyones progress
-              and success, while every contribution is rewarded.
+            <p>The Future Multiverse is a multi-dimensional eco-system created to be a catalyst for humanity's destined future. <br/><br/>
+              Catalyzing the Future Trends Groups' network & influence in 150+ countries, we are empowering the most meaningful movement in history. 
             </p>
           </MainSectionTextContent>
         </div>
@@ -114,6 +142,36 @@
           />
           <br />
           <br />
+          <div class="row">
+              <div class="col-md-3"></div>  
+              <div class="col-md-2">
+                <NuxtLink
+                  :class="$style.btn_second"
+                  class="btn btn-sm btn-outline-primary"
+                >
+                  <span>LEARN MORE <span style="color: #ffffff"><br/>(GUIDEBOOK)</span></span>
+                </NuxtLink>
+              </div>
+              <div class="col-md-2">
+                <NuxtLink
+                  :class="$style.btn_second"
+                  class="btn btn-sm btn-outline-primary"
+                  style="padding-top:18px; padding-bottom: 18px;"
+                >
+                  <span style=" font-size:11px; color: white;">ENTER <span style="color: #CFB16D"> THE FUTURE</span></span>
+                </NuxtLink>
+              </div>  
+              <div class="col-md-2">
+                <NuxtLink
+                  :class="$style.btn_second"
+                  class="btn btn-sm btn-outline-primary"
+                  style="padding-top:18px; padding-bottom: 18px;"
+                >
+                  <span style="color: white;"><span style="color: #CFB16D">DISCOVER </span>MAP</span>
+                </NuxtLink>
+                </div>
+              <div class="col-md-1"></div>  
+            </div>
           <br />
         </div>
       </div>
@@ -133,6 +191,8 @@ import {
   shallowRef,
 } from 'vue';
 import Swiper, { FreeMode } from 'swiper';
+import QuestGallerySection from '~/components/Slider/QuestGallerySection.vue';
+import FutureGroupSlider from '~/components/Slider/FutureGroupSlider.vue';
 import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MainSectionHeader from '~/components/MainSection/MainSectionHeader.vue';
 import MainSectionTextContent from '~/components/MainSection/MainSectionTextContent.vue';
@@ -203,10 +263,11 @@ onBeforeUnmount(() => {
 
 .row {
   @include rfs(112px, --gutter-x);
+  margin-top: 30px;
 }
 
 .header {
-  @include margin-bottom(55px);
+  @include margin-bottom(25px);
 }
 
 .text {

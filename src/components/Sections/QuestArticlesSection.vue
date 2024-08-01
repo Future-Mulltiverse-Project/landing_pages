@@ -4,7 +4,7 @@
       <div class="row" :class="$style.item">
           <MainSectionHeader
             :title="`<strong>THE <span style='color:white'>MOVEMENT</span></strong>`"
-            :class="$style.header"
+            
           />
         <div class="col-12 col-lg-6" :class="$style.leftCol">
           <MainSectionHeader
@@ -20,14 +20,22 @@
               if the existing solutions and available opportunities are made
               accessible and are acknowledged and used consciously.
             </p>
+            
           </MainSectionTextContent>
         </div>
         
-        <div class="col-12 col-lg-6" style="margin-top: 0px;">
+        <div class="col-12 col-lg-6">
           <MediaPicture :src="VisionImg" :width="539" :height="319" />
         </div>
       </div>
+
+      <QuestTopSlider/>
+
       <div class="row" :class="$style.item">
+        <div class="col-12 col-lg-6">
+          <MediaPicture :src="MissionImg" :width="539" :height="319" />
+        </div>
+        
         <div class="col-12 col-lg-6" :class="$style.leftCol">
           <MainSectionHeader
             :title="`<strong>our <span style='color:white'>Mission</span> is Simple</strong>`"
@@ -47,10 +55,9 @@
             </p>
           </MainSectionTextContent>
         </div>
-        <div class="col-12 col-lg-6">
-          <MediaPicture :src="MissionImg" :width="539" :height="319" />
-        </div>
       </div>
+
+      <QuestSecondSlider/>
     </AppWrapper>
   </section>
 </template>
@@ -62,11 +69,13 @@ import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MainSectionHeader from '~/components/MainSection/MainSectionHeader.vue';
 import MainSectionTextContent from '~/components/MainSection/MainSectionTextContent.vue';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
+import QuestTopSlider from '~/components/Slider/QuestTopSlider.vue';
+import QuestSecondSlider from '~/components/Slider/QuestSecondSlider.vue';
 </script>
 
 <style lang="scss" module>
 .section {
-  @include padding(70px 0 126px);
+  @include padding(70px 0 50px);
   background: radial-gradient(1160px 420px at center, #23274a, transparent);
 }
 

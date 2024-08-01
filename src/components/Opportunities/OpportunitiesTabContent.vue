@@ -1,6 +1,10 @@
 <template>
   <div :class="$style.panel">
+          <MediaPicture :src="Video" :width="539" :height="319" />
+          <br/>
+          <br/>
     <div v-if="selectedItem.items?.length" :class="$style.listContainer">
+
       <ul class="row" :class="$style.list">
         <li
           v-for="(item, index) in selectedItem.items"
@@ -40,6 +44,7 @@
 import { Opportunity } from '~/components/Opportunities/useOpportunitiesItems';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
 import CheckCircle from '~/assets/images/check-circle.svg';
+import Video from '~/assets/images/quest_video.png';
 
 defineProps<{
   selectedItem: Opportunity;
