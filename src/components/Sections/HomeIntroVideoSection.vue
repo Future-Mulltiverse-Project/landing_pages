@@ -19,9 +19,9 @@
           Multiverse
         </span>
       </h1>
-      <button :class="$style.btn" class="btn btn-outline-primary" type="button">
-        Explore
-      </button>
+      <a href='https://www.futuremultiverse.com/quest' :class="$style.btn" class="btn btn-outline-primary" >
+          Explore
+      </a>
     </AppWrapper>
     <div :class="$style.scroll">
       <ScrollIcon />

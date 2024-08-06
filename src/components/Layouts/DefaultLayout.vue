@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.main">
-    <AppHeader />
+    <AppHeader  style="position: fixed" />
     <slot />
     <AppFooter />
     <ClientOnly>

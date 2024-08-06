@@ -8,7 +8,7 @@
       <strong style="color: #ffffff">
         <span style="color: #cfb16d">REGISTER</span> NOW &<br />
         <span style="color: #cfb16d">SAVE YOUR SEAT</span> FOR <br />
-        THE <span style="color: #cfb16d">VIP PRE-LAUNCH</span> OF
+        THE <span style="color: #cfb16d">PRE-LAUNCH</span> OF
         <br />THE <span style="color: #cfb16d; font-size: 80px">FUTURE</span>
         <span style="color: #ffffff; font-size: 80px">!</span><br />
         <!--span style="color: #cfb16d;">MULTIVERSE</span> & <span style="color: #cfb16d;">EXPO</span-->

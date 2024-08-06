@@ -17,47 +17,42 @@
             
 
             <div class="row"  >
-              <div class="col-md-1"></div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                   <NuxtLink
                     :class="$style.btn_second"
                     class="btn btn-sm btn-outline-primary"
-                      style="padding-top: 18px; padding-bottom:18px;"
+                      style="padding-top: 18px; padding-bottom:18px;width:100%; font-size:15px"
                   >
                     <span><span style="color: #ffffff">WEBSITE</span></span>
                   </NuxtLink>
               </div>
-              <div class='col-md-3'>
+              <div class='col-md-4'>
                   <NuxtLink
                     :class="$style.btn_second"
                     class="btn btn-sm btn-outline-primary"
-                      style=" padding-top: 18px; padding-bottom:18px;"
+                      style=" padding-top: 18px; padding-bottom:18px; width:100%; font-size:15px"
                   >
                     <span style="color: white;">MATRIX</span>
                   </NuxtLink>
               </div>
-              <div class='col-md-3'>
+              <div class='col-md-4'>
                   <NuxtLink
                     :class="$style.btn_second"
                     class="btn btn-sm btn-outline-primary"
-                    style="background-color: #CFB16D;"
+                    style="background-color: #CFB16D;font-size:12px; width:100%;"
                   >
                     <span style="color: white;">EXPERIENCE <br/>IN Fxpo</span>
                   </NuxtLink>
               </div>
-              <div class="col-md-2"></div>
-              </div>
-              <br/>
+            </div>
+            <br/>
             
         </div>
         <div class="col-12 col-lg-6">
           <MainSectionTextContent :class="$style.text">
-          <MediaPicture
-            :class="$style.VisionImg"
-            :src="VisionImg"
-            :width="1170"
-            :height="656"
-          />
+            
+          <iframe style="width: 100%;" height="319" src="https://www.youtube.com/embed/o_LwGcSnxBg"></iframe>
+
           </MainSectionTextContent>
         </div>
       </div>
@@ -134,12 +129,9 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <MediaPicture
-            :class="$style.video"
-            :src="Video"
-            :width="1170"
-            :height="656"
-          />
+        <div class="col-12 col-lg-12">
+          <iframe style="width: 100%;" height="656" src="https://www.youtube.com/embed/ttm0a_P1sGc"></iframe>
+        </div>
           <br />
           <br />
           <div class="row">

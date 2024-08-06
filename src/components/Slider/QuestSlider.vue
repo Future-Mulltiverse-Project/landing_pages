@@ -79,10 +79,10 @@
             navigation
             :pagination="{ clickable: true }"
             class="mySwiper"
-            style="background-color: #15172E;"
+            style="background-color: #0A0D1D;"
           >
-            <swiper-slide v-for="(item, index) in items" :key="index">
-              <img :src="item" style="width: 100% !important; height: 100% !important;" draggable="true" />
+          <swiper-slide v-for="(item, index) in items" :key="index" style="width: unset !important ; min-width: 120px !important; max-width: 300px !important;  min-height: 170px !important; max-height: 300px !important; ">
+              <img :src="item" style="width: 100% !important;" draggable="true" />
             </swiper-slide>
           </swiper>
         </div> 

@@ -6,34 +6,35 @@
             :title="`<strong>THE <span style='color:white'>MOVEMENT</span></strong>`"
             
           />
-        <div class="col-12 col-lg-6" :class="$style.leftCol">
+        <div class="col-12 col-lg-6" :class="$style.leftCol" style="margin-top: 0px !important;">
           <MainSectionHeader
             :title="`<strong>Our <span style='color:white'>Vision</span> is clear</strong>`"
             :class="$style.header"
           />
           <MainSectionTextContent>
             <p>
-              We are convinced that despite all the challenges the world is
-              currently facing, we are also living in the most exciting time to
-              be alive that holds unprecedented change and transformational
-              potential for our world, the whole economy, and each individual,
-              if the existing solutions and available opportunities are made
-              accessible and are acknowledged and used consciously.
+              We are convinced that despite all the challenges the world is currently facing,
+               we are also living in the most exciting time to be alive that holds unprecedented
+                change and transformational potential for our world, the whole economy, and each 
+                individual, if the already existing solutions and available opportunities are made 
+                accessible & inspired to be used purposefully & wisely.
             </p>
             
           </MainSectionTextContent>
         </div>
         
         <div class="col-12 col-lg-6">
-          <MediaPicture :src="VisionImg" :width="539" :height="319" />
+          <iframe style="width: 100%;" height="319" src="https://www.youtube.com/embed/ttm0a_P1sGc"></iframe>
         </div>
       </div>
 
       <QuestTopSlider/>
+      <br/>
+      <br/>
 
       <div class="row" :class="$style.item">
         <div class="col-12 col-lg-6">
-          <MediaPicture :src="MissionImg" :width="539" :height="319" />
+          <iframe style="width: 100%;" height="319" src="https://www.youtube.com/embed/o_LwGcSnxBg"></iframe>
         </div>
         
         <div class="col-12 col-lg-6" :class="$style.leftCol">
@@ -43,15 +44,12 @@
           />
           <MainSectionTextContent>
             <p>
-              We designed and built the FXPO to demonstrate how, in a world
-              where challenges and opportunities coexist, the latest advances in
-              technology can be used in ways never seen before in a meaningful
-              and forward-thinking way to accelerate a more sustainable,
-              inspiring and meaningful future for all, and at the same time to
-              open up the possibility for everyone to gain access to these new
-              opportunities and to make them usable in essence to create more
-              value for every individual, every project and every company that
-              resonates with this purpose.
+              We designed and built the Future Multiverse & EXPO to demonstrate how, 
+              in a world where challenges and opportunities coexist, the latest advancements 
+              in technology can be used in forward-thinking ways never seen before, to accelerate
+               a more sustainable, meaningful & inspiring  future for all, and to open up the 
+               possibility for everyone to gain access to these new opportunities, to create 
+               value for every individual, every project and every company that resonates with this purpose.
             </p>
           </MainSectionTextContent>
         </div>

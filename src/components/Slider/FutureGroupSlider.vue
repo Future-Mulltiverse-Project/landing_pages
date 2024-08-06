@@ -12,7 +12,7 @@
             class="mySwiper"
             style="background-color: #0A0D1D;"
           >
-            <swiper-slide v-for="(item, index) in items" :key="index">
+          <swiper-slide v-for="(item, index) in items" :key="index" style="width: unset !important ; min-height: 166px; max-height: 300px; min-width: 120 !important; max-width: 500px !important; ">
               <img :src="item" style="width: 100% !important; height: 88% !important;" draggable="true" />
             </swiper-slide>
           </swiper>

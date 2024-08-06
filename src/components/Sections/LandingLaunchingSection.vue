@@ -6,7 +6,7 @@
         <div class="col-md-6">
           <LandingHomeMainSectionHeader
             :class="$style.header"
-            :title="'REGISTER NOW & SAVE YOUR SEAT FOR THE VIP PRE-LAUNCH OF THE FUTURE!'"
+            :title="'REGISTER NOW & SAVE YOUR SEAT FOR THE PRE-LAUNCH OF THE FUTURE!'"
             title-lg
           />
 
@@ -33,7 +33,6 @@
               </div>
               <div class="col-md-5" :class="$style.btn_special2">
                 <NuxtLink
-                  to="https://sandbox.futuremultiverse.dev/"
                   class="btn btn--primary-inverted"
                   :class="$style.btn"
                   style="
@@ -66,7 +65,7 @@
             <SubLaunchingTimerItem>
               <p :class="$style.text1">
                 <br />
-                <span style="font-size: 60px; color: white" :class="$style.date_format">JULY 2024</span>
+                <span style="font-size: 60px; color: white" :class="$style.date_format">AUGUST 2024</span>
               </p>
             </SubLaunchingTimerItem>
           </LaunchingTimerWrapper>

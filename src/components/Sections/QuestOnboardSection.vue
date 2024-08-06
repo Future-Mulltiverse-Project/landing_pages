@@ -3,15 +3,16 @@
     <MediaPicture :src="Bg" :width="1400" :height="428" layout="fill" />
     <AppWrapper >
       <h2 :class="$style.title">
-        The <span :class="$style.title_gold"> Breakthrough </span> and <span :class="$style.title_gold"> Legacy </span><br/> we are able to <span :class="$style.title_gold">create together </span>
+        The <span :class="$style.title_gold"> Breakthrough </span> & <span :class="$style.title_gold"> Legacy </span><br/> we are able to <span :class="$style.title_gold">create together </span>
       </h2>
       <h3 :class="$style.heading">
         A new world & a sustainable, meaningful and inspiring future for
         everyone!
       </h3>
-      <p style="color:white">Partner with us today <span :class="$style.title_gold">to join and become part of our movement!</span></p>
+      <p style="color:white; text-decoration: underline; ">Partner with us today <span :class="$style.title_gold">to join and become part of our movement!</span></p>
       <p style="color: white;">We help you to accelerate and scale your future<span :class="$style.title_gold">, serving you <br/> with our product & service packages, technologies, applications & networks,<br/> and </span>together we have the opportunity to server and impact the future of our world<span :class="$style.title_gold">!</span></p>
-      <h4  style="text-align: center;color:white" ><span :class="$style.title_gold">"</span>In the moments of our decisions, destiny is shaped!<span :class="$style.title_gold">"</span><br/><span :class="$style.title_gold" style="text-align: center;">Tony Robbins</span></h4>
+      <p  style="text-align: center;color:white; margin-bottom: 0px; font-style: italic;" ><span :class="$style.title_gold" >"</span>In the moments of our decisions, destiny is shaped!<span :class="$style.title_gold">"</span><br/></p>
+      <p :class="$style.title_gold" style="text-align: center;">Tony Robbins</p>
     </AppWrapper>
   </section>
   
@@ -81,7 +82,9 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
   margin-right: auto;
   color: white;
 }
-
+p{
+  font-size: 19px;
+}
 .title_gold{
   color: #CFB16D ;
 }

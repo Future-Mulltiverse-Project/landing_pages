@@ -18,11 +18,11 @@
           <div :class="$style.menuInner">
             <nuxt-link :class="[$style.link_sub]">Welcome, Overview & Examples
             </nuxt-link>
-            <nuxt-link to="/launch" :class="$style.link_sub">Enter Future Multiverse & EXPO
+            <nuxt-link :class="$style.link_sub">Enter Future Multiverse & EXPO
             </nuxt-link>
-            <nuxt-link to="https://map.futuremultiverse.dev/" :class="$style.link_sub">Explore Map
+            <nuxt-link  :class="$style.link_sub">Explore Map
             </nuxt-link>
-            <nuxt-link to="/packages" :class="$style.link_sub">Product & Service Packages
+            <nuxt-link :class="$style.link_sub">Product & Service Packages
             </nuxt-link>
             <nuxt-link :class="$style.link_sub">Advanced Technologies
             </nuxt-link>
@@ -38,37 +38,22 @@
         </div>
         <div :class="$style.menu" style="min-width: 12rem !important">
           <div :class="$style.menuInner">
-            <nuxt-link to="/launchpad" :class="[$style.link_sub]">LaunchPad
+            <nuxt-link :class="[$style.link_sub]">LaunchPad
             </nuxt-link>
-            <nuxt-link to="/marketplace" :class="$style.link_sub">Marketplace
+            <nuxt-link :class="$style.link_sub">Marketplace
             </nuxt-link>
-            <nuxt-link to="/blockchain" :class="$style.link_sub">Blockchain
+            <nuxt-link :class="$style.link_sub">Blockchain
             </nuxt-link>
             <nuxt-link :class="$style.link_sub">LAB
             </nuxt-link>
           </div>
         </div>
       </li>
-      <li :class="[$style.dropdown]" class="col-auto">
-        <nuxt-link exact :class="$style.link">Initiative</nuxt-link>
-        <div :class="$style.menu_spacer">
-          <div :class="$style.menuInner">
-            <nuxt-link :class="[$style.link_sub]"></nuxt-link>
-          </div>
-        </div>
-        <div :class="$style.menu" style="min-width: 16rem !important">
-          <div :class="$style.menuInner">
-            <nuxt-link to="/quest" :class="[$style.link_sub]">Quest
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">Vision & Mission & Movement
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">Surprise Rise of Humanity
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">Future Trends Group
-            </nuxt-link>
-          </div>
-        </div>
+      
+      <li class="col-auto" style="margin-top: 8px;">
+        <nuxt-link  to="https://www.futuremultiverse.com/quest"  :class="$style.link">Movement</nuxt-link>
       </li>
+      
       <li :class="[$style.dropdown]" class="col-auto">
         <nuxt-link exact :class="$style.link">Launch</nuxt-link>
         <div :class="$style.menu_spacer">
@@ -105,14 +90,12 @@
       </li>
       <li class="col-auto" :class="$style.btnCol">
         <NuxtLink
-          to="https://sandbox.futuremultiverse.dev"
           class="btn btn-sm btn-outline-gradient-primary"
           :class="$style.btn"
         >
           Onboard
         </NuxtLink>
         <NuxtLink
-          to="https://sandbox.futuremultiverse.dev/"
           class="btn btn-sm btn-outline-gradient-primary"
           :class="$style.btn"
           style="margin-left: 30px"

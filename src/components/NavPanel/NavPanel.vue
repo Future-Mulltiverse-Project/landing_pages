@@ -13,115 +13,23 @@
       <div :class="$style.inner">
         <ul v-if="items && items.length">
           <li class="col-auto" style="margin-top: 8px;">
-        <nuxt-link exact :class="$style.link">Home</nuxt-link>
-      </li>
-      <li :class="[$style.dropdown]" class="col-auto">
-        <nuxt-link exact :class="$style.link">Future Multiverse</nuxt-link>
-        <div :class="$style.menu">
-          <div :class="$style.menuInner">
-            <nuxt-link :class="[$style.link_sub]">
-              <HalfArrowRightIcon />
-              Welcome, Overview & Examples
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              Enter Future Multiverse & EXPO
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              Explore Map
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              Product & Service Packages
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              Advanced Technologies
-            </nuxt-link>
-          </div>
-        </div>
-      </li>
-      <li :class="[$style.dropdown]" class="col-auto">
-        <nuxt-link exact :class="$style.link">Future Trends Catalyst</nuxt-link>
-        <div :class="$style.menu" style="min-width: 12rem !important">
-          <div :class="$style.menuInner">
-            <nuxt-link :class="[$style.link_sub]">
-              <HalfArrowRightIcon />
-              LaunchPad
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              Marketplace
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              Blockchain
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              LAB
-            </nuxt-link>
-          </div>
-        </div>
-      </li>
-      <li :class="[$style.dropdown]" class="col-auto">
-        <nuxt-link exact :class="$style.link">Initiative</nuxt-link>
-        <div :class="$style.menu" style="min-width: 16rem !important">
-          <div :class="$style.menuInner">
-            <nuxt-link :class="[$style.link_sub]">
-              <HalfArrowRightIcon />
-              Quest
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              Vision & Mission & Movement
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              Surprise Rise of Humanity
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              Future Trends Group
-            </nuxt-link>
-          </div>
-        </div>
-      </li>
-      <li :class="[$style.dropdown]" class="col-auto">
-        <nuxt-link exact :class="$style.link">Launch</nuxt-link>
-        <div :class="$style.menu" style="min-width: 12rem !important">
-          <div :class="$style.menuInner">
-            <nuxt-link :class="[$style.link_sub]">
-              <HalfArrowRightIcon />
-              VIP Pre-Launch
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              Pre-Launch
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              Public-Launch
-            </nuxt-link>
-          </div>
-        </div>
-      </li>
-      <li :class="[$style.dropdown]" class="col-auto">
-        <nuxt-link exact :class="$style.link">Grace AI</nuxt-link>
-        <div :class="$style.menu" style="min-width: 12rem !important">
-          <div :class="$style.menuInner">
-            <nuxt-link :class="[$style.link_sub]">
-              <HalfArrowRightIcon />
-              GuideBook
-            </nuxt-link>
-            <nuxt-link :class="$style.link_sub">
-              <HalfArrowRightIcon />
-              ChatGuide
-            </nuxt-link>
-          </div>
-        </div>
-      </li>
+            <nuxt-link exact :class="$style.link">Home</nuxt-link>
+          </li>
+          <li class="col-auto" style="margin-top: 8px;">
+            <nuxt-link :class="$style.link">Future Multiverse</nuxt-link>
+          </li>
+          <li class="col-auto" style="margin-top: 8px;">
+            <nuxt-link :class="$style.link">Future Trends Catalyst</nuxt-link>
+          </li>
+          <li class="col-auto" style="margin-top: 8px;">
+            <nuxt-link :class="$style.link">Movement</nuxt-link>
+          </li>
+          <li class="col-auto" style="margin-top: 8px;">
+            <nuxt-link :class="$style.link">Launch</nuxt-link>
+          </li>
+          <li class="col-auto" style="margin-top: 8px;">
+            <nuxt-link :class="$style.link">Grace AI</nuxt-link>
+          </li>
         </ul>
       </div>
     </aside>
@@ -195,7 +103,6 @@ const items = ref(useNavItems);
 }
 
 .inner {
-  display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: center;
@@ -225,11 +132,12 @@ const items = ref(useNavItems);
 }
 
 .link_sub {
-  @include font-size(16px);
+  @include font-size(17px);
   color: inherit;
   font-weight: 600;
+  cursor: pointer;
   transition: color 0.2s ease-in-out;
-  margin-top: 10px; /* Add this line */
+  margin-top: 2px; /* Add this line */
 
   &:global(.router-link-active) {
     color: $primary;
@@ -244,7 +152,7 @@ const items = ref(useNavItems);
 .dropdown {
   display: flex;
   position: relative;
-  margin-top: 8px;
+  margin-top: 1px;
 
   &:hover {
     //background-color: #000000;
@@ -257,18 +165,18 @@ const items = ref(useNavItems);
 }
 .menu {
   display: none;
-  min-width: rem-calc(18rem);
+  min-width: rem-calc(26rem);
   position: absolute;
   top: 100%;
 
   border-bottom: 4px solid #ffffff;
   padding-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 10px;
-  background-color: rgb(12, 12, 12, 0.5);
+  background-color: rgb(12, 12, 12, 1);
 
   .dropdown--top & {
-    top: auto;
+    top: 10px;
     bottom: 100%;
     right: 50%;
     transform: translateX(50%);
@@ -279,7 +187,7 @@ const items = ref(useNavItems);
     box-shadow: 0 0 rem-calc(25px) 0 rgba(#000, 0.2);
     width: 100%;
     padding: rem-calc(0 16px);
-    position: relative;
+    position: block;
 
     svg {
       fill: #ffffff;

@@ -6,7 +6,7 @@
       <h2 :class="$style.title">
         Onboard <span :class="$style.primaryText"> Now</span> & Save your <span :class="$style.primaryText"> Seat</span><br/> for the <span :class="$style.primaryText"> Launch</span> of <br/><span style="font-size: 70px"> the <span :class="$style.primaryText">future</span>!</span>
       </h2>
-      <h3 :class="$style.timerTitle">PLANNED <span style="color: #CFB16D;">VIP PRE-LAUNCH </span> MINT-EVENT</h3>
+      <h3 :class="$style.timerTitle">PLANNED <span style="color: #CFB16D;">PRE-LAUNCH </span> MINT-EVENT</h3>
       <LaunchingTimer
         :class="$style.timer"
         :datetime="config.public.MINT_EVENT_START_IN"

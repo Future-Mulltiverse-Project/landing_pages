@@ -7,10 +7,10 @@
          <span :class="$style.gold">TO </span>CATALYZE <br /><span :class="$style.gold">THE </span> DESTINY <br/>
           <span :class="$style.gold"> of </span>THE FUTURE
       </h2>
-      <MainSectionTextContent :class="$style.text">
+      <MainSectionTextContent :class="$style.text" style="max-width: 50rem;">
         <p>
-          <span :class="$style.gold">"</span>If you want to find the secrets of the Universe, think in terms of
-          energy, frequencies and vibration<span :class="$style.gold">."
+          <span :class="$style.gold">"</span>The day science / humanity begins to study non-physical phenomena, it will make more 
+          progress in one decade than in all the previous centuries of its existence.<span :class="$style.gold">",
           <br />
           Nikola Tesla</span>
         </p>
@@ -81,7 +81,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 .text {
   margin: 0 auto rem-calc(40px);
-  max-width: rem-calc(400px);
+  max-width: rem-calc(600px);
   text-align: center;
 
   p {
