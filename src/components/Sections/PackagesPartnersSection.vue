@@ -15,6 +15,7 @@
             <MediaPicture
               :class="$style.video"
               :src="Video"
+              style="width: auto !important;"
               :width="1170"
               :height="300"
             />

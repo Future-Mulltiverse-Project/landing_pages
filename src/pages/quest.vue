@@ -5,8 +5,7 @@
     <QuestArticlesSection />
     <QuestSlider/>
     <OpportunitiesSection />
-    <PartnersSection />
-    <QuestFewExamplesSlider/>
+    <ExampleImpressions/>
     <PackagesOpportunitiesSection />
     <QuestOnboardSection />
     <GuidebookSection/>
@@ -25,8 +24,7 @@ import QuestAboutSection from '~/components/Sections/QuestAboutSection.vue';
 import OpportunitiesSection from '~/components/Opportunities/OpportunitiesSection.vue';
 //import OpportunitiesSection2 from '~/components/Opportunities/PackagesOpportunitiesSection.vue';
 import PackagesOpportunitiesSection from '~/components/Opportunities/QuestOpportunitiesSection.vue';
-import QuestFewExamplesSlider from '~/components/Slider/QuestFewExamplesSlider.vue';
-import PartnersSection from '~/components/Sections/PartnersSection.vue';
+import ExampleImpressions from '~/components/Sections/ExampleImpressionsFXPO.vue';
 import QuestArticlesSection from '~/components/Sections/QuestArticlesSection.vue';
 import QuestOnboardSection from '~/components/Sections/QuestOnboardSection.vue';
 import GuidebookSection from '~/components/Sections/GuideBookSection.vue';

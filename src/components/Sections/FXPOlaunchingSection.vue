@@ -9,10 +9,10 @@
         <span :class="$style.primaryText" style="padding-top: 10px;"> FUTURE</span>!
         </h2>
         <h3 :class="$style.timerTitle">
-          <span style="color: #CFB16D;">VIP Pre-Launch Mint Event Start in:</span></h3>
-          <h1 style="font-size: 60px;">July 2024</h1>
+          <span style="color: #CFB16D;">Pre-Launch Mint Event Start in:</span></h3>
+          <h1 style="font-size: 60px;">August 2024</h1>
         <div style="padding-top: 40px;">
-          <NuxtLink to="https://sandbox.futuremultiverse.dev/" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
+          <NuxtLink to="#" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
             ONBOARD NOW
           </NuxtLink>
         </div>

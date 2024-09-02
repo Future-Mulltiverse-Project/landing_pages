@@ -9,7 +9,8 @@
             <MediaPicture
               :class="$style.video"
               :src="Video"
-              :width="1170"
+              style="width: auto !important;"
+              :width="1290"
               :height="300"
             />
             <br />
