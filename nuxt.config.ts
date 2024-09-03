@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   runtimeConfig: {
     public: {
       APP_NAME: 'Future Mulitverse',
@@ -86,10 +92,21 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet',
         },
       ],
+      script: [
+          {
+              type: 'text/javascript',
+              src: '~/assets/js/scripts.bundle.css',
+          },
+          {
+              type: 'text/javascript',
+              src: '~/assets/js/global/plugin.bundle.js',
+          }
+      ],
     },
   },
-  css: ['~/assets/styles/app.scss'],
-  modules: ['~/modules/purgecss','@nuxt/ui'],
+  //css: ['~/assets/styles/app.scss'],
+  css: ['~/assets/css/main.css','~/assets/css/metronic_styling.css'],
+  modules: ['~/modules/purgecss','@nuxt/ui', '@nuxtjs/tailwindcss'],
   experimental: {
     inlineSSRStyles: false,
   },
@@ -120,9 +137,5 @@ export default defineNuxtConfig({
   //   global: false,
   //   // dirs: ['],
   // },
-  components: {
-    // dirs: ['],
-    global: false,
-  },
   telemetry: false,
 });

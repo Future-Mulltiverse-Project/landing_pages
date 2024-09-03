@@ -68,7 +68,7 @@
         </div>
         <div class="col-12 col-lg-6" style="margin-top: 0px">
           <MainSectionTextContent>
-            <p>
+            <p class="text-black">
               The First time in history our platform makes it possible, that Individuals, projects and 
               companies can come together in one fully immersive experience, accessible 24/7 from anywhere 
               around the world, to connect, communicate, share & exchange valuable knowledge, solutions, goods,

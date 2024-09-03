@@ -4,7 +4,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-import PackageTable from '~/components/Package/PackageTable.vue';
+import PackageTable from '~/components/Packages/PackageTable.vue';
 
 const items = [
   {
