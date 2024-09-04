@@ -4596,13 +4596,21 @@ export default {
       return {
         script: [
           {
-             src:  '~/assets/js/scripts.bundle.js',
+             src:  '~/assets/js/scripts.bundle.js',  type: 'text/javascript'
+          },
+          {
+             src:  '~/assets/js/global/plugins.bundle.js',  type: 'text/javascript'
           }
         ],
       }
     }
   }
+
+
+@import "~/assets/js/scripts.bundle.js";
+@import "~/assets/js/global/plugins.bundle.js";
 </script>
+
 
 <style lang="scss" module>
 .el {

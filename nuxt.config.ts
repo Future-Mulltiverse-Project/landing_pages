@@ -99,12 +99,13 @@ export default defineNuxtConfig({
           },
           {
               type: 'text/javascript',
-              src: '~/assets/js/global/plugin.bundle.js',
+              src: 'assets/js/global/plugin.bundle.js',
           }
       ],
     },
   },
   //css: ['~/assets/styles/app.scss'],
+  script: ['~/assets/js/scripts.bundle.css','~/assets/js/global/plugin.bundle.js'],
   css: ['~/assets/css/main.css','~/assets/css/metronic_styling.css'],
   modules: ['~/modules/purgecss','@nuxt/ui', '@nuxtjs/tailwindcss'],
   experimental: {
