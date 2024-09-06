@@ -7,6 +7,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  //plugins: [ '@/assets/js/global/plugins.bundle.js', {src: '~/assets/js/global/plugins.bundle.js', mode:'client'}, ],
   runtimeConfig: {
     public: {
       APP_NAME: 'Future Mulitverse',
@@ -92,22 +94,22 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet',
         },
       ],
-      script: [
+      /*script: [
           {
               type: 'text/javascript',
-              src: '~/assets/js/scripts.bundle.css',
+              src: 'http://localhost:3001/_nuxt/assets/js/global/plugins.bundle.js',
+              defer: true 
           },
           {
               type: 'text/javascript',
-              src: 'assets/js/global/plugin.bundle.js',
+              src: 'http://localhost:3001/_nuxt/assets/js/scripts.bundle.js'
           }
-      ],
+      ],*/
     },
   },
   //css: ['~/assets/styles/app.scss'],
-  script: ['~/assets/js/scripts.bundle.css','~/assets/js/global/plugin.bundle.js'],
   css: ['~/assets/css/main.css','~/assets/css/metronic_styling.css'],
-  modules: ['~/modules/purgecss','@nuxt/ui', '@nuxtjs/tailwindcss'],
+  modules: ['~/modules/purgecss', '@nuxt/ui', '@nuxtjs/tailwindcss', 'shadcn-nuxt'],
   experimental: {
     inlineSSRStyles: false,
   },
@@ -139,4 +141,6 @@ export default defineNuxtConfig({
   //   // dirs: ['],
   // },
   telemetry: false,
+  
+  componentDir: './components/ui'
 });
