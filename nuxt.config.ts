@@ -110,6 +110,18 @@ export default defineNuxtConfig({
   //css: ['~/assets/styles/app.scss'],
   css: ['~/assets/css/main.css','~/assets/css/metronic_styling.css'],
   modules: ['~/modules/purgecss', '@nuxt/ui', '@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  
+  shadcn: {
+    /**
+     * Prefix for all the imported component
+     */
+    prefix: '',
+    /**
+     * Directory that the component lives in.
+     * @default "./components/ui"
+     */
+    componentDir: './components/ui'
+  },
   experimental: {
     inlineSSRStyles: false,
   },
@@ -131,7 +143,7 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
-  srcDir: 'src/',
+  //srcDir: 'src/',
   // build: {
   //   transpile: [],
   // },
@@ -140,7 +152,5 @@ export default defineNuxtConfig({
   //   global: false,
   //   // dirs: ['],
   // },
-  telemetry: false,
-  
-  componentDir: './components/ui'
+  //telemetry: false,
 });
