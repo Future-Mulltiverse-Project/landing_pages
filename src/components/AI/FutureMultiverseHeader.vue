@@ -1,8 +1,8 @@
 <template>
   <header :class="$style.el">
     <div :class="$style.wrapper">
-      <div class="row" :class="$style.row">
-        <div class="col-auto">
+      <div class="grid grid-cols-2 gap-3 mt-8 mb-8 ">
+        <div>
           <div :class="$style.logo">
             <div :class="$style.logoIcon">
               <MediaPicture
@@ -19,7 +19,7 @@
             </span>
           </div>
         </div>
-        <div class="col">
+        <div>
           <div class="row" :class="$style.rightRow">
             <div class="col" :class="$style.navCol"></div>
             <div class="col-auto" :class="$style.btnsCol">

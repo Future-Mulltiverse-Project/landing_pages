@@ -1,79 +1,49 @@
 <template>
-  <section :class="$style.section">
+  <section >
     <AppWrapper>
-      <div class="row" :class="$style.row">
-        <div class="col-12 col-lg-6">
-          <MainSectionHeader
-            :class="$style.header"
-            :title="`<strong style='font-size: 40px !important; color:white'><span style='color:#CFB16D'>FUTURE TRENDS</span> GROUP</strong>`"
-          />
-          
-          <p>
-              We are convinced that despite all the challenges the world is currently facing, we 
-              are also living in the most exciting time to be alive that holds unprecedented change 
-              and transformational potential for our world, the whole economy, and each individual, if 
-              the existing solutions and available opportunities are made accessible and are acknowledged and used consciously.
-            </p>
-            
+      <div class="grid grid-cols-1 gap-3 mt-8 md:grid-cols-2">
+        <div class="md:order-first">
+          <h2 class="mb-3">
+            <strong style="font-size: 40px !important; color:white"><span style="color:#CFB16D">FUTURE TRENDS</span> GROUP</strong>
+          </h2>
 
-            <div class="row"  >
-              <div class="col-md-4">
-                  <NuxtLink
-                    :class="$style.btn_second"
-                    class="btn btn-sm btn-outline-primary"
-                      style="padding-top: 18px; padding-bottom:18px;width:100%; font-size:15px"
-                  >
-                    <span><span style="color: #ffffff">WEBSITE</span></span>
-                  </NuxtLink>
-              </div>
-              <div class='col-md-4'>
-                  <NuxtLink
-                    :class="$style.btn_second"
-                    class="btn btn-sm btn-outline-primary"
-                      style=" padding-top: 18px; padding-bottom:18px; width:100%; font-size:15px"
-                  >
-                    <span style="color: white;">MATRIX</span>
-                  </NuxtLink>
-              </div>
-              <div class='col-md-4'>
-                  <NuxtLink
-                    :class="$style.btn_second"
-                    class="btn btn-sm btn-outline-primary"
-                    style="background-color: #CFB16D;font-size:12px; width:100%;"
-                  >
-                    <span style="color: white;">EXPERIENCE <br/>IN Fxpo</span>
-                  </NuxtLink>
-              </div>
-            </div>
-            <br/>
-            
+          <p class="pb-3 text-lg">
+            We are convinced that despite all the challenges the world is currently facing, we 
+            are also living in the most exciting time to be alive that holds unprecedented change 
+            and transformational potential for our world, the whole economy, and each individual, if 
+            the existing solutions and available opportunities are made accessible and are acknowledged and used consciously.
+          </p>
+
+          <div class="flex items-baseline mt-4 mb-12 flex-wrap "> 
+            <button class="btn btn-outline-primary font-semibold mr-2 mb-2" style="padding-left: 40px; padding-right: 40px;">website</button>
+            <button class="btn btn-outline-primary font-semibold mr-2 mb-2" style="padding-left: 40px; padding-right: 40px;">Matrix</button>
+            <button class="btn btn-outline-primary font-semibold mr-2 mb-2" style="padding-left: 40px; padding-right: 40px; background-color: #CFB16D">Experience in fxpo</button>
+          </div>
         </div>
-        <div class="col-12 col-lg-6">
-          <MainSectionTextContent :class="$style.text">
-            
-          <iframe style="width: 100%;" height="319" src="https://www.youtube.com/embed/o_LwGcSnxBg"></iframe>
-
+        <div class="pr-5 md:pr-0">
+          <MainSectionTextContent :class="$style.text">      
+            <iframe style="width: 100%;" height="330" src="https://www.youtube.com/embed/o_LwGcSnxBg"></iframe>
           </MainSectionTextContent>
         </div>
       </div>
 
       <FutureGroupSlider/>
 
-      <div class="row">
-        <div class="col-12 col-lg-6" :class="$style.leftCol">
+      <div class="grid grid-cols-1 gap-3 mt-12 mb-12 md:grid-cols-2">
+        <div class="md:order-first">
           <MainSectionHeader
-            :title="`<strong>Future Trends Matrix <br/><span style='color:white'>Influence & impact</span></strong>`"
-            :class="$style.header"
+            :title="`<strong class='text-5xl font-medium' >Future Trends Matrix <br/><span style='color:white'>Influence & impact</span></strong>`"
+            class="font-light"
           />
         </div>
-        <div class="col-12 col-lg-6" style="margin-top: 0px">
+        <div class="">
           <MainSectionTextContent>
-            <p class="text-black">
+            <p class="text-white">
               The First time in history our platform makes it possible, that Individuals, projects and 
               companies can come together in one fully immersive experience, accessible 24/7 from anywhere 
               around the world, to connect, communicate, share & exchange valuable knowledge, solutions, goods,
-               services or assets, and work together using our platform as a catalyst to accelerate everyones 
-               progress and success, while every contribution is rewarded.
+              services or assets, and work together using our platform as a catalyst to accelerate everyones 
+              progress and success, while every contribution is rewarded.
             </p>
           </MainSectionTextContent>
         </div>
@@ -81,93 +51,66 @@
 
       <QuestGallerySection/>
 
-      <div class="row"  >
-        <div class="col-md-2"></div>
-        <div class="col-md-3">
-            <NuxtLink
-              :class="$style.btn_second"
-              class="btn btn-sm btn-outline-primary"
-                style="padding-top: 18px; padding-bottom:18px;"
-            >
-              <span><span style="color: #ffffff">FUTURE TRENDS WEBSITE</span></span>
-            </NuxtLink>
-          </div>
-          <div class='col-md-3'>
-            <NuxtLink
-              :class="$style.btn_second"
-              class="btn btn-sm btn-outline-primary"
-                style=" padding-top: 18px; padding-bottom:18px;"
-            >
-              <span style="color: white;">FUTURE TRENDS MATRIX</span>
-            </NuxtLink>
-          </div>
-          <div class='col-md-4'>
-            <NuxtLink
-              :class="$style.btn_second"
-              class="btn btn-sm btn-outline-primary"
-                style="background-color: #CFB16D;"
-            >
-              <span style="color: white;">EXPERIENCE <br/>IN FUTURE MULTIVERSE</span>
-            </NuxtLink>
-          </div>
-          </div>
+      <div class="flex items-baseline mt-12 mb-12 justify-center flex-wrap"> 
+        <button class="btn btn-outline-primary font-semibold mr-2 mb-2">Future Trends website</button>
+        <button class="btn btn-outline-primary font-semibold mr-2 mb-2">Future Trends Matrix</button>
+        <button class="btn btn-outline-primary font-semibold mr-2 mb-2" style="background-color: #CFB16D;">Experience in future mutliverse</button>
+      </div>
 
-      <div class="row" :class="$style.row" style="margin-top:40px">
-        <div class="col-12 col-lg-6">
+      <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+        <div  class="md:order-first">
           <MainSectionHeader
-            :class="$style.header"
+            class="font-light"
             :title="`<strong style='color:CFB16D; font-size: 37px !important;'>FUTURE <span style='color:#FFFFFF'> MULTIVERSE & </span><br /> FUTURE <span style='color:#ffffff'>TRENDS CATALYST </span></strong>`"
           />
         </div>
-        <div class="col-12 col-lg-6">
-          <MainSectionTextContent :class="$style.text">
-            <p>The Future Multiverse is a multi-dimensional eco-system created to be a catalyst for humanity's destined future. <br/><br/>
-              Catalyzing the Future Trends Groups' network & influence in 150+ countries, we are empowering the most meaningful movement in history. 
+        <div>
+          <MainSectionTextContent >
+            <p class="text-base" >The Future Multiverse is a multi-dimensional eco-system created to be a catalyst for humanity's destined future. <br/>
+              Catalyzing the Future Trends Groups' network & influence in 150+ <br/>countries, we are empowering the most meaningful movement in history. 
             </p>
           </MainSectionTextContent>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-        <div class="col-12 col-lg-12">
+      
+
+      <div class="grid grid-cols-1 gap-2 mt-12">
+        <div>
           <iframe style="width: 100%;" height="656" src="https://www.youtube.com/embed/ttm0a_P1sGc"></iframe>
         </div>
-          <br />
-          <br />
-          <div class="row">
-              <div class="col-md-3"></div>  
-              <div class="col-md-2">
-                <NuxtLink
-                  to="https://future-multiverse.gitbook.io/guidebook"
-                  :class="$style.btn_second"
-                  class="btn btn-sm btn-outline-primary"
-                >
-                  <span>LEARN MORE <span style="color: #ffffff"><br/>(GUIDEBOOK)</span></span>
-                </NuxtLink>
-              </div>
-              <div class="col-md-2">
-                <NuxtLink
-                  :class="$style.btn_second"
-                  class="btn btn-sm btn-outline-primary"
-                  style="padding-top:18px; padding-bottom: 18px;"
-                >
-                  <span style=" font-size:11px; color: white;">ENTER <span style="color: #CFB16D"> THE FUTURE</span></span>
-                </NuxtLink>
-              </div>  
-              <div class="col-md-2">
-                <NuxtLink
-                  to="https://map.futuremultiverse.dev"
-                  :class="$style.btn_second"
-                  class="btn btn-sm btn-outline-primary"
-                  style="padding-top:18px; padding-bottom: 18px;"
-                >
-                  <span style="color: white;"><span style="color: #CFB16D">DISCOVER </span>MAP</span>
-                </NuxtLink>
-                </div>
-              <div class="col-md-1"></div>  
-            </div>
-          <br />
-        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 mt-12 ml-10 mr-10 md:grid-cols-4">
+        <NuxtLink
+          to="https://future-multiverse.gitbook.io/guidebook"
+          :class="$style.btn_second"
+          class="btn btn-sm btn-outline-primary text-center"
+        >
+          <span class="font-medium text-sm" style="color: white;">LEARN <span style="color: #CFB16D"> MORE</span></span>
+        </NuxtLink>
+        <NuxtLink
+          :class="$style.btn_second"
+          class="btn btn-sm btn-outline-primary text-center"
+          style="padding-top:18px; padding-bottom: 18px;"
+        >
+          <span class="font-medium text-sm" style=" color: white;">GUIDE<span style="color: #CFB16D">BOOK</span></span>
+        </NuxtLink>
+        <NuxtLink
+          to="https://map.futuremultiverse.dev"
+          :class="$style.btn_second"
+          class="btn btn-sm btn-outline-primary text-center"
+          style="padding-top:18px; padding-bottom: 18px;"
+        >
+          <span  class="font-medium text-sm" style=" color: white;">DISCOVER <span style="color: #CFB16D"> MAP</span></span>
+        </NuxtLink>
+        <NuxtLink
+          to="https://map.futuremultiverse.dev"
+          :class="$style.btn_second"
+          class="btn btn-sm btn-outline-primary text-center"
+          style="padding-top:18px; padding-bottom: 18px; border-color: white;"
+        >
+          <span class="font-medium text-sm" style=" color: white;">ENTER <span style="color: #CFB16D"> THE FUTURE</span></span>
+        </NuxtLink>
       </div>
 
     </AppWrapper>
@@ -265,7 +208,7 @@ onBeforeUnmount(() => {
 }
 
 .text {
-  @include margin-bottom(55px);
+  @include margin-bottom(25px);
 }
 
 .slide {

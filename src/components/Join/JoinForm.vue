@@ -1,21 +1,19 @@
 <template>
   <form>
-    <div :class="$style.group">
-      <input
-        class="form-control"
-        :class="$style.input"
-        type="text"
-        placeholder="Enter your email"
-      />
-      <button class="btn btn-primary" type="submit" :class="$style.btn">
-        Sign in
+    <div>
+      <!--div class="flex w-full max-w-sm items-center gap-1.5">
+        <Input id="email" type="email" placeholder="Email" />
+        <Button type="submit">
+          Subscribe
+        </Button>
+      </div-->
+      <input class="form-control" :class="$style.input" type="text" placeholder="Enter your email" />
+
+      <button class="btn-inline-primary-sm" type="submit" :class="$style.btn">
+        Sign up
       </button>
     </div>
-    <div
-      v-if="message"
-      :class="[isError ? 'invalid-feedback' : 'valid-feedback']"
-      style="display: block"
-    >
+    <div v-if="message" :class="[isError ? 'invalid-feedback' : 'valid-feedback']" style="display: block">
       {{ message }}
     </div>
   </form>
@@ -23,6 +21,7 @@
 
 <script lang="ts" setup>
 const message = '';
+import { Input } from '@/components/ui/input';
 </script>
 
 <style lang="scss" module>
@@ -40,11 +39,12 @@ const message = '';
 .input {
   background-color: #fff !important;
   border-color: #fff !important;
+  padding: 12px;
+  width: 73%;
 }
 
 .btn {
-  --btn-color: #fde8ae;
-  --btn-hover-color: #fde8ae;
+  border: #cfb16d solid 2px;
   --btn-padding-x: #{rem-calc(38px)};
   flex-shrink: 0;
 }

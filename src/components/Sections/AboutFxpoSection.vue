@@ -2,7 +2,7 @@
   <section :class="$style.section">
     <MediaPicture :src="Bg" :width="14240" :height="2338" layout="fill" />
     <AppWrapper>
-    <AboutFutureMultiverse :class="$style.header" :title="title" />
+    <AboutFutureMultiverse :class="$style.header" class="font-medium" title="title" />
     <MainSectionTextContent :class="$style.text">
       <p style="margin-bottom: 170%; font-size: 20px; padding-top:13px">
         the digital & decentralized catalyst accelerating breakthroughs to an inspiring, meaningful and fulfilled future for everyone.
@@ -11,68 +11,69 @@
     <div :class="$style.btnContainer">
       <h3 :class="$style.btnTitle">Experience the <span style="color: #cfb16d;">Future </span>today:</h3>
       <br />
-      <div class="row" :class="$style.btnRow">
-        <div class="col-md-4" :class="$style.btnCol">
-          <NuxtLink
-          to="https://future-multiverse.gitbook.io/guidebook"
-            class="btn btn-outline-primary"
-            :class="$style.btn"
+      <div class="grid grid-cols-1 gap-5 md:grid-cols-4">
+        <div class="flex justify-center">
+          <button
+            class=" md:w-auto w-1/2 btn font-medium btn-sm btn-outline-primary text-center"
             type="button"
           >
-            <p style="margin-bottom: 0px; color: #ffffff;">LEARN <span style="color: #cfb16d;">MORE <br />(<span style="color: #ffffff;">Guide</span>Book)</span></p>
-        </NuxtLink>
+            <p class="mb-0 text-white">LEARN <span class="text-cfb16d">MORE </span></p>
+          </button>
         </div>
-        <div class="col-md-4" :class="$style.btnCol">
-          <a
-            class="btn btn-outline-white"
-            :class="$style.btn"
+        <div class="flex justify-center">
+          <button
+            class=" md:w-auto w-1/2 btn font-medium  btn-sm btn-outline-primary text-center"
+            type="button"
           >
-            <p style="margin-bottom: 12px; padding-top:10px; color: #ffffff;">ENTER
-            <span style="color: #cfb16d;"> FUTURE EXPO <ThreeSixtyIcon /><br />
-            </span> </p>
-          </a>
+            <p class="mb-0 text-white">GUIDE<span class="text-cfb16d">BOOK</span></p>
+          </button>
         </div>
-        <div class="col-md-4" :class="$style.btnCol">
+        <div class="flex justify-center">
+          <button
+            class=" md:w-auto w-1/2 btn font-medium  btn-sm btn-outline-primary text-center"
+            type="button"
+          >
+            <p class="mb-0 text-white">EXPLORE <span class="text-cfb16d"> MAP</span></p>
+          </button>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class=" md:w-auto w-1/2 btn font-medium  btn-sm btn-outline-primary text-center"
+            style="border-color: #ffffff"
+          >
+            <p class="mb-0 text-white">ENTER<span class="text-cfb16d"> THE FUTURE</span></p>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-5 mt-4 pt-12 md:grid-cols-6" :class="$style.btnLinkRow" style="padding-top: 40px !important; margin-top: 0px !important;">
+        <div></div>
+        <div class="md:col-span-4">
+          <NuxtLink :class="$style.btnLink" class="pr-5" to="https://future-multiverse.gitbook.io/guidebook">
+            <HeadCommentIcon />
+            Guide
+            <span class="text-white" style="line-height: 1; ">book</span>
+          </NuxtLink>
+          <NuxtLink :class="$style.btnLink" class="pr-5"  to="/">
+            <HeadCommentIcon />
+            <span class="text-white" style="line-height: 1">Brochure</span>
+          </NuxtLink>
+          <NuxtLink :class="$style.btnLink" class="pr-5"  to="/">
+            <HeadCommentIcon />
+            Launch
+            <span class="text-white" style="line-height: 1; margin-left: 5px">Paper</span>
+          </NuxtLink>
           <NuxtLink
-          to="https://map.futuremultiverse.dev/"
-            class="btn btn-outline-primary"
-            :class="$style.btn"
+            :class="$style.btnLink"
+            class="pr-5" 
+            :to="{ name: 'launch', hash: '#roadmap' }"
           >
-          <p style="margin-bottom: 12px; padding-top:10px; color: #ffffff;"> DISCOVER<span style="color: #cfb16d;"> MAP</span><br /></p>
-        </NuxtLink>
+            <RoadmapIcon />
+            Launch
+            <span class="text-white" style="line-height: 1; margin-left: 5px"> Roadmap</span>
+          </NuxtLink>
         </div>
-      </div>
-    </div>
-    <div class="row" :class="$style.btnLinkRow">
-      <div class="col-auto">
-        <NuxtLink :class="$style.btnLink" to="https://future-multiverse.gitbook.io/guidebook">
-          <HeadCommentIcon />
-          Guide
-          <span style="color: white; line-height: 1">book</span>
-        </NuxtLink>
-      </div>
-      <div class="col-auto">
-        <NuxtLink :class="$style.btnLink" to="/">
-          <FileUploadIcon />
-          <span style="color: white; line-height: 1">Brochure</span>
-        </NuxtLink>
-      </div>
-      <div class="col-auto">
-        <NuxtLink :class="$style.btnLink" to="/">
-          <FileUploadIcon />
-          Launch
-          <span style="color: white; line-height: 1">Paper</span>
-        </NuxtLink>
-      </div>
-      <div class="col-auto">
-        <NuxtLink
-          :class="$style.btnLink"
-          :to="{ name: 'launch', hash: '#roadmap' }"
-        >
-          <RoadmapIcon />
-          Launch
-          <span style="color: white; line-height: 1">&nbsp;Roadmap</span>
-        </NuxtLink>
+        <div></div>
       </div>
     </div>
     </AppWrapper>
@@ -102,13 +103,18 @@ const title = `About FUTURE MULTIVERSE`;
   //background-image: url("@/assets/images/torus2.jpg");
   //height: 1700px;
   text-align: center;
+  padding-bottom: 50px !important;
+  padding-top: 50px !important;
   @include padding(70px 0 200px);
   color: #ffffff;
   position: relative;
 }
+.btn-outline-primary{
+  width: 75% !important
+}
 
 .header {
-  @include margin-top(65px);
+  //@include margin-top(65px);
   @include margin-bottom(26px);
   position: relative;
   z-index: 1;
@@ -175,6 +181,8 @@ const title = `About FUTURE MULTIVERSE`;
   display: inline-flex;
   align-items: center;
   transition: color 150ms ease-in-out;
+  color: #cfb16d;
+  padding-top: 10px !important;
 
   &:hover {
     color: #fff;

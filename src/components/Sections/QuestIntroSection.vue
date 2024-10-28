@@ -15,9 +15,9 @@
           Nikola Tesla</span>
         </p>
       </MainSectionTextContent>
-      <NuxtLink to="/" class="btn btn-outline-primary" :class="$style.btn">
+      <button style="padding-left:60px; padding-right: 60px;" class="btn btn-outline-primary  font-semibold " >
         Start now
-      </NuxtLink>
+      </button>
     </AppWrapper>
   </section>
 </template>
@@ -31,7 +31,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 <style lang="scss" module>
 .section {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   padding-top: rem-calc(10px);
   display: flex;
   align-items: center;
@@ -44,7 +44,8 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .wrapper {
-  @include padding(120px 0);
+  @include padding(80px 0);
+  padding-bottom: 50px !important;
 }
 
 .header {
@@ -62,6 +63,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
   @include font-size(32px);
   @include margin-bottom(15px);
   line-height: divide(30, 28);
+  font-weight: 600;
 }
 
 .title {
@@ -73,6 +75,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
   max-width: rem-calc(720px);
   text-transform: uppercase;
   color: white;
+  font-weight: 600;
 
   > * {
     color: $primary;
@@ -89,10 +92,4 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
   }
 }
 
-.btn {
-  --btn-bg: rgba(12, 15, 34, 0.2);
-  max-width: 100%;
-  color: #ffffff;
-  min-width: rem-calc(226px);
-}
 </style>

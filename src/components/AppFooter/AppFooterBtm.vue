@@ -18,6 +18,7 @@
 <script lang="ts" setup>
 import ArrowIcon from '~/icons/ArrowIcon.vue';
 import CommentsIcon from '~/icons/CommentsIcon.vue';
+
 </script>
 
 <style lang="scss" module>
@@ -62,6 +63,7 @@ import CommentsIcon from '~/icons/CommentsIcon.vue';
     margin-right: rem-calc(16px);
     width: rem-calc(35px);
     height: rem-calc(35px);
+    color: white;
   }
 }
 
@@ -77,7 +79,6 @@ import CommentsIcon from '~/icons/CommentsIcon.vue';
   height: rem-calc(40px);
   justify-content: center;
   right: 0;
-  transform: rotate(90deg);
   width: rem-calc(40px);
   transition: transform 0.2s ease-in-out;
 

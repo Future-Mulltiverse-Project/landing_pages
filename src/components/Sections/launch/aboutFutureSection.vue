@@ -87,7 +87,6 @@ import RoadmapIcon from '~/icons/RoadmapIcon.vue';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
 import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MainSectionTextContent from '~/components/MainSection/MainSectionTextContent.vue';
-import AboutFutureSection from './launch/aboutFutureSection.vue';
 import AboutFutureMultiverse from '~/components/MainSection/AboutFutureMultiverse.vue';
 
 const title = `About FUTURE MULTIVERSE`;

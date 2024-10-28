@@ -5,14 +5,14 @@
       <span style="color: #cfb16d">future</span>!
     </div>
     <h2 :class="[$style.title, titleLg && $style.titleLg]">
-      <strong style="color: #ffffff">
+      <p class="font-semibold text-5xl" style="color: #ffffff; line-height: normal; margin-top: 20px !important">
         <span style="color: #cfb16d">REGISTER</span> NOW &<br />
         <span style="color: #cfb16d">SAVE YOUR SEAT</span> FOR <br />
         THE <span style="color: #cfb16d">PRE-LAUNCH</span> OF
-        <br />THE <span style="color: #cfb16d; font-size: 80px">FUTURE</span>
-        <span style="color: #ffffff; font-size: 80px">!</span><br />
+        <br />THE <span style="color: #cfb16d; font-size: 60px">FUTURE</span>
+        <span style="color: #ffffff; font-size: 60px">!</span>
         <!--span style="color: #cfb16d;">MULTIVERSE</span> & <span style="color: #cfb16d;">EXPO</span-->
-      </strong>
+      </p>
       <template v-if="subtitle">
         <br />
         {{ subtitle }}
@@ -36,8 +36,7 @@ defineProps<{
 
 <style lang="scss" module>
 .heading {
-  @include font-size(22px);
-  @include margin-bottom(53px);
+  @include font-size(23px);
   line-height: divide(30, 22);
 }
 
@@ -49,14 +48,13 @@ defineProps<{
 
 .title {
   @include font-size(45px);
-  margin-top: 10px;
   @include margin-bottom(20px);
   line-height: math-div(55, 45);
   text-transform: uppercase;
 
   &:last-child {
     margin-bottom: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
   }
 
   > * {

@@ -1,44 +1,40 @@
 <template>
   <footer :class="$style.footer">
-    <div :class="$style.wrapper">
-      <div class="row" :class="$style.row">
-        <div class="col-auto">
-          <ul class="row" :class="$style.socialsRow">
-            <li v-for="(item, index) in socials" :key="index" class="col-auto">
-              <NuxtLink
-                :href="item.to"
-                :aria-label="item.name"
-                :class="$style.link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <component :is="icons[item.icon]" />
-              </NuxtLink>
-             </li>
-          </ul>
-        </div>
-        <div class="col-auto">
-          <p :class="$style.text">
-            
-           You are going to enter the
-           <strong>Future Multiverse</strong>
-          </p>
-        </div>
+    <div :class="$style.wrapper" class="flex flex-col items-left">
+      <div class="grid grid-cols-1 gap-2 md:grid-cols-auto">
+        <ul> 
+          <li v-for="(item, index) in socials" :key="index" class="">
+            <button
+              :href="item.to"
+              :aria-label="item.name"
+              :class="$style.link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <component :is="icons[item.icon]" />
+          </button>
+        </li>
+        <li>
+            <p :class="$style.text" class="text-center md:text-right">
+              <span>You are going to enter the VR </span>FXPO Universe<span>. Requirements </span>here:
+            </p>
+          </li>
+        </ul>
       </div>
+      <!--NuxtLink to="/" :class="$style.btn">
+        <ArrowIcon />
+      </NuxtLink-->
     </div>
-    <NuxtLink to="/" :class="$style.btn">
-      <ArrowIcon />
-    </NuxtLink>
   </footer>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue';
 import ArrowIcon from '~/icons/ArrowIcon.vue';
-import TwitterIcon from '~/icons/TwitterIcon.vue';
-import FacebookIcon from '~/icons/FacebookIcon.vue';
-import LinkedinIcon from '~/icons/LinkedinIcon.vue';
-import InstagramIcon from '~/icons/InstagramIcon.vue';
+import TwitterIcon from '~/icons/TwitterWhiteIcon.vue';
+import FacebookIcon from '~/icons/FacebookWhiteIcon.vue';
+import LinkedinIcon from '~/icons/LinkedinWhiteIcon.vue';
+import InstagramIcon from '~/icons/InstagramWhiteIcon.vue';
 
 const icons = {
   TwitterIcon,
@@ -73,6 +69,24 @@ const socials = ref([
 
 <style lang="scss" module>
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
 .btn {
   align-items: center;
   border-radius: 50%;
@@ -90,29 +104,8 @@ const socials = ref([
   width: rem-calc(40px);
   transition: transform 0.2s ease-in-out;
 
-  @include media-breakpoint-up(sm) {
-    
-    right: rem-calc(35px);
-  }
 
-  @media (min-width: 1271px) and (max-width: 1291px){
-    right:3%;
-  }
-
-  @media (min-width: 1291px) and (max-width: 1345px){
-    right:4.5%;
-  }
-
-  @media (min-width: 1395px){
-    right:7.5%;
-  }
-  @media (min-width: 1345px) and (max-width: 1395px){
-    right:6%;
-  }
-  @media (min-width: 1204px) and (max-width: 1269px){
-    right:4%;
-  }
- /* @media (min-width: 1441px) {
+  /* @media (min-width: 1441px) {
     right: 50%;
     transform: translateX(720px);
     margin-right: rem-calc(12px);
@@ -124,8 +117,9 @@ const socials = ref([
   }
 
   svg {
-    height: rem-calc(16px);
-    width: rem-calc(16px);
+    height: rem-calc(25px);
+    width: rem-calc(25px);
+    color: #ffffff;
   }
 }
 
@@ -163,12 +157,13 @@ const socials = ref([
 .link {
   align-items: center;
   border-radius: 50%;
-  border: 1px solid #fff;
+  margin-right: 10px;
+  border: 2px solid #CFB16D;
   color: #fff;
   display: flex;
-  height: rem-calc(20px);
+  height: rem-calc(30px);
   justify-content: center;
-  width: rem-calc(20px);
+  width: rem-calc(30px);
   transition:
     border-color 0.15s ease-in-out,
     color 0.15s ease-in-out;
@@ -179,18 +174,19 @@ const socials = ref([
   }
 
   svg {
-    height: rem-calc(8px);
-    width: rem-calc(8px);
+    height: rem-calc(12px);
+    width: rem-calc(12px);
   }
 }
 
 
 .text {
-  @include font-size(12px);
+  @include font-size(14px);
   line-height: 1.2;
+  font-weight: 500;
   margin-bottom: 0;
-
-  strong {
+  padding-top: 7px;
+  span {
     color: $primary;
   }
 }

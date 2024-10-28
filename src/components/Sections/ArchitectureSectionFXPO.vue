@@ -1,25 +1,37 @@
-<template> 
-  <div style=" background: url('_nuxt/assets/images/design_philosophy.png'), #0A0D1D; background-repeat: no-repeat; background-size: cover;max-width: 100%;">
+<template>
+  <div
+    style="
+      background: url('_nuxt/assets/images/design_philosophy.png'), #0A0D1D;
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 100%;
+    "
+  >
     <section :class="$style.section">
-      <AppWrapper> 
-          <div class="row" :class="$style.row">
-          <div class="col-12 col-lg-6" :class="$style.leftCol">
-            <div class="row">
-              <div class="col-md-12">
-                <h2 :class="$style.header" style="margin-top: 20%; font-size: 40px !important;">
-                  Our Design Philosophy
-                    <br />
-                    & Architecture
+      <AppWrapper>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-0 md:pt-10" 
+          :class="$style.row"
+        >
+          <div :class="$style.leftCol" class=" pr-0 lg:pr-20 pt-8 lg:pt-0 " >
+            <div class="grid grid-cols-1 gap-2">
+              <div>
+                <h2
+                  class="font-medium mb-5 lg:mb-3.5 "
+                  :class="$style.header"
+                  style="font-size: 40px !important;"
+                >
+                  OUR DESIGN PHILOSOPHY
+                  <br />
+                  & ARCHITECTURE
                 </h2>
-                <p style="font-size: 22px" :class="$style.gold">
-                  <strong>
-                    Our design philosophy not only creates an aesthetically
-                    beautiful environment, but also seeks to inspire greater
-                    consciousness in the world.
-                  </strong>
+                <p style="font-size: 20px; font-weight: 400; margin-bottom: 10px" :class="$style.gold">
+                  Our design philosophy not only creates an aesthetically
+                  beautiful environment, but also seeks to inspire greater
+                  consciousness in the world.
                 </p>
                 <MainSectionTextContent>
-                  <p style="font-size: 17px;">
+                  <p style="font-size: 17px; font-weight: 400;">
                     Over the last years we have crafted a revolutionary Multiverse
                     & EXPO platform, fusing Feng Shui and Golden Geometry to
                     enable the creation of the bespoke, visually captivating
@@ -31,7 +43,7 @@
                   </p>
                 </MainSectionTextContent>
               </div>
-              <div class="col-md-12">
+              <div>
                 <img
                   :src="designTool"
                   :width="550"
@@ -42,11 +54,11 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6" :class="$style.rightCol">
+          <div :class="$style.rightCol">
             <div :class="$style.schemeWrapper">
-              <div :class="$style.schemeInner">
+              <div :class="$style.schemeInner" class="pt-7 lg:pt-16">
                 <h3 :class="$style.schemeTitle">
-                  Feng Shui <br/>/ Golden Geometry
+                  Feng Shui <br />/ Golden Geometry
                 </h3>
                 <p :class="$style.schemeText">
                   At the core of the Future Trends Catalyst lies a world of
@@ -54,45 +66,70 @@
                   principles of Fibonacci sequences and Golden Geometry, producing
                   greatest impact with maximum financial results.
                 </p>
-                <div :class="$style.torusWrapper">
+                <div :class="$style.torusWrapper" style="margin-top: 10px !important">
                   <div :class="$style.torusHoldeer">
                     <div :class="$style.schemeContainer">
                       <div :class="$style.scheme">
-                        <MediaPicture :src="Scheme" :width="1440" :height="890" />
+                        <MediaPicture
+                          :src="Scheme"
+                          :width="1440"
+                          :height="890"
+                        />
                       </div>
                     </div>
                     <div :class="$style.torus">
-                      <MediaPicture :src="Torus" :width="1053" :height="793" />
+                      <MediaPicture
+                        :src="Torus"
+                        :width="853"
+                        :height="593"
+                      />
                     </div>
                     <button :class="$style.torusBtn" type="button">
                       <RotationIcon />
                     </button>
                   </div>
                 </div>
-                <div class="row" :class="$style.btnRow">
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-3"
+                  :class="$style.btnRow"
+                >
                   <div class="col-auto" :class="$style.btnCol">
                     <button
-                      class="btn btn-outline-white"
-                      :class="$style.btn"
+                      class=" btn-outline-primary"
+                      style="
+                        padding: 8px;
+                        font-weight: 500;
+                        padding-top: 15px !important;
+                        padding-right: 30px !important;
+                        padding-left: 30px !important;
+                        border-color: #ffffff;
+                        padding-bottom: 15px !important;
+                      "
                       type="button"
                     >
-                      ENTER <span style="color: #CFB16D;padding-left: 4px;" >FUTURE EXPO <ThreeSixtyIcon /> </span>
+                      ENTER
+                      <span style="color: #CFB16D;"
+                        >FUTURE EXPO<ThreeSixtyIcon style="margin-left: 10px; width: 20px; float: right; margin-top: 6px; "/></span
+                      >
                     </button>
                   </div>
                   <div class="col-auto" :class="$style.btnCol">
-                    <nuxt-link 
-                    to="#"
+                    <button
                       class="btn btn-outline-primary"
-                      :class="$style.btn"
+                      style="font-weight: 500;"
                     >
-                    <span style="color: #CFB16D;padding-right: 4px;" >Explore</span>  Map
-                    </nuxt-link>
+                      <span
+                        >Explore</span>
+                      <span style="color: #CFB16D;" >
+                      Map
+                      </span>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          </div>
+        </div>
       </AppWrapper>
     </section>
   </div>
@@ -114,7 +151,8 @@ import designTool from '~/assets/images/design_tool.png';
 .section {
   //background-color: $dark;
   color: #fff;
-  @include padding(30px 0 145px);
+  @include padding(0px 0 25px);
+  padding-bottom: 50px !important;
   text-align: center;
 
   @include media-breakpoint-up(lg) {
@@ -138,9 +176,6 @@ import designTool from '~/assets/images/design_tool.png';
   position: relative;
   z-index: 1;
 
-  @include media-breakpoint-up(lg) {
-    @include padding-right(45px);
-  }
 }
 
 .header {
@@ -157,12 +192,6 @@ import designTool from '~/assets/images/design_tool.png';
   }
 }
 
-.rightCol {
-  @include media-breakpoint-up(lg) {
-    @include padding-left(50px);
-  }
-}
-
 .schemeWrapper {
   max-width: rem-calc(535px);
   margin: 0 auto;
@@ -173,7 +202,7 @@ import designTool from '~/assets/images/design_tool.png';
 }
 
 .schemeInner {
-  padding-top: wrap-calc(114px, 535px);
+  /*padding-top: 65px;*/
 }
 
 .schemeTitle {
@@ -219,6 +248,7 @@ import designTool from '~/assets/images/design_tool.png';
 
 .torusWrapper {
   margin: wrap-calc(103px, 535px) 0 wrap-calc(25px, 535px);
+  margin-bottom: 0px !important;
   position: relative;
   width: wrap-calc(526px, 535px);
 }

@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.main">
+  <div :class="$style.main" class=" mx-auto">
     <MediaPicture
       :media-class="$style.mediaImg"
       :src="Bg"

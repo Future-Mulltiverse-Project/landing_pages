@@ -2,19 +2,19 @@
     <section :class="$style.section">
       <MediaPicture :src="Bg" :width="1440" :height="968" layout="fill" />
       <AppWrapper>
-        <h3 :class="$style.heading">It´s time for the <span style="color: #CFB16D;">Future</span><span >!</span></h3>
-        <h2 :class="$style.title">
+        <h3 :class="$style.heading" style="font-weight: 500;">It´s time for the <span style="color: #CFB16D;">Future</span><span >!</span></h3>
+        <h2 :class="$style.title" style="font-weight: 500;">
           Onboard <span :class="$style.primaryText"> Now</span> & Save your <span :class="$style.primaryText"> Seat</span> for the <span :class="$style.primaryText"> Launch</span> of 
           THE
         <span :class="$style.primaryText" style="padding-top: 10px;"> FUTURE</span>!
         </h2>
         <h3 :class="$style.timerTitle">
-          <span style="color: #CFB16D;">Pre-Launch Mint Event Start in:</span></h3>
-          <h1 style="font-size: 60px;">August 2024</h1>
+          <span style="color: #CFB16D;">Our Pre-Launch Starts in:</span></h3>
+          <h1 style="font-size: 52px;font-weight: 500">August 2024</h1>
         <div style="padding-top: 40px;">
-          <NuxtLink to="#" style="background-color: #CFB16D;" class="btn btn2 btn-primary" :class="$style.btn">
+          <button to="#" style="background-color: #CFB16D;" class="btn btn-outline-primary" :class="$style.btn">
             ONBOARD NOW
-          </NuxtLink>
+          </button>
         </div>
       </AppWrapper>
     </section>
@@ -32,9 +32,8 @@
   
   <style lang="scss" module>
   .section {
-    @include padding(104px 0 448px);
-    
-    padding-bottom: 80px !important;
+    padding-top: 50px;
+    padding-bottom: 50px !important;
     text-align: center;
     position: relative;
   }
@@ -58,7 +57,7 @@
     line-height: divide(55, 45);
     margin-left: auto;
     margin-right: auto;
-    max-width: 26ch;
+    max-width: 32ch;
     text-transform: uppercase;
     margin-bottom: 00px;
   }
@@ -68,10 +67,9 @@
     --btn-color: #0a0d1d;
     min-width: rem-calc(256px);
     max-width: 100%;
-    margin-bottom: 20px;
     margin-right: 10px;
     color: #ffffff;
-    font-weight: 100
+    font-weight: 500 !important;
   }
   
   

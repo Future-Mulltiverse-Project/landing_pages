@@ -60,7 +60,6 @@
 import GraceAiAppHeaderNav from '../AppHeader/graceAiAppHeaderNav.vue';
 import AppHeaderToggleBtn from '~/components/AppHeader/AppHeaderToggleBtn.vue';
 import Logo from '~/assets/images/graceai/graceai_logo.png';
-import MediaPicture from '~/components/Media/MediaPicture.vue';
 </script>
 
 <style lang="scss" module>

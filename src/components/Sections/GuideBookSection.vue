@@ -1,8 +1,8 @@
 <template>
   <section :class="$style.section">
     <AppWrapper>
-      <div class="row" :class="$style.row">
-        <div class="col-12 col-lg-5" :class="$style.leftCol">
+      <div class="grid grid-cols-1 gap-4  md:grid-cols-3" :class="$style.row">
+        <div class="md:col-span-1 md:order-first" :class="$style.leftCol">
           <MainSectionHeader
             :class="$style.header"
             :title="`YOUR FUTURE `"
@@ -10,31 +10,30 @@
             title-lg
           />
           <MainSectionTextContent :class="$style.text">
-            <p><span :class="$style.secondaryText">
-            <span :class="$style.primaryText">ALL OUR PLATFORMS INFORMATION IN ONE 24-7 ACCESSIBLE & INTERACTIVE DATABASE, 
-            ABLE TO ANSWER ANY OF YOUR QUESTIONS AND GUIDE YOU THROUGH YOUR FUTURE!</span>
-             <br><br>
-              DISCOVER THE FUTURE TRENDS CATALYST (FXPO) AI GUIDEBOOK – YOUR GATEWAY TO A 
-              SEAMLESS, 24-7 ACCESSIBLE, AND INTERACTIVE DATABASE. THIS INTELLIGENT GUIDE 
-              CONSOLIDATES ALL OUR PLATFORM INFORMATION, PROVIDING YOU WITH INSTANT ANSWERS TO YOUR QUERIES AND 
-              EXPERTLY GUIDING YOU THROUGH THE JOURNEY OF SHAPING YOUR FUTURE. HARNESS THE COLLECTIVE WISDOM OF 
-              OUR RESOURCES EFFORTLESSLY, ENSURING EVERY QUESTION FINDS ITS SOLUTION AND EVERY PATH LEADS TO SUCCESS. 
-              WELCOME TO A NEW ERA OF INFORMED DECISION-MAKING AND STRATEGIC NAVIGATION.
+            <p>
+              <span :class="$style.secondaryText">
+                <span :class="$style.primaryText">ALL OUR PLATFORMS INFORMATION IN ONE 24-7 ACCESSIBLE & INTERACTIVE DATABASE, 
+                ABLE TO ANSWER ANY OF YOUR QUESTIONS AND GUIDE YOU THROUGH YOUR FUTURE!</span>
+                <br><br>
+                DISCOVER THE FUTURE TRENDS CATALYST (FXPO) AI GUIDEBOOK – YOUR GATEWAY TO A 
+                SEAMLESS, 24-7 ACCESSIBLE, AND INTERACTIVE DATABASE. THIS INTELLIGENT GUIDE 
+                CONSOLIDATES ALL OUR PLATFORM INFORMATION, PROVIDING YOU WITH INSTANT ANSWERS TO YOUR QUERIES AND 
+                EXPERTLY GUIDING YOU THROUGH THE JOURNEY OF SHAPING YOUR FUTURE. HARNESS THE COLLECTIVE WISDOM OF 
+                OUR RESOURCES EFFORTLESSLY, ENSURING EVERY QUESTION FINDS ITS SOLUTION AND EVERY PATH LEADS TO SUCCESS. 
+                WELCOME TO A NEW ERA OF INFORMED DECISION-MAKING AND STRATEGIC NAVIGATION.
               </span>
             </p>
           </MainSectionTextContent>
           <div :class="$style.visitSection">
-            
-            <NuxtLink
+            <button
               :class="$style.visitBtn"
               class="btn btn-sm btn-outline-primary"
-              to="https://future-multiverse.gitbook.io/guidebook"
             >
-              <p style="margin-bottom: 0px;">Visit <span style="color: #CFB16D;">Now</span>!</p>
-            </NuxtLink>
+              <p class="mb-0 text-sm font-medium">Visit <span class="text-cfb16d">Now</span>!</p>
+            </button>
           </div>
         </div>
-        <div class="col-12 col-lg-7" :class="$style.rightCol">
+        <div class="md:col-span-2 " :class="$style.rightCol">
           <div :class="$style.mediaWrapper">
             <div :class="$style.mediaGradient"></div>
             <MediaPicture :src="Guidebook" :width="624" :height="556" />
@@ -55,7 +54,8 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 <style lang="scss" module>
 .section {
-  @include padding(55px 0 156px);
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
   text-align: center;
 
   @include media-breakpoint-up(lg) {
@@ -167,5 +167,6 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
   flex-shrink: 0;
   min-width: rem-calc(130px);
   color: #ffffff;
+  width: unset !important;
 }
 </style>

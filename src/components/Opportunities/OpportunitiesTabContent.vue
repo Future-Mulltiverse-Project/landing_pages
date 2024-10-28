@@ -1,11 +1,8 @@
 <template>
   <div :class="$style.panel">
-          <MediaPicture :src="Video" :width="539" :height="319" />
-          <br/>
-          <br/>
+    <MediaPicture :src="Video" :width="539" :height="319" />
     <div v-if="selectedItem.items?.length" :class="$style.listContainer">
-
-      <ul class="row" :class="$style.list">
+      <ul class="grid grid-cols-1 gap-3 mt-8 md:grid-cols-2">
         <li
           v-for="(item, index) in selectedItem.items"
           :key="index"
@@ -35,7 +32,7 @@
         according to his work and accomplishments. The present is theirs; the
         future, for which I have really worked, is mine."
       </p>
-      <footer style="color: #CFB16D;">Nikola Tesla</footer>
+      <footer style="color: #CFB16D;" class="font-semibold">Nikola Tesla</footer>
     </blockquote>
   </div>
 </template>
@@ -53,7 +50,8 @@ defineProps<{
 
 <style lang="scss" module>
 .panel {
-  @include padding(52px 56px 45px);
+  @include padding(52px 56px 0px);
+  padding-bottom: 50px !important;
   background-color: #1C213E;
   position: relative;
 }
@@ -122,7 +120,7 @@ defineProps<{
 }
 
 .quote {
-  @include margin-top(70px);
+  @include margin-top(20px);
   margin-left: auto;
   margin-right: auto;
   max-width: rem-calc(740px);

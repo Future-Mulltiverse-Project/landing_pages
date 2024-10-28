@@ -1,27 +1,6 @@
 <template>
   <div :class="$style.row">
-    <div :class="$style.col">
-      <!--div :class="$style.val">{{ zerofi(days) }}</div-->
-      <div :class="$style.val">00</div>
-      <div :class="$style.term">Days</div>
-    </div>
-    <div :class="$style.sep">:</div>
-    <div :class="$style.col">
-      <!--div :class="$style.val">{{ zerofi(hours) }}</div-->
-      <div :class="$style.val">00</div>
-      <div :class="$style.term">Hours</div>
-    </div>
-    <div :class="$style.sep">:</div>
-    <div :class="$style.col">
-      <!--div :class="$style.val">{{ zerofi(minutes) }}</div-->
-      <div :class="$style.val">00</div>
-      <div :class="$style.term">Minutes</div>
-    </div>
-    <div :class="$style.sep">:</div>
-    <div :class="$style.col">
-      <!--div :class="$style.val">{{ zerofi(seconds) }}</div-->
-      <div :class="$style.val">00</div>
-    </div>
+    <h3 style="font-size: 54px !important; font-weight: 600">SEPTEMBER 2024</h3>
   </div>
 </template>
 

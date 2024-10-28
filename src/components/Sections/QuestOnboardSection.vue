@@ -1,5 +1,5 @@
 <template>
-  <section :class="$style.section" style="padding-top: 70px !important; padding-bottom: 80px !important;">
+  <section :class="$style.section" class="pt-12 pb-12" >
     <MediaPicture :src="Bg" :width="1400" :height="428" layout="fill" />
     <AppWrapper >
       <h2 :class="$style.title">
@@ -17,42 +17,31 @@
   </section>
   
   <AppWrapper>
-  <div class="row" style="margin-top: 35px;">
-          <div class="col-md-12">
-            <h4 style="color: white; text-align: center" ><span :class="$style.title_gold" >Are you</span> Ready<span :class="$style.title_gold"> ?</span> <br/> Join Us <span :class="$style.title_gold">creating the future today!</span></h4>
-          <br/>
-          </div>
-          <div class="row">
-          <div class="col-md-3" ></div>
-          <div class="col-md-2" >
-            <NuxtLink
-              to="https://future-multiverse.gitbook.io/guidebook"
-              :class="$style.btn_second"
-              class="btn btn-sm btn-outline-primary"
-            >
-              <span>GUIDE<span style="color: #ffffff">BOOK</span></span>
-            </NuxtLink>
-          </div>
-          <div class="col-md-3">
-            <NuxtLink
-              to="https://www.futuremultiverse.com/packages"
-              :class="$style.btn_second"
-              class="btn btn-sm btn-outline-primary"
-            >
-              <span style="color: white;">PRODUCT & SERVICE <span style="color: #CFB16D"> PACKAGES</span></span>
-            </NuxtLink>
-          </div>
-          <div class="col-md-3">
-            <NuxtLink
-              to="https://sandbox.futuremultiverse.dev"
-              :class="$style.btn_second"
-              class="btn btn-sm btn-outline-primary"
-            >
-              <span style="color: white;"><span style="color: #CFB16D">ONBOARD</span> NOW</span>
-            </NuxtLink>
-          </div>
-          </div>
-        </div>
+    <div class="mt-6">
+      <div class="text-center">
+        <h4 style="color: white; text-align: center" ><span :class="$style.title_gold" >Are you</span> Ready<span :class="$style.title_gold"> ?</span> <br/> Join Us <span :class="$style.title_gold">creating the future today!</span></h4>
+      </div>
+      <div class="flex justify-center mt-4 flex-wrap"> 
+        <NuxtLink
+          :class="$style.btn_second"
+          class="btn btn-sm btn-outline-primary mr-5"
+        >
+          <span style="color: #CFB16D">GUIDE<span class="text-white">BOOK</span></span>
+        </NuxtLink>
+        <NuxtLink
+          :class="$style.btn_second"
+          class="btn btn-sm btn-outline-primary mr-5 "
+        >
+          <span style="color: white;">PRODUCT & SERVICE <span style="color: #CFB16D"> PACKAGES</span></span>
+        </NuxtLink>
+        <NuxtLink
+          :class="$style.btn_second"
+          class="btn btn-sm btn-outline-primary mr-5"
+        >
+          <span style="color: white;"><span style="color: #CFB16D">ONBOARD</span> NOW</span>
+        </NuxtLink>
+      </div>
+    </div>
     </AppWrapper>
 </template>
 
@@ -64,7 +53,6 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 <style lang="scss" module>
 .section {
-  @include padding(145px 0 396px);
   background-color: #0A0D1D;
   color: $dark;
   text-align: center;
@@ -94,9 +82,10 @@ p{
   line-height: divide(55, 45);
   margin-left: auto;
   margin-right: auto;
-  max-width: 29ch;
+  max-width: 32ch;
   text-transform: uppercase;
   color: white ;
+  font-weight: 600;
 }
 
 .btn {

@@ -3,13 +3,14 @@
     <div
       v-if="heading"
       :class="[$style.heading, headingLg && $style.headingLg]"
+      class="font-medium"
     >
       {{ heading }} {{ strongTitle }}
     </div>
     <h2 :class="[$style.title, titleLg && $style.titleLg]">
-      <strong v-html="title" /><br /> <span style="color: #ffffff;">{{invent_title}}</span>
+      <p class="font-medium text-5xl" v-html="title" />
+      <span class="font-medium" style="color: #ffffff;">{{invent_title}}</span>
       <template v-if="subtitle">
-        <br />
         {{ subtitle }} 
       </template>
     </h2>

@@ -1,15 +1,14 @@
 <template>
   <div :class="$style.item">
     <div :class="$style.textContainer">
-      <h3 :class="$style.title">{{ item.title }}</h3>
-      <div :class="$style.text">{{ item.text }}</div>
+      <h3 :class="$style.title" class="font-medium" >{{ item.title }}</h3>
+      <div :class="$style.text" class="font-thin" >{{ item.text }}</div>
 
-      <NuxtLink :to="item.to " class="btn btn-sm btn-outline-primary">
-        <p style="font-weight: 100;margin-bottom: 0px;">
+      <button  class="btn-outline-primary">
+        <p style="font-weight: 600;color: #cfb16d; font-size:14px; margin-bottom: 0px;">
           EXPLORE
-          <br />
         </p>
-      </NuxtLink>
+      </button>
     </div>
     <div :class="$style.mediaWrapper">
       <div :class="$style.mediaHolder">
@@ -55,7 +54,7 @@ defineProps<{ item: Itesmata }>();
   //border-bottom: 1px solid #222649;
   display: flex;
   flex-wrap: nowrap;
-  align-items: center;
+  margin-bottom: 50px;
   //background: radial-gradient(100% 60% at center bottom, #23274a, transparent);
   overflow: hidden;
   flex-direction: row;
@@ -90,7 +89,7 @@ defineProps<{ item: Itesmata }>();
 }
 
 .textContainer {
-  @include padding(70px 54px 70px 0);
+  @include padding(70px 54px 0px 0);
   flex: 1 1 rem-calc(323px);
 }
 
@@ -121,15 +120,13 @@ defineProps<{ item: Itesmata }>();
 }
 
 .mediaHolder {
-  padding-bottom: 250%;
+  padding-bottom: 150%;
   position: relative;
 }
 
 .media {
   left: 0;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   width: calc(var(--image-w) * 100% / 280);
 }
 </style>

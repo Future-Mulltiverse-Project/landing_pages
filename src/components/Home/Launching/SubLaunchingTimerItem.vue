@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.el">
     <h3 :class="$style.title">
-        PLANNED<span style="color: #CFB16D"> VIP PRE-LAUNCH</span> MINT-EVENT
+        THE<span style="color: #CFB16D"> PRE-LAUNCH</span> PHASE STARTED:
     </h3>
     <slot />
   </div>

@@ -1,77 +1,74 @@
 <template>
   <div style=" background: url('_nuxt/assets/images/prelaunch-bg.png'), #0A0D1D; background-repeat: no-repeat; background-size: cover;max-width: 100%;">
-  <section :class="$style.section" >
+  <section :class="$style.section" class=" pb-10" >
     <AppWrapper>
-      <div class="row" :class="$style.row">
-        <div class="col-md-6">
+      <div class="grid grid-cols-1 gap-3 md:grid-cols-2" :class="$style.row">
+        <div class="md:order-first">
           <LandingHomeMainSectionHeader
             :class="$style.header"
             :title="'REGISTER NOW & SAVE YOUR SEAT FOR THE PRE-LAUNCH OF THE FUTURE!'"
             title-lg
           />
 
-          <div class="button-container" :class="$style.button_set">
-            <div class="row">
-              <div class="col-md-1"></div>
-              <div class="col-md-5" :class="$style.btn_special1">
-                <button
-                  type="button"
-                  class="btn btn-outline-primary"
-                  :class="$style.btn"
-                  style="
-                    background-color: rgba(255, 255, 255, 0);
-                    width: 100%;
-                    color: #ffffff;
-                    font-weight: 100;
-                  "
-                >
-                  REGISTER FOR
-                  <br />
-                  OUR NEWSLETTER
-                  <br />
-                </button>
+          <div class="button-container" style="margin-top:20px !important" :class="$style.button_set">
+            <div class=" mb-10 mt-10 lg:mb-0 lg:mt-0 grid grid-cols-2 gap-3 mobile:grid-cols-2">
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-primary text-center"
+                    :class="$style.btn"
+                    style="
+                      background-color: rgba(255, 255, 255, 0);
+                      color: #ffffff;
+                      font-weight: 600;
+                      width: 83%;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                      float: right;
+                    "
+                  >
+                    REGISTER FOR OUR NEWSLETTER
+                  </button>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-primary text-center"
+                    :class="$style.btn"
+                    style="
+                      background-color: #cfb16d;
+                      color: #ffffff;
+                      font-weight: 600;
+                      padding-top: 22px;
+                      padding-bottom: 22px;
+                      width: 80%;
+                    "
+                  >
+                    ONBOARD NOW
+                  </button>
+                </div>
               </div>
-              <div class="col-md-5" :class="$style.btn_special2">
-                <NuxtLink
-                  class="btn btn--primary-inverted"
-                  :class="$style.btn"
-                  style="
-                    background-color: #cfb16d;
-                    width: 100%;
-                    color: #ffffff;
-                    font-weight: 400;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                  "
-                >
-                ONBOARD NOW
-                </NuxtLink>
-              </div>
-              <div class="col-md-1"></div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
+        <div class="">
           <LaunchingTimerWrapper
             :class="$style.timerWrapper"
-            style="padding-bottom: 30px"
           >
             <LaunchingTimerItem
               title="NEXT UPDATE & ANNOUNCEMENT"
               class="custom-text-color"
+              style="font-weight: 600;"
             >
               <LaunchingTimerMarketplace :datetime="config.public.MINT_EVENT_START_IN" />
             </LaunchingTimerItem>
             <SubLaunchingTimerItem>
               <p :class="$style.text1">
-                <br />
-                <span style="font-size: 60px; color: white" :class="$style.date_format">AUGUST 2024</span>
+                <span class="text-5xl font-bold pt-5 pb-5" style="color: white" :class="$style.date_format">SEPTEMBER 2024</span>
               </p>
             </SubLaunchingTimerItem>
           </LaunchingTimerWrapper>
         </div>
-      </div>
-      <br />
+        </div>
     </AppWrapper>
   </section>
   </div>
@@ -109,41 +106,23 @@ const config = useRuntimeConfig();
 }
 
 @media (max-width: 1040px) and (min-width:768px) {
-    .button_set{
-      padding-top: 45px !important;
-    }
     .btn{
       font-size: 13px;
     }
 }
 @media (max-width: 768px) and (min-width:599px){
-    .button_set{
-      padding-top: 45px !important;
-    }
     .btn{
-      font-size: 10px;
+      font-size: 14px;
       font-weight: bold;
     }
     .date_format{
       font-size: 40px !important;
-    }
-    .button_set{
-      margin-top: 10%;
-    }
-    .btn_special1{
-      margin-top: 2%;
-    }
-    .btn_special2{
-      margin-top: 10%;
     }
 }
 @media (max-width: 599px) and (min-width: 522px) {
     .date_format{
       font-size: 40px !important;
       text-align: center;
-    }
-    .button_set{
-      margin-top: 30%;
     }
     .btn_special1{
       margin-top: 2%;
@@ -157,14 +136,12 @@ const config = useRuntimeConfig();
       font-size: 40px !important;
       text-align: center;
     }
-    .button_set{
-      margin-top: 35%;
-    }
     .btn_special1{
       margin-top: 2%;
     }
     .btn_special2{
-      margin-top: 15%;
+      margin-top: 10%;
+      margin-bottom: 10%;
     }
 }
 
@@ -173,21 +150,25 @@ const config = useRuntimeConfig();
       font-size: 40px !important;
       text-align: center;
     }
-    .button_set{
-      margin-top: 50%;
-    }
     .btn_special1{
       margin-top: 5%;
-    }
-    .btn_special2{
-      margin-top: 20%;
     }
 }
 
 
 
+@media (max-width: 775px) {
+    .butns{
+      margin-bottom: 40px !important;
+      margin-top: 40px !important;
+    }
+}
+
+
 .section {
-  padding-bottom: 0px !important;
+  padding-bottom: 50px !important;
+  margin-bottom: 50px !important;
+  padding-top: 50px !important;
 }
 
 .primaryText {
@@ -199,7 +180,6 @@ const config = useRuntimeConfig();
 }
 
 .section {
-  @include padding(150px 0 120px);
   color: #ffffff;
   position: relative;
 }
@@ -207,7 +187,6 @@ const config = useRuntimeConfig();
 .row {
   --gutter-x: 0;
   @include rfs(64px, --gutter-y);
-  padding-bottom: wrap-calc(6px);
 
   @include media-breakpoint-up(lg) {
     flex-wrap: nowrap;
@@ -234,7 +213,7 @@ const config = useRuntimeConfig();
 
 .header {
   //@include padding-top(32px);
-  @include margin-bottom(200px);
+  //@include margin-bottom(200px);
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -245,7 +224,6 @@ const config = useRuntimeConfig();
 .btn {
   --btn-bg: rgba(255, 255, 255, 0.2);
   --btn-color: #0a0d1d;
-  margin-top: -360px;
   margin-right: 10px;
 }
 
@@ -259,7 +237,7 @@ const config = useRuntimeConfig();
 }
 
 .text1 {
-  text-align: center; // Align text to the center
+  text-align: left; // Align text to the center
 }
 
 .timer2 {

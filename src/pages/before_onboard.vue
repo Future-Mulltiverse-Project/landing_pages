@@ -1,7 +1,7 @@
 <template>
-  <div :class="$style.el">
-    <AiHeader />
-    <div :class="$style.body">
+  <div :class="$style.el" class="grid grid-cols-1 gap-5">
+    <AppHeader style="position: fixed" />
+    <div :class="$style.body" class="flex flex-col items-center">
       <MediaPicture
         :class="$style.bg"
         :src="Bg"
@@ -14,61 +14,42 @@
           <MediaPicture :src="Logo" :width="284" :height="284" />
         </div>
         <div :class="$style.text1">
-          <span>Enter</span>
-          <strong>&</strong>
-          <span>Experience</span>
-          The
-          <br />
-          <span>FUTURE</span>
-          <strong>GUIDE</strong>
+          <p class="font-medium text-center">
+            <span>Enter </span>
+            <strong>& </strong>
+            <span>Experience </span>
+            The
+            <br />
+            <span style="font-size: 60px;">FUTURE</span>
+            <span style="font-size: 60px; color: white"> MULTIVERSE</span>
+          </p>
         </div>
         <div :class="$style.text2">
-          <strong></strong>
-
-          <br />
-          <br />
-          <br />
-          Experience the future today:
-          <strong></strong>
-
-          <strong></strong>
+          <h4 class="text-center" style="padding-bottom: 0px">Experience the Future today:</h4>
         </div>
-        <div class="row" :class="$style.btnRow">
-          <div class="col-auto">
-            <NuxtLink
-              to="/"
+        <div class="grid grid-cols-1 gap-5">
+          <div class="flex flex-row gap-4 justify-center">
+            <button
               class="btn btn-outline-primary"
               :class="$style.btn77"
             >
-              <span :class="$style.btn7">
-                ENTER FUTURE
-                <br />
-                MULTIVERSE
-              </span>
-              <HeadCommentIcon />
-            </NuxtLink>
-          </div>
-          <div class="col-auto">
-            <NuxtLink
-              to="https://sandbox.futuremultiverse.dev/"
+              ENTER FUTURE
+              <br />
+              MULTIVERSE
+              <!--HeadCommentIcon style="float:right; margin-top:7px" /-->
+            </button>
+            <button
               class="btn btn-outline-primary"
-              :class="$style.btn"
+              style="font-weight: 600; padding-left: 55px; padding-right: 55px;"
             >
-              <span>ONBOARD</span>
-            </NuxtLink>
+              ONBOARD
+            </button>
           </div>
         </div>
-
-        <div :class="$style.text3">
+        <div :class="$style.text3" class="text-center pt-6">
           Please Onboard & Connect your Wallet
           <br />
           to Enter the Future Multiverse
-        </div>
-
-        <div class="row">
-          <div :class="$style.logo2" class="col-md-1">
-            <MediaPicture :src="GraceAILogo" :width="2" :height="3" />
-          </div>
         </div>
       </AppWrapper>
     </div>
@@ -81,16 +62,21 @@ import HeadCommentIcon from '~/icons/HeadCommentIcon4.vue';
 import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
 import Bg from 'assets/images/future-multiverse/multiversebg.png';
-import Logo from '~/assets/images/future-multiverse/logo.png';
+import Logo from '~/assets/images/multiverse_header_logo.png';
 import GraceAILogo from 'assets/images/graceai/GraceAILogo.png';
 import ExploreFooter from '~/components/Explore/ExploreFooter.vue';
 import AiHeader from '~/components/AI/FutureMultiverseHeader.vue';
+import AppHeader from '~/components/AppHeader/AppHeader.vue';
 </script>
 
 <style lang="scss" module>
 .btn77 {
   border: 2px solid gray !important;
   color: gray !important;
+  text-align: left;
+  padding-bottom: 6px !important;
+  padding-top: 6px !important;
+  font-weight: 600;
 }
 .btn7 {
   color: gray !important;
@@ -110,8 +96,6 @@ svg {
 .el {
   background-color: $dark;
   color: #fff;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -207,11 +191,8 @@ svg {
 
 .text1 {
   @include font-size(56px);
-  margin-bottom: rem-calc(-60px);
   font-weight: 700;
   line-height: divide(70, 50);
-  margin-left: auto;
-  margin-right: auto;
   max-width: em-calc(550, 40);
   margin-top: 0%;
   text-align: center;
@@ -226,23 +207,19 @@ svg {
 }
 
 .text3 {
-  @include font-size(26px);
+  @include font-size(18px);
   @include margin-bottom(-200px);
-  max-width: em-calc(730, 22);
-  font-weight: 400;
-  max-width: 60%;
+  max-width: 80%;
+  font-weight: 600;
   margin: 0 auto;
-  margin-top: 4%;
   text-align: center;
 }
 
 .text2 {
   @include font-size(23px);
-  @include margin-bottom(65px);
+  @include margin-top(55px);
+  @include margin-bottom(30px);
   line-height: divide(30, 22);
-  margin-left: auto;
-  margin-right: auto;
-  max-width: em-calc(480, 22);
   text-align: center;
   font-weight: 500;
 

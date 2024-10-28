@@ -1,24 +1,25 @@
 <template>
   <footer :class="$style.footer">
     <AppWrapper :class="$style.wrapper">
-      <div class="row" :class="$style.row">
-        <div :class="$style.leftCol" class="col-12 col-lg-3">
+      <div class="grid grid-cols-1 gap-4 mt-8 mb-8 md:grid-cols-3" :class="$style.row">
+        <div class="md:col-span-1 md:order-first" :class="$style.leftCol">
           <AppFooterLogo :class="$style.logo" />
           <p :class="$style.contactText">
             CONTACT US:
             <br />
-            <a href="mailto:Support@futuremultiverse.com" style="font-weight: 500;" target="_top">Support@futuremultiverse.com</a>
+            <a href="mailto:Support@futuremultiverse.com" class="font-medium" target="_top">Support@futuremultiverse.com</a>
           </p>
           <AppFooterSocials :class="$style.socials" />
         </div>
-        <div class="col-12 col-lg-1"></div>
-        <div class="col-12 col-lg-8">
-          <h4 style="font-size: 18px;padding-bottom: 13px;"><span style="color: #CFB16D;">FUTURE</span> MULTIVERSE</h4>
-          <div class="row" :class="$style.navRow">
+        <div class="md:col-span-2 md:pt-0 pt-6 ">
+          <h4 class="text-lg font-bold" style="padding-top: 0px !important">
+            <span class="text-cfb16d">FUTURE</span> MULTIVERSE
+          </h4>
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-4" :class="$style.navRow">
             <div
               v-for="(item, index) in items"
               :key="index"
-              class="col-12 col-xs-6 col-md"
+              class=""
             >
               <h4 :class="$style.itemTitle">{{ item.name }}</h4>
               <ul v-if="item.subitems.length" :class="$style.subitems">
@@ -57,11 +58,11 @@ const items = useFooterNavItems;
   color: $dark;
   overflow: hidden;
   position: relative;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 .wrapper {
-  @include padding(0 0 146px);
+  @include padding(0 0 36px);
 }
 
 .row {
@@ -114,7 +115,6 @@ const items = useFooterNavItems;
   line-height: math-div(18, 14);
   font-weight: bold;
   color: #000000;
-  margin-bottom: rem-calc(22px);
 }
 
 .subitems {

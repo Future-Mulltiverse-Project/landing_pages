@@ -5,16 +5,36 @@ module.exports = {
   darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",
+  content: [
+    "./node_modules/flowbite/**/*.{js,ts}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./pages/index.vue",
+
+
+    // Or if using `src` directory:
+    //"./src/**/*.{js,ts,jsx,tsx}",
+  ],
   
   theme: {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      // Add your mobile screen size
+      'mobile': '775px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
     extend: {
+      fontFamily: {
+        'bai-jamjuree': ['Bai Jamjuree', 'sans-serif']
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -82,5 +102,5 @@ module.exports = {
       },
     },
   },
-  plugins: [animate],
+  plugins: [animate,'flowbite/plugin'],
 }

@@ -1,36 +1,36 @@
 <template>
   <section :class="$style.section">
           <div class="row" :class="$style.row">
-            <p style="text-align: center; font-size: 25px"><span style="color: #CFB16D">Some of our</span> Business <span style="color: #CFB16D">&</span> Technologies Partners<span style="color: #CFB16D">:</span></p>
+            <p style="text-align: center; font-size: 25px" class='font-medium' ><span style="color: #CFB16D">Some of Our</span> Business <span style="color: #CFB16D">&</span> Technologies Partners<span style="color: #CFB16D">:</span></p>
           </div>
           <div class="row">
             <div class="col-md-12">
-                <MediaPicture
-                :class="$style.video"
-                style="width: auto !important; margin-bottom: 16px !important"
-                :src="Video"
-                :width="1260"
-                :height="300"
-                />
-                <br />
+                        <img
+                            :src="Video"
+                            alt="FUTURE Image"
+                            :class="$style.video"
+                            class="mb-10 pt-4"
+                            style="padding-left: 13px; padding-right: 13px;"
+                            :width="1260"
+                            :height="300"
+                        />
             </div>
           </div>
-    <div class="row">
-      <h1 style="text-align: left; margin-bottom: 50px; font-size: 30px;"><span style="color: #CFB16D;">Example Impressions</span></h1>
-      <div class="row" style="padding-right: 0px !important;">
-        <div class="col-md-6">
-            <div class="card">
+    <div class="grid pl-6 pr-6">
+      <h1 style="text-align: left;  font-size: 30px;" class="font-medium" ><span style="color: #CFB16D;">Example Impressions</span></h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4 mb-2 ">
+        <div>
             <img
                 src="@/assets/images/impressions/big_image.png"
                 alt="FUTURE Image"
-                class="custom-image"
-                style=" width: 100% !important;"
+                class="custom-image md:w_99 w-full "
+               
             />
-            </div>
         </div>
-        <div class="col-md-6" style='padding-right: 2px !important;'>
+        <div class="grid grid-cols-2 gap-3 ">
             <div class="row" style="padding-right: 2px !important;">
-                <div class="col-md-6" style="padding-right: 0px !important;">
+                  <div class="flex justify-left lg:justify-center mb-10 mt-8 lg:mt-0">
                         <img
                             src="@/assets/images/impressions/small_image_1.png"
                             alt="FUTURE Image"
@@ -39,9 +39,9 @@
                         />
                 </div>
                 <div class="col-md-6" style="padding-right: 0px !important;">
-                    <div class="card">
+                  <div class="flex  justify-left lg:justify-center">
                         <img
-                            src="@/assets/images/impressions/small_image_2.png"
+                            src="@/assets/images/impressions/small_image_3.png"
                             alt="FUTURE Image"
                             class="custom-image"
                             :class="$style['custom-image']"
@@ -49,20 +49,18 @@
                     </div>
                 </div>
             </div>
-            <div class="row" style="margin-top: 20px;padding-right: 0px !important;">
-                <div class="col-md-6" style="padding-right: 0px !important;">
-                    <div class="card">
+            <div class="row" style="padding-right: 2px !important;">
+                  <div class="flex lg:justify-start justify-end mb-10  mt-8 lg:mt-0">
                         <img
-                            src="@/assets/images/impressions/small_image_3.png"
+                            src="@/assets/images/impressions/small_image_2.png"
                             alt="FUTURE Image"
                             class="custom-image"
                             style="padding-right: 0px !important;"
                             :class="$style['custom-image']"
                         />
-                    </div>
                 </div>
-                <div class="col-md-6"  style="padding-right: 0px !important;">
-                    <div class="card">
+                <div class="col-md-6" style="padding-right: 0px !important;">
+                  <div class="flex lg:justify-start justify-end">
                         <img
                             src="@/assets/images/impressions/small_image_4.png"
                             alt="FUTURE Image"
@@ -75,23 +73,31 @@
         </div>  
       </div>
     </div>
-  <AppWrapper style=" margin-top: 40px;">
-          <swiper
-            :modules="[Navigation, Pagination]"
-            :spaceBetween="0"
-            :slidesPerView="4"
-            navigation
-            :pagination="{ clickable: true }"
-            class="mySwiper"
-            style="background-color: #0A0D1D;"
-          >
-          <swiper-slide v-for="(item, index) in items" :key="index" style="width: unset !important ; min-width: 120px !important; max-width: 300px !important;  min-height: 170px !important; max-height: 300px !important; ">
-              <img :src="item" style="height: 230px !important; width: 100% !important;" draggable="true" />
-            </swiper-slide>
-          </swiper>
+    
 
-          <br/>          
-     </AppWrapper>
+    <div class="flex justify-center mb-3q pr-6 pl-2 mt-10 lg:mt-10" >
+      <div class="relative  w-4/5  lg:w-5/6 max-w-screen-xl">
+        <Carousel v-slot="{ canScrollNext, canScrollPrev }" :perPage="responsivePerPage" :breakpoints="breakpoints">
+          <CarouselPrevious v-if="canScrollPrev" />
+          <CarouselNext v-if="canScrollNext" />
+          <CarouselContent>
+            <CarouselItem 
+              v-for="(item, index) in items" 
+              :key="index"
+              :style="{ paddingLeft: index === 0 ? '0px' : '' }" 
+              class="flex items-center justify-center lg:basis-1/4 basis-1/3"
+            >
+              <Card class="grid grid-cols-1 gap-2">
+                <CardContent>
+                  <img :src="item" class="img_resize lg:h-40 lg:w-44 h-28 w-32" style="  " />
+                </CardContent>
+              </Card>
+            </CarouselItem>
+          </CarouselContent>
+        </Carousel>
+      </div>
+    </div>
+      
   </section>
 
 </template>
@@ -126,7 +132,6 @@ const items = [
   height: 100%;
 }
 
-
 .btnLink {
 font-size: 25px;
 font-weight: 700;
@@ -146,17 +151,9 @@ svg {
 }
 }
 
-.col-md-6{
-    
-}
 .row{
     padding-right: 0px !important;
 }
-</style>
-
-
-
-<style lang="scss" module>
 
 h4 {
     text-align: left;
@@ -166,25 +163,23 @@ h4 {
 }
 .section {
   padding-top: 40px;
+  padding-bottom: 50px;
   text-align: center;
   position: relative;
   max-width: 1168px;
   margin: 0 auto;
 }
 
-@media (max-width: 1800px)
-{
-    /*.section{
-      margin-left: 10px !important;
-    }*/
-}
 
+.img_resize{
+
+}
 .primaryText {
   color: $primary; /* Replace $primary with your desired primary text color */
 }
 
 .custom-image {
-  width: 87% !important;
+  width: 86% !important;
 }
 
 .heading {

@@ -1,37 +1,50 @@
 <template>
   <ExploreLayout>
-    <AppWrapper>
-      <ExploreSettings>
-        <ExploreChooseServer />
-        <div>
-          <div class="row" :class="$style.footer">
-            <div class="col-auto">
-              <div class="form-check" :class="$style.check">
-                <input
-                  id="flexCheckDefault"
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  I agree with FXPO terms & services
-                </label>
-              </div>
-            </div>
-            <div class="col-auto" :class="$style.btnCol">
-              <button
-                class="btn btn-outline-white"
-                :class="$style.btn"
-                type="button"
-              >
-                ENTER FXPO
-                <DegreeIcon />
-              </button>
-            </div>
-          </div>
+    <div :class="$style.body">
+      <AppWrapper>
+
+        <div :class="$style.logo">
+          <MediaPicture :src="Logo" :width="284" :height="284" />
         </div>
-      </ExploreSettings>
+        <div :class="$style.text1">
+          <p class="font-medium">
+            <span>Enter </span><strong>& </strong><span>Experience </span>The
+            <br /><span>FUTURE</span><strong> GUIDE</strong>
+          </p>
+        </div>
+        <div :class="$style.text2">
+          <h4 style='text-align: center'>Experience the future today:</h4>
+        </div>
+        <div class="grid grid-cols-4 gap-5">
+          <div></div>
+          <div >
+            <button
+              class="btn btn-outline-primary"
+              :class="$style.btn77"
+            >
+                ENTER FUTURE
+                <br />
+                MULTIVERSE
+              <HeadCommentIcon style="float:right" />
+            </button>
+          </div>
+          <div >
+            <button
+              class="btn btn-outline-primary"
+            >
+              ONBOARD
+            </button>
+          </div>
+          <div></div>
+        </div>
+
+        <div :class="$style.text3">
+          Please Onboard & Connect your Wallet
+          <br />
+          to Enter the Future Multiverse
+        </div>
     </AppWrapper>
+    </div>
   </ExploreLayout>
 </template>
 
@@ -41,6 +54,8 @@ import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import ExploreSettings from '~/components/Explore/ExploreSettings.vue';
 import ExploreChooseServer from '~/components/Explore/ExploreChooseServer.vue';
 import DegreeIcon from '~/icons/DegreeIcon.vue';
+
+import Bg from 'assets/images/future-multiverse/multiversebg.png';
 </script>
 
 <style lang="scss" module>
@@ -72,5 +87,12 @@ import DegreeIcon from '~/icons/DegreeIcon.vue';
   :global(.form-check-label) {
     color: #fff;
   }
+}
+.body {
+  @include padding(80px 0 120px);
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  position: relative;
 }
 </style>

@@ -9,15 +9,15 @@
       <div :class="$style.text">
         {{ item.text }} {{ item.text_grey }}
       </div>
-      <NuxtLink
+      <button
         v-if="item.url"
         :to="item.url"
         :class="$style.btn"
-        class="btn btn-sm btn-outline-primary"
+        class="w-1/3 btn btn-sm btn-outline-primary"
         style="color: #ffffff"
       >
         Explore
-      </NuxtLink>
+    </button>
     </div>
   </article>
 </template>
@@ -102,5 +102,7 @@ defineProps<{ item: IconItem }>();
 .btn {
   min-width: rem-calc(128px);
   margin-top: auto;
+  padding-left: unset;
+  padding-right: unset;
 }
 </style>

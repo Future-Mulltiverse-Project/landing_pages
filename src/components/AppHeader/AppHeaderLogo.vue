@@ -1,7 +1,9 @@
 <template>
-  <NuxtLink to="/" aria-label="FXPO" :class="$style.link">
-    <HeaderLogoIcon :class="$style.icon" />
-  </NuxtLink>
+  <div :class="$style.container"> 
+    <NuxtLink to="/" aria-label="FXPO" :class="$style.link">
+      <HeaderLogoIcon :class="$style.icon" />
+    </NuxtLink>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -9,9 +11,14 @@ import HeaderLogoIcon from '~/icons/HeaderLogoIcon.vue';
 </script>
 
 <style lang="scss" module>
+.container {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
 .link {
   color: inherit;
-  display: inline-block;
 }
 
 .icon {

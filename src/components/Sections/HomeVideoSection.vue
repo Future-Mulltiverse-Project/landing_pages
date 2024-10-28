@@ -1,6 +1,6 @@
 <template>
     <section :class="$style.section">
-      <div class="row">
+      <div class="grid grid-cols-1 gap-2">
         <video autoplay controls>
             <source src="@/assets/videos/future_multiverse_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -18,12 +18,11 @@
       font-size: 20px;
   }
   .section {
-    padding-top: 80px;
     text-align: center;
     position: relative;
     max-width: 1168px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    margin-bottom: 50px !important;
   }
   
   .primaryText {

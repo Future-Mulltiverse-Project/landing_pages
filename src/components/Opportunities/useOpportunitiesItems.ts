@@ -11,7 +11,7 @@ export interface Opportunity {
 export const useOpportunitiesItems = () => {
   return ref([
     {
-      tab: '<span style="color:#ffffff !important">For</span> <span style="color: #CFB16D">Individuals</span>',
+      tab: '<p class="font-normal"><span style="color:#ffffff !important">For</span> <span style="color: #CFB16D">Individuals</span></p>',
       items: [
         {
           title: 'Launch and Accelerate Your Project',
@@ -52,7 +52,7 @@ export const useOpportunitiesItems = () => {
       ],
     },
     {
-      tab: '<span style="color:#ffffff !important">For</span> <span style="color: #CFB16D">Projects</span> <span style="color:#ffffff">&</span> <span style="color: #CFB16D">SMEs</span>',
+      tab: '<p class="font-normal"><span style="color:#ffffff !important">For</span> <span style="color: #CFB16D">Projects</span> <span style="color:#ffffff">&</span> <span style="color: #CFB16D">SMEs</span></p>',
       items: [
         {
           title: 'Launch and Accelerate your Project',
@@ -93,7 +93,7 @@ export const useOpportunitiesItems = () => {
       ],
     },
     {
-      tab: '<span style="color:#ffffff !important">For</span> <span style="color: #CFB16D">Public Companies</span> <span style="color:#ffffff">&</span> <span style="color: #CFB16D">Organizations</span>',
+      tab: '<p class="font-normal"><span style="color:#ffffff !important">For</span> <span style="color: #CFB16D">Public Companies</span> <span style="color:#ffffff">&</span> <span style="color: #CFB16D">Organizations</span></p>',
       items: [
         {
           title: 'Accelerate your Project or Business',
@@ -134,7 +134,7 @@ export const useOpportunitiesItems = () => {
       ],
     },
     {
-      tab: '<span style="color:#ffffff !important">For</span> <span style="color: #CFB16D">Governments</span>',
+      tab: '<p class="font-normal"><span style="color:#ffffff !important">For</span> <span style="color: #CFB16D">Governments</span></p>',
       items: [
         {
           title: 'Launch and Accelerate Your Project',

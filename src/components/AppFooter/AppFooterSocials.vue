@@ -1,6 +1,6 @@
 <template>
-  <ul class="row" :class="$style.row">
-    <li v-for="(item, index) in socials" :key="index" class="col-auto">
+  <ul class="grid grid-cols-4 gap-5" :class="$style.row">
+    <li v-for="(item, index) in socials" :key="index" class="col-auto flex sm:justify-normal justify-center">
       <NuxtLink
         :href="item.to"
         :aria-label="item.name"

@@ -1,79 +1,60 @@
 <template>
-        <br/>
-        <br/>
-        <br/>
-        <h2 style="color: #CFB16D;">Historic:</h2>
-        <br/>
-        <div class="row"  style="background-color: #0A0D1D;">
-            <div class="col-md-12">
+        <h2 style="color: #CFB16D;" class="text-4xl font-medium mb-4 mt-4">Historic:</h2>
+        <div class="grid"  style="background-color: #0A0D1D;">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_1" style="width: 100%;"/>
-                <br/>
-                <br/>
+                 
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_2" style="width: 100%;"/>
-                <br/>
-                <br/>
+                 
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_3" style="width: 100%;"/>
-                <br/>
-                <br/>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_4" style="width: 100%;"/>
-                <br/>
-                <br/>
             </div>
         </div>
-        <h2 style="color: #CFB16D;">Recent:</h2>
-        <br/>
+        <h2 style="color: #CFB16D;"  class="font-medium text-4xl mb-4">Recent:</h2>
+
         <div class="row"  style="background-color: #0A0D1D;">
-            <div class="col-md-12">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_5" style="width: 100%;"/>
-                <br/>
-                <br/>
+                 
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_6" style="width: 100%;"/>
-                <br/>
-                <br/>
+                 
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_7" style="width: 100%;"/>
-                <br/>
-                <br/>
+                 
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_8" style="width: 100%;"/>
-                <br/>
-                <br/>
+                 
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_9" style="width: 100%;"/>
-                <br/>
-                <br/>
+                 
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_10" style="width: 100%;"/>
-                <br/>
-                <br/>
+                 
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_11" style="width: 100%;"/>
-                <br/>
-                <br/>
+                 
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_12" style="width: 100%;"/>
-                <br/>
-                <br/>
+                 
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-6">
                 <img class="img-responsive" :src="image_13" style="width: 100%;"/>
-                <br/>
-                <br/>
+                 
             </div>
         </div>
         

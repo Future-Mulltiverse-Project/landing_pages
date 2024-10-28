@@ -1,21 +1,24 @@
 <template>
-  <div class="row"  style="background-color: #15172E;">
-      
-      <div class="row" style="padding-right: 0px !important;padding-left: 30px !important;">
-        <swiper
-          :modules="[Navigation, Pagination]"
-          :spaceBetween="0"
-          :slidesPerView="6"
-          navigation
-          :pagination="{ clickable: true }"
-          class="mySwiper"
-          style="background-color: #15172E;"
-        >
-          <swiper-slide v-for="(item, index) in items" :key="index" style="width: unset !important ; min-height: 166px; max-height: 167px; min-width: 120 !important; max-width: 300px !important; ">
-            <img :src="item" style="width: 100% !important;" draggable="true" />
-          </swiper-slide>
-        </swiper>
+  <div class="row"  >
+    <div class="flex justify-center mb-3q pr-6 pl-6 mt-10 lg:mt-10" >
+      <div class="relative  w-4/5  lg:w-5/6 max-w-screen-xl">
+        <Carousel v-slot="{ canScrollNext, canScrollPrev }" class="relative w-full max-w-screen-xl">
+          <CarouselContent>
+            <CarouselItem class="basis-1/7" style="padding-left: 0px" v-for="(item, index) in items" :key="index">
+              <div class="p-1">
+                <Card class="grid grid-cols-1 gap-2">
+                  <CardContent class="flex  items-center justify-center">
+                    <img :src="item" class="img_resize lg:h-40 lg:w-44 h-32 w-40" style="  " />
+                  </CardContent>
+                </Card>
+              </div>
+            </CarouselItem>
+          </CarouselContent>
+          <CarouselPrevious v-if="canScrollPrev" />
+          <CarouselNext v-if="canScrollNext" />
+        </Carousel>
       </div>
+    </div>
     </div>
   </template>
   

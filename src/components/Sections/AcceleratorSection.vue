@@ -1,12 +1,11 @@
 <template>
-  <section :class="$style.section" style="padding-top: 0px;padding-bottom: 20px;">
+  <section :class="$style.section" class=" pb-12 " style="padding-top: 0px;">
     <AppWrapper>
-      <div class="row" :class="$style.row">
-        <div class="col-md-6">
-          <h1 style="font-size: 48px; padding-bottom:20px; color: #cfb16d">
+      <div class="grid grid-cols-1 gap-3 md:grid-cols-2" :class="$style.row">
+        <div class="md:order-first lg:pl-0 lg:pr-0 pl-4 pr-4">
+          <h1 class="text-left font-medium text-5xl " style=" color: #cfb16d">
             FUTURE MULTIVERSE
-            <br />
-            <span style="color: #ffffff">ECOSYSTEM</span>
+            <span class="text-white">ECOSYSTEM</span>
           </h1>
           <!--p style="padding-bottom: 10px; color: #cfb16d">
             <span style="font-size: 16px">
@@ -15,19 +14,19 @@
               AND EVERYTHING YOU CAN BUILD, CAN BE FUNDED!"
             </span>
           </p-->
-          <p style="font-size: 14px; padding-right: 30px; line-height: 1.8;">
+          <p style="margin-top: 20px; padding-left: 0px;" class="mb-5 lg:mb-0 text-left text-sm font-normal leading-7 px-4 md:px-0" >
             Leveraging our advanced tools, including our In-House Cinematic Design Production Studio, our Web3 based Accelerator platform, uniting a hyper-realistic Multivere, LaunchPad and Marketplace, and the methodologies, systems and modeling, amplified by the outstanding global influence and resources of Future Trends Group, we empower nations, organizations, associations, institutions, academies, universities, companies, projects and individuals across the world to actualize, uplift and transform their reality, enabling them to scale and grow quickly. Our platform offers key transformational processes that unlock limitless potentials and open up new realms of possibilities for growth and success. 
 
           </p>
         </div>
-        <div class="col-md-7" :class="$style.mediaCol">
+        <div :class="$style.mediaCol" class=" lg:pl-0 lg:pr-0 pl-4 pr-4" >
           <div :class="$style.mediaWrapper">
             <MediaPicture :src="Img" :width="433" :height="247" />
           </div>
         </div>
       </div>
       <div class="row">
-        <h4 style="text-align: center;">Partner with us today and take your future to the next level.</h4>
+        <h4 class="font-medium mt-12 " style="text-align: center;padding: 0px; ">Partner with us today and take your future to the next level.</h4>
       </div>
     </AppWrapper>
   </section>
@@ -60,8 +59,9 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
     #23274a,
     transparent
   );
-  @include margin-top(36px);
-  padding: calc(2.0375rem + 13.1811023622vw) 0 calc(1.1rem + 2.5511811024vw);
+  //@include margin-top(26px)
+  //padding-bottom: 50px !important;
+  //padding: calc(2.0375rem + 13.1811023622vw) 0 calc(1.1rem + 2.5511811024vw);
   //@include padding(200px 0 50px);
   text-align: center;
 

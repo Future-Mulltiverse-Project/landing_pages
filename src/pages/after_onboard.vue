@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.el">
-    <AiHeader />
+    <AppHeader  style="position: fixed" />
     <div :class="$style.body">
       <MediaPicture
         :class="$style.bg"
@@ -14,43 +14,33 @@
           <MediaPicture :src="Logo" :width="284" :height="284" />
         </div>
         <div :class="$style.text1">
-          <span>Enter</span>
-          <strong>&</strong>
-          <span>Experience</span>
-          The
-          <br />
-          <span>FUTURE</span>
-          <strong>GUIDE</strong>
+          <p class="font-medium">
+            <span>Enter </span><strong>& </strong><span>Experience </span>The
+            <br /><span>FUTURE</span><strong> GUIDE</strong>
+          </p>
         </div>
         <div :class="$style.text2">
-          <strong></strong>
-
-          <br />
-          <br />
-          <br />
-          Experience the future today:
-          <strong></strong>
-
-          <strong></strong>
+          <h4 style='text-align: center'>Experience the future today:</h4>
         </div>
-        <div class="row" :class="$style.btnRow">
-          <div class="col-auto">
-            <NuxtLink
-              to="/"
+        <div class="grid grid-cols-3 gap-4">
+          <div></div>
+          <div >
+            <button
               class="btn btn-outline-primary"
               :class="$style.btn77"
             >
-              <span :class="$style.btn7">
-                ENTER
-                <strong>
-                  FUTURE
-                  <br />
-                  MULTIVERSE
-                </strong>
-              </span>
-              <HeadCommentIcon />
-            </NuxtLink>
+                ENTER FUTURE
+                MULTIVERSE
+              <HeadCommentIcon style="float:right" />
+            </button>
           </div>
+          <div></div>
+        </div>
+
+        <div :class="$style.text3">
+          Please Onboard & Connect your Wallet
+          <br />
+          to Enter the Future Multiverse
         </div>
 
         <div :class="$style.text3"></div>
@@ -71,10 +61,11 @@ import HeadCommentIcon from '~/icons/HeadCommentIcon4.vue';
 import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
 import Bg from 'assets/images/future-multiverse/multiversebg.png';
-import Logo from '~/assets/images/future-multiverse/logo.png';
+import Logo from '~/assets/images/multiverse_header_logo.png';
 import GraceAILogo from 'assets/images/graceai/GraceAILogo.png';
 import ExploreFooter from '~/components/Explore/ExploreFooter.vue';
 import AiHeader from '~/components/AI/FutureMultiverseHeader 2.vue';
+import AppHeader from '~/components/AppHeader/AppHeader.vue';
 </script>
 
 <style lang="scss" module>
@@ -200,7 +191,6 @@ svg {
 
 .text1 {
   @include font-size(56px);
-  margin-bottom: rem-calc(-60px);
   font-weight: 700;
   line-height: divide(70, 50);
   margin-left: auto;
@@ -231,11 +221,9 @@ svg {
 
 .text2 {
   @include font-size(23px);
-  @include margin-bottom(65px);
+  @include margin-bottom(20px);
+  @include margin-top(20px);
   line-height: divide(30, 22);
-  margin-left: auto;
-  margin-right: auto;
-  max-width: em-calc(480, 22);
   text-align: center;
   font-weight: 500;
 

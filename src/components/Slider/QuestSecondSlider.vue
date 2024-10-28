@@ -1,78 +1,36 @@
 <template>
-  <div class="row" style="background-color: #0a0d1d">
-    <div
-      class="row"
-      style="padding-right: 0px !important; padding-left: 30px !important"
-    >
-      <swiper
-        :modules="[Navigation, Pagination]"
-        :spaceBetween="0"
-        :slidesPerView="4"
-        navigation
-        :pagination="{ clickable: true }"
-        class="mySwiper"
-        style="background-color: #0a0d1d"
-      >
-        <swiper-slide
-          v-for="(item, index) in items"
-          :key="index"
-          style="width: 100px !important"
-        >
-          <img
-            :src="item"
-            style="width: 100% !important; height: 100% !important"
-            draggable="true"
-          />
-        </swiper-slide>
-      </swiper>
+  <div class="row" >
+    <div class="flex justify-center mb-3q pr-6 pl-6 mt-10 lg:mt-10 mb-10" >
+      <div class="relative  w-4/5  lg:w-5/6 max-w-screen-xl">
+      <Carousel v-slot="{ canScrollNext, canScrollPrev }" :perPage="responsivePerPage" :breakpoints="breakpoints">
+        <CarouselContent>
+          <CarouselItem 
+            v-for="(item, index) in items" 
+            :key="index"
+            :style="{ paddingLeft: index === 0 ? '0px' : '' }" 
+              class="flex items-center justify-center lg:basis-1/4 basis-1/3"
+          >
+            <div class="p-1">
+              <Card class="grid grid-cols-1 gap-2">
+                <CardContent>
+                  <img :src="item" class="img_resize lg:h-40 lg:w-44 h-28 w-32" style="  " />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious v-if="canScrollPrev" />
+        <CarouselNext v-if="canScrollNext" />
+      </Carousel>
     </div>
   </div>
 
-  <div class="row" style="margin-top: 40px">
-    <div class="col-md-3"></div>
-    <div class="col-md-2">
-      <NuxtLink
-        :class="$style.btn_second"
-        class="btn btn-sm btn-outline-primary"
-        style="
-          padding-top: 18px;
-          padding-bottom: 18px;
-          width: 100%;
-          font-size: 15px;
-        "
-      >
-        <span><span style="color: #ffffff">WEBSITE</span></span>
-      </NuxtLink>
-    </div>
-    <div class="col-md-2">
-      <NuxtLink
-        :class="$style.btn_second"
-        class="btn btn-sm btn-outline-primary"
-        style="
-          padding-top: 18px;
-          padding-bottom: 18px;
-          width: 100%;
-          font-size: 15px;
-        "
-      >
-        <span style="color: white">MATRIX</span>
-      </NuxtLink>
-    </div>
-    <div class="col-md-2">
-      <NuxtLink
-        :class="$style.btn_second"
-        class="btn btn-sm btn-outline-primary"
-        style="background-color: #cfb16d; font-size: 12px; width: 100%"
-      >
-        <span style="color: white">
-          EXPERIENCE
-          <br />
-          IN Fxpo
-        </span>
-      </NuxtLink>
-    </div>
-    <div class="col-md-3"></div>
-  </div>
+  <div class="flex items-baseline justify-center flex-wrap"> 
+  <button class="btn btn-outline-primary font-semibold mr-2 mb-2">website</button>
+  <button class="btn btn-outline-primary font-semibold mr-2 mb-2">Matrix</button>
+  <button class="btn btn-outline-primary font-semibold mr-2 mb-2">Experience in fxpo</button>
+</div>
+</div>
 
 </template>
 
@@ -87,8 +45,9 @@ import sliderImage1 from '~/assets/images/slider/second_slider/slider_1.png';
 import sliderImage2 from '~/assets/images/slider/second_slider/slider_2.png';
 import sliderImage3 from '~/assets/images/slider/second_slider/slider_3.png';
 import sliderImage4 from '~/assets/images/slider/second_slider/slider_4.png';
+import sliderImage5 from '~/assets/images/slider/second_slider/slider_5.png';
 
-const items = [sliderImage1, sliderImage2, sliderImage3, sliderImage4];
+const items = [sliderImage1, sliderImage2, sliderImage3, sliderImage4, sliderImage5];
 </script>
 
 <style lang="scss" module>

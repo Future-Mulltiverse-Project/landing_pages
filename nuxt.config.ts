@@ -7,12 +7,12 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
+  // buildModules: ['@nuxtjs/tailwindcss'],
   //plugins: [ '@/assets/js/global/plugins.bundle.js', {src: '~/assets/js/global/plugins.bundle.js', mode:'client'}, ],
   runtimeConfig: {
     public: {
-      APP_NAME: 'Future Mulitverse',
-      APP_TITLE: 'Future Mulitverse',
+      APP_NAME: 'Future Multiverse',
+      APP_TITLE: 'Future Multiverse',
       APP_DESCRIPTION: '',
       API_URL: 'https://futuremultiverse.com/',
       MINT_EVENT_START_IN: '2023-06-08T11:59:59.000Z',
@@ -108,9 +108,39 @@ export default defineNuxtConfig({
     },
   },
   //css: ['~/assets/styles/app.scss'],
-  css: ['~/assets/css/main.css','~/assets/css/metronic_styling.css'],
-  modules: ['~/modules/purgecss', '@nuxt/ui', '@nuxtjs/tailwindcss', 'shadcn-nuxt'],
-  
+  css: [
+    '~/assets/css/main.css', 
+    '~/assets/css/tailwind.css', 
+    '@fontsource/bai-jamjuree/latin.css'
+  ],
+  //modules: [ '@nuxt/ui', '@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  modules: [
+    '~/modules/purgecss', 
+    '@nuxt/ui', 
+    '@nuxtjs/tailwindcss', 
+    'shadcn-nuxt',
+    '@nuxtjs/google-fonts'
+  ],
+  googleFonts: {
+    families: {
+      'Bai Jamjuree': true
+    }
+  },
+  // extractCSS: {
+  //   ignoreOrder: true
+  // },
+  /*optimization: {
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /\.(css|vue)$/,
+          chunks: 'all',
+          enforce: true
+        }
+      }
+    }
+  },*/
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -120,7 +150,7 @@ export default defineNuxtConfig({
      * Directory that the component lives in.
      * @default "./components/ui"
      */
-    componentDir: './components/ui'
+    componentDir: './src/components/ui'
   },
   experimental: {
     inlineSSRStyles: false,
@@ -143,7 +173,7 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
-  //srcDir: 'src/',
+  srcDir: 'src/',
   // build: {
   //   transpile: [],
   // },
@@ -152,5 +182,5 @@ export default defineNuxtConfig({
   //   global: false,
   //   // dirs: ['],
   // },
-  //telemetry: false,
+  telemetry: false,
 });

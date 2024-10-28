@@ -1,5 +1,5 @@
 <template>
-  <section :class="$style.section">
+  <section :class="$style.section" class="pt-12 pb-12">
     <MediaPicture
       :media-class="$style.bg"
       layout="fill"
@@ -9,19 +9,19 @@
     />
     <div :class="$style.gradient" />
     <AppWrapper>
-      <div :class="$style.formContainer">
-        <div class="row" :class="$style.row">
-          <div class="col-12 col-lg">
+      <div :class="$style.formContainer"class='pb-12'>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-5" :class="$style.row">
+          <div class="md:col-span-3">
             <h2 :class="$style.title">
-               JOIN OUR<span :class="$style.primaryText"> NEWSLETTER LIST TODAY</span> FOR ALL <span :class="$style.primaryText">NEWS</span> & <span :class="$style.primaryText">UPDATES</span>
+              JOIN OUR<span :class="$style.primaryText"> NEWSLETTER LIST TODAY</span> FOR ALL <span :class="$style.primaryText">NEWS</span> & <span :class="$style.primaryText">UPDATES</span>
             </h2>
           </div>
-          <div class="col-12 col-lg-auto">
+          <div class="md:col-span-2">
             <JoinForm :class="$style.form" />
           </div>
         </div>
       </div>
-      <p :class="$style.text1">We can´t wait to meet you in the <br> <span style="font-size: 42px; color: white;">FUTURE MULTIVERSE</span><span style="font-size: 42px;">!</span></p>
+      <p :class="$style.text1">We can´t wait to meet you in the <br> <span style="font-size: 66px; color: white;">FUTURE MULTIVERSE</span><span style="font-size: 66px;">!</span></p>
       <p :class="$style.text2">Your<span style="color: white;"> home</span> of <span style="color: white;">inspiration <br /> </span> for the <span style="color: white;">future</span></p>
     </AppWrapper>
   </section>
@@ -35,7 +35,6 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 <style lang="scss" module>
 .section {
-  @include padding-bottom(100px);
   
   color: #0a0d1d;
   position: relative;
@@ -65,7 +64,6 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .formContainer {
-  @include padding(62px 0 34px);
 
   border-bottom: 1px solid rgba(#fff, 0.7);
   margin-bottom: 16%;
@@ -83,7 +81,6 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .form {
-  max-width: rem-calc(474px);
   width: 100%;
   margin: 0 auto;
 
@@ -103,17 +100,18 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .text1 {
-  @include font-size(50px);
-  @include margin-bottom(115px);
+  @include font-size(35px);
+  @include margin-bottom(85px);
   @include margin-top(10px);
   line-height: math-div(30, 26);
   color: $primary;
   text-align: center;
+  font-weight: 600;
 }
 
 .text2 {
   @include font-size(62px);
-  font-weight: 700;
+  font-weight: 600;
   line-height: math-div(55, 45);
   text-transform: uppercase;
   text-align: center;

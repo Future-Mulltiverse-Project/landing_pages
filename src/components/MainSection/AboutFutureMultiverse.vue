@@ -43,7 +43,7 @@ defineProps<{
 }
 
 .title {
-  @include font-size(45px);
+  @include font-size(50px);
   @include margin-bottom(20px);
   line-height: math-div(55, 45);
   text-transform: uppercase;

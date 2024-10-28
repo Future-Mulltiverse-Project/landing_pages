@@ -105,7 +105,9 @@ const items = [
 
 <style lang="scss" module>
 .section {
-  @include padding(76px 0 80px);
+  /*@include padding(50px 0 80px);*/
+  padding-top: 50px;
+  padding-bottom: 50px ;
 }
 .gold {
   color: $primary;
@@ -113,8 +115,7 @@ const items = [
 
 .title {
   @include font-size(48px);
-  @include margin-bottom(126px);
-  @include margin-top(36px);
+  @include margin-bottom(66px);
   line-height: divide(60, 48);
   color: $white;
   font-weight: 600;

@@ -1,60 +1,52 @@
 <template>
-  <section :class="$style.section">
+  <section :class="$style.section" class="pt-12">
     <AppWrapper>
       <div class="row" :class="$style.item">
-          <MainSectionHeader
-            :title="`<strong>THE <span style='color:white'>MOVEMENT</span></strong>`"
-            
-          />
-        <div class="col-12 col-lg-6" :class="$style.leftCol" style="margin-top: 0px !important;">
-          <MainSectionHeader
-            :title="`<strong>Our <span style='color:white'>Vision</span> is clear</strong>`"
-            :class="$style.header"
-          />
-          <MainSectionTextContent>
-            <p>
-              We are convinced that despite all the challenges the world is currently facing,
-               we are also living in the most exciting time to be alive that holds unprecedented
+        <MainSectionHeader
+          :title="`<strong class='font-semibold text-5xl'>THE <span style='color:white'>MOVEMENT</span></strong>`"            
+        />
+        <div class=" grid-cols-1 gap-3 md:grid-cols-2 grid items-center"> 
+          <div class="md:order-first">
+            <MainSectionHeader
+              :title="`Our <span style='color:white'>Vision</span> is clear`"
+              :class="$style.header"
+              class="font-medium text-5xl"
+            />
+            <MainSectionTextContent>
+              <p class="text-lg mr-10 pt-4">
+                We are convinced that despite all the challenges the world is currently facing,
+                we are also living in the most exciting time to be alive that holds unprecedented
                 change and transformational potential for our world, the whole economy, and each 
                 individual, if the already existing solutions and available opportunities are made 
                 accessible & inspired to be used purposefully & wisely.
-            </p>
-            
-          </MainSectionTextContent>
-        </div>
-        
-        <div class="col-12 col-lg-6">
-          <iframe style="width: 100%;" height="319" src="https://www.youtube.com/embed/ttm0a_P1sGc"></iframe>
+              </p>
+            </MainSectionTextContent>
+          </div>
+          <div class="pr-5 md:pr-0">
+            <iframe style="width: 100%;" height="319" src="https://www.youtube.com/embed/ttm0a_P1sGc"></iframe>
+          </div>
         </div>
       </div>
 
-      <QuestTopSlider/>
-      <br/>
-      <br/>
-
-      <div class="row" :class="$style.item">
-        <div class="col-12 col-lg-6">
+      <QuestTopSlider style="margin-bottom: 50px;" />
+      <div class=" grid-cols-1 gap-3 mt-8 mb-3 md:grid-cols-2 grid items-center">
+        <div class="md:order-first">
           <iframe style="width: 100%;" height="319" src="https://www.youtube.com/embed/o_LwGcSnxBg"></iframe>
         </div>
-        
-        <div class="col-12 col-lg-6" :class="$style.leftCol">
-          <MainSectionHeader
-            :title="`<strong>our <span style='color:white'>Mission</span> is Simple</strong>`"
-            :class="$style.header"
-          />
+        <div class="p-4">
+          <h2 class="mb-5 font-medium text-5xl" style="color: #CFB16D">OUR <span style='color:white'>MISSION</span> IS SIMPLE</h2>
           <MainSectionTextContent>
-            <p>
+            <p class="text-lg">
               We designed and built the Future Multiverse & EXPO to demonstrate how, 
               in a world where challenges and opportunities coexist, the latest advancements 
               in technology can be used in forward-thinking ways never seen before, to accelerate
-               a more sustainable, meaningful & inspiring  future for all, and to open up the 
-               possibility for everyone to gain access to these new opportunities, to create 
-               value for every individual, every project and every company that resonates with this purpose.
+              a more sustainable, meaningful & inspiring  future for all, and to open up the 
+              possibility for everyone to gain access to these new opportunities, to create 
+              value for every individual, every project and every company that resonates with this purpose.
             </p>
           </MainSectionTextContent>
         </div>
       </div>
-
       <QuestSecondSlider/>
     </AppWrapper>
   </section>
@@ -73,7 +65,6 @@ import QuestSecondSlider from '~/components/Slider/QuestSecondSlider.vue';
 
 <style lang="scss" module>
 .section {
-  @include padding(70px 0 50px);
   background: radial-gradient(1160px 420px at center, #23274a, transparent);
 }
 
@@ -96,7 +87,4 @@ import QuestSecondSlider from '~/components/Slider/QuestSecondSlider.vue';
   }
 }
 
-.header {
-  @include margin-bottom(6px);
-}
 </style>

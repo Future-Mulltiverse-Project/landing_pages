@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.el">
-    <p style="margin-top: -16%; text-align: center; color: #CFB16D; font-size: 30px; margin-bottom: 30px;">COUNTDOWN</p>
+    <p class='font-medium' style="margin-top: -16%; text-align: center; color: #CFB16D; font-size: 30px; margin-bottom: 30px;">COUNTDOWN</p>
     <h3 :class="$style.title">
       <span style="color: #CFB16D">NEXT UPDATE</span> & ANNOUNCEMENT:
     </h3>

@@ -1,19 +1,17 @@
 <template>
-  <section :class="$style.section">
-    <AppWrapper>
-      <div class="row" :class="$style.row">
-        <div class="col-md-6">
-          <h2 style='color: #ffffff;font-size: 40px; text-align: left;padding-top: 35px;padding-bottom: 50px;'>THE <span style='color:#CFB16D'>OPPORTUNITIES</span> <br/>FOR <span style='color:#CFB16D'>EVERYONE</span></h2>
+  <section>
+    <AppWrapper class="pb-14">
+      <div class="grid grid-cols-1 gap-3 mb-12 md:grid-cols-2">
+        <div class="md:order-first">
+          <h2 style='color: #ffffff; text-align: left;' class="text-5xl font-semibold" >THE <span style='color:#CFB16D'>OPPORTUNITIES</span> <br/>FOR <span style='color:#CFB16D'>EVERYONE</span></h2>
         </div>
-        <div class="col-md-6">
-          <h4 style="font-size: 16px; line-height: 23px; font-weight: 100;">The First time in history our platform makes it possible, that Individuals, projects and companies can come together in one fully immersive experience,
+        <div>
+          <p style="font-size: 16px; line-height: 23px;" class="text-xl font-normal">The First time in history our platform makes it possible, that Individuals, projects and companies can come together in one fully immersive experience,
             accessible 24/7 from anywhere around the world, to connect, communicate, share & exchange valuable knowledge, solutions, goods, services or assets, and 
             work together using our platform as a catalyst to accelerate everyones progress and success, while every contribution is rewarded.
-          </h4>
+          </p>
         </div>
       </div>
-      <br />
-      <br />
 
       <div v-if="opportunities?.length" ref="swiperRef" class="swiper">
         <div class="swiper-wrapper">
@@ -35,8 +33,6 @@
         v-if="selectedItem"
         :selected-item="selectedItem"
       />
-      <br />
-      <br/>
     </AppWrapper>
   </section>
 </template>
@@ -117,9 +113,6 @@ onBeforeUnmount(() => {
 .btn_second {
   float:left;
   color: white;
-}
-.section {
-  @include padding(10px 0);
 }
 
 .row {

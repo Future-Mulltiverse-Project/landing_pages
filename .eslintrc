@@ -4,12 +4,24 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
+    "prettier/prettier": 0,
     "vue/multi-word-component-names": 0,
     "vue/no-multiple-template-root": 0,
     "import/no-named-as-default": 0,
     "vue/prop-name-casing": 0,
     "vue/no-dupe-keys": 0,
     "vue/no-v-html": 0,
-    "camelcase": 0
+    "camelcase": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "no-unused-vars": 0, 
+    "no-console": 0,
+    "spaced-comment":0,
+    "vue/attributes-order":0,
+    "import/first":0,
+    "import/order": 0,
+    "vue/attribute-hyphenation":0,
+    "vue/require-default-prop": 0,
+    "vue/valid-v-bind": 0,
+    "vue/no-parsing-error": 0
   }
 }

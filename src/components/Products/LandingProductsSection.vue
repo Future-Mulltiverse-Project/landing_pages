@@ -5,6 +5,7 @@
         v-for="(item, index) in items"
         :key="index"
         :item="item"
+        class="p-10 m-10 lg:p-0 lg:m-0"
       />
     </div>
   </section>
@@ -77,7 +78,9 @@ const items = [
   background-size: cover;
   background-image: url("@/assets/images/dalle_background.png");
 }*/
-
+.section{
+  margin-top: 70px;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);

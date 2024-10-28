@@ -1,12 +1,12 @@
 <template>
   <section :class="$style.section">
     <AppWrapper>
-      <div class="row" :class="$style.row" style="padding-top: 125px;">
-        <div class="col-md-6">
-          <h2 style='color: #ffffff;font-size: 40px; text-align: left;padding-bottom: 50px;'>Welcome to the  <span style='color:#CFB16D'>Future Multiverse</span> & <span style='color:#CFB16D'>EXPO</span></h2>
+      <div class="grid grid-cols-1 gap-3 mt-0 pt-7 lg:pt-14 lg:mt-8 md:grid-cols-2" :class="$style.row" >
+        <div class='md:order-first'>
+          <h2 class="font-semibold pb-4 lg:pb-12" style='color: #ffffff;font-size: 40px;  text-align: left;'>WELCOME TO THE <span style='color:#CFB16D'>FUTURE MULTIVERSE </span> & <span style='color:#CFB16D'>EXPO</span></h2>
         </div>
-        <div class="col-md-6">
-          <h4 style="font-size: 17px; line-height: 30px; font-weight: 100;">
+        <div >
+          <h4 class="font-medium" style="font-size: 17px; line-height: 30px;  padding-top: 0px;">
             The Future Multiverse is a multi-dimensional eco-system created to be a 
             catalyst for humanity's destined future.<br>
             Catalyzing the Future Trends Groups' network & influence in 150+
@@ -15,48 +15,42 @@
           </h4>
         </div>
       </div>
-      <br />
-      <br />
-      
-      <div class="row">
-          <div style="margin-bottom: 80px;">
-                        
-          <iframe style="width: 100%; height:600px"  src="https://www.youtube.com/embed/0K_GMH0s0Kc"></iframe>
 
-          </div>
+      <div class="row">
+        <div style="margin-bottom: 50px;" class="md:order-first">  <!-- Add md:order-first here -->
+          <iframe style="width: 100%; height:600px"  src="https://www.youtube.com/embed/0K_GMH0s0Kc"></iframe>
+        </div>
       </div>
 
-      
-      <div class="row">
-              <div class="col-md-4">
-                <NuxtLink
-                  to="https://future-multiverse.gitbook.io/guidebook"
-                  :class="$style.btn_second"
-                  class="btn btn-sm btn-outline-primary"
-                  style="margin-bottom: 20px;"
-                >
-                  <span style=" font-size:17px; ">LEARN MORE <span style="color: #ffffff"><br/>(GUIDEBOOK)</span></span>
-                </NuxtLink>
-              </div>
-              <div class="col-md-4">
-                <NuxtLink
-                  :class="$style.btn_second"
-                  class="btn btn-sm btn-outline-primary"
-                  style="padding-top:18px; padding-bottom: 18px;margin-bottom: 20px;"
-                >
-                  <span style=" font-size:17px; color: white;">ENTER <span style="color: #CFB16D"> THE FUTURE</span><ThreeSixtyIcon style="width: 20px;"/></span>
-                </NuxtLink>
-              </div>  
-              <div class="col-md-4">
-                <NuxtLink
-                  :class="$style.btn_second"
-                  class="btn btn-sm btn-outline-primary"
-                  style="padding-top:18px; padding-bottom: 18px;margin-bottom: 20px; float: right;"
-                >
-                  <span style="color: white; font-size:17px; "><span style="color: #CFB16D">DISCOVER </span>MAP</span>
-                </NuxtLink>
-                </div>
-            </div>
+      <div class="grid grid-cols-1 gap-4 items-center md:grid-cols-3" style="margin-bottom: 50px;">
+        <div class="flex justify-center md:justify-end">
+          <button
+            :class="$style.btn_second"
+            class="btn-outline-primary"
+            style="font-weight: 500; padding-bottom: 10px; padding-top: 10px"
+          >
+            <span style=" font-size:17px; ">LEARN <span style="color: #CFB16D"> MORE<br/>(</span>GUIDE<span style="color: #CFB16D">BOOK)</span></span>
+        </button>
+        </div>
+        <div class="flex justify-center md:justify-center ">
+          <button
+            :class="$style.btn_second"
+            class="btn btn-sm btn-outline-primary"
+            style="font-weight: 500; border-color: white; padding-bottom: 23px; padding-top: 23px"
+          >
+            <span style=" font-size:17px; color: white;">ENTER <span style="color: #CFB16D"> THE FUTURE</span><ThreeSixtyIcon style="width: 20px; float: right; margin-top: 6px; margin-left: 8px;"/></span>
+          </button>
+        </div>  
+        <div class="flex justify-center md:justify-start">
+          <button
+            :class="$style.btn_second"
+            class="btn btn-sm btn-outline-primary"
+            style="font-weight: 500; padding-bottom: 23px; padding-top: 23px"
+          >
+            <span style="color: #CFB16D; font-size:17px; ">DISCOVER</span> <span style="color: #ffffff">MAP</span>
+          </button>
+        </div>
+      </div>
 
     </AppWrapper>
   </section>
@@ -138,9 +132,6 @@ onBeforeUnmount(() => {
 .btn_second {
   float:left;
   color: white;
-}
-.section {
-  @include padding(10px 0);
 }
 
 .row {

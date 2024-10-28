@@ -90,7 +90,6 @@
   import MediaPicture from '~/components/Media/MediaPicture.vue';
   import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
   import MainSectionTextContent from '~/components/MainSection/MainSectionTextContent.vue';
-  import AboutFutureSection from './launch/aboutFutureSection.vue';
   import AboutLaunchMultiverse from '~/components/MainSection/AboutLaunchMultiverse.vue';
   
   const title = `About FUTURE MULTIVERSE`;

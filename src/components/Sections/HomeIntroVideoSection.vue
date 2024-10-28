@@ -3,23 +3,23 @@
     <MediaVideo layout="fill" :loop="true" :autoplay="true" :src="Bg" :width="1440" :height="860" />
     <AppWrapper :class="$style.wrapper">
       <h1 :class="$style.title">
-        <strong>Welcome To The</strong>
+        <span class="font-semibold"  >Welcome To The</span>
         <br />
         <span
-          class="title_span"
+          class="title_span font-bold"
           style="font-size: 122px; color: white; line-height: 1"
         >
           Future
         </span>
         <br />
         <span
-          class="title_span"
+          class="title_span font-bold"
           style="font-size: 78px; color: white; line-height: 1"
         >
           Multiverse
         </span>
       </h1>
-      <a href='https://www.futuremultiverse.com/quest' :class="$style.btn" class="btn btn-outline-primary" >
+      <a href='https://www.futuremultiverse.com/quest' :class="$style.btn" class="btn btn-outline-primary font-semibold" >
           Explore
       </a>
     </AppWrapper>
@@ -72,8 +72,8 @@ import MediaVideo from '../Media/MediaVideo.vue';
 }
 
 .title {
-  @include font-size(50px);
-  @include margin-bottom(90px);
+  @include font-size(70px);
+  @include margin-bottom(80px);
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
@@ -94,13 +94,13 @@ import MediaVideo from '../Media/MediaVideo.vue';
 .btn {
   --btn-bg: rgba(12, 15, 34, 0.2);
   --btn-color: #fff;
-  max-width: 100%;
-  min-width: rem-calc(256px);
+  max-width: 40% !important;
+  //min-width: rem-calc(256px);
 }
 
 .scroll {
-  @include font-size(10px);
-  font-weight: 700;
+  @include font-size(15px);
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   position: relative;
