@@ -12,9 +12,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./pages/index.vue",
 
-
     // Or if using `src` directory:
     //"./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{html,js}",
   ],
   
   theme: {

@@ -1,0 +1,246 @@
+<template>
+  <div :class="$style.main">
+    <AppHeader style="position: fixed" />
+    <div :class="$style.el" class="grid grid-cols-1 gap-5"> 
+      <div :class="$style.body" class="flex flex-col items-center justify-center ">        
+        <MediaPicture
+          :media-class="$style.mediaImg"
+          :src="Bg"
+          style="background-color: #000000"
+          :width="1523"
+          :height="3024"
+          layout="fill"
+        />
+        <div class="flex lg:h-screen justify-center items-center"> 
+          <AppWrapper class="text-center inline-block align-middle">
+            <div :class="$style.logo" class="pt-0 md md:pt-24" >
+              <MediaPicture :src="Logo" :width="284" :height="284" />
+            </div>
+            <div :class="$style.text1">
+              <p class="font-medium text-center">
+                <span>Enter </span>
+                <strong>& </strong>
+                <span>Experience </span>
+                The
+                <br />
+                <span class=" lg:text-7xl text-5xl" >FUTURE</span>
+                <span class="lg:text-7xl text-5xl" style="color: white"> MULTIVERSE</span>
+              </p>
+            </div>
+            <div :class="$style.text2" class="pb-6 pt-1">
+              <h4 class="text-center pb-0" >Experience the Future today:</h4>
+            </div>
+            <div class="grid grid-cols-1 gap-5">
+              <div class="flex flex-row gap-4 justify-center">
+                <button
+                  class="btn btn-outline-primary"
+                  :class="$style.btn77"
+                >
+                  ENTER FUTURE <br/> MULTIVERSE <DegreeGreyIcon style='float:right; color: white' /> 
+                </button>
+                <button
+                  class="btn btn-outline-primary"
+                  style="font-weight: 600; padding-left: 55px; padding-right: 55px;"
+                >
+                  ONBOARD
+                </button>
+              </div>
+            </div>
+            <div :class="$style.text3" class="text-center pt-6 md:pb-14 pb-24">
+              Please Onboard & Connect your Wallet
+              <br />
+              to Enter the Future Multiverse
+            </div>
+          </AppWrapper>  
+        </div>
+      </div>
+    </div>
+    <div class="fixed bottom-0 w-full" >
+      <ExploreFooter />
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
+import MediaPicture from '~/components/Media/MediaPicture.vue';
+import Logo from '~/assets/images/multiverse_header_logo.png';
+import DefaultLayout from '~/components/Layouts/DefaultLayout.vue';
+import AppHeader from '~/components/AppHeader/AppHeader.vue';
+import ExploreFooter from '~/components/Explore/ExploreFooter.vue';
+import DegreeGreyIcon from '~/icons/DegreeGreyIcon.vue';
+import Bg from '~/assets/images/future-multiverse/multiversebg.png';
+</script>
+
+<style lang="scss" module>
+.main {
+  background-color: $blue-800;
+  color: #fff;
+  overflow: hidden;
+}
+.btn77 {
+  border: 2px solid #ababab !important;
+  color: #ababab !important;
+  text-align: left;
+  padding-bottom: 6px !important;
+  padding-top: 6px !important;
+  font-weight: 600;
+}
+.btn7 {
+  color: gray !important;
+}
+svg {
+  height: 17px;
+  margin-left: 12px;
+  width: rem-calc(30px);
+}
+.logo_style {
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 21px;
+}
+.el {
+  background-color: $dark;
+  color: #fff;
+  //min-height: 100vh;
+}
+
+
+.form {
+  max-width: 100%;
+  align-content: center;
+  margin: 0 auto;
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  min-width: rem-calc(10%);
+}
+
+.input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  width: 60%;
+  @media (max-width: 641px) {
+    width: 55%;
+  }
+}
+
+.logo2 {
+  margin-top: 200px;
+  margin-left: 103%;
+  margin-bottom: -50px;
+  @include rfs(7%, width);
+  min-width: rem-calc(7%);
+  @media (max-width: 641px) {
+    width: 12%;
+  }
+}
+.logo4 {
+  @include rfs(20%, width);
+  min-width: rem-calc(20%);
+}
+
+.logo5 {
+  @include rfs(13%, width);
+  min-width: rem-calc(13%);
+  @media (max-width: 600px) {
+    @include rfs(1%, width);
+    min-width: rem-calc(1%);
+  }
+}
+
+.chat_message {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+.chat_message::placeholder {
+  font-weight: 600;
+  color: black;
+}
+
+.bg {
+  opacity: 0.9;
+}
+
+.logo {
+  @include rfs(100px, width);
+  min-width: rem-calc(160px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formimage1 {
+  @include rfs(30px, width);
+  min-width: rem-calc(30px);
+  margin-left: auto;
+  float: right;
+  margin-right: auto;
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+.text1 {
+  @include font-size(56px);
+  font-weight: 700;
+  line-height: divide(70, 50);
+  max-width: em-calc(550, 40);
+  margin-top: 0%;
+  text-align: center;
+  text-transform: uppercase;
+
+  strong {
+    color: $white;
+  }
+  span {
+    color: $primary;
+  }
+}
+
+.text3 {
+  @include font-size(18px);
+  max-width: 80%;
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text2 {
+  @include font-size(23px);
+  line-height: divide(30, 22);
+  text-align: center;
+  font-weight: 500;
+
+  strong {
+    color: $primary;
+  }
+}
+
+.btnRow {
+  --gutter-x: #{rem-calc(32px)};
+  --gutter-y: #{rem-calc(16px)};
+  justify-content: center;
+
+  :global(.col-auto) {
+    flex: 0 0 rem-calc(262px);
+  }
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  font-size: 12px;
+  margin-bottom: 14%;
+}
+
+.btn span {
+  color: #fff;
+}
+</style>

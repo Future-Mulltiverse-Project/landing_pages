@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import tailwindcss from 'tailwindcss'; // Import tailwindcss
+import autoprefixer from 'autoprefixer'; 
 export default defineNuxtConfig({
   ssr: false,
   postcss: {
@@ -7,12 +10,12 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  // buildModules: ['@nuxtjs/tailwindcss'],
+
   //plugins: [ '@/assets/js/global/plugins.bundle.js', {src: '~/assets/js/global/plugins.bundle.js', mode:'client'}, ],
   runtimeConfig: {
     public: {
-      APP_NAME: 'Future Multiverse',
-      APP_TITLE: 'Future Multiverse',
+      APP_NAME: 'Future Mulitverse',
+      APP_TITLE: 'Future Mulitverse',
       APP_DESCRIPTION: '',
       API_URL: 'https://futuremultiverse.com/',
       MINT_EVENT_START_IN: '2023-06-08T11:59:59.000Z',
@@ -93,54 +96,29 @@ export default defineNuxtConfig({
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet',
         },
+        {
+          rel: 'stylesheet',
+          href: '~/assets/css/main.css',
+        },
+        {
+          rel: 'stylesheet',
+          href: '~/assets/css/tailwind.css',
+        },
       ],
-      /*script: [
+      script: [
           {
-              type: 'text/javascript',
-              src: 'http://localhost:3001/_nuxt/assets/js/global/plugins.bundle.js',
-              defer: true 
-          },
-          {
-              type: 'text/javascript',
-              src: 'http://localhost:3001/_nuxt/assets/js/scripts.bundle.js'
+              //type: 'text/javascript',
+              src: 'https://cdn.tailwindcss.com'
+              //defer: true 
           }
-      ],*/
+      ],
     },
   },
   //css: ['~/assets/styles/app.scss'],
-  css: [
-    '~/assets/css/main.css', 
-    '~/assets/css/tailwind.css', 
-    '@fontsource/bai-jamjuree/latin.css'
-  ],
-  //modules: [ '@nuxt/ui', '@nuxtjs/tailwindcss', 'shadcn-nuxt'],
-  modules: [
-    '~/modules/purgecss', 
-    '@nuxt/ui', 
-    '@nuxtjs/tailwindcss', 
-    'shadcn-nuxt',
-    '@nuxtjs/google-fonts'
-  ],
-  googleFonts: {
-    families: {
-      'Bai Jamjuree': true
-    }
-  },
-  // extractCSS: {
-  //   ignoreOrder: true
-  // },
-  /*optimization: {
-    splitChunks: {
-      cacheGroups: {
-        styles: {
-          name: 'styles',
-          test: /\.(css|vue)$/,
-          chunks: 'all',
-          enforce: true
-        }
-      }
-    }
-  },*/
+  css: ['~/assets/css/main.css'],
+  modules: [ '@nuxt/ui', '@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  //modules: ['~/modules/purgecss', '@nuxt/ui', '@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -150,13 +128,20 @@ export default defineNuxtConfig({
      * Directory that the component lives in.
      * @default "./components/ui"
      */
-    componentDir: './src/components/ui'
+    componentDir: './components/ui'
   },
   experimental: {
     inlineSSRStyles: false,
   },
   vite: {
     css: {
+      postcss: {
+        plugins: [
+          // Pass the plugins as functions
+          tailwindcss(), 
+          autoprefixer(),
+        ],
+      },
       preprocessorOptions: {
         scss: {
           additionalData: '@import "~/assets/styles/vars.scss";',
@@ -164,7 +149,7 @@ export default defineNuxtConfig({
       },
       modules: {
         generateScopedName:
-          process.env.NODE_ENV === 'production'
+          process.env.NODE_ENV === 'development'
             ? '_app_[hash:base64:5]'
             : '[path][name]__[local]-[hash:base64:5]',
       },
@@ -173,7 +158,7 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
-  srcDir: 'src/',
+  //srcDir: 'src/',
   // build: {
   //   transpile: [],
   // },
