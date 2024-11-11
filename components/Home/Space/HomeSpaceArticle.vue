@@ -75,7 +75,7 @@ import ConnectWalletBtn from '~/components/Wallet/ConnectWalletBtn.vue';
 }
 
 .title {
-  @include font-size(26px);
+  font-size: 26px;
   line-height: math-div(30, 26);
   margin-bottom: rem-calc(26px);
 
@@ -108,7 +108,7 @@ import ConnectWalletBtn from '~/components/Wallet/ConnectWalletBtn.vue';
 }
 
 .figText {
-  @include font-size(18px);
+  font-size: 18px;
   bottom: 0;
   margin-bottom: wrap-calc(80px, 822px);
   line-height: math-div(24, 18);

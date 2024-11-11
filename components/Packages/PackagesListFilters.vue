@@ -73,8 +73,8 @@ onBeforeUnmount(() => {
 
 <style lang="scss" module>
 .swiper {
-  @include padding-left(60px);
-  @include padding-right(60px);
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 1px;
   margin-bottom: -1px;
   max-width: 100%;
@@ -94,7 +94,7 @@ onBeforeUnmount(() => {
 }
 
 .slide {
-  @include margin-right(42px);
+  margin-right: 42px;
   width: auto;
 
   &:last-child {
@@ -103,8 +103,8 @@ onBeforeUnmount(() => {
 }
 
 .tab {
-  @include padding(25px 0 30px);
-  @include font-size(18px);
+  padding: 25px  0 30px;
+  font-size: 18px;
   line-height: divide(30, 18);
   cursor: pointer;
   user-select: none;

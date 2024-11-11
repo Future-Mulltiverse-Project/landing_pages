@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss" module>
 .link {
-  @include font-size(14px);
+  font-size: 14px;
 
   line-height: math-div(18, 14);
   display: inline-flex;

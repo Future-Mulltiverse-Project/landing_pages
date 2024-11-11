@@ -90,15 +90,15 @@
   }
   
   .wrapper {
-    @include padding(26px 0 74px);
+    padding: 26px  0 74px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
   .headline {
-    @include font-size(28px);
-    @include margin-bottom(12px);
+    font-size: 28px;
+    margin-bottom: 12px;
     line-height: divide(30, 28);
     font-weight: 600;
   
@@ -108,7 +108,7 @@
   }
   
   .title {
-    @include font-size(50px);
+    font-size: 50px;
     line-height: divide(70, 50);
     margin: 0 auto;
     max-width: rem-calc(900px);
@@ -120,8 +120,8 @@
   }
   
   .text {
-    @include margin-bottom(24px);
-    @include margin-top(48px);
+    margin-bottom: 24px;
+    margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
     max-width: rem-calc(560px);

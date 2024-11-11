@@ -113,7 +113,7 @@ const items = useGuidebookNavItems;
 }
 
 .item {
-  @include padding(24px);
+  padding: 24px   ;
   border-bottom: 1px solid #2a3052;
 
   &:last-child {
@@ -122,7 +122,7 @@ const items = useGuidebookNavItems;
 }
 
 .itemText {
-  @include font-size(14px);
+  font-size: 14px;
   align-items: center;
   color: $primary;
   display: inline-flex;
@@ -136,8 +136,8 @@ const items = useGuidebookNavItems;
 }
 
 .subitems {
-  @include font-size(13px);
-  @include margin-top(16px);
+  font-size: 13px;
+  margin-top: 16px;
   row-gap: rem-calc(8px);
   color: #9c9c9c;
   display: flex;
@@ -150,7 +150,7 @@ const items = useGuidebookNavItems;
 }
 
 .subitemLink {
-  @include font-size(13px);
+  font-size: 13px;
   color: #9c9c9c;
   font-weight: 500;
   display: inline-block;

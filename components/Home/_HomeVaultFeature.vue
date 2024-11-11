@@ -75,7 +75,7 @@ import ConnectWalletBtn from '~/components/Wallet/ConnectWalletBtn.vue';
 }
 
 .wrapper {
-  @include padding(135px 0 110px);
+  padding: 135px  0 110px;
 }
 
 .row {

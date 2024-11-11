@@ -78,8 +78,8 @@ const items = [
 
 <style lang="scss" module>
 .field {
-  @include font-size(16px);
-  @include margin-bottom(24px);
+  font-size: 16px;
+  margin-bottom: 24px;
   color: $primary;
   display: block;
   font-weight: 700;
@@ -102,7 +102,7 @@ const items = [
 }
 
 .itemHeader {
-  @include font-size(16px);
+  font-size: 16px;
   font-weight: 600;
   padding: rem-calc(8px 16px);
 }
@@ -127,7 +127,7 @@ const items = [
 }
 
 .name {
-  @include font-size(16px);
+  font-size: 16px;
   line-height: 1.2;
   font-family: 'Nunito Sans', sans-serif;
   color: #9c9c9c;
@@ -155,8 +155,8 @@ const items = [
 }
 
 .text {
-  @include font-size(14px);
-  @include margin-bottom(20px);
+  font-size: 14px;
+  margin-bottom: 20px;
   color: #9c9c9c;
   opacity: 0.7;
   line-height: divide(19, 14);
@@ -178,14 +178,14 @@ const items = [
 }
 
 .term {
-  @include font-size(10px);
+  font-size: 10px;
   color: $primary;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .value {
-  @include font-size(16px);
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 500;
 }

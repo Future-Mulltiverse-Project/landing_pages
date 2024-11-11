@@ -43,7 +43,7 @@ import PaymentIcon from '~/icons/PaymentIcon.vue';
 }
 
 .title {
-  @include font-size(26px);
+  font-size: 26px;
   line-height: math-div(30, 26);
   font-weight: 600;
   margin-bottom: rem-calc(22px);
@@ -58,7 +58,7 @@ import PaymentIcon from '~/icons/PaymentIcon.vue';
 }
 
 .priceLabel {
-  @include font-size(12px);
+  font-size: 12px;
   color: #9c9c9c;
   line-height: math-div(15, 12);
   margin-bottom: rem-calc(2px);
@@ -66,7 +66,7 @@ import PaymentIcon from '~/icons/PaymentIcon.vue';
 }
 
 .priceValue {
-  @include font-size(26px);
+  font-size: 26px;
   line-height: math-div(30, 26);
   color: $primary;
 }
@@ -91,7 +91,7 @@ import PaymentIcon from '~/icons/PaymentIcon.vue';
 }
 
 .note {
-  @include font-size(12px);
+  font-size: 12px;
   color: #7a7a7a;
   text-transform: uppercase;
 }

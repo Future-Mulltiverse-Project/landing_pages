@@ -62,7 +62,7 @@ import ArrowIcon from '~/icons/ArrowIcon.vue';
 }
 
 .btn {
-  @include font-size(10px);
+  font-size: 10px;
 
   color: $primary;
   line-height: 1.2;

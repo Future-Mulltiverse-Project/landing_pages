@@ -43,7 +43,7 @@ defineProps<{
 
 <style lang="scss" module>
 .group {
-  @include margin-bottom(44px);
+  margin-bottom: 44px;
 
   &:last-child {
     margin-bottom: 0;
@@ -51,8 +51,8 @@ defineProps<{
 }
 
 .field {
-  @include font-size(16px);
-  @include margin-bottom(24px);
+  font-size: 16px;
+  margin-bottom: 24px;
   color: $primary;
   display: block;
   font-weight: 700;
@@ -77,7 +77,7 @@ defineProps<{
 }
 
 .checkIndicator {
-  @include margin-bottom(22px);
+  margin-bottom: 22px;
   cursor: pointer;
   user-select: none;
   display: block;
@@ -114,7 +114,7 @@ defineProps<{
 }
 
 .checkLabel {
-  @include font-size(14px);
+  font-size: 14px;
   color: #9c9c9c;
   display: block;
   font-family: 'Nunito Sans', sans-serif;

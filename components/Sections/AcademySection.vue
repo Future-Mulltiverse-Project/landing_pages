@@ -58,7 +58,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 <style lang="scss" module>
 .section {
-  @include padding(125px 0 0);
+  padding: 125px  0 0;
   text-align: center;
 
   @include media-breakpoint-up(lg) {
@@ -91,7 +91,6 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .row {
-  @include rfs(26px, --gutter-y);
   --gutter-x: 0;
   position: relative;
   z-index: 1;
@@ -99,23 +98,23 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 .leftCol {
   @include media-breakpoint-up(lg) {
-    @include padding-right(70px);
+    padding-right: 70px;
   }
 }
 
 .rightCol {
   @include media-breakpoint-up(lg) {
-    @include padding-left(10px);
+    padding-left: 10px;
   }
 }
 
 .text {
   margin-top: em-calc(8, 16);
-  @include margin-bottom(48px);
+  margin-bottom: 48px;
 }
 
 .text2 {
-  @include font-size(22px);
+  font-size: 22px;
   line-height: divide(30, 22);
   margin-bottom: 0;
   max-width: 22ch;
@@ -129,7 +128,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .mediaHolder {
-  @include margin-bottom(40px);
+  margin-bottom: 40px;
   padding-bottom: 47.863%;
   position: relative;
 }

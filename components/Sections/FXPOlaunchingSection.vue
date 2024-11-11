@@ -44,8 +44,8 @@
   
   
   .heading {
-    @include font-size(28px);
-    @include margin-bottom(28px);
+    font-size: 28px;
+    margin-bottom: 28px;
     color: #ffffff;
     font-weight: 600;
     line-height: divide(30, 28);
@@ -53,7 +53,7 @@
   
   .title {
     font-size: 42px;
-    @include margin-bottom(64px);
+    margin-bottom: 64px;
     line-height: divide(55, 45);
     margin-left: auto;
     margin-right: auto;
@@ -74,8 +74,8 @@
   
   
   .timerTitle {
-    @include font-size(24px);
-    @include margin-top(300px);
+    font-size: 24px;
+    margin-top: 300px;
     color: #ffffff;
     font-weight: 600;
     line-height: divide(30, 18);
@@ -83,7 +83,7 @@
   }
   
   .timer {
-    @include margin-bottom(2px);
+    margin-bottom: 2px;
     justify-content: center;
     
   }

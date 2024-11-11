@@ -73,7 +73,7 @@ export default {
 
 <style lang="scss" module>
 .wrapper {
-  @include padding-top(75px);
+  padding-top: 75px;
   padding-bottom: rem-calc(54px);
 }
 

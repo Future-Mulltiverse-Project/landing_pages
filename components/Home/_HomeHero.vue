@@ -158,7 +158,7 @@ function afterLeave() {
 }
 
 .title {
-  @include font-size(60px);
+  font-size: 60px;
   margin: 0 0 rem-calc(24px);
   text-transform: uppercase;
   line-height: math-div(70, 60);
@@ -176,7 +176,7 @@ function afterLeave() {
 }
 
 .subtitle {
-  @include font-size(28px);
+  font-size: 28px;
   color: $primary;
   font-weight: 600;
   margin-bottom: rem-calc(42px);
@@ -194,7 +194,7 @@ function afterLeave() {
 .scroll {
   //margin: calc(var(--angleHeight) / -2 - #{rem-calc(23px)}) auto rem-calc(16px);
 
-  @include font-size(10px);
+  font-size: 10px;
   bottom: 0;
   margin-bottom: calc(var(--angleHeight) / 2);
   font-weight: 700;

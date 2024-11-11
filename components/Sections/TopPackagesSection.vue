@@ -114,62 +114,42 @@
   .section {
     //background-color: $dark;
     color: #fff;
-    @include padding(30px 0 145px);
+    padding: 30px  0 145px;
     text-align: center;
   
-    @include media-breakpoint-up(lg) {
-      text-align: left;
-    }
   }
   .gold {
     color: #cfb16d;
   }
   .row {
-    @include rfs(64px, --gutter-y);
     --gutter-x: 0;
-    align-items: center;
-  
-    @include media-breakpoint-up(lg) {
+    --gutter-y: 64px; 
+    padding-bottom: wrap-calc(328px);
+
+    @media (min-width: 1024px) { /* Replace media-breakpoint-up(lg) with media query */
       flex-wrap: nowrap;
     }
   }
-  
   .leftCol {
     position: relative;
     z-index: 1;
   
-    @include media-breakpoint-up(lg) {
-      @include padding-right(45px);
-    }
   }
   
   .header {
-    @include margin-bottom(30px);
+    margin-bottom: 30px;
   
     h2 {
-      @include margin-bottom(33px);
+      margin-bottom: 33px;
     }
   
-    p {
-      @include media-breakpoint-up(lg) {
-        max-width: rem-calc(450px);
-      }
-    }
   }
   
-  .rightCol {
-    @include media-breakpoint-up(lg) {
-      @include padding-left(50px);
-    }
-  }
-  
+
   .schemeWrapper {
     max-width: rem-calc(535px);
     margin: 0 auto;
   
-    @include media-breakpoint-up(lg) {
-      margin: 0;
-    }
   }
   
   .schemeInner {
@@ -177,8 +157,8 @@
   }
   
   .schemeTitle {
-    @include font-size(26px);
-    @include margin-bottom(38px);
+    font-size: 26px;
+    margin-bottom: 38px;
     line-height: divide(30, 26);
     font-weight: 600;
     max-width: rem-calc(256px);
@@ -189,7 +169,7 @@
   }
   
   .schemeText {
-    @include font-size(16px);
+    font-size: 16px;
     font-weight: 600;
     font-family: 'Nunito Sans', sans-serif;
     margin-bottom: 0;
@@ -271,12 +251,12 @@
   }
   
   .spaceContainer {
-    @include margin-top(102px);
+    margin-top: 102px;
     text-align: left;
   }
   
   .spaceLabel {
-    @include font-size(18px);
+    font-size: 18px;
     line-height: divide(24, 18);
     font-weight: 600;
     color: $primary;
@@ -290,7 +270,7 @@
   }
   
   .spaceValue {
-    @include font-size(55px);
+    font-size: 55px;
     line-height: 1;
     color: $primary;
     font-weight: 700;
@@ -302,7 +282,7 @@
   }
   
   .spaceText {
-    @include font-size(16px);
+    font-size: 16px;
     align-self: center;
     max-width: rem-calc(220px);
     margin: rem-calc(0 10px);

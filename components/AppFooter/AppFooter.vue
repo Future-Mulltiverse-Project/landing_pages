@@ -1,7 +1,7 @@
 <template>
   <footer :class="$style.footer">
     <AppWrapper :class="$style.wrapper">
-      <div class="grid grid-cols-1 gap-4 mt-8 mb-8 md:grid-cols-3" :class="$style.row">
+      <div class="grid grid-cols-1 gap-4 mt-8 mb-8 lg:grid-cols-3" :class="$style.row">
         <div class="md:col-span-1 md:order-first" :class="$style.leftCol">
           <AppFooterLogo :class="$style.logo" />
           <p :class="$style.contactText">
@@ -12,7 +12,7 @@
           <AppFooterSocials :class="$style.socials" />
         </div>
         <div class="md:col-span-2 md:pt-0 pt-6 ">
-          <h4 class="text-lg font-bold" style="padding-top: 0px !important">
+          <h4 class="text-lg font-bold lg:text-left text-center" style="padding-top: 0px !important">
             <span class="text-cfb16d">FUTURE</span> MULTIVERSE
           </h4>
           <div class="grid grid-cols-1 gap-5 md:grid-cols-4" :class="$style.navRow">
@@ -21,7 +21,7 @@
               :key="index"
               class=""
             >
-              <h4 :class="$style.itemTitle">{{ item.name }}</h4>
+              <h4 :class="$style.itemTitle" class="pt-2 pb-2 " >{{ item.name }}</h4>
               <ul v-if="item.subitems.length" :class="$style.subitems">
                 <li
                   v-for="(subitem, subitemIndex) in item.subitems"
@@ -70,26 +70,25 @@ const items = useFooterNavItems;
 }
 
 .row {
-  @include rfs(70px, --gutter-y);
+  --gutter-y: 70px; 
   --gutter-x: 0;
 }
-
 .leftCol {
   text-align: center;
 
   @include media-breakpoint-up(lg) {
-    @include padding-right(30px);
+    padding-right: 30px;
     text-align: left;
   }
 }
 
 .logo {
-  @include margin-bottom(42px);
+  margin-bottom: 42px;
 }
 
 .contactText {
-  @include font-size(15px);
-  @include margin-bottom(24px);
+  font-size: 15px;
+  margin-bottom: 24px;
   line-height: divide(30, 22);
   font-weight: 900;
 
@@ -115,7 +114,7 @@ const items = useFooterNavItems;
 }
 
 .itemTitle {
-  @include font-size(14px);
+  font-size: 14px;
   line-height: math-div(18, 14);
   font-weight: bold;
   color: #000000;
@@ -148,7 +147,7 @@ const items = useFooterNavItems;
   }
 
   a {
-    @include font-size(14px);
+    font-size: 14px;
     color: inherit;
     font-weight: 500;
     line-height: math-div(18, 14);

@@ -105,7 +105,7 @@ const items = [
 
 <style lang="scss" module>
 .section {
-  /*@include padding(50px 0 80px);*/
+  /*padding: 50px  0 80px;*/
   padding-top: 30px;
   padding-bottom: 50px ;
 }
@@ -114,7 +114,7 @@ const items = [
 }
 
 .title {
-  @include font-size(48px);
+  font-size: 48px;
   line-height: divide(60, 48);
   color: $white;
   font-weight: 600;

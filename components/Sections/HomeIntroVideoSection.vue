@@ -4,9 +4,9 @@
     <AppWrapper class="flex lg:h-screen justify-center items-center">
         <div class="flex flex-col">  
             <h1 style="margin: unset">
-                <span class="font-semibold text-5xl" style="color: #CFB16D">WELCOME TO THE </span><br/>
-                <span class="title_span font-bold text-9xl" style="color: white; line-height: 1">FUTURE</span><br/>
-                <span class="title_span font-bold text-7xl" style="color: white; line-height: 1">MULTIVERSE</span>
+                <span class="font-semibold text-3xl md:text-5xl" style="color: #CFB16D">WELCOME TO THE </span><br/>
+                <span class="title_span font-bold md:text-9xl text-7xl" style="color: white; line-height: 1">FUTURE</span><br/>
+                <span class="title_span font-bold md:text-7xl text-5xl" style="color: white; line-height: 1">MULTIVERSE</span>
             </h1>
             <nuxt-link to='/home' :class="$style.btn" class="btn btn-outline-primary font-semibold m-auto">
                 Explore
@@ -30,8 +30,8 @@ import MediaVideo from '../Media/MediaVideo.vue';
 
 <style lang="scss" module>
 .section {
-  //@include padding-top(130px);
-  //@include padding-top(66px);
+  //padding-top: 130px;
+  //padding-top: 66px;
   //min-height: rem-calc(860px);
   min-height: 100vh;
   display: flex;
@@ -63,7 +63,7 @@ import MediaVideo from '../Media/MediaVideo.vue';
 }
 
 .scroll {
-  @include font-size(15px);
+  font-size: 15px;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;

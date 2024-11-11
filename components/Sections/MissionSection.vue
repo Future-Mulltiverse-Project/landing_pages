@@ -59,7 +59,7 @@ import MainSectionHeader from '~/components/MainSection/MainSectionHeader.vue';
 
 <style lang="scss" module>
 .section {
-  @include padding(45px 0 0);
+  padding: 45px  0 0;
   text-align: center;
 
   @include media-breakpoint-up(lg) {
@@ -69,23 +69,22 @@ import MainSectionHeader from '~/components/MainSection/MainSectionHeader.vue';
 
 .row {
   --gutter-x: 0;
-  @include rfs(20px, --gutter-y);
 }
 
 .leftCol {
   @include media-breakpoint-up(lg) {
-    @include padding-right(30px);
+    padding-right: 30px;
   }
 }
 
 .rightCol {
   @include media-breakpoint-up(lg) {
-    @include padding-left(13px);
+    padding-left: 13px;
   }
 }
 
 .header {
-  @include margin-bottom(44px);
+  margin-bottom: 44px;
 
   h2 {
     @include media-breakpoint-up(lg) {
@@ -100,7 +99,7 @@ import MainSectionHeader from '~/components/MainSection/MainSectionHeader.vue';
   }
 
   p:first-child {
-    @include margin-top(22px);
+    margin-top: 22px;
   }
 }
 </style>

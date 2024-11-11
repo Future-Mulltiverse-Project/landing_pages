@@ -38,7 +38,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 <style lang="scss" module>
 .section {
-  @include padding(186px 0 210px);
+  padding: 186px  0 210px;
   background: radial-gradient(1160px 420px at center 15%, #23274a, transparent);
   text-align: center;
 
@@ -48,7 +48,6 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .row {
-  @include rfs(64px, --gutter-y);
 
   --gutter-x: 0;
   align-items: center;
@@ -57,12 +56,12 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 .leftCol {
   @include media-breakpoint-up(lg) {
     order: -1;
-    @include padding-right(64px);
+    padding-right: 64px;
   }
 }
 
 .header {
-  @include margin-bottom(34px);
+  margin-bottom: 34px;
 
   p {
     @include media-breakpoint-up(lg) {
@@ -71,7 +70,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
   }
 
   p:first-child {
-    @include margin-top(38px);
+    margin-top: 38px;
   }
 }
 

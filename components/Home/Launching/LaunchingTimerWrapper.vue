@@ -10,7 +10,7 @@
 
 <style lang="scss" module>
 .wrapper {
-  @include padding(56px 56px 50px);
+  padding: 56px 56px 50px ;
   position: relative;
   min-height: rem-calc(200px);
   width: 100%;

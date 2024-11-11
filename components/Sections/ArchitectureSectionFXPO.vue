@@ -148,7 +148,7 @@ import designTool from '~/assets/images/design_tool.png';
 .section {
   //background-color: $dark;
   color: #fff;
-  @include padding(0px 0 25px);
+  padding: 0px  0 25px;
   padding-bottom: 50px !important;
   text-align: center;
 
@@ -160,7 +160,6 @@ import designTool from '~/assets/images/design_tool.png';
   color: #cfb16d;
 }
 .row {
-  @include rfs(64px, --gutter-y);
   --gutter-x: 0;
   align-items: center;
 
@@ -176,10 +175,10 @@ import designTool from '~/assets/images/design_tool.png';
 }
 
 .header {
-  @include margin-bottom(30px);
+  margin-bottom: 30px;
 
   h2 {
-    @include margin-bottom(33px);
+    margin-bottom: 33px;
   }
 
   p {
@@ -203,8 +202,8 @@ import designTool from '~/assets/images/design_tool.png';
 }
 
 .schemeTitle {
-  @include font-size(26px);
-  @include margin-bottom(38px);
+  font-size: 26px;
+  margin-bottom: 38px;
   line-height: divide(30, 26);
   font-weight: 600;
   color: #ffffff;
@@ -216,7 +215,7 @@ import designTool from '~/assets/images/design_tool.png';
 }
 
 .schemeText {
-  @include font-size(16px);
+  font-size: 16px;
   font-weight: 600;
   font-family: 'Nunito Sans', sans-serif;
   margin-bottom: 0;
@@ -299,12 +298,12 @@ import designTool from '~/assets/images/design_tool.png';
 }
 
 .spaceContainer {
-  @include margin-top(102px);
+  margin-top: 102px;
   text-align: left;
 }
 
 .spaceLabel {
-  @include font-size(18px);
+  font-size: 18px;
   line-height: divide(24, 18);
   font-weight: 600;
   color: $primary;
@@ -318,7 +317,7 @@ import designTool from '~/assets/images/design_tool.png';
 }
 
 .spaceValue {
-  @include font-size(55px);
+  font-size: 55px;
   line-height: 1;
   color: $primary;
   font-weight: 700;
@@ -330,7 +329,7 @@ import designTool from '~/assets/images/design_tool.png';
 }
 
 .spaceText {
-  @include font-size(16px);
+  font-size: 16px;
   align-self: center;
   max-width: rem-calc(220px);
   margin: rem-calc(0 10px);

@@ -1039,7 +1039,7 @@ function selectIndex2(index: number) {
 
 <style lang="scss" module>
 .section {
-  @include padding(60px 0 40px);
+  padding: 60px  0 40px;
   background: radial-gradient(1160px 820px at center top, #23274a, transparent);
   text-align: center;
 }
@@ -1057,8 +1057,8 @@ function selectIndex2(index: number) {
 }
 
 .heading {
-  @include font-size(28px);
-  @include margin-bottom(52px);
+  font-size: 28px;
+  margin-bottom: 52px;
   color: $primary;
   font-weight: 600;
   line-height: divide(30, 28);
@@ -1068,7 +1068,7 @@ function selectIndex2(index: number) {
 }
 
 .text {
-  @include margin-bottom(48px);
+  margin-bottom: 48px;
   font-size: 30px;
 }
 

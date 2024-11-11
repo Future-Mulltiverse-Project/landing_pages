@@ -139,7 +139,7 @@ ul {
 }
 
 .row {
-  @include padding-top(28px);
+  padding-top: 28px;
   align-items: center;
   --gutter-y: #{rem-calc(12px)};
 
@@ -180,7 +180,7 @@ ul {
 
 
 .text {
-  @include font-size(14px);
+  font-size: 14px;
   line-height: 1.2;
   font-weight: 500;
   margin-bottom: 0;

@@ -107,7 +107,7 @@ svg {
 }
 
 .body {
-  @include padding(80px 0 120px);
+  padding: 80px  0 120px;
   align-items: center;
   display: flex;
   flex-grow: 1;
@@ -137,28 +137,27 @@ svg {
     width: 55%;
   }
 }
-
 .logo2 {
   margin-top: 200px;
   margin-left: 103%;
   margin-bottom: -50px;
-  @include rfs(7%, width);
-  min-width: rem-calc(7%);
+  width: 7%;
+  min-width: 7%;
   @media (max-width: 641px) {
     width: 12%;
   }
 }
 .logo4 {
-  @include rfs(20%, width);
-  min-width: rem-calc(20%);
+  width: 20%;
+  min-width: 20%;
 }
 
 .logo5 {
-  @include rfs(13%, width);
-  min-width: rem-calc(13%);
+  width: 13%;
+  min-width: 13%;
   @media (max-width: 600px) {
-    @include rfs(1%, width);
-    min-width: rem-calc(1%);
+    width: 1%;
+    min-width: 1%;
   }
 }
 
@@ -178,17 +177,17 @@ svg {
 }
 
 .logo {
-  @include rfs(100px, width);
-  min-width: rem-calc(160px);
+  width: 100px;
+  min-width: 160px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: rem-calc(10px);
+  margin-bottom: 10px;
   margin-top: 8%;
 }
 
 .formimage1 {
-  @include rfs(30px, width);
-  min-width: rem-calc(30px);
+  width: 30px;
+  min-width: 30px;
   margin-left: auto;
   float: right;
   margin-right: auto;
@@ -197,7 +196,7 @@ svg {
 }
 
 .text1 {
-  @include font-size(56px);
+  font-size: 56px;
   margin-bottom: rem-calc(-60px);
   font-weight: 700;
   line-height: divide(70, 50);
@@ -217,8 +216,8 @@ svg {
 }
 
 .text3 {
-  @include font-size(26px);
-  @include margin-bottom(-200px);
+  font-size: 26px;
+  margin-bottom: -200px;
   max-width: em-calc(730, 22);
   font-weight: 400;
   max-width: 60%;
@@ -228,8 +227,8 @@ svg {
 }
 
 .text2 {
-  @include font-size(23px);
-  @include margin-bottom(65px);
+  font-size: 23px;
+  margin-bottom: 65px;
   line-height: divide(30, 22);
   margin-left: auto;
   margin-right: auto;

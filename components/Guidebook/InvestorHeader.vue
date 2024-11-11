@@ -39,12 +39,6 @@ import GuidebookToggleBtn from '~/components/Guidebook/GuidebookToggleBtn.vue';
 
 <style lang="scss" module>
 .logo1 {
-  @include rfs(30%, width);
-  min-width: rem-calc(30%);
-  @media (max-width: 1200px) {
-    @include rfs(30%, width);
-    min-width: rem-calc(30%);
-  }
   margin-left: 10px;
   height: 40px;
   border-radius: 20px;
@@ -53,7 +47,7 @@ import GuidebookToggleBtn from '~/components/Guidebook/GuidebookToggleBtn.vue';
 }
 
 .header {
-  //@include padding(25px 24px);
+  //padding: 25px 24px  ;
   background-color: rgba(#0c0f22, 0.7);
   left: 0;
   display: flex;
@@ -74,7 +68,7 @@ import GuidebookToggleBtn from '~/components/Guidebook/GuidebookToggleBtn.vue';
 }
 
 .logoContainer {
-  @include padding(24px);
+  padding: 24px   ;
 
   display: flex;
   align-items: center;
@@ -87,7 +81,7 @@ import GuidebookToggleBtn from '~/components/Guidebook/GuidebookToggleBtn.vue';
 }
 
 .logo {
-  @include font-size(16px);
+  font-size: 16px;
   align-items: center;
   color: #fff !important;
   display: inline-block;
@@ -103,7 +97,7 @@ import GuidebookToggleBtn from '~/components/Guidebook/GuidebookToggleBtn.vue';
 }
 
 .content {
-  @include padding(25px 24px);
+  padding: 25px 24px  ;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -119,12 +113,9 @@ import GuidebookToggleBtn from '~/components/Guidebook/GuidebookToggleBtn.vue';
 
 .link {
   display: none;
-  @include font-size(16px);
+  font-size: 16px;
   align-items: center;
 
-  @include media-breakpoint-up(lg) {
-    display: inline-flex;
-  }
 
   svg {
     height: rem-calc(20px);

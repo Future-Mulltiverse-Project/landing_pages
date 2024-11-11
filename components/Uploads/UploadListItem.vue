@@ -41,31 +41,22 @@ defineProps<{
 
 <style lang="scss" module>
 .item {
-  @include padding-bottom(68px);
+  padding-bottom: 68px;
   display: flex;
   align-items: center;
   text-align: left;
   flex-direction: column;
 
-  @include media-breakpoint-up(md) {
-    flex-direction: row;
-  }
 }
 
 .titleCol {
   margin: 0 auto;
   width: 100%;
 
-  @include media-breakpoint-up(md) {
-    flex: 0 0 rem-calc(300px);
-    max-width: none;
-    width: auto;
-    margin: 0;
-  }
 }
 
 .title {
-  @include font-size(22px);
+  font-size: 22px;
   align-items: center;
   display: inline-flex;
   font-weight: 600;
@@ -89,14 +80,9 @@ defineProps<{
 }
 
 .textCol {
-  @include padding-top(30px);
+  padding-top: 30px;
   width: 100%;
 
-  @include media-breakpoint-up(md) {
-    @include padding-left(30px);
-    padding-top: 0;
-    width: auto;
-  }
 }
 
 .detailsRow {
@@ -106,7 +92,7 @@ defineProps<{
 }
 
 .details {
-  @include font-size(14px);
+  font-size: 14px;
   line-height: 1.2;
   align-items: center;
   display: flex;
@@ -127,7 +113,7 @@ defineProps<{
 }
 
 .category {
-  @include font-size(12px);
+  font-size: 12px;
   background-color: #171c36;
   color: $primary;
   line-height: divide(16, 12);

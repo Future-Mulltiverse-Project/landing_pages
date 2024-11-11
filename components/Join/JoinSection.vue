@@ -10,7 +10,7 @@
     <div :class="$style.gradient" />
     <AppWrapper>
       <div :class="$style.formContainer"class='pb-12'>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-5" :class="$style.row">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-5" :class="$style.row">
           <div class="md:col-span-3">
             <h2 :class="$style.title">
               SUBSCRIBE TO OUR YOUTUBE
@@ -92,7 +92,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .title {
-  @include font-size(20px);
+  font-size: 20px;
   color: #fff;
   line-height: 1.2;
   font-weight: 600;
@@ -101,8 +101,8 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 .text1 {
   font-size: 33px !important;
-  @include margin-bottom(85px);
-  @include margin-top(10px);
+  margin-bottom: 85px;
+  margin-top: 10px;
   line-height: math-div(30, 26);
   color: $primary;
   text-align: center;

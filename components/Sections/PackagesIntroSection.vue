@@ -74,7 +74,7 @@ const { days } = useTimer(config.public.MINT_EVENT_START_IN);
 }
 
 .wrapper {
-  @include padding(26px 0 130px);
+  padding: 26px  0 130px;
   display: flex;
   flex-direction: column;
 }
@@ -85,7 +85,7 @@ const { days } = useTimer(config.public.MINT_EVENT_START_IN);
 }
 
 .btnContainer {
-  @include margin-top(36px);
+  margin-top: 36px;
   position: relative;
 }
 
@@ -102,8 +102,8 @@ const { days } = useTimer(config.public.MINT_EVENT_START_IN);
 }
 
 .btnTitle {
-  @include font-size(16px);
-  @include margin-bottom(32px);
+  font-size: 16px;
+  margin-bottom: 32px;
   font-weight: 600;
   color: #cfb16d;
 }
@@ -119,7 +119,7 @@ const { days } = useTimer(config.public.MINT_EVENT_START_IN);
 }
 
 .timer {
-  @include font-size(20px);
+  font-size: 20px;
   margin-bottom: rem-calc(10px);
   line-height: math-div(30, 20);
   text-transform: uppercase;

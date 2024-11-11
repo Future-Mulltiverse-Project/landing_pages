@@ -35,7 +35,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .wrapper {
-  //@include padding-top(26px);
+  //padding-top: 26px;
   padding-top: 26px;
 }
 
@@ -52,10 +52,10 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .headline {
-  //@include font-size(28px);
+  //font-size: 28px;
   font-size: 28px;
   margin-bottom: 12px;
-  //@include margin-bottom(12px);
+  //margin-bottom: 12px;
   line-height: divide(30, 28);
   font-weight: 600;
 
@@ -65,7 +65,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .title {
-  //@include font-size(50px);
+  //font-size: 50px;
   font-size: 50px;
   line-height: divide(70, 50);
   margin: 0 auto;

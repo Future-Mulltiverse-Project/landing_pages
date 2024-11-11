@@ -23,8 +23,6 @@ import HeaderLogoIcon from '~/icons/HeaderLogoIcon.vue';
 }
 
 .icon {
-  @include rfs(40px, height);
-  @include rfs(40px, width);
   max-height: rem-calc(50px);
   max-width: rem-calc(50px);
 }

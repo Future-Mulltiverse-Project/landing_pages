@@ -61,7 +61,7 @@ import Bg from 'assets/images/future-multiverse/multiversebg.png';
 <style lang="scss" module>
 .footer {
   --gutter-y: #{rem-calc(16px)};
-  @include padding-top(38px);
+  padding-top: 38px;
   align-items: center;
   justify-content: space-between;
 }
@@ -89,7 +89,7 @@ import Bg from 'assets/images/future-multiverse/multiversebg.png';
   }
 }
 .body {
-  @include padding(80px 0 120px);
+  padding: 80px  0 120px;
   align-items: center;
   display: flex;
   flex-grow: 1;

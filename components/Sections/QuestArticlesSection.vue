@@ -69,9 +69,7 @@ import QuestSecondSlider from '~/components/Slider/QuestSecondSlider.vue';
 }
 
 .item {
-  @include rfs(80px, --gutter-x);
-  @include rfs(64px, --gutter-y);
-  //@include margin-bottom(58px);
+  //margin-bottom: 58px;
   align-items: center;
 
   &:last-child {

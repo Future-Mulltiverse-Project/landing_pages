@@ -14,8 +14,8 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 <style lang="scss" module>
 .header {
-  @include padding-left(24px);
-  @include padding-right(24px);
+  padding-left: 24px;
+  padding-right: 24px;
   position: relative;
   text-align: center;
 }

@@ -41,7 +41,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 <style lang="scss" module>
 .section {
-  //@include padding(50px 0 50px);
+  //padding: 50px  0 50px;
   min-height: 10vh;
   display: flex;
   align-items: center;
@@ -49,11 +49,11 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .header {
-  @include margin-bottom(30px);
+  margin-bottom: 30px;
   max-width: rem-calc(600px);
 
   p:first-child {
-    @include margin-top(28px);
+    margin-top: 28px;
   }
 }
 

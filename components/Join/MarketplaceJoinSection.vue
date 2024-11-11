@@ -37,7 +37,7 @@
   
   <style lang="scss" module>
   .section {
-    @include padding-bottom(100px);
+    padding-bottom: 100px;
     
     color: #0a0d1d;
     position: relative;
@@ -74,7 +74,7 @@
   }
   
   .formContainer {
-    @include padding(62px 0 54px);
+    padding: 62px  0 54px;
   
     border-bottom: 1px solid rgba(#fff, 0.7);
     margin-bottom: 16%;
@@ -104,7 +104,7 @@
   }
   
   .title {
-    @include font-size(20px);
+    font-size: 20px;
     color: #fff;
     line-height: 1.2;
     font-weight: 600;
@@ -112,9 +112,9 @@
   }
   
   .text1 {
-    @include font-size(26px);
-    @include margin-bottom(auto);
-    @include margin-top(10px);
+    font-size: 26px;
+    margin-bottom: auto;
+    margin-top: 10px;
     line-height: math-div(30, 26);
     color: #ffffff;
     text-align: center;
@@ -122,7 +122,7 @@
   }
   
   .text2 {
-    @include font-size(45px);
+    font-size: 45px;
     font-weight: 700;
     line-height: math-div(55, 45);
     text-transform: uppercase;

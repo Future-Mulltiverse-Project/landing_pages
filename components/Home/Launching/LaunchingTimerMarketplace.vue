@@ -65,7 +65,7 @@ const { days, hours, minutes, seconds } = useTimer(props.datetime);
 }
 
 .term {
-  @include font-size(10px);
+  font-size: 10px;
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: 700;

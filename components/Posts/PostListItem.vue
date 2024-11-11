@@ -88,7 +88,7 @@ const route = useTypedRoute<ToGuidebookCategoryArticle>();
 
 <style lang="scss" module>
 .item {
-  @include padding(30px 0);
+  padding: 30px 0 ;
   display: flex;
   flex-direction: column;
   //align-items: center;
@@ -105,7 +105,7 @@ const route = useTypedRoute<ToGuidebookCategoryArticle>();
   width: 100%;
 
   @include media-breakpoint-up(md) {
-    @include margin-right(30px);
+    margin-right: 30px;
     flex: 0 0 rem-calc(300px);
     max-width: none;
     width: auto;
@@ -120,12 +120,12 @@ const route = useTypedRoute<ToGuidebookCategoryArticle>();
 }
 
 .header {
-  @include padding-bottom(18px);
+  padding-bottom: 18px;
   align-items: center;
 }
 
 .textCol {
-  @include padding-top(30px);
+  padding-top: 30px;
   flex-grow: 1;
 
   @include media-breakpoint-up(md) {
@@ -134,7 +134,7 @@ const route = useTypedRoute<ToGuidebookCategoryArticle>();
 }
 
 .title {
-  @include font-size(22px);
+  font-size: 22px;
   font-weight: 600;
   line-height: divide(30, 22);
   margin-bottom: 0;
@@ -149,8 +149,8 @@ const route = useTypedRoute<ToGuidebookCategoryArticle>();
 }
 
 .text {
-  @include font-size(16px);
-  @include margin-bottom(32px);
+  font-size: 16px;
+  margin-bottom: 32px;
   color: #9c9c9c;
   font-family: 'Nunito Sans', sans-serif;
 }
@@ -184,7 +184,7 @@ const route = useTypedRoute<ToGuidebookCategoryArticle>();
 }
 
 .details {
-  @include font-size(14px);
+  font-size: 14px;
   line-height: 1.2;
   align-items: center;
   display: flex;
@@ -206,7 +206,7 @@ const route = useTypedRoute<ToGuidebookCategoryArticle>();
 }
 
 .category {
-  @include font-size(12px);
+  font-size: 12px;
   background-color: #171c36;
   color: $primary;
   line-height: divide(16, 12);

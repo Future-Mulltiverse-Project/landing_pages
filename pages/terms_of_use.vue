@@ -9,5 +9,4 @@
   import TermsAndConditions from '~/components/documentation/terms_and_conditions.vue';
   </script>
   
-  <style lang="scss" module></style>
   

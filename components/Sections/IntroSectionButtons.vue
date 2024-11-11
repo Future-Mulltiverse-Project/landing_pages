@@ -11,7 +11,7 @@
 
 <style lang="scss" module>
 .btnContainer {
-  @include margin-top(22px);
+  margin-top: 22px;
   position: relative;
   width: 100%;
 }
@@ -33,8 +33,8 @@
 }
 
 .btnTitle {
-  @include font-size(16px);
-  @include margin-bottom(32px);
+  font-size: 16px;
+  margin-bottom: 32px;
   font-weight: 600;
 }
 </style>

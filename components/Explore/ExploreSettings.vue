@@ -13,8 +13,8 @@ import CloseIcon from '~/icons/CloseIcon.vue';
 
 <style lang="scss" module>
 .wrapper {
-  @include padding-left(50px);
-  @include padding-right(50px);
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: rem-calc(40px);
   padding-bottom: rem-calc(40px);
   background-color: #1a1c37;

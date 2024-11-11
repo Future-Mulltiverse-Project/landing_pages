@@ -44,31 +44,31 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .wrapper {
-  @include padding(80px 0);
+  padding: 80px 0 ;
   padding-bottom: 50px !important;
 }
 
 .header {
-  @include margin-bottom(40px);
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   max-width: rem-calc(740px);
 
   p:first-child {
-    @include margin-top(28px);
+    margin-top: 28px;
   }
 }
 
 .heading {
-  @include font-size(32px);
-  @include margin-bottom(15px);
+  font-size: 32px;
+  margin-bottom: 15px;
   line-height: divide(30, 28);
   font-weight: 600;
 }
 
 .title {
-  @include font-size(60px);
-  @include margin-bottom(25px);
+  font-size: 60px;
+  margin-bottom: 25px;
   line-height: divide(70, 50);
   margin-left: auto;
   margin-right: auto;

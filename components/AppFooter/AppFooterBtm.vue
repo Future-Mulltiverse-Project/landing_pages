@@ -1,14 +1,14 @@
 <template>
   <div :class="$style.btm">
     <div :class="$style.wrapper">
-      <NuxtLink to="/" :class="$style.link">
+      <NuxtLink to="/" :class="$style.link" class="mt-0 sm:mt-5" >
         <CommentsIcon />
         <span>
           <strong>Need a Quote?</strong>
           Let’s talk business!
         </span>
       </NuxtLink>
-      <NuxtLink to="/" :class="$style.btn">
+      <NuxtLink to="/" :class="$style.btn" @click="scrollToTop">
         <ArrowIcon />
       </NuxtLink>
     </div>
@@ -18,7 +18,14 @@
 <script lang="ts" setup>
 import ArrowIcon from '~/icons/ArrowIcon.vue';
 import CommentsIcon from '~/icons/CommentsIcon.vue';
+import { ref } from 'vue';
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Add smooth scrolling
+  });
+};
 </script>
 
 <style lang="scss" module>
@@ -43,8 +50,8 @@ import CommentsIcon from '~/icons/CommentsIcon.vue';
 }
 
 .link {
-  @include font-size(14px);
-  margin-top: rem-calc(20px);
+  font-size: 14px;
+  //margin-top: rem-calc(20px);
   display: inline-flex;
   align-items: center;
   color: inherit;

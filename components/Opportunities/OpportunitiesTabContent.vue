@@ -50,7 +50,7 @@ defineProps<{
 
 <style lang="scss" module>
 .panel {
-  @include padding(52px 56px 0px);
+  padding: 52px 56px 0px ;
   padding-bottom: 50px !important;
   background-color: #1C213E;
   position: relative;
@@ -61,10 +61,9 @@ defineProps<{
 }
 
 .list {
-  @include rfs(112px, --gutter-x);
   position: relative;
-  @include margin-top(-19px);
-  @include margin-bottom(-19px);
+  margin-top: -19px;
+  margin-bottom: -19px;
 
   @include media-breakpoint-up(md) {
     &::before {
@@ -81,7 +80,7 @@ defineProps<{
 
 .item {
   border-bottom: 1px solid #2a3052;
-  @include padding(19px 0);
+  padding: 19px 0 ;
 
   @include media-breakpoint-up(md) {
     border-bottom: 0;
@@ -94,8 +93,8 @@ defineProps<{
 }
 
 .itemTitle {
-  @include font-size(18px);
-  @include margin-bottom(14px);
+  font-size: 18px;
+  margin-bottom: 14px;
   color: white;
   font-weight: 700;
   line-height: divide(30, 18);
@@ -113,14 +112,14 @@ defineProps<{
 }
 
 .itemText {
-  @include font-size(16px);
+  font-size: 16px;
   font-family: 'Nunito Sans', sans-serif;
   color: #9c9c9c;
   margin-bottom: 0;
 }
 
 .quote {
-  @include margin-top(20px);
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   max-width: rem-calc(740px);
@@ -131,15 +130,15 @@ defineProps<{
 }
 
 .quote p {
-  @include font-size(18px);
-  @include margin-bottom(18px);
+  font-size: 18px;
+  margin-bottom: 18px;
   font-weight: 700;
   color: $primary;
   line-height: math-div(23, 18);
 }
 
 .quite footer {
-  @include font-size(18px);
+  font-size: 18px;
   font-weight: 700;
   line-height: math-div(30, 18);
 }

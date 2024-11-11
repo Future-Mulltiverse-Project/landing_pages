@@ -62,7 +62,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
   //@include margin-top(26px)
   //padding-bottom: 50px !important;
   //padding: calc(2.0375rem + 13.1811023622vw) 0 calc(1.1rem + 2.5511811024vw);
-  //@include padding(200px 0 50px);
+  //padding: 200px  0 50px;
   text-align: center;
 
   @include media-breakpoint-up(lg) {
@@ -71,7 +71,6 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 .row {
   --gutter-x: 0;
-  @include rfs(64px, --gutter-y);
 
   @include media-breakpoint-up(lg) {
     flex-wrap: nowrap;
@@ -82,7 +81,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
   flex: 1 rem-calc($wrapper-inner-width - 700px);
 
   @include media-breakpoint-up(lg) {
-    @include padding-right($wrapper-padding);
+    padding-right: $wrapper-padding;
   }
 }
 
@@ -91,7 +90,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .header {
-  @include margin-bottom(26px);
+  margin-bottom: 26px;
 
   p:first-child {
     color: $primary;
@@ -99,12 +98,12 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .mediaWrapper {
-  @include padding(25px);
+  padding: 25px   ;
   background-color: #0a0d1d;
   border: 1px solid #232749;
 }
 
 .text {
-  @include margin-bottom(34px);
+  margin-bottom: 34px;
 }
 </style>

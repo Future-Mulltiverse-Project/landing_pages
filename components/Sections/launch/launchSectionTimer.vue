@@ -47,17 +47,17 @@ const config = useRuntimeConfig();
 
 <style lang="scss" module>
 .section {
-  @include padding(150px 0 120px);
+  padding: 150px  0 120px;
   color: #0c0f22;
   position: relative;
 }
 
 .row {
   --gutter-x: 0;
-  @include rfs(64px, --gutter-y);
+  --gutter-y: 64px; 
   padding-bottom: wrap-calc(328px);
 
-  @include media-breakpoint-up(lg) {
+  @media (min-width: 1024px) { /* Replace media-breakpoint-up(lg) with media query */
     flex-wrap: nowrap;
   }
 }
@@ -70,7 +70,7 @@ const config = useRuntimeConfig();
   flex: 1 1 rem-calc($wrapper-inner-width - 570px);
 
   @include media-breakpoint-up(lg) {
-    @include padding-right($wrapper-padding);
+    padding-right: $wrapper-padding;
     text-align: left;
     align-items: flex-start;
   }
@@ -81,8 +81,8 @@ const config = useRuntimeConfig();
 }
 
 .header {
-  @include padding-top(0px);
-  @include margin-bottom(70px);
+  padding-top: 0px;
+  margin-bottom: 70px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;

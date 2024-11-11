@@ -85,7 +85,7 @@ import TextContent from '~/components/utilities/TextContent.vue';
 }
 
 .wrapper {
-  @include padding-top(108px);
+  padding-top: 108px;
   padding-bottom: rem-calc(68px);
 }
 
@@ -120,7 +120,7 @@ import TextContent from '~/components/utilities/TextContent.vue';
 }
 
 .heading {
-  @include font-size(18px);
+  font-size: 18px;
   color: $primary;
   font-weight: 700;
   line-height: math-div(30, 18);

@@ -1,23 +1,23 @@
 <template>
-  <div :class="$style.item">
-    <div :class="$style.textContainer">
-      <h3 :class="$style.title" class="font-medium" >{{ item.title }}</h3>
+  <div class="grid grid-cols-1 gap-3 lg:grid-cols-2 pb-0" >
+    <div :class="$style.textContainer" class="ml-8" >
+      <h3 :class="$style.title" class="font-medium mb:text-5xl text-3xl mb-7 text-center lg:text-left" >{{ item.title }}</h3>
       <div :class="$style.text" class="font-thin" >{{ item.text }}</div>
 
-      <button  class="btn-outline-primary">
-        <p style="font-weight: 600;color: #cfb16d; font-size:14px; margin-bottom: 0px;">
-          LEARN MORE
-        </p>
-      </button>
+      <div class="flex justify-center" >
+        <button  class="btn-outline-primary">
+          <p style="font-weight: 600;color: #cfb16d; font-size:14px; margin-bottom: 0px;">
+            LEARN MORE
+          </p>
+        </button>
+      </div>
     </div>
     <div :class="$style.mediaWrapper">
-      <div :class="$style.mediaHolder">
+      <div :class="$style.mediaHolder" class="flex justify-center">
         <div
           v-if="item.img"
           :class="$style.media"
-          :style="{
-            '--image-w': `${item.img.width}`,
-          }"
+          class="w-3/4"
         >
           <MediaPicture
             :src="item.img.url"
@@ -63,7 +63,7 @@ defineProps<{ item: Itesmata }>();
     padding-left: rem-calc($wrapper-padding-sm);
 
     @include media-breakpoint-up(sm) {
-      @include padding-left($wrapper-padding);
+      padding-left: $wrapper-padding;
     }
 
   }
@@ -72,7 +72,7 @@ defineProps<{ item: Itesmata }>();
     padding-left: rem-calc($wrapper-padding-sm);
 
     @include media-breakpoint-up(lg) {
-      @include padding-left($wrapper-padding);
+      padding-left: $wrapper-padding;
     }
 
 
@@ -82,21 +82,19 @@ defineProps<{ item: Itesmata }>();
   }
 }
 
-.textContainer {
+/*.textContainer {
   @include padding(70px 54px 0px 0);
   flex: 1 1 rem-calc(323px);
-}
+}*/
 
 .title {
-  @include font-size(44px);
-  @include margin-bottom(24px);
   color: $primary;
   line-height: divide(55, 44);
 }
 
 .text {
-  @include font-size(16px);
-  @include margin-bottom(32px);
+  font-size: 16px;
+  margin-bottom: 32px;
   font-weight: 400;
   font-family: 'Nunito Sans', sans-serif;
   line-height: divide(24, 16);
@@ -121,6 +119,6 @@ defineProps<{ item: Itesmata }>();
 .media {
   left: 0;
   position: absolute;
-  width: calc(var(--image-w) * 100% / 280);
+  //width: calc(var(--image-w) * 100% / 280);
 }
 </style>

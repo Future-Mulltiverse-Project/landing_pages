@@ -111,7 +111,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .el {
-  @include padding-right(30px);
+  padding-right: 30px;
   background-color: #1a1c37;
   color: #fff;
   position: relative;
@@ -158,7 +158,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
   margin-left: 21px;
 }
 .logoName {
-  @include font-size(24px);
+  font-size: 24px;
   margin-left: rem-calc(18px);
 
   strong {
@@ -219,7 +219,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .walletBtn {
-  @include font-size(14px);
+  font-size: 14px;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;

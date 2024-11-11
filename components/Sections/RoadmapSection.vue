@@ -183,12 +183,12 @@ onBeforeUnmount(() => {
 <style lang="scss" module>
 .section {
   //@include padding-top(256px + 146px);
-  @include padding-top(146px);
+  padding-top: 146px;
   text-align: center;
 }
 
 .header {
-  @include margin-bottom(34px);
+  margin-bottom: 34px;
 
   h2 {
     line-height: divide(55, 50);
@@ -196,7 +196,7 @@ onBeforeUnmount(() => {
 }
 
 .legend {
-  @include padding-bottom(70px);
+  padding-bottom: 70px;
 
   --gutter-x: #{rem-calc(24px)};
   --gutter-y: #{rem-calc(10px)};
@@ -204,7 +204,7 @@ onBeforeUnmount(() => {
 }
 
 .legendItem {
-  @include font-size(14px);
+  font-size: 14px;
   color: #9c9c9c;
   font-weight: 500;
   padding-left: rem-calc(22px);
@@ -297,7 +297,7 @@ onBeforeUnmount(() => {
 }
 
 .itemTime {
-  @include font-size(26px);
+  font-size: 26px;
   line-height: divide(30, 26);
   margin-bottom: rem-calc(105px);
 
@@ -415,7 +415,7 @@ onBeforeUnmount(() => {
 }
 
 .itemLabel {
-  @include font-size(14px);
+  font-size: 14px;
   font-weight: 500;
   line-height: divide(18, 14);
   margin-bottom: rem-calc(2px);
@@ -426,8 +426,8 @@ onBeforeUnmount(() => {
 }
 
 .itemTitle {
-  @include font-size(18px);
-  @include margin-bottom(22px);
+  font-size: 18px;
+  margin-bottom: 22px;
   line-height: divide(30, 18);
 
   .completed & {
@@ -436,8 +436,8 @@ onBeforeUnmount(() => {
 }
 
 .itemText {
-  @include font-size(16px);
-  @include margin-bottom(24px);
+  font-size: 16px;
+  margin-bottom: 24px;
   font-family: 'Nunito Sans', sans-serif;
   opacity: 0.5;
 
@@ -453,6 +453,6 @@ onBeforeUnmount(() => {
 }
 
 .sectionBtn {
-  @include margin-top(60px);
+  margin-top: 60px;
 }
 </style>

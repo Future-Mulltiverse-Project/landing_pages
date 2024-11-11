@@ -154,11 +154,11 @@ const items = ref([
 }
 
 .wrapper {
-  @include padding-bottom(64px);
+  padding-bottom: 64px;
 }
 
 .header {
-  @include margin-bottom(68px);
+  margin-bottom: 68px;
   text-align: center;
 }
 

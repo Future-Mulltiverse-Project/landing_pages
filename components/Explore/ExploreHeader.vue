@@ -523,7 +523,7 @@ import {
 }
 
 .text {
-  @include font-size(24px);
+  font-size: 24px;
   display: flex;
   align-items: center;
   line-height: divide(30, 24);
@@ -551,7 +551,7 @@ import {
 }
 
 .link {
-  @include font-size(14px);
+  font-size: 14px;
   color: inherit;
   align-items: center;
   display: inline-flex;

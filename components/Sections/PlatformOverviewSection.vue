@@ -58,12 +58,12 @@ import ChatButton from '~/components/ChatButton.vue';
 }
 
 .wrapper {
-  //@include padding-top(26px);
+  //padding-top: 26px;
   margin: unset;
 }
 
 .header {
-  @include margin-bottom(48px);
+  margin-bottom: 48px;
   position: relative;
   z-index: 1;
 
@@ -75,7 +75,7 @@ import ChatButton from '~/components/ChatButton.vue';
 }
 
 .text {
-  @include margin-bottom(30px);
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   max-width: 49ch;
@@ -88,7 +88,7 @@ import ChatButton from '~/components/ChatButton.vue';
 }
 
 .btnContainer {
-  @include margin-top(32px);
+  margin-top: 32px;
   position: relative;
 }
 
@@ -105,8 +105,8 @@ import ChatButton from '~/components/ChatButton.vue';
 }
 
 .btnTitle {
-  @include font-size(22px);
-  @include margin-bottom(22px);
+  font-size: 22px;
+  margin-bottom: 22px;
   font-weight: 600;
   color: $primary;
 }
@@ -129,7 +129,7 @@ import ChatButton from '~/components/ChatButton.vue';
 }
 
 .btnLink {
-  @include font-size(14px);
+  font-size: 14px;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
@@ -140,15 +140,15 @@ import ChatButton from '~/components/ChatButton.vue';
   }
 
   svg {
-    @include margin-right(7px);
+    margin-right: 7px;
     width: rem-calc(16px);
     height: rem-calc(18px);
   }
 }
 
 .scroll {
-  @include font-size(10px);
-  @include margin-top(70px);
+  font-size: 10px;
+  margin-top: 70px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;

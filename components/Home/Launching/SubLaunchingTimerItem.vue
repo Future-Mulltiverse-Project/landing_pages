@@ -25,7 +25,7 @@
   text-align: center;
 }
 .title {
-  @include font-size(23px);
+  font-size: 23px;
   line-height: math-div(30, 22);
   font-weight: 600;
   margin-top: 20px;

@@ -124,7 +124,7 @@ defineProps({
 }
 
 .index {
-  @include font-size(16px);
+  font-size: 16px;
   align-items: center;
   border-radius: 50%;
   border: 3px solid $primary;
@@ -137,7 +137,7 @@ defineProps({
 }
 
 .title {
-  @include font-size(26px);
+  font-size: 26px;
   color: $primary;
   font-weight: 600;
   margin-bottom: rem-calc(28px);
@@ -191,7 +191,7 @@ defineProps({
 
 .salePrice,
 .label {
-  @include font-size(12px);
+  font-size: 12px;
   color: #9c9c9c;
   font-weight: 700;
   line-height: math-div(15, 12);
@@ -203,7 +203,7 @@ defineProps({
 }
 
 .price {
-  @include font-size(26px);
+  font-size: 26px;
   color: $primary;
   line-height: math-div(30, 26);
 }

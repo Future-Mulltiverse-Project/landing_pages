@@ -16,8 +16,6 @@ import LogoIcon from '~/icons/LogoIcon.vue';
 }
 
 .icon {
-  @include rfs(80px, height);
-  @include rfs(80px, width);
   min-height: rem-calc(54px);
   min-width: rem-calc(54px);
 }

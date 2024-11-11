@@ -38,7 +38,7 @@ function show() {
 }
 
 .name {
-  @include font-size(14px);
+  font-size: 14px;
   color: $primary;
   font-weight: 700;
   text-transform: uppercase;
@@ -94,7 +94,7 @@ function show() {
 }
 
 .dropdownItem {
-  @include font-size(14px);
+  font-size: 14px;
   color: inherit;
   display: inline-block;
   font-weight: 500;

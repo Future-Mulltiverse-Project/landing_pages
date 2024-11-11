@@ -227,20 +227,21 @@ const config = useRuntimeConfig();
 }
 
 .section {
-  @include padding(150px 0 120px);
+  padding: 150px  0 120px;
   color: #ffffff;
   position: relative;
 }
 
-.row {
-  --gutter-x: 0;
-  @include rfs(64px, --gutter-y);
-  padding-bottom: wrap-calc(6px);
 
-  @include media-breakpoint-up(lg) {
-    flex-wrap: nowrap;
+.row {
+    --gutter-x: 0;
+    --gutter-y: 64px; 
+    padding-bottom: wrap-calc(328px);
+
+    @media (min-width: 1024px) { /* Replace media-breakpoint-up(lg) with media query */
+      flex-wrap: nowrap;
+    }
   }
-}
 
 .leftCol {
   align-items: center;
@@ -249,11 +250,6 @@ const config = useRuntimeConfig();
   text-align: center;
   flex: 1 1 rem-calc($wrapper-inner-width - 570px);
 
-  @include media-breakpoint-up(lg) {
-    @include padding-right($wrapper-padding);
-    /* text-align: left; */
-    align-items: flex-start;
-  }
 }
 
 .rightCol {
@@ -261,8 +257,8 @@ const config = useRuntimeConfig();
 }
 
 .header {
-  //@include padding-top(32px);
-  @include margin-bottom(200px);
+  //padding-top: 32px;
+  margin-bottom: 200px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -281,9 +277,6 @@ const config = useRuntimeConfig();
   max-width: rem-calc(580px);
   margin: 0 auto;
 
-  @include media-breakpoint-up(lg) {
-    margin-right: 0;
-  }
 }
 
 .text1 {

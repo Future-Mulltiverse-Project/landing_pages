@@ -1,3 +1,4 @@
+@import '../functions/rem-calc.scss';
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -83,7 +84,7 @@ $blue-400: tint-color($blue, 20%) !default;
 $blue-500: $blue !default;
 $blue-600: #15172E;
 $blue-700: shade-color($blue, 40%) !default;
-$blue-800: #0A0D1D;
+$blue-800: #0A0D1D !default;
 $blue-900: shade-color($blue, 80%) !default;
 
 $indigo-100: tint-color($indigo, 80%) !default;

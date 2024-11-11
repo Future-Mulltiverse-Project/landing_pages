@@ -80,19 +80,19 @@ const upload = {
 
 <style lang="scss" module>
 .top {
-  @include padding-left(24px);
-  @include padding-right(24px);
+  padding-left: 24px;
+  padding-right: 24px;
   position: relative;
   text-align: center;
 }
 
 .breadcrumbs {
-  @include padding(24px 0);
+  padding: 24px 0 ;
 }
 
 .body {
-  @include padding-left(24px);
-  @include padding-right(24px);
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .wrapper {
@@ -102,7 +102,7 @@ const upload = {
 }
 
 .wrapperTop {
-  @include padding(24px 0 66px);
+  padding: 24px  0 66px;
 }
 
 .header {

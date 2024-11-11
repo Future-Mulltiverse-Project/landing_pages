@@ -163,7 +163,6 @@ const config = useRuntimeConfig();
 
 .row {
   --gutter-x: 0;
-  @include rfs(64px, --gutter-y);
 
   @include media-breakpoint-up(lg) {
     flex-wrap: nowrap;
@@ -178,7 +177,7 @@ const config = useRuntimeConfig();
   flex: 1 1 rem-calc($wrapper-inner-width - 570px);
 
   @include media-breakpoint-up(lg) {
-    @include padding-right($wrapper-padding);
+    padding-right: $wrapper-padding;
     /* text-align: left; */
     align-items: flex-start;
   }
@@ -189,8 +188,8 @@ const config = useRuntimeConfig();
 }
 
 .header {
-  //@include padding-top(32px);
-  //@include margin-bottom(200px);
+  //padding-top: 32px;
+  //margin-bottom: 200px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;

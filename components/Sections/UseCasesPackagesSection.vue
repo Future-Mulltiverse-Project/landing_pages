@@ -177,16 +177,16 @@
   }
   
   .heading {
-    @include font-size(28px);
-    @include margin-bottom(28px);
+    font-size: 28px;
+    margin-bottom: 28px;
     color: #ffffff;
     font-weight: 600;
     line-height: divide(30, 28);
   }
   
   .title {
-    @include font-size(45px);
-    @include margin-bottom(64px);
+    font-size: 45px;
+    margin-bottom: 64px;
     line-height: divide(55, 45);
     margin-left: auto;
     margin-right: auto;

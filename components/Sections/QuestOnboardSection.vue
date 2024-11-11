@@ -60,8 +60,8 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .heading {
-  @include font-size(28px);
-  @include margin-bottom(42px);
+  font-size: 28px;
+  margin-bottom: 42px;
   color: $primary;
   font-weight: 600;
   line-height: divide(35, 28);
@@ -77,8 +77,8 @@ p{
   color: #CFB16D ;
 }
 .title {
-  @include font-size(40px);
-  @include margin-bottom(42px);
+  font-size: 40px;
+  margin-bottom: 42px;
   line-height: divide(55, 45);
   margin-left: auto;
   margin-right: auto;
@@ -96,7 +96,7 @@ p{
 }
 
 .timerTitle {
-  @include font-size(18px);
+  font-size: 18px;
   color: $primary;
   font-weight: 600;
   line-height: divide(30, 18);
@@ -104,14 +104,14 @@ p{
 }
 
 .btnText {
-  @include font-size(18px);
+  font-size: 18px;
   line-height: divide(30, 18);
   max-width: rem-calc(240px);
   margin: 0 auto rem-calc(18px);
 }
 
 .timer {
-  @include margin-bottom(22px);
+  margin-bottom: 22px;
   justify-content: center;
 }
 </style>

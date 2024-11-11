@@ -36,17 +36,15 @@ defineProps<{
 
 <style lang="scss" module>
 .section {
-  @include padding(132px 0 0);
+  padding: 132px  0 0;
 }
 
 .row {
-  @include padding-bottom(116px);
-  @include rfs($wrapper-padding, --gutter-x);
-  @include rfs(20px, --gutter-y);
+  padding-bottom: 116px;
 }
 
 .listContainer {
-  @include padding-bottom(132px);
+  padding-bottom: 132px;
   background: radial-gradient(
     1160px 320px at center bottom,
     #0a0d21,
@@ -55,7 +53,7 @@ defineProps<{
 }
 
 .header {
-  @include margin-bottom(44px);
+  margin-bottom: 44px;
 
   p {
     @include media-breakpoint-up(lg) {
@@ -64,13 +62,13 @@ defineProps<{
   }
 
   p:first-child {
-    @include margin-top(30px);
+    margin-top: 30px;
   }
 }
 
 .rightCol {
   @include media-breakpoint-up(lg) {
-    //@include padding-left(100px);
+    //padding-left: 100px;
   }
 }
 </style>

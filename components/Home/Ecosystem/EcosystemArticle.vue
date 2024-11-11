@@ -139,15 +139,13 @@ defineProps({
   margin: 0 0 rem-calc(22px);
 
   svg {
-    height: rfs-value(64px);
-    width: rfs-value(64px);
     min-width: rem-calc(40px);
     min-height: rem-calc(40px);
   }
 }
 
 .title {
-  @include font-size(26px);
+  font-size: 26px;
   line-height: math-div(30, 26);
   margin-bottom: rem-calc(20px);
   font-weight: 600;
@@ -169,7 +167,7 @@ defineProps({
 }
 
 .subtitle {
-  @include font-size(26px);
+  font-size: 26px;
   color: $primary;
   line-height: math-div(30, 26);
   font-weight: 600;

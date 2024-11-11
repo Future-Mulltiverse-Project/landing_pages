@@ -35,9 +35,6 @@ defineProps<{ item: ItemData }>();
   grid-template-columns: repeat(1, 1fr);
   margin: 0 -1px -1px;
 
-  @include media-breakpoint-up(md) {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .item {
@@ -50,31 +47,14 @@ defineProps<{ item: ItemData }>();
   overflow: hidden;
   flex-direction: column;
   text-align: center;
-  @include padding-top(70px);
-  @include padding-bottom(70px);
+  padding-top: 70px;
+  padding-bottom: 70px;
 
-  @include media-breakpoint-up(md) {
-    text-align: left;
-  }
-
-  @include media-breakpoint-up(lg) {
-    padding-top: 0;
-    padding-bottom: 0;
-    flex-direction: row;
-  }
 
   &:nth-child(odd) {
     padding-left: rem-calc($wrapper-padding-sm);
     padding-right: rem-calc($wrapper-padding-sm);
 
-    @include media-breakpoint-up(sm) {
-      @include padding-left($wrapper-padding);
-      @include padding-right($wrapper-padding);
-    }
-
-    @include media-breakpoint-up(lg) {
-      padding-right: 0;
-    }
 
     @media (min-width: $wrapper-width + 1px) {
       padding-left: calc(100% - $wrapper-inner-width / 2);
@@ -85,10 +65,6 @@ defineProps<{ item: ItemData }>();
     padding-left: rem-calc($wrapper-padding-sm);
     padding-right: rem-calc($wrapper-padding-sm);
 
-    @include media-breakpoint-up(sm) {
-      @include padding-left($wrapper-padding);
-      @include padding-right($wrapper-padding);
-    }
 
     @media (min-width: $wrapper-width + 1px) {
       padding-left: calc(100% - $wrapper-inner-width / 2);
@@ -103,24 +79,20 @@ defineProps<{ item: ItemData }>();
 }
 
 .textContainer {
-  @include padding-bottom(70px);
+  padding-bottom: 70px;
 
-  @include media-breakpoint-up(lg) {
-    @include padding-right(70px);
-    padding-bottom: 0;
-  }
 }
 
 .title {
-  @include font-size(44px);
-  @include margin-bottom(24px);
+  font-size: 44px;
+  margin-bottom: 24px;
   color: $primary;
   line-height: divide(55, 44);
 }
 
 .text {
-  @include font-size(16px);
-  @include margin-bottom(32px);
+  font-size: 16px;
+  margin-bottom: 32px;
   font-weight: 400;
   font-family: 'Nunito Sans', sans-serif;
   line-height: divide(24, 16);

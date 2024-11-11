@@ -44,7 +44,7 @@ defineProps<{
 }
 
 .breadcrumbItem {
-  @include font-size(12px);
+  font-size: 12px;
   color: inherit !important;
   line-height: 1.2;
   font-weight: 400;
@@ -55,7 +55,7 @@ defineProps<{
 }
 
 .breadcrumbSlash {
-  @include font-size(12px);
+  font-size: 12px;
   line-height: 1.2;
   font-weight: 400;
   margin: 0 em-calc(5, 12);

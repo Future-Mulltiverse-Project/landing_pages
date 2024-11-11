@@ -32,7 +32,7 @@ const config = useRuntimeConfig();
 
 <style lang="scss" module>
 .section {
-  @include padding(104px 0 448px);
+  padding: 104px  0 448px;
   
   padding-bottom: 80px !important;
   text-align: center;
@@ -45,16 +45,16 @@ const config = useRuntimeConfig();
 
 
 .heading {
-  @include font-size(28px);
-  @include margin-bottom(28px);
+  font-size: 28px;
+  margin-bottom: 28px;
   color: #ffffff;
   font-weight: 600;
   line-height: divide(30, 28);
 }
 
 .title {
-  @include font-size(35px);
-  @include margin-bottom(64px);
+  font-size: 35px;
+  margin-bottom: 64px;
   line-height: divide(55, 45);
   margin-left: auto;
   margin-right: auto;
@@ -76,8 +76,8 @@ const config = useRuntimeConfig();
 
 
 .timerTitle {
-  @include font-size(24px);
-  @include margin-top(300px);
+  font-size: 24px;
+  margin-top: 300px;
   color: #ffffff;
   font-weight: 600;
   line-height: divide(30, 18);
@@ -85,7 +85,7 @@ const config = useRuntimeConfig();
 }
 
 .timer {
-  @include margin-bottom(2px);
+  margin-bottom: 2px;
   justify-content: center;
   
 }

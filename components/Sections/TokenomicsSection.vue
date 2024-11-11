@@ -49,7 +49,7 @@ import Img from '~/assets/images/tokenomics.png';
 
 <style lang="scss" module>
 .section {
-  @include padding(145px 0 130px);
+  padding: 145px  0 130px;
   text-align: center;
 
   @include media-breakpoint-up(lg) {
@@ -58,18 +58,18 @@ import Img from '~/assets/images/tokenomics.png';
 }
 
 .row {
-  @include padding-bottom(112px);
+  padding-bottom: 112px;
   --gutter-x: 0;
 }
 
 .leftCol {
   @include media-breakpoint-up(lg) {
-    @include padding-right(50px);
+    padding-right: 50px;
   }
 }
 
 .header {
-  @include margin-bottom(26px);
+  margin-bottom: 26px;
 }
 
 .scheme {

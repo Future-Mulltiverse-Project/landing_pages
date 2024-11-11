@@ -8,7 +8,7 @@
       {{ heading }} {{ strongTitle }}
     </div>
     <h2 :class="[$style.title, titleLg && $style.titleLg]">
-      <p class="font-medium text-5xl" v-html="title" />
+      <h4 class="font-medium text-4xl pb-0 pt-0 text-center" v-html="title" />
       <span class="font-medium" style="color: #ffffff;">{{invent_title}}</span>
       <template v-if="subtitle">
         {{ subtitle }} 
@@ -34,20 +34,20 @@ defineProps<{
 
 <style lang="scss" module>
 .heading {
-  @include font-size(22px);
-  @include margin-bottom(25px);
+  font-size: 22px;
+  margin-bottom: 25px;
   line-height: divide(30, 22);
 }
 
 .headingLg {
-  @include font-size(28px);
-  @include margin-bottom(14px);
+  font-size: 28px;
+  margin-bottom: 14px;
   line-height: divide(30, 28);
 }
 
 .title {
-  @include font-size(45px);
-  @include margin-bottom(20px);
+  font-size: 45px;
+  margin-bottom: 20px;
   line-height: math-div(55, 45);
   text-transform: uppercase;
 
@@ -61,12 +61,12 @@ defineProps<{
 }
 
 .titleLg {
-  @include font-size(50px);
+  font-size: 50px;
   line-height: divide(70, 50);
 }
 
 .text {
-  @include font-size(22px);
+  font-size: 22px;
   line-height: divide(30, 22);
   font-family: 'Nunito Sans', sans-serif;
 

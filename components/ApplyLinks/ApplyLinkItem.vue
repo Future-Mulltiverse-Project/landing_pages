@@ -65,8 +65,8 @@ defineProps<{ item: Itesmata }>();
     padding-right: rem-calc($wrapper-padding-sm);
 
     @include media-breakpoint-up(sm) {
-      @include padding-left($wrapper-padding);
-      @include padding-right($wrapper-padding);
+      padding-left: $wrapper-padding;
+      padding-right: $wrapper-padding;
     }
 
     @include media-breakpoint-up(lg) {
@@ -83,8 +83,8 @@ defineProps<{ item: Itesmata }>();
     padding-right: rem-calc($wrapper-padding-sm);
 
     @include media-breakpoint-up(sm) {
-      @include padding-left($wrapper-padding);
-      @include padding-right($wrapper-padding);
+      padding-left: $wrapper-padding;
+      padding-right: $wrapper-padding;
     }
 
     @media (min-width: $wrapper-width + 1px) {
@@ -105,15 +105,15 @@ defineProps<{ item: Itesmata }>();
 }
 
 .title {
-  @include font-size(35px);
-  @include margin-bottom(28px);
+  font-size: 35px;
+  margin-bottom: 28px;
   color: white;
   line-height: divide(50, 40);
 }
 
 .text {
-  @include font-size(16px);
-  @include margin-bottom(32px);
+  font-size: 16px;
+  margin-bottom: 32px;
   font-weight: 400;
   font-family: 'Nunito Sans', sans-serif;
   line-height: divide(24, 16);

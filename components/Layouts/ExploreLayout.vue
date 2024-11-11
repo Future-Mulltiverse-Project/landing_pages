@@ -71,7 +71,7 @@ useHead({
 }
 
 .content {
-  @include padding(60px 0);
+  padding: 60px 0 ;
   align-items: center;
   display: flex;
   flex: 1 1 auto;

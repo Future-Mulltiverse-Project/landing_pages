@@ -34,7 +34,7 @@ defineProps<{
 }
 
 .details {
-  @include font-size(12px);
+  font-size: 12px;
   color: #9c9c9c;
   font-weight: 700;
   line-height: math-div(15, 12);
@@ -42,7 +42,7 @@ defineProps<{
 }
 
 .title {
-  @include font-size(18px);
+  font-size: 18px;
   font-weight: 700;
   line-height: math-div(30, 18);
   margin-bottom: rem-calc(18px);
@@ -50,7 +50,7 @@ defineProps<{
 }
 
 .text {
-  @include font-size(16px);
+  font-size: 16px;
   color: #9c9c9c;
   font-family: 'Nunito Sans', sans-serif;
 }

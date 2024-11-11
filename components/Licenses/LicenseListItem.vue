@@ -111,7 +111,7 @@ defineProps({
 }
 
 .title {
-  @include font-size(26px);
+  font-size: 26px;
   line-height: math-div(30, 26);
   color: $primary;
   font-weight: 600;

@@ -55,7 +55,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 <style lang="scss" module>
 .section {
-  @include padding(136px 0 156px);
+  padding: 136px  0 156px;
   text-align: center;
 
   @include media-breakpoint-up(lg) {
@@ -72,12 +72,11 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .secondaryText {
- @include font-size(12px);
+ font-size: 12px;
 }
 
 .row {
   --gutter-x: 0;
-  @include rfs(64px, --gutter-y);
 }
 
 .leftCol {
@@ -87,7 +86,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 .rightCol {
   @include media-breakpoint-up(lg) {
-    @include padding-left(58px);
+    padding-left: 58px;
     max-width: none;
   }
 }
@@ -120,7 +119,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .header {
-  @include margin-bottom(30px);
+  margin-bottom: 30px;
 
   h2 {
     line-height: divide(55, 50);
@@ -131,7 +130,7 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .text {
-  @include margin-bottom(54px);
+  margin-bottom: 54px;
 
   @include media-breakpoint-up(lg) {
     max-width: rem-calc(400px);
@@ -150,14 +149,14 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .visitTitle {
-  @include font-size(22px);
-  @include margin-bottom(32px);
+  font-size: 22px;
+  margin-bottom: 32px;
   line-height: divide(30, 22);
   color: $primary;
   font-weight: 600;
 
   @include media-breakpoint-up(lg) {
-    @include padding-right(24px);
+    padding-right: 24px;
     margin-bottom: 0;
     max-width: rem-calc(270px);
   }

@@ -25,7 +25,7 @@ const items = ref(useNavItems);
 }
 
 .link {
-  @include font-size(14px);
+  font-size: 14px;
   color: inherit;
   font-weight: 700;
   line-height: 1.2;

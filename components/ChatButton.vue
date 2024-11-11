@@ -13,7 +13,7 @@ import HeadCommentIcon from '~/icons/HeadCommentIcon.vue';
 
 <style lang="scss" module>
 .chatBtn {
-  //@include font-size(12px);
+  //font-size: 12px;
   font-size: 12px;
   background-color: transparent;
   border: 0;
@@ -30,7 +30,7 @@ import HeadCommentIcon from '~/icons/HeadCommentIcon.vue';
   z-index: 2;
 
   /*@include media-breakpoint-up(sm) {
-    @include margin-right($wrapper-padding);
+    margin-right: $wrapper-padding;
   }*/
 
   @media (min-width: 1441px) {

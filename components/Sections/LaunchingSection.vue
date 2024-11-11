@@ -199,14 +199,13 @@ const config = useRuntimeConfig();
 }
 
 .section {
-  //@include padding(150px 0 120px);
+  //padding: 150px  0 120px;
   color: #ffffff;
   position: relative;
 }
 
 .row {
   --gutter-x: 0;
-  @include rfs(64px, --gutter-y);
   padding-bottom: wrap-calc(6px);
 
   @include media-breakpoint-up(lg) {
@@ -222,7 +221,7 @@ const config = useRuntimeConfig();
   flex: 1 1 rem-calc($wrapper-inner-width - 570px);
 
   @include media-breakpoint-up(lg) {
-    @include padding-right($wrapper-padding);
+    padding-right: $wrapper-padding;
     /* text-align: left; */
     align-items: flex-start;
   }
@@ -233,8 +232,8 @@ const config = useRuntimeConfig();
 }
 
 .header {
-  @include padding-top(32px);
-  @include margin-bottom(200px);
+  padding-top: 32px;
+  margin-bottom: 200px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;

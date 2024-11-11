@@ -82,7 +82,7 @@ import Logo from '~/assets/images/graceai/graceai_logo.png';
 }
 
 .el {
-  //@include padding-right(30px);
+  //padding-right: 30px;
   padding-right: 30px;
   background-color: #1a1c37;
   color: #fff;
@@ -166,7 +166,7 @@ import Logo from '~/assets/images/graceai/graceai_logo.png';
 
 
 .walletBtn {
-  //@include font-size(14px);
+  //font-size: 14px;
   font-size: 14px;
   color: #fff;
   font-weight: 700;

@@ -55,12 +55,12 @@ const { days, hours, minutes, seconds } = useTimer(
 
 <style lang="scss" module>
 .section {
-  @include padding(194px 0 86px);
+  padding: 194px  0 86px;
   position: relative;
   overflow: hidden;
 
   @include media-breakpoint-up(lg) {
-    @include padding-bottom(156px);
+    padding-bottom: 156px;
   }
 }
 
@@ -71,7 +71,7 @@ const { days, hours, minutes, seconds } = useTimer(
   pointer-events: none;
 
   @include media-breakpoint-up(lg) {
-    @include margin-right($wrapper-padding);
+    margin-right: $wrapper-padding;
     position: absolute;
     max-width: none;
     margin-left: 0;
@@ -116,8 +116,8 @@ const { days, hours, minutes, seconds } = useTimer(
 }
 
 .title {
-  @include font-size(50px);
-  @include margin-bottom(68px);
+  font-size: 50px;
+  margin-bottom: 68px;
   font-weight: 600;
   line-height: divide(63, 50);
 
@@ -127,7 +127,7 @@ const { days, hours, minutes, seconds } = useTimer(
 }
 
 .timer {
-  @include font-size(16px);
+  font-size: 16px;
   margin-bottom: rem-calc(10px);
   line-height: math-div(30, 20);
   text-transform: uppercase;

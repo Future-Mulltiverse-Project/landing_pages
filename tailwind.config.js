@@ -13,8 +13,7 @@ module.exports = {
     "./pages/index.vue",
 
     // Or if using `src` directory:
-    //"./src/**/*.{js,ts,jsx,tsx}",
-    "./src/**/*.{html,js}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   
   theme: {

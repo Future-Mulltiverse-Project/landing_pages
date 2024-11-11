@@ -148,7 +148,7 @@ onBeforeUnmount(() => {
 
 <style lang="scss" module>
 .panel {
-  @include margin-bottom(50px);
+  margin-bottom: 50px;
   background-color: #0c0e1f;
   margin-top: rem-calc(10px);
   border: 1px solid $primary;
@@ -192,8 +192,8 @@ onBeforeUnmount(() => {
 }
 
 .contactLink {
-  @include font-size(14px);
-  @include margin(25px 60px 30px);
+  font-size: 14px;
+  margin: 25px 60px 30px ;
   display: inline-block;
   line-height: divide(18, 14);
   font-weight: 500;
@@ -208,14 +208,14 @@ onBeforeUnmount(() => {
 }
 
 .text {
-  @include font-size(16px);
+  font-size: 16px;
   @include margin(44px 0 50px);
   font-weight: 500;
   opacity: 0.5;
 }
 .swiper {
-  @include padding-left(60px);
-  @include padding-right(60px);
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 1px;
   margin-bottom: -1px;
   max-width: 100%;
@@ -235,7 +235,7 @@ onBeforeUnmount(() => {
 }
 
 .slide {
-  @include margin-right(42px);
+  margin-right: 42px;
   width: auto;
 
   &:last-child {
@@ -244,8 +244,8 @@ onBeforeUnmount(() => {
 }
 
 .tab {
-  @include padding(25px 0 30px);
-  @include font-size(18px);
+  padding: 25px  0 30px;
+  font-size: 18px;
   line-height: divide(30, 18);
   cursor: pointer;
   user-select: none;

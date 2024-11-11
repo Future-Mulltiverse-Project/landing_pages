@@ -110,7 +110,7 @@ import CommentsIcon from '~/icons/CommentsIcon.vue';
 }
 
 .summ {
-  @include font-size(18px);
+  font-size: 18px;
   font-weight: 700;
   line-height: math-div(24, 18);
   margin: rem-calc(54px) auto rem-calc(64px);
@@ -183,7 +183,7 @@ import CommentsIcon from '~/icons/CommentsIcon.vue';
 }
 
 .applyText {
-  @include font-size(40px);
+  font-size: 40px;
   align-items: center;
   color: $primary;
   display: flex;

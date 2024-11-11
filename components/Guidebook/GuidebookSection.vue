@@ -11,20 +11,20 @@ defineProps<{ title: string }>();
 
 <style lang="scss" module>
 .section {
-  //@include padding-bottom(64px);
+  //padding-bottom: 64px;
 }
 
 .title {
-  @include font-size(14px);
-  @include margin-top(36px);
-  @include margin-bottom(36px);
+  font-size: 14px;
+  margin-top: 36px;
+  margin-bottom: 36px;
   font-weight: 600;
   color: $primary;
   display: flex;
   align-items: center;
 
   &::after {
-    @include margin-left(32px);
+    margin-left: 32px;
     content: '';
     flex-grow: 1;
     display: block;

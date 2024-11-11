@@ -54,7 +54,6 @@ useHead({
 
 <style lang="scss" module>
 .logo {
-  @include rfs(100px, width);
   min-width: rem-calc(160px);
   margin-left: auto;
   margin-right: auto;

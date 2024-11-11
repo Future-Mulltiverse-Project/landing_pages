@@ -46,7 +46,7 @@ const emit = defineEmits<{
 
 <style lang="scss" module>
 .item {
-  @include padding(42px 50px 46px);
+  padding: 42px 50px 46px ;
   border: 1px solid #3b3d4a;
   align-items: center;
   display: flex;
@@ -87,8 +87,8 @@ const emit = defineEmits<{
 }
 
 .title {
-  @include font-size(26px);
-  @include margin-bottom(20px);
+  font-size: 26px;
+  margin-bottom: 20px;
   line-height: divide(30, 26);
   font-weight: 600;
   color: $primary;
@@ -120,8 +120,8 @@ const emit = defineEmits<{
 }
 
 .label {
-  @include font-size(12px);
-  @include margin-bottom(20px);
+  font-size: 12px;
+  margin-bottom: 20px;
   color: #9c9c9c;
   font-weight: 700;
   line-height: 1.2;
@@ -129,8 +129,8 @@ const emit = defineEmits<{
 }
 
 .text {
-  @include font-size(16px);
-  @include margin-bottom(24px);
+  font-size: 16px;
+  margin-bottom: 24px;
   font-weight: 500;
   opacity: 0.5;
   max-width: rem-calc(450px);

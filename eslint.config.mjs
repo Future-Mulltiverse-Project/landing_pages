@@ -17,6 +17,7 @@ export default [
   {
     rules: {
       "prettier/prettier": 0,
+      "no-useless-catch":0,
       "vue/multi-word-component-names": 0,
       "vue/no-multiple-template-root": 0,
       "import/no-named-as-default": 0,

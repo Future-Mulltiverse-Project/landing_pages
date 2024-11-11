@@ -279,11 +279,11 @@
   
   <style lang="scss" module>
   .section {
-    @include padding(140px 0 12px);
+    padding: 140px  0 12px;
   }
   
   .header {
-    @include margin-bottom(40px);
+    margin-bottom: 40px;
   }
   
   .btn {
@@ -292,16 +292,16 @@
   }
   
   .text1 {
-    @include font-size(22px);
-    @include margin-top(80px);
-    @include margin-bottom(24px);
+    font-size: 22px;
+    margin-top: 80px;
+    margin-bottom: 24px;
     line-height: divide(30, 22);
     font-weight: 400;
   }
   
   .text2 {
-    @include font-size(45px);
-    @include margin-bottom(16px);
+    font-size: 45px;
+    margin-bottom: 16px;
     line-height: divide(55, 45);
     text-transform: uppercase;
   
@@ -310,7 +310,7 @@
     }
   }
   .text3 {
-    @include font-size(22px);
+    font-size: 22px;
     color: $primary;
     line-height: divide(30, 22);
     margin: 0 auto;

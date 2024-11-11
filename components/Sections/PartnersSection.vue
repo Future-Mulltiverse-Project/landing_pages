@@ -41,19 +41,15 @@
     color: white;
   }
   .section {
-    @include padding(0px 0);
+    padding: 0px 0 ;
   }
-  
-  .row {
-    @include rfs(112px, --gutter-x);
-  }
-  
+
   .header {
-    @include margin-bottom(55px);
+    margin-bottom: 55px;
   }
   
   .text {
-    @include margin-bottom(55px);
+    margin-bottom: 55px;
   }
   
   .slide {
@@ -61,8 +57,8 @@
   }
   
   .tab {
-    @include padding(23px 46px);
-    @include font-size(22px);
+    padding: 23px 46px  ;
+    font-size: 22px;
     color: $primary;
     cursor: pointer;
     line-height: divide(30, 22);

@@ -128,11 +128,11 @@ import QuoteIcon from '~/icons/QuoteIcon.vue';
 }
 
 .header {
-  @include margin-bottom(98px);
+  margin-bottom: 98px;
 }
 
 .container {
-  @include padding-bottom(96px);
+  padding-bottom: 96px;
 }
 
 .wrapper {
@@ -149,7 +149,7 @@ import QuoteIcon from '~/icons/QuoteIcon.vue';
 }
 
 .row {
-  @include padding-bottom(126px);
+  padding-bottom: 126px;
   --gutter-x: #{rem-calc(20px)};
   --gutter-y: #{rem-calc(20px)};
   justify-content: center;
@@ -230,7 +230,7 @@ import QuoteIcon from '~/icons/QuoteIcon.vue';
 }
 
 .text {
-  @include font-size(20px);
+  font-size: 20px;
   line-height: math-div(30, 20);
 }
 
@@ -239,7 +239,7 @@ import QuoteIcon from '~/icons/QuoteIcon.vue';
 }
 
 .quote {
-  @include font-size(16px);
+  font-size: 16px;
   max-width: rem-calc(575px);
   margin: 0 auto rem-calc(38px);
   position: relative;
@@ -266,14 +266,14 @@ import QuoteIcon from '~/icons/QuoteIcon.vue';
 }
 
 .name {
-  @include font-size(26px);
+  font-size: 26px;
   line-height: math-div(30, 26);
   color: $primary;
   margin-bottom: rem-calc(4px);
 }
 
 .position {
-  @include font-size(16px);
+  font-size: 16px;
   color: #9c9c9c;
 }
 </style>

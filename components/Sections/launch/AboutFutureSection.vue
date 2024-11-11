@@ -99,20 +99,20 @@ const title = `About FUTURE MULTIVERSE`;
   //background-image: url("@/assets/images/torus2.jpg");
   //height: 1700px;
   text-align: center;
-  @include padding(70px 0 200px);
+  padding: 70px  0 200px;
   color: #ffffff;
   position: relative;
 }
 
 .header {
-  @include margin-top(65px);
-  @include margin-bottom(26px);
+  margin-top: 65px;
+  margin-bottom: 26px;
   position: relative;
   z-index: 1;
 }
 
 .text {
-  @include margin-bottom(15px);
+  margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
   max-width: rem-calc(434px);
@@ -121,12 +121,12 @@ const title = `About FUTURE MULTIVERSE`;
 }
 
 .btnContainer {
-  @include margin-top(58px);
+  margin-top: 58px;
   position: relative;
 }
 
 .btnRow {
-  @include padding-bottom(76px);
+  padding-bottom: 76px;
   --gutter-x: #{rem-calc(24px)};
   --gutter-y: #{rem-calc(10px)};
   justify-content: center;
@@ -139,8 +139,8 @@ const title = `About FUTURE MULTIVERSE`;
 }
 
 .btnTitle {
-  @include font-size(28px);
-  @include margin-bottom(32px);
+  font-size: 28px;
+  margin-bottom: 32px;
   font-weight: 600;
   color: #ffffff;
 }
@@ -167,7 +167,7 @@ const title = `About FUTURE MULTIVERSE`;
 }
 
 .btnLink {
-  @include font-size(14px);
+  font-size: 14px;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
@@ -178,7 +178,7 @@ const title = `About FUTURE MULTIVERSE`;
   }
 
   svg {
-    @include margin-right(7px);
+    margin-right: 7px;
     width: rem-calc(16px);
     height: rem-calc(18px);
   }

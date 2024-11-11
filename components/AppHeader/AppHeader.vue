@@ -2,13 +2,13 @@
   <nav class=" lg:hidden lg:px-16 px-6 bg-white shadow-md flex flex-wrap items-center lg:py-0 py-2" style='background-color: #1A1C37;' >
     <div class="flex-1 flex justify-between items-center">
       <a href="/" class="flex text-lg font-semibold">
-        <img src="@/assets/images/multiverse_header_logo.png" style="width: 50px"  alt="logo">
+        <img src="@/assets/images/multiverse_header_logo.png" class='w-14'  alt="logo">
       </a>
     </div>
     <label class="relative z-40 cursor-pointer px-3 py-6" for="mobile-menu">
       <input class="peer hidden" type="checkbox" id="mobile-menu" />
       <div
-        class="relative z-50 block h-[1px] w-7 bg-transparent content-[''] before:absolute before:top-[-0.35rem] before:z-50 before:block before:h-full before:w-full before:bg-black before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full after:w-full after:bg-black after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform">
+        class="relative z-50 block h-[1px] w-7 bg-white content-[''] before:absolute before:top-[-0.35rem] before:z-50 before:block before:h-full before:w-full before:bg-white before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full after:w-full after:bg-white after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform">
       </div>
       <div class="fixed inset-0 z-40 hidden h-full w-full  backdrop-blur-sm peer-checked:block">
 
@@ -19,7 +19,7 @@
           <menu>
             <Accordion type="single">
               <AccordionItem value="item-1" style="padding-bottom: 10px;">
-                <img src="@/assets/images/multiverse_header_logo.png" style="width: 50px; padding-bottom: 10px"  alt="logo">
+                <img src="@/assets/images/multiverse_header_logo.png" class='w-28'  style=" padding-bottom: 10px"  alt="logo">
               </AccordionItem>
             </Accordion>
 
@@ -346,7 +346,7 @@
             <Accordion type="single">
               <AccordionItem value="item-1">
                 <AccordionTrigger class="text-white"><img src="~/assets/images/drop_menu/magnifier_white.png"
-                    style="width: 5%; height: 100%" alt="search_image"> </AccordionTrigger>
+                    style=" height: 100%" alt="search_image"> </AccordionTrigger>
                 <AccordionContent class="text-white">
                   <li class="col-span-2 flex  ml-4 flex-col items-left">
                     <ul class="grid grid-cols-1 gap-2 ">
@@ -402,17 +402,17 @@
               </AccordionItem>
             </Accordion>
 
-            <Accordion type="single">
+            <Accordion type="single" class="mt-4 mb-4">
               <AccordionItem value="item-1"  style="padding-bottom: 10px; padding-top: 10px">
-                  <nuxt-link to='https://auth.futuremultiverse.com' class="px-2 py-2   text-medium text-white font-medium hover:bg-blue-600"
-                  style="padding-right: 16px; padding-left: 16px; border: 2px solid #FDE8AE; background-color: #1A1C37; color: #FDE8AE; border-radius: 1px">Onboard</nuxt-link>
+                  <nuxt-link to='https://auth.futuremultiverse.com' class="px-2 py-2 pr-8 pl-8 text-medium text-white font-medium hover:bg-blue-600"
+                  style=" border: 2px solid #FDE8AE; background-color: #1A1C37; color: #FDE8AE; border-radius: 1px">Onboard</nuxt-link>
               </AccordionItem>
             </Accordion>
 
             <Accordion type="single">
               <AccordionItem value="item-1"  style="padding-bottom: 10px; padding-top: 10px">
-                <nuxt-link to='https://auth.futuremultiverse.com' class="px-2 py-2 text-white font-medium rounded-md hover:bg-blue-600"
-                style=" border: 2px solid #FDE8AE;background-color: #1A1C37;padding-right: 16px; padding-left: 16px; color: #FDE8AE; border-radius: 1px">Connect</nuxt-link>
+                <nuxt-link to='https://auth.futuremultiverse.com' class="px-2 py-2 pr-8 pl-8 text-white font-medium rounded-md hover:bg-blue-600"
+                style=" border: 2px solid #FDE8AE;background-color: #1A1C37; color: #FDE8AE; border-radius: 1px">Connect</nuxt-link>
               </AccordionItem>
             </Accordion>
 

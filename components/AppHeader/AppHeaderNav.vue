@@ -132,7 +132,7 @@ const items = ref(useNavItems);
 }
 
 .link {
-  @include font-size(16px);
+  font-size: 16px;
   color: inherit;
   font-weight: 600;
   //line-height: 1.2;
@@ -149,7 +149,7 @@ const items = ref(useNavItems);
 }
 
 .link_sub {
-  @include font-size(16px);
+  font-size: 16px;
   color: inherit;
   font-weight: 600;
   transition: color 0.2s ease-in-out;

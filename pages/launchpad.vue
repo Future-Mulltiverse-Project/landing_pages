@@ -125,7 +125,6 @@ import LaunchPadGuideBookSection from '~/components/Sections/LaunchPadGuideBookS
 import JoinSection from '~/components/Join/JoinSection.vue';
 import LaunchPadPrelaunchSection from '~/components/Sections/LaunchPadPrelaunchSection.vue';
 import AboutLaunchpadSection from '~/components/Sections/AboutLaunchpadSection.vue';
-import GradientArticleSection from '~/components/Sections/GradientArticleSection.vue';
 import ArticleSection from '~/components/Sections/ArticleSection.vue';
 import Img from '~/assets/images/fxpo_launchpad_screens.png';
 import SignDocumentIcon from '~/icons/SignDocumentIcon.vue';

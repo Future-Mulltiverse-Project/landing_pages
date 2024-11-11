@@ -75,7 +75,7 @@ import SectionHeader from '~/components/utilities/SectionHeader.vue';
 }
 
 .row {
-  @include margin-bottom(180px);
+  margin-bottom: 180px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -141,7 +141,7 @@ import SectionHeader from '~/components/utilities/SectionHeader.vue';
 }
 
 .link {
-  @include font-size(14px);
+  font-size: 14px;
   color: $primary;
   line-height: math-div(18, 14);
   text-transform: uppercase;

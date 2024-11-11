@@ -20,19 +20,19 @@
             to="https://auth.futuremultiverse.com"
             :class="$style.btn"
             style="border-color: #ffffff;"
-            class="w-1/2 btn-sm btn-outline-primary text-center font-medium"
+            class=" btn-sm btn-outline-primary text-center font-medium"
           >
             <p class="mb-0 font-medium text-sm" style="color:#CFB16D;min-width: unset; max-width: unset; ">ONBOARD <span class="text-white font-medium"> now </span> </p>
         </nuxt-link> 
         </div>
         <div class="md:flex md:items-center md:justify-start">
-          <button type="button"
-            class="btn md:pl-24 md:pr-24 btn-sm btn-inline-primary  text-center"
+          <nuxt-link
+            class="btn btn-sm btn-inline-primary  text-center"
             :class="$style.btn"
             style="background-color: #CFB16D; color: #ffffff" 
           >
             <span style="color: #ffffff; font-weight: 700; font-size: 14px"  class=" font-medium text-sm">NEWS & UPDATES </span>
-          </button> 
+        </nuxt-link> 
         </div>
       </div>
 
@@ -63,16 +63,16 @@ const config = useRuntimeConfig();
 
 
 .heading {
-  @include font-size(28px);
-  @include margin-bottom(30px);
+  font-size: 28px;
+  margin-bottom: 30px;
   color: #ffffff;
   font-weight: 600;
   line-height: divide(30, 28);
 }
 
 .title {
-  @include font-size(35px);
-  @include margin-bottom(10px);
+  font-size: 35px;
+  margin-bottom: 10px;
   line-height: divide(55, 45);
   margin-left: auto;
   margin-right: auto;
@@ -93,8 +93,8 @@ const config = useRuntimeConfig();
 
 
 .timerTitle {
-  @include font-size(21px);
-  @include margin-top(130px);
+  font-size: 21px;
+  margin-top: 130px;
   color: #ffffff;
   font-weight: 600;
   line-height: divide(30, 18);

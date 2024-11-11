@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.el">
     <AppHeader />
-    <div :class="$style.body">
+    <div :class="$style.body" class='pt-8 lg:pt-24 pb-14' >
       <MediaPicture
         :class="$style.bg"
         :src="Bg"
@@ -11,16 +11,35 @@
       />
       <AppWrapper>
         <div :class="$style.text2">
-          <div class="grid grid-cols-4 gap-5" >
-            <div><p class="text-left" style="color: #CFB16D">Top Servers</p></div>
-            <div class="col-span-2"></div>
-            <div>icons</div>
+          <div class="grid grid-cols-4 gap-5 pb-2 md:pb-0  pt-8">
+            <div class="col-span-3">
+              <p
+                class="text-left text-2xl pl-3 font-semibold"
+                style="color: #cfb16d"
+              >
+                Top Servers
+              </p>
+            </div>
+            <div class="grid grid-cols-1 gap-2 md:pr-0 pr-5">
+              <div class="flex justify-end">
+                <img
+                  class="mr-3 w-12 h-12"
+                  src="@/assets/images/explore/filter_button.png"
+                  alt="img"
+                />
+                <img
+                  class="w-12 h-12"
+                  src="@/assets/images/explore/show_button.png"
+                  alt="img"
+                />
+              </div>
+            </div>
           </div>
         </div>
+
         
-        <div class="grid grid-cols-3 gap-4" >
-
-          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4" >
+          <div class="max-w-full pl-4 md:pl-0 md:pr-0 pr-5 pb-8 md:pb-0 rounded overflow-hidden shadow-lg">
             <img class="w-full" src="@/assets/images/server_1.png" alt="img">
             <div class="px-6 py-4" style="background-color:  #161A32;">
               <div class="grid grid-cols-2 gap-3 mb-5" >
@@ -32,46 +51,68 @@
                 </div>
               </div>
               <div class="font-bold text-xl mb-2">Azuki Corp Server 01 in Mainz, Germany</div>
-              <div class="grid grid-cols-3 gap-4 mt-5 mb-5" >
-                <div style="border-right: grey solid 2px;">
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+              <div class="grid grid-cols-3 gap-1 mt-5 mb-5">
+                <div style="border-right: grey solid 2px">
+                  <p
+                    class="font-semibold text-center text-lg"
+                    style="color: #cfb16d"
+                  >
                     244 
                   </p>     
-                  <p class="font-medium text-gray-400 text-center text-base">
+                  <p class="font-semibold text-gray-400 text-center text-base">
                     ONLINE 
                   </p>   
                 </div>
                 <div style="border-right: grey solid 2px;">
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+                  <p class="font-semibold text-center text-base" style="color: #CFB16D">
                     500 
                   </p>     
-                  <p class="font-medium text-center text-gray-400 text-base">
+                  <p class="font-semibold text-center text-gray-400 text-base">
                     SLOTS 
                   </p>                  
                 </div>
                 <div>
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+                  <p class="font-semibold text-center text-base" style="color: #CFB16D">
                     12m/s 
                   </p>     
-                  <p class="font-medium text-center text-gray-400 text-base">
+                  <p class="font-semibold text-center text-gray-400 text-base">
                     PING 
                   </p>               
                 </div>
               </div>
             </div>
-            <div class="px-6 pt-6 pb-2" style="background-color:  #11152B;">
+            <div
+              class="px-6 pt-6 pb-2"
+              style="background-color: #11152b"
+            >
               <div class="grid grid-cols-2 gap-3 mb-5">
                 <div>
-                  <p class="font-medium pt-2" style="color: #CFB16D;" >READ MORE</p>
+                  <p
+                    class="font-semibold text-base pt-2"
+                    style="color: #cfb16d"
+                  >
+                    READ MORE
+                  </p>
                 </div>
                 <div>
-                  <button style="background-color: #CFB16D; padding-top: 7px; padding-bottom: 7px; padding-left: 20px; padding-right: 20px;">ENTER SERVER</button>
+                  <button
+                    class="font-semibold float-right"
+                    style="
+                      background-color: #cfb16d;
+                      padding-top: 7px;
+                      padding-bottom: 7px;
+                      padding-left: 20px;
+                      padding-right: 20px;
+                    "
+                  >
+                    ENTER SERVER
+                  </button>
                 </div>
               </div>
             </div>
 
           </div>          
-          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <div class="max-w-full pl-4 md:pl-0 md:pr-0 pr-5 pb-8 md:pb-0 rounded overflow-hidden shadow-lg">
             <img class="w-full" src="@/assets/images/server_2.png" alt="img">
             <div class="px-6 py-4" style="background-color:  #161A32;">
               <div class="grid grid-cols-2 gap-3 mb-5" >
@@ -83,46 +124,68 @@
                 </div>
               </div>
               <div class="font-bold text-xl mb-2">Azuki Corp Server 01 in Mainz, Germany</div>
-              <div class="grid grid-cols-3 gap-4 mt-5 mb-5" >
-                <div style="border-right: grey solid 2px;">
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+              <div class="grid grid-cols-3 gap-1 mt-5 mb-5">
+                <div style="border-right: grey solid 2px">
+                  <p
+                    class="font-semibold text-center text-lg"
+                    style="color: #cfb16d"
+                  >
                     244 
                   </p>     
-                  <p class="font-medium text-gray-400 text-center text-base">
+                  <p class="font-semibold text-gray-400 text-center text-base">
                     ONLINE 
                   </p>   
                 </div>
                 <div style="border-right: grey solid 2px;">
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+                  <p class="font-semibold text-center text-base" style="color: #CFB16D">
                     500 
                   </p>     
-                  <p class="font-medium text-center text-gray-400 text-base">
+                  <p class="font-semibold text-center text-gray-400 text-base">
                     SLOTS 
                   </p>                  
                 </div>
                 <div>
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+                  <p class="font-semibold text-center text-base" style="color: #CFB16D">
                     12m/s 
                   </p>     
-                  <p class="font-medium text-center text-gray-400 text-base">
+                  <p class="font-semibold text-center text-gray-400 text-base">
                     PING 
                   </p>               
                 </div>
               </div>
             </div>
-            <div class="px-6 pt-6 pb-2" style="background-color:  #11152B;">
+            <div
+              class="px-6 pt-6 pb-2"
+              style="background-color: #11152b"
+            >
               <div class="grid grid-cols-2 gap-3 mb-5">
                 <div>
-                  <p class="font-medium pt-2" style="color: #CFB16D;" >READ MORE</p>
+                  <p
+                    class="font-semibold text-base pt-2"
+                    style="color: #cfb16d"
+                  >
+                    READ MORE
+                  </p>
                 </div>
                 <div>
-                  <button style="background-color: #CFB16D; padding-top: 7px; padding-bottom: 7px; padding-left: 20px; padding-right: 20px;">ENTER SERVER</button>
+                  <button
+                    class="font-semibold float-right"
+                    style="
+                      background-color: #cfb16d;
+                      padding-top: 7px;
+                      padding-bottom: 7px;
+                      padding-left: 20px;
+                      padding-right: 20px;
+                    "
+                  >
+                    ENTER SERVER
+                  </button>
                 </div>
               </div>
             </div>
 
           </div> 
-          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <div class="max-w-full pl-4 md:pl-0 md:pr-0 pr-5 pb-8 md:pb-0 rounded overflow-hidden shadow-lg">
             <img class="w-full" src="@/assets/images/server_3.png" alt="img">
             <div class="px-6 py-4" style="background-color:  #161A32;">
               <div class="grid grid-cols-2 gap-3 mb-5" >
@@ -134,49 +197,69 @@
                 </div>
               </div>
               <div class="font-bold text-xl mb-2">Azuki Corp Server 01 in Mainz, Germany</div>
-              <div class="grid grid-cols-3 gap-4 mt-5 mb-5" >
-                <div style="border-right: grey solid 2px;">
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+              <div class="grid grid-cols-3 gap-1 mt-5 mb-5">
+                <div style="border-right: grey solid 2px">
+                  <p
+                    class="font-semibold text-center text-lg"
+                    style="color: #cfb16d"
+                  >
                     244 
                   </p>     
-                  <p class="font-medium text-gray-400 text-center text-base">
+                  <p class="font-semibold text-gray-400 text-center text-base">
                     ONLINE 
                   </p>   
                 </div>
                 <div style="border-right: grey solid 2px;">
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+                  <p class="font-semibold text-center text-base" style="color: #CFB16D">
                     500 
                   </p>     
-                  <p class="font-medium text-center text-gray-400 text-base">
+                  <p class="font-semibold text-center text-gray-400 text-base">
                     SLOTS 
                   </p>                  
                 </div>
                 <div>
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+                  <p class="font-semibold text-center text-base" style="color: #CFB16D">
                     12m/s 
                   </p>     
-                  <p class="font-medium text-center text-gray-400 text-base">
+                  <p class="font-semibold text-center text-gray-400 text-base">
                     PING 
                   </p>               
                 </div>
               </div>
             </div>
-            <div class="px-6 pt-6 pb-2" style="background-color:  #11152B;">
+            <div
+              class="px-6 pt-6 pb-2"
+              style="background-color: #11152b"
+            >
               <div class="grid grid-cols-2 gap-3 mb-5">
                 <div>
-                  <p class="font-medium pt-2" style="color: #CFB16D;" >READ MORE</p>
+                  <p
+                    class="font-semibold text-base pt-2"
+                    style="color: #cfb16d"
+                  >
+                    READ MORE
+                  </p>
                 </div>
                 <div>
-                  <button style="background-color: #CFB16D; padding-top: 7px; padding-bottom: 7px; padding-left: 20px; padding-right: 20px;">ENTER SERVER</button>
+                  <button
+                    class="font-semibold float-right"
+                    style="
+                      background-color: #cfb16d;
+                      padding-top: 7px;
+                      padding-bottom: 7px;
+                      padding-left: 20px;
+                      padding-right: 20px;
+                    "
+                  >
+                    ENTER SERVER
+                  </button>
                 </div>
               </div>
             </div>
 
           </div> 
 
-
-
-          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <div class="max-w-full pl-4 md:pl-0 md:pr-0 pr-5 pb-8 md:pb-0 rounded overflow-hidden shadow-lg">
             <img class="w-full" src="@/assets/images/server_1.png" alt="img">
             <div class="px-6 py-4" style="background-color:  #161A32;">
               <div class="grid grid-cols-2 gap-3 mb-5" >
@@ -188,46 +271,68 @@
                 </div>
               </div>
               <div class="font-bold text-xl mb-2">Azuki Corp Server 01 in Mainz, Germany</div>
-              <div class="grid grid-cols-3 gap-4 mt-5 mb-5" >
-                <div style="border-right: grey solid 2px;">
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+              <div class="grid grid-cols-3 gap-1 mt-5 mb-5">
+                <div style="border-right: grey solid 2px">
+                  <p
+                    class="font-semibold text-center text-lg"
+                    style="color: #cfb16d"
+                  >
                     244 
                   </p>     
-                  <p class="font-medium text-gray-400 text-center text-base">
+                  <p class="font-semibold text-gray-400 text-center text-base">
                     ONLINE 
                   </p>   
                 </div>
                 <div style="border-right: grey solid 2px;">
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+                  <p class="font-semibold text-center text-base" style="color: #CFB16D">
                     500 
                   </p>     
-                  <p class="font-medium text-center text-gray-400 text-base">
+                  <p class="font-semibold text-center text-gray-400 text-base">
                     SLOTS 
                   </p>                  
                 </div>
                 <div>
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+                  <p class="font-semibold text-center text-base" style="color: #CFB16D">
                     12m/s 
                   </p>     
-                  <p class="font-medium text-center text-gray-400 text-base">
+                  <p class="font-semibold text-center text-gray-400 text-base">
                     PING 
                   </p>               
                 </div>
               </div>
             </div>
-            <div class="px-6 pt-6 pb-2" style="background-color:  #11152B;">
+            <div
+              class="px-6 pt-6 pb-2"
+              style="background-color: #11152b"
+            >
               <div class="grid grid-cols-2 gap-3 mb-5">
                 <div>
-                  <p class="font-medium pt-2" style="color: #CFB16D;" >READ MORE</p>
+                  <p
+                    class="font-semibold text-base pt-2"
+                    style="color: #cfb16d"
+                  >
+                    READ MORE
+                  </p>
                 </div>
                 <div>
-                  <button style="background-color: #CFB16D; padding-top: 7px; padding-bottom: 7px; padding-left: 20px; padding-right: 20px;">ENTER SERVER</button>
+                  <button
+                    class="font-semibold float-right"
+                    style="
+                      background-color: #cfb16d;
+                      padding-top: 7px;
+                      padding-bottom: 7px;
+                      padding-left: 20px;
+                      padding-right: 20px;
+                    "
+                  >
+                    ENTER SERVER
+                  </button>
                 </div>
               </div>
             </div>
 
           </div>          
-          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <div class="max-w-full pl-4 md:pl-0 md:pr-0 pr-5 pb-8 md:pb-0 rounded overflow-hidden shadow-lg">
             <img class="w-full" src="@/assets/images/server_2.png" alt="img">
             <div class="px-6 py-4" style="background-color:  #161A32;">
               <div class="grid grid-cols-2 gap-3 mb-5" >
@@ -239,46 +344,68 @@
                 </div>
               </div>
               <div class="font-bold text-xl mb-2">Azuki Corp Server 01 in Mainz, Germany</div>
-              <div class="grid grid-cols-3 gap-4 mt-5 mb-5" >
-                <div style="border-right: grey solid 2px;">
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+              <div class="grid grid-cols-3 gap-1 mt-5 mb-5">
+                <div style="border-right: grey solid 2px">
+                  <p
+                    class="font-semibold text-center text-lg"
+                    style="color: #cfb16d"
+                  >
                     244 
                   </p>     
-                  <p class="font-medium text-gray-400 text-center text-base">
+                  <p class="font-semibold text-gray-400 text-center text-base">
                     ONLINE 
                   </p>   
                 </div>
                 <div style="border-right: grey solid 2px;">
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+                  <p class="font-semibold text-center text-base" style="color: #CFB16D">
                     500 
                   </p>     
-                  <p class="font-medium text-center text-gray-400 text-base">
+                  <p class="font-semibold text-center text-gray-400 text-base">
                     SLOTS 
                   </p>                  
                 </div>
                 <div>
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+                  <p class="font-semibold text-center text-base" style="color: #CFB16D">
                     12m/s 
                   </p>     
-                  <p class="font-medium text-center text-gray-400 text-base">
+                  <p class="font-semibold text-center text-gray-400 text-base">
                     PING 
                   </p>               
                 </div>
               </div>
             </div>
-            <div class="px-6 pt-6 pb-2" style="background-color:  #11152B;">
+            <div
+              class="px-6 pt-6 pb-2"
+              style="background-color: #11152b"
+            >
               <div class="grid grid-cols-2 gap-3 mb-5">
                 <div>
-                  <p class="font-medium pt-2" style="color: #CFB16D;" >READ MORE</p>
+                  <p
+                    class="font-semibold text-base pt-2"
+                    style="color: #cfb16d"
+                  >
+                    READ MORE
+                  </p>
                 </div>
                 <div>
-                  <button style="background-color: #CFB16D; padding-top: 7px; padding-bottom: 7px; padding-left: 20px; padding-right: 20px;">ENTER SERVER</button>
+                  <button
+                    class="font-semibold float-right"
+                    style="
+                      background-color: #cfb16d;
+                      padding-top: 7px;
+                      padding-bottom: 7px;
+                      padding-left: 20px;
+                      padding-right: 20px;
+                    "
+                  >
+                    ENTER SERVER
+                  </button>
                 </div>
               </div>
             </div>
 
           </div> 
-          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <div class="max-w-full pl-4 md:pl-0 md:pr-0 pr-5 pb-8 md:pb-0 rounded overflow-hidden shadow-lg">
             <img class="w-full" src="@/assets/images/server_3.png" alt="img">
             <div class="px-6 py-4" style="background-color:  #161A32;">
               <div class="grid grid-cols-2 gap-3 mb-5" >
@@ -290,40 +417,62 @@
                 </div>
               </div>
               <div class="font-bold text-xl mb-2">Azuki Corp Server 01 in Mainz, Germany</div>
-              <div class="grid grid-cols-3 gap-4 mt-5 mb-5" >
-                <div style="border-right: grey solid 2px;">
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+              <div class="grid grid-cols-3 gap-1 mt-5 mb-5">
+                <div style="border-right: grey solid 2px">
+                  <p
+                    class="font-semibold text-center text-lg"
+                    style="color: #cfb16d"
+                  >
                     244 
                   </p>     
-                  <p class="font-medium text-gray-400 text-center text-base">
+                  <p class="font-semibold text-gray-400 text-center text-base">
                     ONLINE 
                   </p>   
                 </div>
                 <div style="border-right: grey solid 2px;">
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+                  <p class="font-semibold text-center text-base" style="color: #CFB16D">
                     500 
                   </p>     
-                  <p class="font-medium text-center text-gray-400 text-base">
+                  <p class="font-semibold text-center text-gray-400 text-base">
                     SLOTS 
                   </p>                  
                 </div>
                 <div>
-                  <p class="font-medium text-center text-base" style="color: #CFB16D">
+                  <p class="font-semibold text-center text-base" style="color: #CFB16D">
                     12m/s 
                   </p>     
-                  <p class="font-medium text-center text-gray-400 text-base">
+                  <p class="font-semibold text-center text-gray-400 text-base">
                     PING 
                   </p>               
                 </div>
               </div>
             </div>
-            <div class="px-6 pt-6 pb-2" style="background-color:  #11152B;">
+            <div
+              class="px-6 pt-6 pb-2"
+              style="background-color: #11152b"
+            >
               <div class="grid grid-cols-2 gap-3 mb-5">
                 <div>
-                  <p class="font-medium pt-2" style="color: #CFB16D;" >READ MORE</p>
+                  <p
+                    class="font-semibold text-base pt-2"
+                    style="color: #cfb16d"
+                  >
+                    READ MORE
+                  </p>
                 </div>
                 <div>
-                  <button style="background-color: #CFB16D; padding-top: 7px; padding-bottom: 7px; padding-left: 20px; padding-right: 20px;">ENTER SERVER</button>
+                  <button
+                    class="font-semibold float-right"
+                    style="
+                      background-color: #cfb16d;
+                      padding-top: 7px;
+                      padding-bottom: 7px;
+                      padding-left: 20px;
+                      padding-right: 20px;
+                    "
+                  >
+                    ENTER SERVER
+                  </button>
                 </div>
               </div>
             </div>
@@ -359,9 +508,9 @@ import AppHeader from '~/components/AppHeader/AppHeaderServer.vue';
   color: gray !important;
 }
 svg {
-  height: rem-calc(10px);
-  margin-right: rem-calc(2px);
-  width: rem-calc(30px);
+  height: 10px;
+  margin-right: 2px;
+  width: 30px;
   color: gray !important;
 }
 .logo_style {
@@ -379,7 +528,6 @@ svg {
 }
 
 .body {
-  @include padding(80px 0 120px);
   align-items: center;
   display: flex;
   flex-grow: 1;
@@ -393,7 +541,7 @@ svg {
   margin-top: 4%;
   display: flex;
   align-items: center;
-  min-width: rem-calc(10%);
+  min-width: 10%;
 }
 
 .input {
@@ -414,23 +562,23 @@ svg {
   margin-top: 200px;
   margin-left: 103%;
   margin-bottom: -50px;
-  @include rfs(7%, width);
-  min-width: rem-calc(7%);
+  width: 7%;
+  min-width: 7%;
   @media (max-width: 641px) {
     width: 12%;
   }
 }
 .logo4 {
-  @include rfs(20%, width);
-  min-width: rem-calc(20%);
+  width: 20%;
+  min-width: 20%;
 }
 
 .logo5 {
-  @include rfs(13%, width);
-  min-width: rem-calc(13%);
+  width: 13%;
+  min-width: 13%;
   @media (max-width: 600px) {
-    @include rfs(1%, width);
-    min-width: rem-calc(1%);
+    width: 1%;
+    min-width: 1%;
   }
 }
 
@@ -450,17 +598,17 @@ svg {
 }
 
 .logo {
-  @include rfs(100px, width);
-  min-width: rem-calc(160px);
+  width: 100px;
+  min-width: 160px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: rem-calc(50px);
+  margin-bottom: 50px;
   margin-top: 8%;
 }
 
 .formimage1 {
-  @include rfs(30px, width);
-  min-width: rem-calc(30px);
+  width: 30px;
+  min-width: 30px;
   margin-left: auto;
   float: right;
   margin-right: auto;
@@ -469,12 +617,12 @@ svg {
 }
 
 .text1 {
-  @include font-size(56px);
+  font-size: 56px;
   font-weight: 700;
-  line-height: divide(70, 50);
+  line-height: 1.4;
   margin-left: auto;
   margin-right: auto;
-  max-width: em-calc(650, 40);
+  max-width: 650px;
   margin-top: 0%;
   text-align: center;
   text-transform: uppercase;
@@ -488,9 +636,9 @@ svg {
 }
 
 .text3 {
-  @include font-size(26px);
-  @include margin-bottom(-200px);
-  max-width: em-calc(730, 22);
+  font-size: 26px;
+  margin-bottom: -200px;
+  max-width: 730px;
   font-weight: 400;
   max-width: 60%;
   margin: 0 auto;
@@ -499,9 +647,9 @@ svg {
 }
 
 .text2 {
-  @include font-size(23px);
-  @include margin-bottom(65px);
-  line-height: divide(30, 22);
+  font-size: 23px;
+  margin-bottom: 65px;
+  line-height: 1.36;
   text-align: center;
   font-weight: 500;
 
@@ -511,12 +659,12 @@ svg {
 }
 
 .btnRow {
-  --gutter-x: #{rem-calc(32px)};
-  --gutter-y: #{rem-calc(16px)};
+  --gutter-x: 32px;
+  --gutter-y: 16px;
   justify-content: center;
 
   :global(.col-auto) {
-    flex: 0 0 rem-calc(262px);
+    flex: 0 0 262px;
   }
 }
 

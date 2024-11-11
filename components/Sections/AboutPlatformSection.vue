@@ -55,7 +55,7 @@ import ArrowIcon from '~/icons/ArrowIcon.vue';
 .section {
   background-color: $dark;
   color: #fff;
-  @include padding(84px 0 76px);
+  padding: 84px  0 76px;
   text-align: center;
 
   @include media-breakpoint-up(lg) {
@@ -65,7 +65,6 @@ import ArrowIcon from '~/icons/ArrowIcon.vue';
 
 .row {
   --gutter-x: 0;
-  @include rfs(64px, --gutter-y);
 
   @include media-breakpoint-up(lg) {
     flex-wrap: nowrap;
@@ -76,7 +75,7 @@ import ArrowIcon from '~/icons/ArrowIcon.vue';
   flex: 1 1 rem-calc($wrapper-inner-width - 616px);
 
   @include media-breakpoint-up(lg) {
-    @include padding-right(20px);
+    padding-right: 20px;
   }
 }
 
@@ -85,30 +84,30 @@ import ArrowIcon from '~/icons/ArrowIcon.vue';
 }
 
 .header {
-  @include margin-bottom(30px);
+  margin-bottom: 30px;
 
   p {
     @include media-breakpoint-up(lg) {
-      @include margin-right(90px);
+      margin-right: 90px;
     }
   }
 }
 
 .text {
   @include media-breakpoint-up(lg) {
-    @include margin-right(50px);
+    margin-right: 50px;
   }
 }
 
 .mediaWrapper {
-  @include padding(32px 25px 20px);
+  padding: 32px 25px 20px ;
   background-color: #0a0d1d;
   border: 1px solid #232749;
 }
 
 .btn {
-  @include font-size(18px);
-  @include padding(17px 25px);
+  font-size: 18px;
+  padding: 17px 25px  ;
   background-color: transparent;
   align-items: center;
   border: 1px solid #232749;

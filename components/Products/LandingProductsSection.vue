@@ -1,6 +1,6 @@
 <template>
   <section :class="$style.section">
-    <div :class="$style.grid">
+    <div class="grid grid-cols-1 gap-3 lg:grid-cols-2" >
       <ProductListItem
         v-for="(item, index) in items"
         :key="index"

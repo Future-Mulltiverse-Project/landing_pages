@@ -59,7 +59,7 @@ const { days, hours, minutes, seconds } = useTimer(
 
 <style lang="scss" module>
 .section {
-  //@include padding-top(248px);
+  //padding-top: 248px;
   //position: relative;
   //padding-bottom: wrap-calc(168px, 1440px);
 }
@@ -110,7 +110,7 @@ const { days, hours, minutes, seconds } = useTimer(
 }
 
 .title {
-  @include font-size(70px);
+  font-size: 70px;
   line-height: math-div(75, 70);
   margin-bottom: rem-calc(32px);
 
@@ -131,7 +131,7 @@ const { days, hours, minutes, seconds } = useTimer(
 }
 
 .timer {
-  @include font-size(26px);
+  font-size: 26px;
   line-height: math-div(30, 26);
   text-transform: uppercase;
 }

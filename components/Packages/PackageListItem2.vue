@@ -68,14 +68,14 @@ defineProps<{ package: PackageItem; type: string }>();
 
 <style lang="scss" module>
 .item {
-  @include padding(30px);
+  padding: 30px   ;
   background-color: #141830;
   text-align: center;
 }
 
 .title {
-  @include font-size(20px);
-  @include margin-bottom(18px);
+  font-size: 20px;
+  margin-bottom: 18px;
   line-height: divide(30, 20);
   margin-top: rem-calc(4px);
   color: $primary;
@@ -106,8 +106,8 @@ defineProps<{ package: PackageItem; type: string }>();
 }
 
 .priceLabel {
-  @include font-size(11px);
-  @include margin-bottom(10px);
+  font-size: 11px;
+  margin-bottom: 10px;
   color: #9c9c9c;
   font-weight: 700;
   line-height: 1.2;
@@ -115,13 +115,13 @@ defineProps<{ package: PackageItem; type: string }>();
 }
 
 .price {
-  @include font-size(22px);
-  @include margin-bottom(22px);
+  font-size: 22px;
+  margin-bottom: 22px;
   line-height: divide(30, 22);
 }
 
 .list {
-  @include margin-bottom(55px);
+  margin-bottom: 55px;
   display: flex;
   flex-direction: column;
   list-style: disc inside;
@@ -129,7 +129,7 @@ defineProps<{ package: PackageItem; type: string }>();
   text-align: left;
 
   li {
-    @include font-size(14px);
+    font-size: 14px;
 
     line-height: math-div(18, 14);
     font-weight: 500;
@@ -153,7 +153,7 @@ defineProps<{ package: PackageItem; type: string }>();
 }
 
 .ftxeLabel {
-  @include font-size(11px);
+  font-size: 11px;
   color: $primary;
   font-weight: 700;
   line-height: divide(14, 11);
@@ -161,7 +161,7 @@ defineProps<{ package: PackageItem; type: string }>();
 }
 
 .fxte {
-  @include font-size(14px);
+  font-size: 14px;
   line-height: math-div(24, 14);
 }
 

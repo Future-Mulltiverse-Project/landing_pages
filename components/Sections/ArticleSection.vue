@@ -66,26 +66,21 @@ defineProps<{
 
 <style lang="scss" module>
 .section {
-  @include padding(170px 0 120px);
+  padding: 170px  0 120px;
 }
 
 .title_white_1{
    color: white;
-  @include font-size(18px);
-  //@include margin-bottom(14px);
+  font-size: 18px;
+  //margin-bottom: 14px;
   font-weight: 700;
   line-height: divide(30, 18);
   position: relative;
 }
 
-.row {
-  @include rfs(64px, --gutter-y);
-  --gutter-x: 0;
-}
-
 .leftCol {
   @include media-breakpoint-up(lg) {
-    @include padding-left(126px);
+    padding-left: 126px;
     order: 9999;
   }
 }
@@ -100,27 +95,27 @@ defineProps<{
 }
 
 .header {
-  @include margin-bottom(20px);
+  margin-bottom: 20px;
 
   p:first-child {
-    @include margin-top(25px);
+    margin-top: 25px;
   }
 }
 
 .text {
-  @include margin-bottom(22px);
+  margin-bottom: 22px;
 }
 
 .list {
-  @include margin-top(-14px);
-  @include margin-bottom(-14px);
-  @include padding-bottom(62px);
+  margin-top: -14px;
+  margin-bottom: -14px;
+  padding-bottom: 62px;
   position: relative;
 }
 
 .item {
   border-bottom: 1px solid #2a3052;
-  @include padding(14px 0);
+  padding: 14px 0 ;
 
   @include media-breakpoint-up(md) {
     border-bottom: 0;
@@ -133,8 +128,8 @@ defineProps<{
 }
 
 .itemTitle {
-  @include font-size(18px);
-  @include margin-bottom(14px);
+  font-size: 18px;
+  margin-bottom: 14px;
   color: white;
   font-weight: 700;
   line-height: divide(30, 18);
@@ -151,7 +146,7 @@ defineProps<{
 }
 
 .itemText {
-  @include font-size(16px);
+  font-size: 16px;
   font-family: 'Nunito Sans', sans-serif;
   color: #9c9c9c;
   margin-bottom: 0;

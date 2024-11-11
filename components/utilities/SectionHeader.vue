@@ -42,7 +42,7 @@ defineProps<{
 }
 
 .title {
-  @include font-size(50px);
+  font-size: 50px;
   line-height: math-div(55, 50);
   margin-bottom: rem-calc(32px);
 

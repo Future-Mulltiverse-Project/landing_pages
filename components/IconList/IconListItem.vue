@@ -40,7 +40,7 @@ defineProps<{ item: IconItem }>();
 
 <style lang="scss" module>
 .article {
-  @include padding(50px 0);
+  padding: 50px 0 ;
   text-align: center;
   position: relative;
   border-top: 2px solid transparent;
@@ -69,15 +69,13 @@ defineProps<{ item: IconItem }>();
   margin: 0 0 rem-calc(20px);
 
   svg {
-    height: rfs-value(64px);
-    width: rfs-value(64px);
     min-width: rem-calc(40px);
     min-height: rem-calc(40px);
   }
 }
 
 .title {
-  @include font-size(26px);
+  font-size: 26px;
   line-height: math-div(30, 26);
   margin-bottom: rem-calc(24px);
   font-weight: 600;
@@ -93,7 +91,7 @@ defineProps<{ item: IconItem }>();
 }
 
 .text {
-  @include font-size(16px);
+  font-size: 16px;
   color: #9C9C9C;
   font-family: 'Nunito Sans', sans-serif;
   margin: 0 0 rem-calc(24px);

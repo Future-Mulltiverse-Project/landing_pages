@@ -117,28 +117,27 @@ svg {
     width: 55%;
   }
 }
-
 .logo2 {
   margin-top: 200px;
   margin-left: 103%;
   margin-bottom: -50px;
-  @include rfs(7%, width);
-  min-width: rem-calc(7%);
+  width: 7%;
+  min-width: 7%;
   @media (max-width: 641px) {
     width: 12%;
   }
 }
 .logo4 {
-  @include rfs(20%, width);
-  min-width: rem-calc(20%);
+  width: 20%;
+  min-width: 20%;
 }
 
 .logo5 {
-  @include rfs(13%, width);
-  min-width: rem-calc(13%);
+  width: 13%;
+  min-width: 13%;
   @media (max-width: 600px) {
-    @include rfs(1%, width);
-    min-width: rem-calc(1%);
+    width: 1%;
+    min-width: 1%;
   }
 }
 
@@ -158,24 +157,23 @@ svg {
 }
 
 .logo {
-  @include rfs(100px, width);
-  min-width: rem-calc(160px);
+  width: 100px;
+  min-width: 160px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .formimage1 {
-  @include rfs(30px, width);
-  min-width: rem-calc(30px);
+  width: 30px;
+  min-width: 30px;
   margin-left: auto;
   float: right;
   margin-right: auto;
   cursor: pointer;
   padding-right: 5px;
 }
-
 .text1 {
-  @include font-size(56px);
+  font-size: 56px;
   font-weight: 700;
   line-height: divide(70, 50);
   max-width: em-calc(550, 40);
@@ -192,7 +190,7 @@ svg {
 }
 
 .text3 {
-  @include font-size(18px);
+  font-size: 18px;
   max-width: 80%;
   font-weight: 600;
   margin: 0 auto;
@@ -200,7 +198,7 @@ svg {
 }
 
 .text2 {
-  @include font-size(23px);
+  font-size: 23px;
   line-height: divide(30, 22);
   text-align: center;
   font-weight: 500;

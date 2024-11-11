@@ -39,8 +39,8 @@ import Bg from '~/assets/images/home-intro.jpg';
 
 <style lang="scss" module>
 .section {
-  @include padding-top(130px);
-  //@include padding-top(66px);
+  padding-top: 130px;
+  //padding-top: 66px;
   //min-height: rem-calc(860px);
   min-height: 100vh;
   display: flex;
@@ -50,7 +50,7 @@ import Bg from '~/assets/images/home-intro.jpg';
 }
 
 .wrapper {
-  @include padding(66px 0);
+  padding: 66px 0 ;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -59,8 +59,8 @@ import Bg from '~/assets/images/home-intro.jpg';
 }
 
 .title {
-  @include font-size(50px);
-  @include margin-bottom(90px);
+  font-size: 50px;
+  margin-bottom: 90px;
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
@@ -86,7 +86,7 @@ import Bg from '~/assets/images/home-intro.jpg';
 }
 
 .scroll {
-  @include font-size(10px);
+  font-size: 10px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
