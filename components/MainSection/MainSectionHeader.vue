@@ -8,7 +8,7 @@
       {{ heading }} {{ strongTitle }}
     </div>
     <h2 :class="[$style.title, titleLg && $style.titleLg]">
-      <h4 class="font-medium text-4xl pb-0 pt-0 text-center" v-html="title" />
+      <h4 class="font-medium text-5xl pb-0 pt-0 text-center lg:text-left" v-html="title" />
       <span class="font-medium" style="color: #ffffff;">{{invent_title}}</span>
       <template v-if="subtitle">
         {{ subtitle }} 

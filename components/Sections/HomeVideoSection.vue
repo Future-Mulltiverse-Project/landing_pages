@@ -2,8 +2,8 @@
   <AppWrapper>
     <section :class="$style.section" class="mt-12 mb-12 " >
       <div class="grid grid-cols-1 gap-2">
-        <video autoplay controls>
-            <source src="@/assets/videos/future_multiverse_video.mp4" type="video/mp4">
+        <video autoplay controls class="w-full" >
+            <source class="w-full" src="@/assets/videos/future_multiverse_video_updated.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
       </div>

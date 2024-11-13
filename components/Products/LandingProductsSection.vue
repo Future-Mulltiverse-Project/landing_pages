@@ -1,14 +1,86 @@
 <template>
-  <section :class="$style.section">
-    <div class="grid grid-cols-1 gap-3 lg:grid-cols-2" >
-      <ProductListItem
-        v-for="(item, index) in items"
-        :key="index"
-        :item="item"
-        class="p-10 m-10 lg:p-0 lg:m-0"
-      />
-    </div>
-  </section>
+  <AppWrapper>
+    <section :class="$style.section">
+
+      <div class="pb-12 flex items-center">
+        <div class=" grid grid-cols-1 gap-3 lg:grid-cols-2" >
+          <div class="grid grid-cols-2 gap-3" >
+            <!-- text left -->
+            <div>
+              <h4 class='card-title text-4xl font-bold'>LaunchPad</h4>
+              <p>“The Future isn’t limited by space or time, only by our imagination. Anything you can imagine, can be built. And everything that can be built, can be funded”.</p>      
+              <div class="flex mt-8" >
+                <button  class="btn-outline-primary">
+                  <p style="font-weight: 600;color: #cfb16d; font-size:14px; margin-bottom: 0px;">
+                    LEARN MORE
+                  </p>
+                </button>
+              </div>
+            </div>
+            <!-- Image right -->
+            <div>
+              <img :src="LaunchpadImg" class='w-40'  style=" padding-bottom: 10px"  alt="logo">
+            </div>
+
+            <!-- text left -->
+            <div class="pt-16">
+              <h4 class='card-title text-4xl font-bold'>Marketplace</h4>
+              <p>“Discover the limitless possibilities of the future, at the FXPO Marketplace. Where passions meet purpose and values create opportunities.”</p>      
+              <div class="flex mt-8" >
+                <button  class="btn-outline-primary">
+                  <p style="font-weight: 600;color: #cfb16d; font-size:14px; margin-bottom: 0px;">
+                    LEARN MORE
+                  </p>
+                </button>
+              </div>
+            </div>
+            <!-- Image right -->
+            <div class="pt-16">
+              <img :src="MarketplaceImg" class=' w-40'  style=" padding-bottom: 10px"  alt="logo">
+            </div>
+          </div>
+
+
+          <div class="pt-2 grid grid-cols-2 gap-3" >
+            <!-- text left -->
+            <div>
+              <h4 class='card-title text-4xl font-bold'>Initiative</h4>
+              <p>Discovering the Secrets of the Universe. "If you want to find the secrets of the Universe, think in terms of energy, frequencies and vibration.",<br/>Nikola Tesla</p>      
+              <div class="flex mt-8" >
+                <button  class="btn-outline-primary">
+                  <p style="font-weight: 600;color: #cfb16d; font-size:14px; margin-bottom: 0px;">
+                    LEARN MORE
+                  </p>
+                </button>
+              </div>
+            </div>
+            <!-- Image right -->
+            <div class="pt-16">
+              <img :src="QuestImg" class='w-40'  style=" padding-bottom: 10px"  alt="logo">
+            </div>
+
+            <!-- text left -->
+            <div class="pt-14">
+              <h4 class='card-title text-4xl font-bold'>Blockchain</h4>
+              <p>The FXPO Blockchain is a Proof of Stake (POS) / Proof of Authority (POA) protocol that logs, verifies, and authorizes all transactions of all Smart Contracts listed & traded on the Future Multiverse Blockchain.</p>      
+              <div class="flex mt-8" >
+                <button  class="btn-outline-primary">
+                  <p style="font-weight: 600;color: #cfb16d; font-size:14px; margin-bottom: 0px;">
+                    LEARN MORE
+                  </p>
+                </button>
+              </div>
+            </div>
+            <!-- Image right -->
+            <div class="pt-16">
+              <img :src="BlockchainImg" class='w-40'  style=" padding-bottom: 10px"  alt="logo">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </AppWrapper>
 </template>
 
 <script lang="ts" setup>
@@ -22,6 +94,7 @@ import MarketplaceImg from '~/assets/images/marketplace.jpg';
 import QuestImg from '~/assets/images/quest.png';
 // @ts-ignore
 import BlockchainImg from '~/assets/images/blockchain.png';
+import MediaPicture from '~/components/Media/MediaPicture.vue';
 
 const items = [
   {
@@ -80,6 +153,7 @@ const items = [
 }*/
 .section{
   margin-top: 70px;
+  margin-bottom: 50px;
 }
 .grid {
   display: grid;
@@ -89,5 +163,9 @@ const items = [
   @include media-breakpoint-up(lg) {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.card-title{
+  color: #CFB16D !important;
 }
 </style>

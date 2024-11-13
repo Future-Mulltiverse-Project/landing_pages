@@ -1,6 +1,6 @@
 <template>
   <section :class="$style.section" >
-    <MediaVideo layout="fill" :loop="true" :autoplay="true" :src="Bg" :width="1440" :height="860" />
+    <MediaVideo layout="fill" :loop="true" :autoplay="true" :src="Bg" :width="1440" :height="800" />
     <AppWrapper class="flex lg:h-screen justify-center items-center">
         <div class="flex flex-col">  
             <h1 style="margin: unset">
@@ -24,7 +24,7 @@
 import AppWrapper from '~/components/AppWrapper/AppWrapper.vue';
 import MediaPicture from '~/components/Media/MediaPicture.vue';
 import ScrollIcon from '~/icons/ScrollIcon.vue';
-import Bg from '~/assets/videos/future_multiverse_video.mp4';
+import Bg from '~/assets/videos/future_multiverse_video_updated.mp4';
 import MediaVideo from '../Media/MediaVideo.vue';
 </script>
 
