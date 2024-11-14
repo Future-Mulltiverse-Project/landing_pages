@@ -9,31 +9,29 @@
       </p>
     </MainSectionTextContent>
     <div :class="$style.btnContainer">
-      <h3 :class="$style.btnTitle" class="pb-12">Experience the <span style="color: #cfb16d;">Future </span>today:</h3>
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-5">
+      <h3 :class="$style.btnTitle" class="pb-8 lg:text-3xl md:text-2xl text-xl ">Experience the <span style="color: #cfb16d;">Future </span>today:</h3>
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-5">
         <div></div>
         <div class="flex justify-center">
           <button
-            class=" md:w-auto w-1/2 btn font-medium  btn-sm btn-outline-primary text-center"
+            class=" md:w-auto w-1/2 btn pt-4 pb-4 pr-6 pl-6 font-medium  btn-sm btn-outline-primary-no-spacing text-center"
             type="button"
-            style="padding-top: 10px !important; padding-bottom: 10px !important;"
           >
             <p class="mb-0 text-white">GUIDE<span class="text-cfb16d">BOOK</span></p>
           </button>
         </div>
         <div class="flex justify-center">
           <button
-            class=" md:w-auto w-1/2 btn font-medium  btn-sm btn-outline-primary text-center"
-            style="border-color: #ffffff;  padding-left: 25px !important; padding-right: 30px !important; padding-top: 0px !important; padding-bottom: 0px !important"
+            class=" md:w-auto w-1/2 btn font-medium  btn-sm btn-outline-primary-no-spacing text-center pt-4 pb-4 pr-6 pl-6"
+            style="border-color: #ffffff; "
           >
-            <p class="mb-0 text-white">ENTER<span class="text-cfb16d"> THE FUTURE</span></p>
+            <p class="mb-0  text-white">ENTER<span class="text-cfb16d"> THE FUTURE</span></p>
           </button>
         </div>
         <div class="flex justify-center">
           <button
-            class=" md:w-auto w-1/2 btn font-medium  btn-sm btn-outline-primary text-center"
+            class=" md:w-auto w-1/2 btn font-medium  btn-sm btn-outline-primary-no-spacing text-center pt-4 pb-4 pr-6 pl-6"
             type="button"
-            style="padding-top: 10px !important; padding-bottom: 10px !important;"
           >
             <p class="mb-0 text-white">EXPLORE <span class="text-cfb16d"> MAP</span></p>
           </button>
@@ -41,7 +39,7 @@
         <div></div>
       </div>
 
-      <div class="grid grid-cols-1 gap-5 mt-4 pt-12 md:grid-cols-6" :class="$style.btnLinkRow" style="padding-top: 40px !important; margin-top: 0px !important;">
+      <div class="grid grid-cols-1 gap-5 mt-4 pt-8 md:grid-cols-6" :class="$style.btnLinkRow" style="margin-top: 0px !important;">
         <div></div>
         <div class="md:col-span-4">
           <NuxtLink :class="$style.btnLink" class="pr-5" to="https://future-multiverse.gitbook.io/guidebook">
@@ -138,7 +136,6 @@ const title = `About FUTURE MULTIVERSE`;
 }
 
 .btnTitle {
-  font-size: 28px;
   font-weight: 600;
   color: #ffffff;
 }

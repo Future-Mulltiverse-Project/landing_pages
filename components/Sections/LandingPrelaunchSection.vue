@@ -2,27 +2,27 @@
   <section :class="$style.section">
     <!--MediaPicture :src="Bg" :width="1440" :height="968" layout="fill" /-->
     <AppWrapper>
-      <h3 class="font-medium" :class="$style.heading">It´s time<span :class="$style.primaryText">!</span></h3>
-      <h2 class="font-medium" :class="$style.title">
+      <h3 class="font-medium md:text-2xl text-xl" :class="$style.heading">It´s time<span :class="$style.primaryText">!</span></h3>
+      <h2 class="font-medium md:text-4xl text-2xl" :class="$style.title">
         Onboard <span :class="$style.primaryText"> Now</span> & Save your <span :class="$style.primaryText"> Seat</span><br/> for the <span :class="$style.primaryText"> Launch</span> of 
       </h2>
-      <h2>
-        <span style="font-size: 70px; font-weight: 600; "> THE <span :class="$style.primaryText">FUTURE</span>!</span>
+      <h2 class="font font-bold lg:text-8xl md:text-6xl sm:text-5xl text-4xl pt-4">
+        <span> THE <span :class="$style.primaryText">FUTURE</span>!</span>
       </h2>
-      <h3 class="font-medium" :class="$style.timerTitle">PLANNED <span style="color: #CFB16D;">PUBLIC LAUNCH </span>ONBOARDING</h3>
+      <h3 class="font-medium text-xl" :class="$style.timerTitle">PLANNED <span style="color: #CFB16D;">PUBLIC LAUNCH </span>ONBOARDING</h3>
       <LaunchingTimer
         :class="$style.timer"
         :datetime="config.public.MINT_EVENT_START_IN"
       />
       <div class="pt-3 grid grid-cols-1 gap-3 md:grid-cols-2">
-        <div class="md:flex md:items-center md:justify-end">
+        <div class="md:flex md:items-center md:justify-end mt-2 sm:mt-0 mb-10 sm:mb-0">
           <nuxt-link 
             to="https://auth.futuremultiverse.com"
             :class="$style.btn"
             style="border-color: #ffffff;"
             class=" btn-sm btn-outline-primary text-center font-medium"
           >
-            <p class="mb-0 font-medium text-sm" style="color:#CFB16D;min-width: unset; max-width: unset; ">ONBOARD <span class="text-white font-medium"> now </span> </p>
+            <span class="mb-0 font-medium text-sm" style="color:#CFB16D;min-width: unset; max-width: unset; ">ONBOARD <span class="text-white font-medium"> now </span> </span>
         </nuxt-link> 
         </div>
         <div class="md:flex md:items-center md:justify-start">
@@ -63,7 +63,6 @@ const config = useRuntimeConfig();
 
 
 .heading {
-  font-size: 28px;
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 600;
@@ -71,7 +70,6 @@ const config = useRuntimeConfig();
 }
 
 .title {
-  font-size: 35px;
   margin-bottom: 10px;
   line-height: divide(55, 45);
   margin-left: auto;
@@ -93,7 +91,6 @@ const config = useRuntimeConfig();
 
 
 .timerTitle {
-  font-size: 21px;
   margin-top: 130px;
   color: #ffffff;
   font-weight: 600;

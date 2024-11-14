@@ -2,7 +2,7 @@
   <div style=" background: url('_nuxt/assets/images/prelaunch-bg.png'), #0A0D1D; background-repeat: no-repeat; background-size: cover;max-width: 100%;">
   <section :class="$style.section" class="pt-12 pb-12">
     <AppWrapper>
-      <div class="grid grid-cols-1 md:gap-3 gap-1 md:grid-cols-2" :class="$style.row">
+      <div class="grid grid-cols-1 lg:gap-3 gap-1 lg:grid-cols-2" :class="$style.row">
         <div class="md:order-first md:max-w-md w-full">
           <LandingHomeMainSectionHeader
             :class="$style.header"
@@ -52,7 +52,7 @@
               </div>
             </div>
           </div>
-        <div class=" ml-0 md:ml-20">
+        <div class=" ml-0 lg:ml-20">
           <LaunchingTimerWrapper
             :class="$style.timerWrapper"
           >

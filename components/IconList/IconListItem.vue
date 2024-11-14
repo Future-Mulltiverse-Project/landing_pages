@@ -1,12 +1,12 @@
 <template>
-  <article :class="$style.article">
+  <article :class="$style.article" class="pt-10">
     <div :class="$style.inner">
       <div :class="$style.icon">
         <slot name="icon" />
       </div>
       <h3 :class="$style.title"> <span style="color: #ffffff">{{ item.title_white_1 }}</span> <span style="color: #CFB16D"> {{ item.title_gold_1 }}</span> <span style="color: #ffffff"> {{ item.title_white_2 }}</span> <span style="color: #CFB16D">{{ item.title_gold_2 }}</span></h3>
       <!--div v-if="item.text" :class="$style.text"-->
-      <div :class="$style.text">
+      <div :class="$style.text" class="pb-12">
         {{ item.text }} {{ item.text_grey }}
       </div>
       <!--button
@@ -40,7 +40,6 @@ defineProps<{ item: IconItem }>();
 
 <style lang="scss" module>
 .article {
-  padding: 50px 0 ;
   text-align: center;
   position: relative;
   border-top: 2px solid transparent;
@@ -94,7 +93,7 @@ defineProps<{ item: IconItem }>();
   font-size: 16px;
   color: #9C9C9C;
   font-family: 'Nunito Sans', sans-serif;
-  margin: 0 0 rem-calc(24px);
+  margin: 0 0 ;
 }
 
 .btn {

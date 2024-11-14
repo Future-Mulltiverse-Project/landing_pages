@@ -1,8 +1,8 @@
 <template>
 <div style=" background: url('_nuxt/assets/images/accelerator_bg.png'), #0A0D1D; background-repeat: no-repeat; background-size: cover;">
-  <section :class="$style.section">
+  <section class="pt-10 pb-10">
     <AppWrapper>
-      <h2 :class="$style.title" class="mb-12" >
+      <h2 :class="$style.title" class="mb-8 text-2xl md:text-3xl lg:text-4xl " >
         Key Components
         <span :class="$style.gold">&</span>
         Features
@@ -104,17 +104,13 @@ const items = [
 </script>
 
 <style lang="scss" module>
-.section {
-  /*padding: 50px  0 80px;*/
-  padding-top: 30px;
-  padding-bottom: 50px ;
-}
+
 .gold {
   color: $primary;
 }
 
 .title {
-  font-size: 48px;
+  //font-size: 48px;
   line-height: divide(60, 48);
   color: $white;
   font-weight: 600;

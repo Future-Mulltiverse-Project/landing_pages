@@ -9,7 +9,7 @@
       </div-->
       <input class="form-control" :class="$style.input" type="text" placeholder="Enter your email" />
 
-      <button class="btn-inline-primary-sm" type="submit" :class="$style.btn">
+      <button class="btn-inline-primary-sm sm:mt-0 mt-8" type="submit" :class="$style.btn">
         Sign up
       </button>
     </div>

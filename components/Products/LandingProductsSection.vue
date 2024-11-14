@@ -2,78 +2,80 @@
   <AppWrapper>
     <section :class="$style.section">
 
-      <div class="pb-12 flex items-center">
-        <div class=" grid grid-cols-1 gap-3 lg:grid-cols-2" >
-          <div class="grid grid-cols-2 gap-3" >
+      <div class="pb-12 md:pl-6 lg:pl-10 sm:pl-4 pl-0">
+        <div class=" grid grid-cols-1 gap-3 lg:grid-cols-2 lg:ml-0 ml-0 md:ml-28 " >
+          <div class="grid md:grid-cols-2 md:gap-3 grid-cols-1 gap-2 " >
             <!-- text left -->
-            <div>
-              <h4 class='card-title text-4xl font-bold'>LaunchPad</h4>
-              <p>“The Future isn’t limited by space or time, only by our imagination. Anything you can imagine, can be built. And everything that can be built, can be funded”.</p>      
-              <div class="flex mt-8" >
+            <div >
+              <h4 class='sm:text-left text-center card-title text-4xl font-bold'>LaunchPad</h4>
+              <p class="sm:text-left text-center"  >“The Future isn’t limited by space or time, only by our imagination. Anything you can imagine, can be built. And everything that can be built, can be funded”.</p>      
+              <div class="flex mt-8  sm:items-baseline items-center sm:justify-start justify-center" >
                 <button  class="btn-outline-primary">
-                  <p style="font-weight: 600;color: #cfb16d; font-size:14px; margin-bottom: 0px;">
+                  <p style="font-weight: 600;color: #cfb16d; font-size:13px; margin-bottom: 0px;">
                     LEARN MORE
                   </p>
                 </button>
               </div>
             </div>
             <!-- Image right -->
-            <div>
-              <img :src="LaunchpadImg" class='w-40'  style=" padding-bottom: 10px"  alt="logo">
+            <div class=" pt-10 sm:pt-0 sm:order-none order-first">
+              <img :src="LaunchpadImg" class='w-full sm:w-40'  style=" padding-bottom: 10px"  alt="logo">
             </div>
-
+          </div>
+          <div class="grid md:grid-cols-2 md:gap-3 grid-cols-1 gap-2 lg:ml-16 md:ml-0 ml-0" >
             <!-- text left -->
-            <div class="pt-16">
-              <h4 class='card-title text-4xl font-bold'>Marketplace</h4>
-              <p>“Discover the limitless possibilities of the future, at the FXPO Marketplace. Where passions meet purpose and values create opportunities.”</p>      
-              <div class="flex mt-8" >
+            <div >
+              <h4 class='sm:text-left text-center card-title text-4xl font-bold '>Marketplace</h4>
+              <p class="sm:text-left text-center">“Discover the limitless possibilities of the future, at the FXPO Marketplace. Where passions meet purpose and values create opportunities.”</p>      
+              <div class="flex mt-8  sm:items-baseline items-center sm:justify-start justify-center" >
                 <button  class="btn-outline-primary">
-                  <p style="font-weight: 600;color: #cfb16d; font-size:14px; margin-bottom: 0px;">
+                  <p style="font-weight: 600;color: #cfb16d; font-size:13px; margin-bottom: 0px;">
                     LEARN MORE
                   </p>
                 </button>
               </div>
             </div>
             <!-- Image right -->
-            <div class="pt-16">
-              <img :src="MarketplaceImg" class=' w-40'  style=" padding-bottom: 10px"  alt="logo">
+            <div class="pt-14 sm:pt-0 sm:order-none order-first">
+              <img :src="MarketplaceImg" class='w-full sm:w-40'  style=" padding-bottom: 10px"  alt="logo">
             </div>
           </div>
 
 
-          <div class="pt-2 grid grid-cols-2 gap-3" >
+          <div class="grid md:grid-cols-2 md:gap-3 grid-cols-1 gap-2" >
             <!-- text left -->
             <div>
-              <h4 class='card-title text-4xl font-bold'>Initiative</h4>
-              <p>Discovering the Secrets of the Universe. "If you want to find the secrets of the Universe, think in terms of energy, frequencies and vibration.",<br/>Nikola Tesla</p>      
-              <div class="flex mt-8" >
+              <h4 class='sm:text-left text-center card-title text-4xl font-bold'>Initiative</h4>
+              <p class="sm:text-left text-center">Discovering the Secrets of the Universe. "If you want to find the secrets of the Universe, think in terms of energy, frequencies and vibration.",<br/>Nikola Tesla</p>      
+              <div class="flex mt-8  sm:items-baseline items-center sm:justify-start justify-center" >
                 <button  class="btn-outline-primary">
-                  <p style="font-weight: 600;color: #cfb16d; font-size:14px; margin-bottom: 0px;">
+                  <p style="font-weight: 600;color: #cfb16d; font-size:13px; margin-bottom: 0px;">
                     LEARN MORE
                   </p>
                 </button>
               </div>
             </div>
             <!-- Image right -->
-            <div class="pt-16">
-              <img :src="QuestImg" class='w-40'  style=" padding-bottom: 10px"  alt="logo">
+            <div class="pt-14 sm:pt-0 sm:order-none order-first">
+              <img :src="QuestImg" class='w-full sm:w-40 pt-0 sm:pt-20'  style=" padding-bottom: 10px"  alt="logo">
             </div>
-
+          </div>
+          <div class="grid md:grid-cols-2 md:gap-3 grid-cols-1 gap-2 lg:ml-16 md:ml-0 ml-0" >
             <!-- text left -->
-            <div class="pt-14">
-              <h4 class='card-title text-4xl font-bold'>Blockchain</h4>
-              <p>The FXPO Blockchain is a Proof of Stake (POS) / Proof of Authority (POA) protocol that logs, verifies, and authorizes all transactions of all Smart Contracts listed & traded on the Future Multiverse Blockchain.</p>      
-              <div class="flex mt-8" >
+            <div>
+              <h4 class='sm:text-left text-center card-title text-4xl font-bold'>Blockchain</h4>
+              <p class='sm:text-left text-center' >The FXPO Blockchain is a Proof of Stake (POS) / Proof of Authority (POA) protocol that logs, verifies, and authorizes all transactions of all Smart Contracts listed & traded on the Future Multiverse Blockchain.</p>      
+              <div class="flex mt-8  sm:items-baseline items-center sm:justify-start justify-center" >
                 <button  class="btn-outline-primary">
-                  <p style="font-weight: 600;color: #cfb16d; font-size:14px; margin-bottom: 0px;">
+                  <p style="font-weight: 600;color: #cfb16d; font-size:13px; margin-bottom: 0px;">
                     LEARN MORE
                   </p>
                 </button>
               </div>
             </div>
             <!-- Image right -->
-            <div class="pt-16">
-              <img :src="BlockchainImg" class='w-40'  style=" padding-bottom: 10px"  alt="logo">
+            <div class=" pt-14 sm:pt-0 sm:order-none order-first">
+              <img :src="BlockchainImg" class='w-full sm:w-40 pt-0 sm:pt-20'  style=" padding-bottom: 10px"  alt="logo">
             </div>
           </div>
 

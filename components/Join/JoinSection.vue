@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <p :class="$style.text1">We can´t wait to meet you in the <br> <span style="font-size: 55px; color: white;">FUTURE MULTIVERSE</span><span style="font-size: 66px;">!</span></p>
+      <p :class="$style.text1" class='sm:text-5xl text-4xl' >We can´t wait to meet you in the <br> <span style="font-size: 55px; color: white;">FUTURE MULTIVERSE</span><span style="font-size: 66px;">!</span></p>
       <p :class="$style.text2">Your<span style="color: white;"> home</span> of <span style="color: white;">inspiration <br /> </span> for the <span style="color: white;">future</span></p>
     </AppWrapper>
   </section>
@@ -100,7 +100,6 @@ import MediaPicture from '~/components/Media/MediaPicture.vue';
 }
 
 .text1 {
-  font-size: 33px !important;
   margin-bottom: 85px;
   margin-top: 10px;
   line-height: math-div(30, 26);

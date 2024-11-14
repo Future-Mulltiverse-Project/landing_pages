@@ -10,6 +10,17 @@
     font-weight: 600;
     border: #cfb16d solid 3px;
 }
+.card-title{
+    color: #cfb16d;
+}
+.btn-outline-primary-no-spacing{
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border-width: 10px;
+    font-weight: 600;
+    border: #cfb16d solid 3px;
+}
 .btn-outline-primary:hover{
     background-color: #cfb16d;
 }

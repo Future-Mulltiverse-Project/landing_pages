@@ -1,9 +1,9 @@
 <template>
   <section :class="$style.section" class=" pb-10 " style="padding-top: 0px;">
     <AppWrapper>
-      <div class="grid grid-cols-1 gap-3 md:grid-cols-2" :class="$style.row">
+      <div class="grid grid-cols-1 gap-3 lg:grid-cols-2" :class="$style.row">
         <div class="md:order-first lg:pl-0 lg:pr-0 pl-4 pr-4">
-          <h1 class="text-left font-medium text-5xl " style=" color: #cfb16d">
+          <h1 class="text-center lg:text-left font-medium text-5xl " style=" color: #cfb16d">
             FUTURE MULTIVERSE
             <span class="text-white">ECOSYSTEM</span>
           </h1>
@@ -14,7 +14,7 @@
               AND EVERYTHING YOU CAN BUILD, CAN BE FUNDED!"
             </span>
           </p-->
-          <p style="margin-top: 20px; padding-left: 0px;" class="mb-5 lg:mb-0 text-left text-sm font-normal leading-7 px-4 md:px-0" >
+          <p style="margin-top: 20px; padding-left: 0px;" class="mb-5 lg:mb-0 lg:text-left text-center text-sm font-normal leading-7 px-4 md:px-0" >
             Leveraging our advanced tools, including our In-House Cinematic Design Production Studio, our Web3 based Accelerator platform, uniting a hyper-realistic Multivere, LaunchPad and Marketplace, and the methodologies, systems and modeling, amplified by the outstanding global influence and resources of Future Trends Group, we empower nations, organizations, associations, institutions, academies, universities, companies, projects and individuals across the world to actualize, uplift and transform their reality, enabling them to scale and grow quickly. Our platform offers key transformational processes that unlock limitless potentials and open up new realms of possibilities for growth and success. 
 
           </p>
